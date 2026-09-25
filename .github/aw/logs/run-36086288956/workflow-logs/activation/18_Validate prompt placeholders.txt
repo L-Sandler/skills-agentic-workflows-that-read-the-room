@@ -1,0 +1,45 @@
+﻿2026-09-25T02:36:25.9986787Z ##[debug]Evaluating: format('{0}/gh-aw/aw-prompts/prompt.txt', runner.temp)
+2026-09-25T02:36:25.9988263Z ##[debug]Evaluating format:
+2026-09-25T02:36:25.9988831Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.9989488Z ##[debug]..=> '{0}/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:25.9990279Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.9990872Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:25.9991439Z ##[debug]....=> Object
+2026-09-25T02:36:25.9992000Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.9992545Z ##[debug]....=> 'temp'
+2026-09-25T02:36:25.9993117Z ##[debug]..=> '/home/runner/work/_temp'
+2026-09-25T02:36:25.9993875Z ##[debug]=> '/home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:25.9994806Z ##[debug]Result: '/home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:25.9996007Z ##[debug]Evaluating condition for step: 'Validate prompt placeholders'
+2026-09-25T02:36:25.9999181Z ##[debug]Evaluating: success()
+2026-09-25T02:36:25.9999993Z ##[debug]Evaluating success:
+2026-09-25T02:36:26.0000829Z ##[debug]=> true
+2026-09-25T02:36:26.0001589Z ##[debug]Result: true
+2026-09-25T02:36:26.0002607Z ##[debug]Starting: Validate prompt placeholders
+2026-09-25T02:36:26.0018866Z ##[debug]Loading inputs
+2026-09-25T02:36:26.0021274Z ##[debug]Loading env
+2026-09-25T02:36:26.0029509Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/validate_prompt_placeholders.sh"
+2026-09-25T02:36:26.0030553Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/validate_prompt_placeholders.sh"[0m
+2026-09-25T02:36:26.0036108Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:36:26.0036636Z env:
+2026-09-25T02:36:26.0037465Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:26.0038069Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:26.0039805Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:26.0041472Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:26.0042075Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:26.0042729Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:26.0043286Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:26.0043848Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:26.0044464Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:26.0045370Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:26.0046026Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:26.0046781Z   GH_AW_PROMPT: /home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt
+2026-09-25T02:36:26.0047714Z ##[endgroup]
+2026-09-25T02:36:26.0056488Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/db3a764e-7910-4638-a099-3daebdb2206e.sh
+2026-09-25T02:36:26.0162495Z 🔍 Validating prompt placeholders...
+2026-09-25T02:36:26.0164129Z ✅ Placeholder validation complete
+2026-09-25T02:36:26.0164851Z 📊 Prompt statistics:
+2026-09-25T02:36:26.0165430Z    - Lines: 139
+2026-09-25T02:36:26.0165985Z    - Characters: 13659
+2026-09-25T02:36:26.0166561Z    - Words: 1907
+2026-09-25T02:36:26.0171719Z ##[debug]Finishing: Validate prompt placeholders

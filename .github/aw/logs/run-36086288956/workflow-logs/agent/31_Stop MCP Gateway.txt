@@ -1,0 +1,94 @@
+﻿2026-09-25T02:37:38.7258660Z ##[debug]Evaluating: steps.start-mcp-gateway.outputs.gateway-port
+2026-09-25T02:37:38.7259124Z ##[debug]Evaluating Index:
+2026-09-25T02:37:38.7259398Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:38.7259681Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:38.7259965Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:38.7260269Z ##[debug]......=> Object
+2026-09-25T02:37:38.7260554Z ##[debug]......Evaluating String:
+2026-09-25T02:37:38.7260855Z ##[debug]......=> 'start-mcp-gateway'
+2026-09-25T02:37:38.7261155Z ##[debug]....=> Object
+2026-09-25T02:37:38.7261402Z ##[debug]....Evaluating String:
+2026-09-25T02:37:38.7261672Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:38.7261914Z ##[debug]..=> Object
+2026-09-25T02:37:38.7262161Z ##[debug]..Evaluating String:
+2026-09-25T02:37:38.7262435Z ##[debug]..=> 'gateway-port'
+2026-09-25T02:37:38.7262703Z ##[debug]=> '8080'
+2026-09-25T02:37:38.7262945Z ##[debug]Result: '8080'
+2026-09-25T02:37:38.7263429Z ##[debug]Evaluating: steps.start-mcp-gateway.outputs.gateway-agent-id
+2026-09-25T02:37:38.7263868Z ##[debug]Evaluating Index:
+2026-09-25T02:37:38.7264314Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:38.7264572Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:38.7264835Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:38.7265110Z ##[debug]......=> Object
+2026-09-25T02:37:38.7265367Z ##[debug]......Evaluating String:
+2026-09-25T02:37:38.7265655Z ##[debug]......=> 'start-mcp-gateway'
+2026-09-25T02:37:38.7265938Z ##[debug]....=> Object
+2026-09-25T02:37:38.7266183Z ##[debug]....Evaluating String:
+2026-09-25T02:37:38.7266447Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:38.7266690Z ##[debug]..=> Object
+2026-09-25T02:37:38.7266932Z ##[debug]..Evaluating String:
+2026-09-25T02:37:38.7267211Z ##[debug]..=> 'gateway-agent-id'
+2026-09-25T02:37:38.7267898Z ##[debug]=> '***'
+2026-09-25T02:37:38.7268341Z ##[debug]Result: '***'
+2026-09-25T02:37:38.7279585Z ##[debug]Evaluating: steps.start-mcp-gateway.outputs.gateway-pid
+2026-09-25T02:37:38.7280067Z ##[debug]Evaluating Index:
+2026-09-25T02:37:38.7280362Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:38.7280632Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:38.7280924Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:38.7281208Z ##[debug]......=> Object
+2026-09-25T02:37:38.7281470Z ##[debug]......Evaluating String:
+2026-09-25T02:37:38.7281774Z ##[debug]......=> 'start-mcp-gateway'
+2026-09-25T02:37:38.7282061Z ##[debug]....=> Object
+2026-09-25T02:37:38.7282321Z ##[debug]....Evaluating String:
+2026-09-25T02:37:38.7282586Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:38.7282835Z ##[debug]..=> Object
+2026-09-25T02:37:38.7283073Z ##[debug]..Evaluating String:
+2026-09-25T02:37:38.7283338Z ##[debug]..=> 'gateway-pid'
+2026-09-25T02:37:38.7283599Z ##[debug]=> '4361'
+2026-09-25T02:37:38.7283838Z ##[debug]Result: '4361'
+2026-09-25T02:37:38.7284274Z ##[debug]Evaluating condition for step: 'Stop MCP Gateway'
+2026-09-25T02:37:38.7285548Z ##[debug]Evaluating: always()
+2026-09-25T02:37:38.7285933Z ##[debug]Evaluating always:
+2026-09-25T02:37:38.7286281Z ##[debug]=> true
+2026-09-25T02:37:38.7286668Z ##[debug]Result: true
+2026-09-25T02:37:38.7287182Z ##[debug]Starting: Stop MCP Gateway
+2026-09-25T02:37:38.7297780Z ##[debug]Loading inputs
+2026-09-25T02:37:38.7298743Z ##[debug]Loading env
+2026-09-25T02:37:38.7303062Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/stop_mcp_gateway.sh" "$GATEWAY_PID"
+2026-09-25T02:37:38.7303632Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/stop_mcp_gateway.sh" "$GATEWAY_PID"[0m
+2026-09-25T02:37:38.7371945Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:37:38.7372239Z env:
+2026-09-25T02:37:38.7372470Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:38.7372793Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:38.7373743Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:38.7374632Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:38.7374941Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:38.7375475Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:38.7375752Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:38.7376006Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:38.7376263Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:38.7376514Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:38.7376805Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:38.7377128Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:38.7377393Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:38.7377856Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:38.7378115Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:38.7378375Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:38.7378609Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:38.7378843Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:38.7379127Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:38.7379491Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:38.7379870Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:38.7380207Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:38.7380655Z   MCP_GATEWAY_PORT: 8080
+2026-09-25T02:37:38.7381124Z   MCP_GATEWAY_AGENT_ID: ***
+2026-09-25T02:37:38.7381385Z   GATEWAY_PID: 4361
+2026-09-25T02:37:38.7381626Z ##[endgroup]
+2026-09-25T02:37:38.7447372Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/c5506677-fa5a-4a47-9e1c-d10f15625eec.sh
+2026-09-25T02:37:38.7482147Z Stopping MCP gateway (PID: 4361)...
+2026-09-25T02:37:38.7605930Z Attempting graceful shutdown via /close endpoint...
+2026-09-25T02:37:38.7930347Z Gateway accepted close request
+2026-09-25T02:37:38.7932159Z Response: {"message":"Gateway shutdown initiated","serversTerminated":2,"status":"closed"}
+2026-09-25T02:37:39.8409927Z Gateway stopped gracefully via /close endpoint
+2026-09-25T02:37:39.8410358Z Cleaning up awmg-mcpg container...
+2026-09-25T02:37:39.8692073Z ##[debug]Finishing: Stop MCP Gateway

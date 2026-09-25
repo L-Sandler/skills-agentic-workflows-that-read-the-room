@@ -1,0 +1,26 @@
+﻿2026-09-25T02:38:17.3653540Z ##[debug]Evaluating condition for step: 'Copy detection firewall logs'
+2026-09-25T02:38:17.3655074Z ##[debug]Evaluating: (always() && (steps.detection_guard.outputs.run_detection == 'true'))
+2026-09-25T02:38:17.3655594Z ##[debug]Evaluating And:
+2026-09-25T02:38:17.3655953Z ##[debug]..Evaluating always:
+2026-09-25T02:38:17.3656300Z ##[debug]..=> true
+2026-09-25T02:38:17.3656626Z ##[debug]..Evaluating Equal:
+2026-09-25T02:38:17.3656987Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:17.3657347Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:17.3657708Z ##[debug]........Evaluating Index:
+2026-09-25T02:38:17.3658090Z ##[debug]..........Evaluating steps:
+2026-09-25T02:38:17.3658459Z ##[debug]..........=> Object
+2026-09-25T02:38:17.3658830Z ##[debug]..........Evaluating String:
+2026-09-25T02:38:17.3659533Z ##[debug]..........=> 'detection_guard'
+2026-09-25T02:38:17.3659943Z ##[debug]........=> Object
+2026-09-25T02:38:17.3660315Z ##[debug]........Evaluating String:
+2026-09-25T02:38:17.3660684Z ##[debug]........=> 'outputs'
+2026-09-25T02:38:17.3661073Z ##[debug]......=> Object
+2026-09-25T02:38:17.3661440Z ##[debug]......Evaluating String:
+2026-09-25T02:38:17.3661804Z ##[debug]......=> 'run_detection'
+2026-09-25T02:38:17.3662182Z ##[debug]....=> 'false'
+2026-09-25T02:38:17.3662543Z ##[debug]....Evaluating String:
+2026-09-25T02:38:17.3662884Z ##[debug]....=> 'true'
+2026-09-25T02:38:17.3663208Z ##[debug]..=> false
+2026-09-25T02:38:17.3663544Z ##[debug]=> false
+2026-09-25T02:38:17.3664011Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-09-25T02:38:17.3664447Z ##[debug]Result: false

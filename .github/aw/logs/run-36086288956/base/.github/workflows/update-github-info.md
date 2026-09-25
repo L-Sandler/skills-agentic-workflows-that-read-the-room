@@ -8,7 +8,6 @@ on:
 permissions:
   contents: read
 engine: copilot
-model: auto
 tools:
   github:
     toolsets:

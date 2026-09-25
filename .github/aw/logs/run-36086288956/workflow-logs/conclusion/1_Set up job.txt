@@ -1,0 +1,173 @@
+﻿2026-09-25T02:38:35.2847452Z ##[debug]Starting: Set up job
+2026-09-25T02:38:35.2849150Z Current runner version: '2.337.0'
+2026-09-25T02:38:35.2883808Z ##[group]Runner Image Provisioner
+2026-09-25T02:38:35.2884642Z Hosted Compute Agent
+2026-09-25T02:38:35.2885313Z Version: 20260828.587
+2026-09-25T02:38:35.2886492Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-25T02:38:35.2887844Z Build Date: 2026-08-28T16:44:25Z
+2026-09-25T02:38:35.2888565Z Worker ID: {71f153ee-a86e-4ef8-aad6-5a555636ce13}
+2026-09-25T02:38:35.2889589Z Azure Region: eastus
+2026-09-25T02:38:35.2890415Z ##[endgroup]
+2026-09-25T02:38:35.2892385Z ##[group]VM Image
+2026-09-25T02:38:35.2893303Z - OS: Linux (x64)
+2026-09-25T02:38:35.2893974Z - Source: Docker
+2026-09-25T02:38:35.2894818Z - Name: ubuntu:24.04
+2026-09-25T02:38:35.2895659Z - Version: 20260922.6.5
+2026-09-25T02:38:35.2896258Z ##[endgroup]
+2026-09-25T02:38:35.2898445Z ##[group]GITHUB_TOKEN Permissions
+2026-09-25T02:38:35.2901117Z Actions: read
+2026-09-25T02:38:35.2902161Z Contents: write
+2026-09-25T02:38:35.2902855Z Issues: write
+2026-09-25T02:38:35.2903695Z Metadata: read
+2026-09-25T02:38:35.2904260Z PullRequests: write
+2026-09-25T02:38:35.2905102Z ##[endgroup]
+2026-09-25T02:38:35.2908955Z Secret source: Actions
+2026-09-25T02:38:35.2910280Z Cache mode: write
+2026-09-25T02:38:35.2911668Z ##[debug]Primary repository: L-Sandler/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:38:35.2912934Z Prepare workflow directory
+2026-09-25T02:38:35.3016659Z ##[debug]Creating pipeline directory: '/home/runner/work/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:35.3022538Z ##[debug]Creating workspace directory: '/home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:35.3025288Z ##[debug]Update context data
+2026-09-25T02:38:35.3030644Z ##[debug]Evaluating job-level environment variables
+2026-09-25T02:38:35.3545748Z ##[debug]Evaluating: (secrets.GH_AW_DEFAULT_OTLP_ENDPOINT || vars.GH_AW_DEFAULT_OTLP_ENDPOINT)
+2026-09-25T02:38:35.3551386Z ##[debug]Evaluating Or:
+2026-09-25T02:38:35.3554261Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:35.3556759Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:35.3566279Z ##[debug]....=> Object
+2026-09-25T02:38:35.3575157Z ##[debug]....Evaluating String:
+2026-09-25T02:38:35.3576229Z ##[debug]....=> 'GH_AW_DEFAULT_OTLP_ENDPOINT'
+2026-09-25T02:38:35.3580534Z ##[debug]..=> null
+2026-09-25T02:38:35.3582425Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:35.3583118Z ##[debug]....Evaluating vars:
+2026-09-25T02:38:35.3583793Z ##[debug]....=> Object
+2026-09-25T02:38:35.3584366Z ##[debug]....Evaluating String:
+2026-09-25T02:38:35.3585086Z ##[debug]....=> 'GH_AW_DEFAULT_OTLP_ENDPOINT'
+2026-09-25T02:38:35.3586027Z ##[debug]..=> null
+2026-09-25T02:38:35.3586604Z ##[debug]=> null
+2026-09-25T02:38:35.3594255Z ##[debug]Expanded: (null || null)
+2026-09-25T02:38:35.3595134Z ##[debug]Result: null
+2026-09-25T02:38:35.3623189Z ##[debug]Evaluating: format('gh-aw.workflow.name=update-github-info,gh-aw.repository={0},gh-aw.run.id={1},github.run_id={2},gh-aw.engine.id=copilot', github.repository, github.run_id, github.run_id)
+2026-09-25T02:38:35.3624798Z ##[debug]Evaluating format:
+2026-09-25T02:38:35.3629124Z ##[debug]..Evaluating String:
+2026-09-25T02:38:35.3630449Z ##[debug]..=> 'gh-aw.workflow.name=update-github-info,gh-aw.repository={0},gh-aw.run.id={1},github.run_id={2},gh-aw.engine.id=copilot'
+2026-09-25T02:38:35.3642918Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:35.3643627Z ##[debug]....Evaluating github:
+2026-09-25T02:38:35.3644280Z ##[debug]....=> Object
+2026-09-25T02:38:35.3644948Z ##[debug]....Evaluating String:
+2026-09-25T02:38:35.3645584Z ##[debug]....=> 'repository'
+2026-09-25T02:38:35.3646786Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:35.3648628Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:35.3651268Z ##[debug]....Evaluating github:
+2026-09-25T02:38:35.3653123Z ##[debug]....=> Object
+2026-09-25T02:38:35.3654217Z ##[debug]....Evaluating String:
+2026-09-25T02:38:35.3655803Z ##[debug]....=> 'run_id'
+2026-09-25T02:38:35.3657934Z ##[debug]..=> '36086288956'
+2026-09-25T02:38:35.3658849Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:35.3659770Z ##[debug]....Evaluating github:
+2026-09-25T02:38:35.3660903Z ##[debug]....=> Object
+2026-09-25T02:38:35.3661987Z ##[debug]....Evaluating String:
+2026-09-25T02:38:35.3663717Z ##[debug]....=> 'run_id'
+2026-09-25T02:38:35.3664379Z ##[debug]..=> '36086288956'
+2026-09-25T02:38:35.3666808Z ##[debug]=> 'gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot'
+2026-09-25T02:38:35.3671506Z ##[debug]Result: 'gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot'
+2026-09-25T02:38:35.3673920Z ##[debug]Evaluating: secrets.GH_AW_DEFAULT_OTLP_HEADERS
+2026-09-25T02:38:35.3674662Z ##[debug]Evaluating Index:
+2026-09-25T02:38:35.3675259Z ##[debug]..Evaluating secrets:
+2026-09-25T02:38:35.3675950Z ##[debug]..=> Object
+2026-09-25T02:38:35.3676506Z ##[debug]..Evaluating String:
+2026-09-25T02:38:35.3677541Z ##[debug]..=> 'GH_AW_DEFAULT_OTLP_HEADERS'
+2026-09-25T02:38:35.3680898Z ##[debug]=> null
+2026-09-25T02:38:35.3681440Z ##[debug]Result: null
+2026-09-25T02:38:35.3683576Z ##[debug]Evaluating: format('[{{"url":"{0}","headers":"{1}"}}]', (secrets.GH_AW_DEFAULT_OTLP_ENDPOINT || vars.GH_AW_DEFAULT_OTLP_ENDPOINT), secrets.GH_AW_DEFAULT_OTLP_HEADERS)
+2026-09-25T02:38:35.3684833Z ##[debug]Evaluating format:
+2026-09-25T02:38:35.3685487Z ##[debug]..Evaluating String:
+2026-09-25T02:38:35.3686119Z ##[debug]..=> '[{{"url":"{0}","headers":"{1}"}}]'
+2026-09-25T02:38:35.3687202Z ##[debug]..Evaluating Or:
+2026-09-25T02:38:35.3687797Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:35.3688432Z ##[debug]......Evaluating secrets:
+2026-09-25T02:38:35.3689122Z ##[debug]......=> Object
+2026-09-25T02:38:35.3689711Z ##[debug]......Evaluating String:
+2026-09-25T02:38:35.3690439Z ##[debug]......=> 'GH_AW_DEFAULT_OTLP_ENDPOINT'
+2026-09-25T02:38:35.3691122Z ##[debug]....=> null
+2026-09-25T02:38:35.3691661Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:35.3692301Z ##[debug]......Evaluating vars:
+2026-09-25T02:38:35.3692878Z ##[debug]......=> Object
+2026-09-25T02:38:35.3693462Z ##[debug]......Evaluating String:
+2026-09-25T02:38:35.3694210Z ##[debug]......=> 'GH_AW_DEFAULT_OTLP_ENDPOINT'
+2026-09-25T02:38:35.3694877Z ##[debug]....=> null
+2026-09-25T02:38:35.3695441Z ##[debug]..=> null
+2026-09-25T02:38:35.3695985Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:35.3696642Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:35.3697469Z ##[debug]....=> Object
+2026-09-25T02:38:35.3698014Z ##[debug]....Evaluating String:
+2026-09-25T02:38:35.3698667Z ##[debug]....=> 'GH_AW_DEFAULT_OTLP_HEADERS'
+2026-09-25T02:38:35.3699329Z ##[debug]..=> null
+2026-09-25T02:38:35.3699900Z ##[debug]=> '[{"url":"","headers":""}]'
+2026-09-25T02:38:35.3700634Z ##[debug]Result: '[{"url":"","headers":""}]'
+2026-09-25T02:38:35.3722298Z ##[debug]Evaluating: vars.GH_AW_RUNTIME_FEATURES
+2026-09-25T02:38:35.3723255Z ##[debug]Evaluating Index:
+2026-09-25T02:38:35.3723900Z ##[debug]..Evaluating vars:
+2026-09-25T02:38:35.3724637Z ##[debug]..=> Object
+2026-09-25T02:38:35.3725228Z ##[debug]..Evaluating String:
+2026-09-25T02:38:35.3725882Z ##[debug]..=> 'GH_AW_RUNTIME_FEATURES'
+2026-09-25T02:38:35.3726563Z ##[debug]=> null
+2026-09-25T02:38:35.3727361Z ##[debug]Result: null
+2026-09-25T02:38:35.3728215Z ##[debug]Evaluating job container
+2026-09-25T02:38:35.3731140Z ##[debug]Evaluating job service containers
+2026-09-25T02:38:35.3733796Z ##[debug]Evaluating job defaults
+2026-09-25T02:38:35.3764021Z Prepare all required actions
+2026-09-25T02:38:35.3823420Z Getting action download info
+2026-09-25T02:38:35.7714713Z Download action repository 'github/gh-aw-actions@924af5fdc64061cfbf66fb584c8b07e2ac230c60' (SHA:924af5fdc64061cfbf66fb584c8b07e2ac230c60)
+2026-09-25T02:38:35.8967183Z ##[debug]Download 'https://codeload.github.com/github/gh-aw-actions/tar.gz/924af5fdc64061cfbf66fb584c8b07e2ac230c60' to '/home/runner/work/_actions/_temp_63c202a2-03f9-4971-b2d7-194bcae0ee7a/15001aa7-6c04-4b42-8f9e-428bb381e70b.tar.gz'
+2026-09-25T02:38:36.0115499Z ##[debug]Unwrap 'gh-aw-actions-924af5fdc64061cfbf66fb584c8b07e2ac230c60' to '/home/runner/work/_actions/github/gh-aw-actions/924af5fdc64061cfbf66fb584c8b07e2ac230c60'
+2026-09-25T02:38:36.4572850Z ##[debug]Archive '/home/runner/work/_actions/_temp_63c202a2-03f9-4971-b2d7-194bcae0ee7a/15001aa7-6c04-4b42-8f9e-428bb381e70b.tar.gz' has been unzipped into '/home/runner/work/_actions/github/gh-aw-actions/924af5fdc64061cfbf66fb584c8b07e2ac230c60'.
+2026-09-25T02:38:36.4835178Z Download action repository 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' (SHA:3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c)
+2026-09-25T02:38:36.5654215Z ##[debug]Download 'https://codeload.github.com/actions/download-artifact/tar.gz/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' to '/home/runner/work/_actions/_temp_2947e389-3afb-4cef-9217-44ae9dc29872/66fca75a-99eb-4b3c-b61f-e0c1bad6d8b2.tar.gz'
+2026-09-25T02:38:36.6202473Z ##[debug]Unwrap 'download-artifact-3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' to '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c'
+2026-09-25T02:38:36.6405623Z ##[debug]Archive '/home/runner/work/_actions/_temp_2947e389-3afb-4cef-9217-44ae9dc29872/66fca75a-99eb-4b3c-b61f-e0c1bad6d8b2.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c'.
+2026-09-25T02:38:36.6459411Z ##[debug]Action 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' already downloaded at '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c'.
+2026-09-25T02:38:36.6463862Z ##[debug]Action 'actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c' already downloaded at '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c'.
+2026-09-25T02:38:36.6472192Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-09-25T02:38:36.6533805Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a.tar.gz' to '/home/runner/work/_actions/_temp_76100b8b-210b-4431-80f4-02a47c9108fe/1c13fd76-9562-4b17-a913-02640a6a590d.tar.gz'
+2026-09-25T02:38:36.7245056Z ##[debug]Unwrap 'actions-upload-artifact-043fb46' to '/home/runner/work/_actions/actions/upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a'
+2026-09-25T02:38:36.7426294Z ##[debug]Archive '/home/runner/work/_actions/_temp_76100b8b-210b-4431-80f4-02a47c9108fe/1c13fd76-9562-4b17-a913-02640a6a590d.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a'.
+2026-09-25T02:38:36.7468800Z ##[debug]Action 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' already downloaded at '/home/runner/work/_actions/actions/upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a'.
+2026-09-25T02:38:36.7477326Z Download action repository 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' (SHA:3a2844b7e9c422d3c10d287c895573f7108da1b3)
+2026-09-25T02:38:36.8502475Z ##[debug]Download 'https://codeload.github.com/actions/github-script/tar.gz/3a2844b7e9c422d3c10d287c895573f7108da1b3' to '/home/runner/work/_actions/_temp_da9a5ce1-aa2c-4d40-9af7-7874cd5f552e/4db96f1f-141f-44ee-97e0-8bdbd0ec242f.tar.gz'
+2026-09-25T02:38:36.8873976Z ##[debug]Unwrap 'github-script-3a2844b7e9c422d3c10d287c895573f7108da1b3' to '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'
+2026-09-25T02:38:36.9011196Z ##[debug]Archive '/home/runner/work/_actions/_temp_da9a5ce1-aa2c-4d40-9af7-7874cd5f552e/4db96f1f-141f-44ee-97e0-8bdbd0ec242f.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'.
+2026-09-25T02:38:36.9060768Z ##[debug]Action 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' already downloaded at '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'.
+2026-09-25T02:38:36.9066670Z ##[debug]Action 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' already downloaded at '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'.
+2026-09-25T02:38:36.9073427Z ##[debug]Action 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' already downloaded at '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'.
+2026-09-25T02:38:36.9079814Z ##[debug]Action 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' already downloaded at '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'.
+2026-09-25T02:38:36.9085562Z ##[debug]Action 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' already downloaded at '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3'.
+2026-09-25T02:38:36.9112113Z ##[debug]action.yml for action: '/home/runner/work/_actions/github/gh-aw-actions/924af5fdc64061cfbf66fb584c8b07e2ac230c60/setup/action.yml'.
+2026-09-25T02:38:37.0574412Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c/action.yml'.
+2026-09-25T02:38:37.0741161Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c/action.yml'.
+2026-09-25T02:38:37.0815964Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/download-artifact/3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c/action.yml'.
+2026-09-25T02:38:37.0885272Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a/action.yml'.
+2026-09-25T02:38:37.1107601Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/upload-artifact/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a/action.yml'.
+2026-09-25T02:38:37.1185014Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3/action.yml'.
+2026-09-25T02:38:37.1261321Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3/action.yml'.
+2026-09-25T02:38:37.1327343Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3/action.yml'.
+2026-09-25T02:38:37.1385857Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3/action.yml'.
+2026-09-25T02:38:37.1471331Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3/action.yml'.
+2026-09-25T02:38:37.1530364Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/github-script/3a2844b7e9c422d3c10d287c895573f7108da1b3/action.yml'.
+2026-09-25T02:38:37.1634475Z ##[debug]Set step 'setup' display name to: 'Setup Scripts'
+2026-09-25T02:38:37.1638368Z ##[debug]Set step 'download-agent-output' display name to: 'Download agent output artifact'
+2026-09-25T02:38:37.1640953Z ##[debug]Set step 'setup-agent-output-env' display name to: 'Setup agent output environment variable'
+2026-09-25T02:38:37.1643417Z ##[debug]Set step 'download-detection-artifact' display name to: 'Download detection artifact'
+2026-09-25T02:38:37.1645910Z ##[debug]Set step 'download-safe-outputs-manifest' display name to: 'Download Safe Outputs Items Manifest'
+2026-09-25T02:38:37.1682654Z ##[debug]Set step '__run' display name to: 'Collect usage artifact files'
+2026-09-25T02:38:37.1685381Z ##[debug]Set step 'upload-usage-artifact' display name to: 'Upload usage artifact'
+2026-09-25T02:38:37.1688130Z ##[debug]Set step '__run_2' display name to: 'Wait before retrying usage artifact upload'
+2026-09-25T02:38:37.1690576Z ##[debug]Set step 'upload-usage-artifact-retry' display name to: 'Retry upload usage artifact'
+2026-09-25T02:38:37.1692761Z ##[debug]Set step 'noop' display name to: 'Process no-op messages'
+2026-09-25T02:38:37.1694802Z ##[debug]Set step 'detection_runs' display name to: 'Log detection run'
+2026-09-25T02:38:37.1696851Z ##[debug]Set step 'missing_tool' display name to: 'Record missing tool'
+2026-09-25T02:38:37.1699122Z ##[debug]Set step 'report_incomplete' display name to: 'Record incomplete'
+2026-09-25T02:38:37.1701299Z ##[debug]Set step 'handle_agent_failure' display name to: 'Handle agent failure'
+2026-09-25T02:38:37.1703413Z ##[debug]Set step 'report_failed_jobs' display name to: 'Report failed jobs'
+2026-09-25T02:38:37.1704244Z Complete job name: conclusion
+2026-09-25T02:38:37.1805471Z ##[debug]Collect running processes for tracking orphan processes.
+2026-09-25T02:38:37.1964063Z ##[debug]Finishing: Set up job

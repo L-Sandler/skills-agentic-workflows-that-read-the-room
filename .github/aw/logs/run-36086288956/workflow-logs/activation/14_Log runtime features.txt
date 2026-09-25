@@ -1,0 +1,16 @@
+﻿2026-09-25T02:36:25.3081543Z ##[debug]Evaluating condition for step: 'Log runtime features'
+2026-09-25T02:36:25.3090810Z ##[debug]Evaluating: (success() && contains(toJSON(vars), '"GH_AW_RUNTIME_FEATURES":'))
+2026-09-25T02:36:25.3092397Z ##[debug]Evaluating And:
+2026-09-25T02:36:25.3093413Z ##[debug]..Evaluating success:
+2026-09-25T02:36:25.3094258Z ##[debug]..=> true
+2026-09-25T02:36:25.3095263Z ##[debug]..Evaluating contains:
+2026-09-25T02:36:25.3101926Z ##[debug]....Evaluating toJSON:
+2026-09-25T02:36:25.3111123Z ##[debug]......Evaluating vars:
+2026-09-25T02:36:25.3112557Z ##[debug]......=> Object
+2026-09-25T02:36:25.3117530Z ##[debug]....=> '{}'
+2026-09-25T02:36:25.3118658Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.3119468Z ##[debug]....=> '"GH_AW_RUNTIME_FEATURES":'
+2026-09-25T02:36:25.3120542Z ##[debug]..=> false
+2026-09-25T02:36:25.3121818Z ##[debug]=> false
+2026-09-25T02:36:25.3124416Z ##[debug]Expanded: (true && contains('{}', '"GH_AW_RUNTIME_FEATURES":'))
+2026-09-25T02:36:25.3125789Z ##[debug]Result: false

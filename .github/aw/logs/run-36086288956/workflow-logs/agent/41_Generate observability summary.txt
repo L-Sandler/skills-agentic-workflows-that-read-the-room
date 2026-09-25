@@ -1,0 +1,73 @@
+﻿2026-09-25T02:37:41.8054318Z ##[debug]Evaluating condition for step: 'Generate observability summary'
+2026-09-25T02:37:41.8056469Z ##[debug]Evaluating: always()
+2026-09-25T02:37:41.8057078Z ##[debug]Evaluating always:
+2026-09-25T02:37:41.8057912Z ##[debug]=> true
+2026-09-25T02:37:41.8058532Z ##[debug]Result: true
+2026-09-25T02:37:41.8059358Z ##[debug]Starting: Generate observability summary
+2026-09-25T02:37:41.8097227Z ##[debug]Loading inputs
+2026-09-25T02:37:41.8099490Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:41.8099985Z ##[debug]Evaluating Index:
+2026-09-25T02:37:41.8100408Z ##[debug]..Evaluating github:
+2026-09-25T02:37:41.8100873Z ##[debug]..=> Object
+2026-09-25T02:37:41.8101260Z ##[debug]..Evaluating String:
+2026-09-25T02:37:41.8101670Z ##[debug]..=> 'token'
+2026-09-25T02:37:41.8106039Z ##[debug]=> '***'
+2026-09-25T02:37:41.8110572Z ##[debug]Result: '***'
+2026-09-25T02:37:41.8116277Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:37:41.8116809Z ##[debug]Evaluating Equal:
+2026-09-25T02:37:41.8117237Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:41.8117907Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:41.8118351Z ##[debug]....=> Object
+2026-09-25T02:37:41.8118758Z ##[debug]....Evaluating String:
+2026-09-25T02:37:41.8119157Z ##[debug]....=> 'debug'
+2026-09-25T02:37:41.8119552Z ##[debug]..=> '1'
+2026-09-25T02:37:41.8119919Z ##[debug]..Evaluating String:
+2026-09-25T02:37:41.8120324Z ##[debug]..=> '1'
+2026-09-25T02:37:41.8120698Z ##[debug]=> true
+2026-09-25T02:37:41.8121088Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:37:41.8121515Z ##[debug]Result: true
+2026-09-25T02:37:41.8127669Z ##[debug]Loading env
+2026-09-25T02:37:41.8134925Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:37:41.8135583Z with:
+2026-09-25T02:37:41.8137888Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_observability_summary.cjs'));
+await main(core);
+
+2026-09-25T02:37:41.8144015Z   github-token: ***
+2026-09-25T02:37:41.8144401Z   debug: true
+2026-09-25T02:37:41.8144770Z   user-agent: actions/github-script
+2026-09-25T02:37:41.8145252Z   result-encoding: json
+2026-09-25T02:37:41.8145622Z   retries: 0
+2026-09-25T02:37:41.8146019Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:37:41.8146515Z env:
+2026-09-25T02:37:41.8146843Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:41.8147324Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:41.8149070Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:41.8150645Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:41.8151113Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:41.8151619Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:41.8152039Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:41.8152419Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:41.8152820Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:41.8153201Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:41.8153659Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:41.8154188Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:41.8154603Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:41.8155028Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:41.8155427Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:41.8155818Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:41.8156449Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:41.8156832Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:41.8157261Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:41.8158010Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:41.8158631Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:41.8159164Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:41.8160031Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-25T02:37:41.8160540Z ##[endgroup]
+2026-09-25T02:37:41.9288751Z Generated observability summary in step summary
+2026-09-25T02:37:41.9379820Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:41.9389746Z ##[debug]Set output result = 
+2026-09-25T02:37:41.9390916Z ##[debug]Finishing: Generate observability summary

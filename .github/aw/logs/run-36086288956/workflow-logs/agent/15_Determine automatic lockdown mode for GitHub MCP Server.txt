@@ -1,0 +1,140 @@
+﻿2026-09-25T02:36:56.6926470Z ##[debug]Evaluating: secrets.GH_AW_GITHUB_TOKEN
+2026-09-25T02:36:56.6926841Z ##[debug]Evaluating Index:
+2026-09-25T02:36:56.6927126Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:56.6927443Z ##[debug]..=> Object
+2026-09-25T02:36:56.6927990Z ##[debug]..Evaluating String:
+2026-09-25T02:36:56.6928273Z ##[debug]..=> 'GH_AW_GITHUB_TOKEN'
+2026-09-25T02:36:56.6948527Z ##[debug]=> null
+2026-09-25T02:36:56.6948870Z ##[debug]Result: null
+2026-09-25T02:36:56.6949874Z ##[debug]Evaluating: secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN
+2026-09-25T02:36:56.6950285Z ##[debug]Evaluating Index:
+2026-09-25T02:36:56.6950566Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:56.6950838Z ##[debug]..=> Object
+2026-09-25T02:36:56.6951087Z ##[debug]..Evaluating String:
+2026-09-25T02:36:56.6951389Z ##[debug]..=> 'GH_AW_GITHUB_MCP_SERVER_TOKEN'
+2026-09-25T02:36:56.6951711Z ##[debug]=> null
+2026-09-25T02:36:56.6951950Z ##[debug]Result: null
+2026-09-25T02:36:56.6952530Z ##[debug]Evaluating condition for step: 'Determine automatic lockdown mode for GitHub MCP Server'
+2026-09-25T02:36:56.6954048Z ##[debug]Evaluating: success()
+2026-09-25T02:36:56.6954467Z ##[debug]Evaluating success:
+2026-09-25T02:36:56.6954912Z ##[debug]=> true
+2026-09-25T02:36:56.6955297Z ##[debug]Result: true
+2026-09-25T02:36:56.6955899Z ##[debug]Starting: Determine automatic lockdown mode for GitHub MCP Server
+2026-09-25T02:36:56.6981693Z ##[debug]Loading inputs
+2026-09-25T02:36:56.6983151Z ##[debug]Evaluating: github.token
+2026-09-25T02:36:56.6983458Z ##[debug]Evaluating Index:
+2026-09-25T02:36:56.6983727Z ##[debug]..Evaluating github:
+2026-09-25T02:36:56.6983993Z ##[debug]..=> Object
+2026-09-25T02:36:56.6984253Z ##[debug]..Evaluating String:
+2026-09-25T02:36:56.6984519Z ##[debug]..=> 'token'
+2026-09-25T02:36:56.6987109Z ##[debug]=> '***'
+2026-09-25T02:36:56.6989806Z ##[debug]Result: '***'
+2026-09-25T02:36:56.6993391Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:36:56.6993745Z ##[debug]Evaluating Equal:
+2026-09-25T02:36:56.6994029Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:56.6994313Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:56.6994591Z ##[debug]....=> Object
+2026-09-25T02:36:56.6994858Z ##[debug]....Evaluating String:
+2026-09-25T02:36:56.6995150Z ##[debug]....=> 'debug'
+2026-09-25T02:36:56.6995421Z ##[debug]..=> '1'
+2026-09-25T02:36:56.6995663Z ##[debug]..Evaluating String:
+2026-09-25T02:36:56.6995928Z ##[debug]..=> '1'
+2026-09-25T02:36:56.6996167Z ##[debug]=> true
+2026-09-25T02:36:56.6996436Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:36:56.6996707Z ##[debug]Result: true
+2026-09-25T02:36:56.7000956Z ##[debug]Loading env
+2026-09-25T02:36:56.7005709Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:36:56.7006131Z with:
+2026-09-25T02:36:56.7007128Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const determineAutomaticLockdown = require(path.join(actionsDir, 'determine_automatic_lockdown.cjs'));
+await determineAutomaticLockdown(github, context, core);
+
+2026-09-25T02:36:56.7010572Z   github-token: ***
+2026-09-25T02:36:56.7010815Z   debug: true
+2026-09-25T02:36:56.7011062Z   user-agent: actions/github-script
+2026-09-25T02:36:56.7011551Z   result-encoding: json
+2026-09-25T02:36:56.7011798Z   retries: 0
+2026-09-25T02:36:56.7012055Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:36:56.7012378Z env:
+2026-09-25T02:36:56.7012606Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:56.7012912Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:56.7013865Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:56.7014765Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:56.7015067Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:56.7015394Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:56.7015655Z   DEFAULT_BRANCH: main
+2026-09-25T02:36:56.7016078Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:36:56.7016355Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:36:56.7016595Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:36:56.7016896Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:36:56.7017227Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:36:56.7017675Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:36:56.7017959Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:36:56.7018216Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:36:56.7018472Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:36:56.7018717Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:36:56.7018967Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:56.7019245Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:36:56.7019630Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:56.7020020Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:36:56.7020358Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:36:56.7020657Z   GH_AW_GITHUB_TOKEN: 
+2026-09-25T02:36:56.7020918Z   GH_AW_GITHUB_MCP_SERVER_TOKEN: 
+2026-09-25T02:36:56.7021200Z ##[endgroup]
+2026-09-25T02:36:56.8022387Z Determining automatic guard policy for GitHub MCP server
+2026-09-25T02:36:56.8024337Z Checking repository: L-Sandler/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:36:56.8031998Z request {
+2026-09-25T02:36:56.8032406Z   method: 'GET',
+2026-09-25T02:36:56.8032827Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:36:56.8033300Z   headers: {
+2026-09-25T02:36:56.8033707Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:36:56.8034880Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.agent.__default octokit-core.js/7.0.6 Node.js/24'
+2026-09-25T02:36:56.8035987Z   },
+2026-09-25T02:36:56.8036366Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:36:56.8036839Z   request: {
+2026-09-25T02:36:56.8037174Z     agent: Agent {
+2026-09-25T02:36:56.8037873Z       _events: [Object: null prototype],
+2026-09-25T02:36:56.8038366Z       _eventsCount: 2,
+2026-09-25T02:36:56.8038778Z       _maxListeners: undefined,
+2026-09-25T02:36:56.8039229Z       options: [Object: null prototype],
+2026-09-25T02:36:56.8039707Z       defaultPort: 443,
+2026-09-25T02:36:56.8040109Z       protocol: 'https:',
+2026-09-25T02:36:56.8040539Z       requests: [Object: null prototype] {},
+2026-09-25T02:36:56.8041060Z       sockets: [Object: null prototype] {},
+2026-09-25T02:36:56.8041580Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:36:56.8042089Z       keepAliveMsecs: 1000,
+2026-09-25T02:36:56.8042493Z       keepAlive: false,
+2026-09-25T02:36:56.8042891Z       maxSockets: 100,
+2026-09-25T02:36:56.8043268Z       maxFreeSockets: 256,
+2026-09-25T02:36:56.8043675Z       scheduling: 'lifo',
+2026-09-25T02:36:56.8044098Z       maxTotalSockets: Infinity,
+2026-09-25T02:36:56.8044533Z       totalSocketCount: 0,
+2026-09-25T02:36:56.8044988Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:36:56.8045494Z       maxCachedSessions: 100,
+2026-09-25T02:36:56.8045933Z       _sessionCache: [Object],
+2026-09-25T02:36:56.8046406Z       Symbol(shapeMode): false,
+2026-09-25T02:36:56.8046841Z       Symbol(kCapture): false
+2026-09-25T02:36:56.8047249Z     },
+2026-09-25T02:36:56.8048156Z     fetch: [Function: proxyFetch],
+2026-09-25T02:36:56.8048636Z     hook: [Function: bound bound register]
+2026-09-25T02:36:56.8049103Z   },
+2026-09-25T02:36:56.8049439Z   url: '/repos/{owner}/{repo}',
+2026-09-25T02:36:56.8049862Z   owner: 'L-Sandler',
+2026-09-25T02:36:56.8050354Z   repo: 'skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:36:56.8050906Z }
+2026-09-25T02:36:57.2262552Z GET /repos/L-Sandler/skills-agentic-workflows-that-read-the-room - 200 with id A058:46822:1D9EA57:6105CE2:6AB5DE48 in 423ms
+2026-09-25T02:36:57.2264002Z Repository visibility: public
+2026-09-25T02:36:57.2264492Z Repository is private: false
+2026-09-25T02:36:57.2270026Z Configured min-integrity: (not set)
+2026-09-25T02:36:57.2270501Z Configured repos: (not set)
+2026-09-25T02:36:57.2271541Z min-integrity not configured — automatically setting to 'approved' for public repository
+2026-09-25T02:36:57.2272944Z repos not configured — automatically setting to 'public' for public repository
+2026-09-25T02:36:57.2273793Z Automatic guard policy determination complete for public repository
+2026-09-25T02:36:57.2274824Z GitHub MCP guard policy automatically applied for public repository. min-integrity='approved' and repos='public'.
+2026-09-25T02:36:57.2565163Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:57.2579927Z ##[debug]Set output visibility = public
+2026-09-25T02:36:57.2580298Z ##[debug]Set output min_integrity = approved
+2026-09-25T02:36:57.2580638Z ##[debug]Set output repos = public
+2026-09-25T02:36:57.2580954Z ##[debug]Set output result = 
+2026-09-25T02:36:57.2582093Z ##[debug]Finishing: Determine automatic lockdown mode for GitHub MCP Server

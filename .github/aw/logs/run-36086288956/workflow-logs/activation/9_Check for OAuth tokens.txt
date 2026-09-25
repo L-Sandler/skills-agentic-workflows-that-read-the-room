@@ -1,0 +1,53 @@
+﻿2026-09-25T02:36:22.3159407Z ##[debug]Evaluating: secrets.COPILOT_GITHUB_TOKEN
+2026-09-25T02:36:22.3160168Z ##[debug]Evaluating Index:
+2026-09-25T02:36:22.3160739Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:22.3161323Z ##[debug]..=> Object
+2026-09-25T02:36:22.3161847Z ##[debug]..Evaluating String:
+2026-09-25T02:36:22.3162430Z ##[debug]..=> 'COPILOT_GITHUB_TOKEN'
+2026-09-25T02:36:22.3163646Z ##[debug]=> '***'
+2026-09-25T02:36:22.3164685Z ##[debug]Result: '***'
+2026-09-25T02:36:22.3165607Z ##[debug]Evaluating: secrets.GH_AW_GITHUB_TOKEN
+2026-09-25T02:36:22.3166267Z ##[debug]Evaluating Index:
+2026-09-25T02:36:22.3166971Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:22.3167822Z ##[debug]..=> Object
+2026-09-25T02:36:22.3168354Z ##[debug]..Evaluating String:
+2026-09-25T02:36:22.3168950Z ##[debug]..=> 'GH_AW_GITHUB_TOKEN'
+2026-09-25T02:36:22.3169561Z ##[debug]=> null
+2026-09-25T02:36:22.3170052Z ##[debug]Result: null
+2026-09-25T02:36:22.3170937Z ##[debug]Evaluating: secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN
+2026-09-25T02:36:22.3171657Z ##[debug]Evaluating Index:
+2026-09-25T02:36:22.3172238Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:22.3172793Z ##[debug]..=> Object
+2026-09-25T02:36:22.3173304Z ##[debug]..Evaluating String:
+2026-09-25T02:36:22.3173920Z ##[debug]..=> 'GH_AW_GITHUB_MCP_SERVER_TOKEN'
+2026-09-25T02:36:22.3174551Z ##[debug]=> null
+2026-09-25T02:36:22.3175031Z ##[debug]Result: null
+2026-09-25T02:36:22.3175820Z ##[debug]Evaluating condition for step: 'Check for OAuth tokens'
+2026-09-25T02:36:22.3178416Z ##[debug]Evaluating: success()
+2026-09-25T02:36:22.3179234Z ##[debug]Evaluating success:
+2026-09-25T02:36:22.3180015Z ##[debug]=> true
+2026-09-25T02:36:22.3180765Z ##[debug]Result: true
+2026-09-25T02:36:22.3181712Z ##[debug]Starting: Check for OAuth tokens
+2026-09-25T02:36:22.3195092Z ##[debug]Loading inputs
+2026-09-25T02:36:22.3197361Z ##[debug]Loading env
+2026-09-25T02:36:22.3204960Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/check_oauth_tokens.sh"
+2026-09-25T02:36:22.3205902Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/check_oauth_tokens.sh"[0m
+2026-09-25T02:36:22.3210674Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:36:22.3211211Z env:
+2026-09-25T02:36:22.3211678Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:22.3212284Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:22.3214090Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:22.3215846Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:22.3216447Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:22.3217399Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:22.3217983Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:22.3218697Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:22.3219317Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:22.3220057Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:22.3220724Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:22.3222006Z   COPILOT_GITHUB_TOKEN: ***
+2026-09-25T02:36:22.3222545Z   GH_AW_GITHUB_TOKEN: 
+2026-09-25T02:36:22.3223055Z   GH_AW_GITHUB_MCP_SERVER_TOKEN: 
+2026-09-25T02:36:22.3223610Z ##[endgroup]
+2026-09-25T02:36:22.3233384Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/661a065d-b36b-47b8-9408-d0466be856f9.sh
+2026-09-25T02:36:22.3281556Z ##[debug]Finishing: Check for OAuth tokens

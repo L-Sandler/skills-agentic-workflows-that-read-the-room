@@ -1,0 +1,275 @@
+﻿2026-09-25T02:38:42.2878961Z ##[debug]Evaluating: steps.setup-agent-output-env.outputs.GH_AW_AGENT_OUTPUT
+2026-09-25T02:38:42.2880120Z ##[debug]Evaluating Index:
+2026-09-25T02:38:42.2880731Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2881339Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:42.2881970Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:42.2882633Z ##[debug]......=> Object
+2026-09-25T02:38:42.2883269Z ##[debug]......Evaluating String:
+2026-09-25T02:38:42.2883945Z ##[debug]......=> 'setup-agent-output-env'
+2026-09-25T02:38:42.2884668Z ##[debug]....=> Object
+2026-09-25T02:38:42.2885222Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2885820Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:42.2886376Z ##[debug]..=> Object
+2026-09-25T02:38:42.2887187Z ##[debug]..Evaluating String:
+2026-09-25T02:38:42.2887797Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-09-25T02:38:42.2888498Z ##[debug]=> '/tmp/gh-aw/agent_output.json'
+2026-09-25T02:38:42.2889255Z ##[debug]Result: '/tmp/gh-aw/agent_output.json'
+2026-09-25T02:38:42.2891355Z ##[debug]Evaluating: format('{0}/{1}/blob/{2}/.github/workflows/update-github-info.md', github.server_url, github.repository, github.ref_name)
+2026-09-25T02:38:42.2893028Z ##[debug]Evaluating format:
+2026-09-25T02:38:42.2893974Z ##[debug]..Evaluating String:
+2026-09-25T02:38:42.2896161Z ##[debug]..=> '{0}/{1}/blob/{2}/.github/workflows/update-github-info.md'
+2026-09-25T02:38:42.2898168Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2899424Z ##[debug]....Evaluating github:
+2026-09-25T02:38:42.2900645Z ##[debug]....=> Object
+2026-09-25T02:38:42.2901246Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2902436Z ##[debug]....=> 'server_url'
+2026-09-25T02:38:42.2903685Z ##[debug]..=> 'https://github.com'
+2026-09-25T02:38:42.2904971Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2905879Z ##[debug]....Evaluating github:
+2026-09-25T02:38:42.2906819Z ##[debug]....=> Object
+2026-09-25T02:38:42.2908212Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2909436Z ##[debug]....=> 'repository'
+2026-09-25T02:38:42.2910838Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:42.2912333Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2913528Z ##[debug]....Evaluating github:
+2026-09-25T02:38:42.2914716Z ##[debug]....=> Object
+2026-09-25T02:38:42.2915314Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2916517Z ##[debug]....=> 'ref_name'
+2026-09-25T02:38:42.2917875Z ##[debug]..=> 'main'
+2026-09-25T02:38:42.2920308Z ##[debug]=> 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md'
+2026-09-25T02:38:42.2923494Z ##[debug]Result: 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md'
+2026-09-25T02:38:42.2928074Z ##[debug]Evaluating: format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id)
+2026-09-25T02:38:42.2929799Z ##[debug]Evaluating format:
+2026-09-25T02:38:42.2931444Z ##[debug]..Evaluating String:
+2026-09-25T02:38:42.2932873Z ##[debug]..=> '{0}/{1}/actions/runs/{2}'
+2026-09-25T02:38:42.2934262Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2934892Z ##[debug]....Evaluating github:
+2026-09-25T02:38:42.2936118Z ##[debug]....=> Object
+2026-09-25T02:38:42.2937510Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2938764Z ##[debug]....=> 'server_url'
+2026-09-25T02:38:42.2940051Z ##[debug]..=> 'https://github.com'
+2026-09-25T02:38:42.2940742Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2942057Z ##[debug]....Evaluating github:
+2026-09-25T02:38:42.2943266Z ##[debug]....=> Object
+2026-09-25T02:38:42.2945784Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2946842Z ##[debug]....=> 'repository'
+2026-09-25T02:38:42.2947894Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:42.2948788Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2949375Z ##[debug]....Evaluating github:
+2026-09-25T02:38:42.2949984Z ##[debug]....=> Object
+2026-09-25T02:38:42.2950547Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2951459Z ##[debug]....=> 'run_id'
+2026-09-25T02:38:42.2952023Z ##[debug]..=> '36086288956'
+2026-09-25T02:38:42.2953336Z ##[debug]=> 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956'
+2026-09-25T02:38:42.2955766Z ##[debug]Result: 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956'
+2026-09-25T02:38:42.2958613Z ##[debug]Evaluating: needs.detection.outputs.detection_conclusion
+2026-09-25T02:38:42.2961259Z ##[debug]Evaluating Index:
+2026-09-25T02:38:42.2961898Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2963159Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:42.2963784Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:42.2964726Z ##[debug]......=> Object
+2026-09-25T02:38:42.2965678Z ##[debug]......Evaluating String:
+2026-09-25T02:38:42.2967065Z ##[debug]......=> 'detection'
+2026-09-25T02:38:42.2968377Z ##[debug]....=> Object
+2026-09-25T02:38:42.2969554Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2970765Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:42.2971386Z ##[debug]..=> Object
+2026-09-25T02:38:42.2972539Z ##[debug]..Evaluating String:
+2026-09-25T02:38:42.2973760Z ##[debug]..=> 'detection_conclusion'
+2026-09-25T02:38:42.2975361Z ##[debug]=> 'warning'
+2026-09-25T02:38:42.2976559Z ##[debug]Result: 'warning'
+2026-09-25T02:38:42.2978665Z ##[debug]Evaluating: needs.detection.outputs.detection_reason
+2026-09-25T02:38:42.2980794Z ##[debug]Evaluating Index:
+2026-09-25T02:38:42.2981424Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.2982669Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:42.2983903Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:42.2985163Z ##[debug]......=> Object
+2026-09-25T02:38:42.2985786Z ##[debug]......Evaluating String:
+2026-09-25T02:38:42.2987531Z ##[debug]......=> 'detection'
+2026-09-25T02:38:42.2988549Z ##[debug]....=> Object
+2026-09-25T02:38:42.2989744Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.2991028Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:42.2992246Z ##[debug]..=> Object
+2026-09-25T02:38:42.2992853Z ##[debug]..Evaluating String:
+2026-09-25T02:38:42.2994076Z ##[debug]..=> 'detection_reason'
+2026-09-25T02:38:42.2995319Z ##[debug]=> 'agent_failure'
+2026-09-25T02:38:42.2996554Z ##[debug]Result: 'agent_failure'
+2026-09-25T02:38:42.2998503Z ##[debug]Evaluating condition for step: 'Log detection run'
+2026-09-25T02:38:42.3004714Z ##[debug]Evaluating: success()
+2026-09-25T02:38:42.3005992Z ##[debug]Evaluating success:
+2026-09-25T02:38:42.3007191Z ##[debug]=> true
+2026-09-25T02:38:42.3008079Z ##[debug]Result: true
+2026-09-25T02:38:42.3009233Z ##[debug]Starting: Log detection run
+2026-09-25T02:38:42.3081364Z ##[debug]Loading inputs
+2026-09-25T02:38:42.3086048Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-09-25T02:38:42.3087838Z ##[debug]Evaluating Or:
+2026-09-25T02:38:42.3089171Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.3090385Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:42.3091620Z ##[debug]....=> Object
+2026-09-25T02:38:42.3092837Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.3093488Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-09-25T02:38:42.3094755Z ##[debug]..=> null
+2026-09-25T02:38:42.3095914Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.3097396Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:42.3098689Z ##[debug]....=> Object
+2026-09-25T02:38:42.3099281Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.3100507Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-09-25T02:38:42.3108652Z ##[debug]..=> '***'
+2026-09-25T02:38:42.3117075Z ##[debug]=> '***'
+2026-09-25T02:38:42.3124388Z ##[debug]Expanded: (null || '***')
+2026-09-25T02:38:42.3130764Z ##[debug]Result: '***'
+2026-09-25T02:38:42.3133848Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:38:42.3135239Z ##[debug]Evaluating Equal:
+2026-09-25T02:38:42.3135867Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:42.3136708Z ##[debug]....Evaluating runner:
+2026-09-25T02:38:42.3137905Z ##[debug]....=> Object
+2026-09-25T02:38:42.3139104Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.3140675Z ##[debug]....=> 'debug'
+2026-09-25T02:38:42.3141311Z ##[debug]..=> '1'
+2026-09-25T02:38:42.3142471Z ##[debug]..Evaluating String:
+2026-09-25T02:38:42.3143684Z ##[debug]..=> '1'
+2026-09-25T02:38:42.3144260Z ##[debug]=> true
+2026-09-25T02:38:42.3145408Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:38:42.3146868Z ##[debug]Result: true
+2026-09-25T02:38:42.3167081Z ##[debug]Loading env
+2026-09-25T02:38:42.3211375Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:38:42.3212850Z with:
+2026-09-25T02:38:42.3220260Z   github-token: ***
+2026-09-25T02:38:42.3224374Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_detection_runs.cjs'));
+await main();
+
+2026-09-25T02:38:42.3228822Z   debug: true
+2026-09-25T02:38:42.3229989Z   user-agent: actions/github-script
+2026-09-25T02:38:42.3231222Z   result-encoding: json
+2026-09-25T02:38:42.3231998Z   retries: 0
+2026-09-25T02:38:42.3232910Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:38:42.3234526Z env:
+2026-09-25T02:38:42.3235638Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:42.3237069Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:42.3240099Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:42.3243295Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:42.3244343Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:42.3245636Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:42.3246803Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:42.3248240Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:42.3249677Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 434ff0d3ad0b9735
+2026-09-25T02:38:42.3250989Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303919335
+2026-09-25T02:38:42.3252297Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-25T02:38:42.3253604Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-25T02:38:42.3255656Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-09-25T02:38:42.3260625Z   GH_AW_RUN_URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956
+2026-09-25T02:38:42.3263123Z   GH_AW_DETECTION_CONCLUSION: warning
+2026-09-25T02:38:42.3263804Z   GH_AW_DETECTION_REASON: agent_failure
+2026-09-25T02:38:42.3264423Z ##[endgroup]
+2026-09-25T02:38:42.5280757Z Detection conclusion: warning
+2026-09-25T02:38:42.5281547Z Detection reason: agent_failure
+2026-09-25T02:38:42.5282678Z Workflow name: update-github-info
+2026-09-25T02:38:42.5286608Z Run URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956
+2026-09-25T02:38:42.5289334Z Detection problem detected (warning), posting to tracking issue
+2026-09-25T02:38:42.5292261Z Searching for detection runs issue: "[aw] Detection Runs"
+2026-09-25T02:38:42.5294663Z request {
+2026-09-25T02:38:42.5295914Z   method: 'GET',
+2026-09-25T02:38:42.5299571Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:38:42.5301071Z   headers: {
+2026-09-25T02:38:42.5302085Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:38:42.5305405Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.conclusion.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:38:42.5308662Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:38:42.5310995Z   },
+2026-09-25T02:38:42.5311997Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:38:42.5312652Z   request: {
+2026-09-25T02:38:42.5313577Z     agent: Agent {
+2026-09-25T02:38:42.5314137Z       _events: [Object: null prototype],
+2026-09-25T02:38:42.5315120Z       _eventsCount: 2,
+2026-09-25T02:38:42.5315675Z       _maxListeners: undefined,
+2026-09-25T02:38:42.5316287Z       options: [Object: null prototype],
+2026-09-25T02:38:42.5349116Z       defaultPort: 443,
+2026-09-25T02:38:42.5352014Z       protocol: 'https:',
+2026-09-25T02:38:42.5353514Z       requests: [Object: null prototype] {},
+2026-09-25T02:38:42.5354369Z       sockets: [Object: null prototype] {},
+2026-09-25T02:38:42.5355652Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:38:42.5358060Z       keepAliveMsecs: 1000,
+2026-09-25T02:38:42.5358674Z       keepAlive: false,
+2026-09-25T02:38:42.5360008Z       maxSockets: 100,
+2026-09-25T02:38:42.5361326Z       maxFreeSockets: 256,
+2026-09-25T02:38:42.5361915Z       scheduling: 'lifo',
+2026-09-25T02:38:42.5363266Z       maxTotalSockets: Infinity,
+2026-09-25T02:38:42.5364780Z       totalSocketCount: 0,
+2026-09-25T02:38:42.5365926Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:38:42.5366626Z       maxCachedSessions: 100,
+2026-09-25T02:38:42.5368401Z       _sessionCache: [Object],
+2026-09-25T02:38:42.5369519Z       Symbol(shapeMode): false,
+2026-09-25T02:38:42.5370125Z       Symbol(kCapture): false
+2026-09-25T02:38:42.5371461Z     },
+2026-09-25T02:38:42.5372897Z     fetch: [Function: proxyFetch],
+2026-09-25T02:38:42.5376257Z     hook: [Function: bound bound register]
+2026-09-25T02:38:42.5508182Z   },
+2026-09-25T02:38:42.5510152Z   url: '/search/issues',
+2026-09-25T02:38:42.5514677Z   q: 'repo:L-Sandler/skills-agentic-workflows-that-read-the-room is:issue is:open label:agentic-workflows in:title "[aw] Detection Runs"',
+2026-09-25T02:38:42.5530710Z   per_page: 1
+2026-09-25T02:38:42.5531275Z }
+2026-09-25T02:38:42.8769461Z GET /search/issues?q=repo%3AL-Sandler%2Fskills-agentic-workflows-that-read-the-room%20is%3Aissue%20is%3Aopen%20label%3Aagentic-workflows%20in%3Atitle%20%22%5Baw%5D%20Detection%20Runs%22&per_page=1 - 200 with id 17C0:3279D0:20A854E:6AF4929:6AB5DEB2 in 346ms
+2026-09-25T02:38:42.8918946Z Found existing detection runs issue #5: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/issues/5
+2026-09-25T02:38:42.9160436Z request {
+2026-09-25T02:38:42.9162137Z   method: 'POST',
+2026-09-25T02:38:42.9163050Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:38:42.9235527Z   headers: {
+2026-09-25T02:38:42.9237313Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:38:42.9337860Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.conclusion.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:38:42.9339876Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:38:42.9341002Z   },
+2026-09-25T02:38:42.9341715Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:38:42.9342816Z   request: {
+2026-09-25T02:38:42.9343330Z     agent: Agent {
+2026-09-25T02:38:42.9343868Z       _events: [Object: null prototype],
+2026-09-25T02:38:42.9344773Z       _eventsCount: 2,
+2026-09-25T02:38:42.9345344Z       _maxListeners: undefined,
+2026-09-25T02:38:42.9467726Z       options: [Object: null prototype],
+2026-09-25T02:38:42.9468838Z       defaultPort: 443,
+2026-09-25T02:38:42.9469429Z       protocol: 'https:',
+2026-09-25T02:38:42.9470035Z       requests: [Object: null prototype] {},
+2026-09-25T02:38:42.9470826Z       sockets: [Object: null prototype] {},
+2026-09-25T02:38:42.9471526Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:38:42.9472196Z       keepAliveMsecs: 1000,
+2026-09-25T02:38:42.9472782Z       keepAlive: false,
+2026-09-25T02:38:42.9473313Z       maxSockets: 100,
+2026-09-25T02:38:42.9473851Z       maxFreeSockets: 256,
+2026-09-25T02:38:42.9474411Z       scheduling: 'lifo',
+2026-09-25T02:38:42.9476720Z       maxTotalSockets: Infinity,
+2026-09-25T02:38:42.9478143Z       totalSocketCount: 0,
+2026-09-25T02:38:42.9479767Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:38:42.9480448Z       maxCachedSessions: 100,
+2026-09-25T02:38:42.9481358Z       _sessionCache: [Object],
+2026-09-25T02:38:42.9482677Z       Symbol(shapeMode): false,
+2026-09-25T02:38:42.9483277Z       Symbol(kCapture): false
+2026-09-25T02:38:42.9484100Z     },
+2026-09-25T02:38:42.9484585Z     fetch: [Function: proxyFetch],
+2026-09-25T02:38:42.9485476Z     hook: [Function: bound bound register]
+2026-09-25T02:38:42.9486117Z   },
+2026-09-25T02:38:42.9557242Z   url: '/repos/{owner}/{repo}/issues/{issue_number}/comments',
+2026-09-25T02:38:42.9558868Z   owner: 'L-Sandler',
+2026-09-25T02:38:42.9559590Z   repo: 'skills-agentic-workflows-that-read-the-room',
+2026-09-25T02:38:42.9560329Z   issue_number: 5,
+2026-09-25T02:38:42.9561157Z   body: '### update-github-info\n' +
+2026-09-25T02:38:42.9562008Z     '\n' +
+2026-09-25T02:38:42.9562680Z     'Threat detection produced a **warning** result for this run.\n' +
+2026-09-25T02:38:42.9563736Z     '\n' +
+2026-09-25T02:38:42.9564251Z     '<details>\n' +
+2026-09-25T02:38:42.9565049Z     '<summary>Run details</summary>\n' +
+2026-09-25T02:38:42.9565672Z     '\n' +
+2026-09-25T02:38:42.9566150Z     '| Field | Value |\n' +
+2026-09-25T02:38:42.9566746Z     '|---|---|\n' +
+2026-09-25T02:38:42.9567920Z     '| Conclusion | `warning` |\n' +
+2026-09-25T02:38:42.9568568Z     '| Reason | `agent_failure` |\n' +
+2026-09-25T02:38:42.9569990Z     '| Run | [View run](https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956) |\n' +
+2026-09-25T02:38:42.9571805Z     '\n' +
+2026-09-25T02:38:42.9572532Z     '</details>'
+2026-09-25T02:38:42.9573030Z }
+2026-09-25T02:38:43.3916774Z POST /repos/L-Sandler/skills-agentic-workflows-that-read-the-room/issues/5/comments - 201 with id 17C0:3279D0:20A8713:6AF4ED8:6AB5DEB2 in 475ms
+2026-09-25T02:38:43.3925380Z ✓ Posted detection run comment to issue #5
+2026-09-25T02:38:43.4030445Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:43.4036099Z ##[debug]Set output result = 
+2026-09-25T02:38:43.4038870Z ##[debug]Finishing: Log detection run

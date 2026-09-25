@@ -1,0 +1,22 @@
+﻿2026-09-25T02:36:57.2590643Z ##[debug]Evaluating condition for step: 'Restore agent config folders from base branch'
+2026-09-25T02:36:57.2592812Z ##[debug]Evaluating: (success() && (steps.checkout-pr.outcome == 'success'))
+2026-09-25T02:36:57.2593407Z ##[debug]Evaluating And:
+2026-09-25T02:36:57.2593777Z ##[debug]..Evaluating success:
+2026-09-25T02:36:57.2594200Z ##[debug]..=> true
+2026-09-25T02:36:57.2594556Z ##[debug]..Evaluating Equal:
+2026-09-25T02:36:57.2594923Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:57.2595275Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:57.2595640Z ##[debug]........Evaluating steps:
+2026-09-25T02:36:57.2596018Z ##[debug]........=> Object
+2026-09-25T02:36:57.2596399Z ##[debug]........Evaluating String:
+2026-09-25T02:36:57.2596791Z ##[debug]........=> 'checkout-pr'
+2026-09-25T02:36:57.2597193Z ##[debug]......=> Object
+2026-09-25T02:36:57.2597848Z ##[debug]......Evaluating String:
+2026-09-25T02:36:57.2598227Z ##[debug]......=> 'outcome'
+2026-09-25T02:36:57.2598588Z ##[debug]....=> 'skipped'
+2026-09-25T02:36:57.2599005Z ##[debug]....Evaluating String:
+2026-09-25T02:36:57.2599349Z ##[debug]....=> 'success'
+2026-09-25T02:36:57.2599702Z ##[debug]..=> false
+2026-09-25T02:36:57.2600005Z ##[debug]=> false
+2026-09-25T02:36:57.2600569Z ##[debug]Expanded: (true && ('skipped' == 'success'))
+2026-09-25T02:36:57.2601047Z ##[debug]Result: false

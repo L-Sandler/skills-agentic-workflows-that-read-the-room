@@ -1,0 +1,41 @@
+﻿2026-09-25T02:36:57.2606509Z ##[debug]Evaluating condition for step: 'Restore inline sub-agents from activation artifact'
+2026-09-25T02:36:57.2608151Z ##[debug]Evaluating: success()
+2026-09-25T02:36:57.2608647Z ##[debug]Evaluating success:
+2026-09-25T02:36:57.2609038Z ##[debug]=> true
+2026-09-25T02:36:57.2609425Z ##[debug]Result: true
+2026-09-25T02:36:57.2610002Z ##[debug]Starting: Restore inline sub-agents from activation artifact
+2026-09-25T02:36:57.2620338Z ##[debug]Loading inputs
+2026-09-25T02:36:57.2621315Z ##[debug]Loading env
+2026-09-25T02:36:57.2625491Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/restore_inline_sub_agents.sh"
+2026-09-25T02:36:57.2626022Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/restore_inline_sub_agents.sh"[0m
+2026-09-25T02:36:57.2695040Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:36:57.2695329Z env:
+2026-09-25T02:36:57.2695561Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:57.2695890Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:57.2697016Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:57.2698123Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:57.2698430Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:57.2698760Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:57.2699027Z   DEFAULT_BRANCH: main
+2026-09-25T02:36:57.2699278Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:36:57.2699543Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:36:57.2699782Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:36:57.2700072Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:36:57.2700400Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:36:57.2700650Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:36:57.2700911Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:36:57.2701186Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:36:57.2701446Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:36:57.2701707Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:36:57.2701951Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:57.2702235Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:36:57.2702608Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:57.2702992Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:36:57.2703329Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:36:57.2703635Z   GH_AW_SUB_AGENT_DIR: .github/agents
+2026-09-25T02:36:57.2703916Z   GH_AW_SUB_AGENT_EXT: .agent.md
+2026-09-25T02:36:57.2704179Z ##[endgroup]
+2026-09-25T02:36:57.2769844Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/4bec8916-3ae1-4bbc-8a8d-baeab6cfdad9.sh
+2026-09-25T02:36:57.2806929Z [restore-sub-agents] source: /tmp/gh-aw/.github/agents
+2026-09-25T02:36:57.2808195Z [restore-sub-agents] source directory not found — no inline sub-agents to restore
+2026-09-25T02:36:57.2814678Z ##[debug]Finishing: Restore inline sub-agents from activation artifact

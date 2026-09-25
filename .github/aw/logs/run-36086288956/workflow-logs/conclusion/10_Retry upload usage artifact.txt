@@ -1,0 +1,22 @@
+﻿2026-09-25T02:38:42.0792656Z ##[debug]Evaluating condition for step: 'Retry upload usage artifact'
+2026-09-25T02:38:42.0797594Z ##[debug]Evaluating: (always() && (steps.upload-usage-artifact.outcome == 'failure'))
+2026-09-25T02:38:42.0799224Z ##[debug]Evaluating And:
+2026-09-25T02:38:42.0800320Z ##[debug]..Evaluating always:
+2026-09-25T02:38:42.0801138Z ##[debug]..=> true
+2026-09-25T02:38:42.0802217Z ##[debug]..Evaluating Equal:
+2026-09-25T02:38:42.0803559Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:42.0804403Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:42.0805506Z ##[debug]........Evaluating steps:
+2026-09-25T02:38:42.0806600Z ##[debug]........=> Object
+2026-09-25T02:38:42.0807634Z ##[debug]........Evaluating String:
+2026-09-25T02:38:42.0808829Z ##[debug]........=> 'upload-usage-artifact'
+2026-09-25T02:38:42.0809993Z ##[debug]......=> Object
+2026-09-25T02:38:42.0810811Z ##[debug]......Evaluating String:
+2026-09-25T02:38:42.0811926Z ##[debug]......=> 'outcome'
+2026-09-25T02:38:42.0812970Z ##[debug]....=> 'success'
+2026-09-25T02:38:42.0813823Z ##[debug]....Evaluating String:
+2026-09-25T02:38:42.0814917Z ##[debug]....=> 'failure'
+2026-09-25T02:38:42.0815915Z ##[debug]..=> false
+2026-09-25T02:38:42.0816645Z ##[debug]=> false
+2026-09-25T02:38:42.0818499Z ##[debug]Expanded: (true && ('success' == 'failure'))
+2026-09-25T02:38:42.0819503Z ##[debug]Result: false

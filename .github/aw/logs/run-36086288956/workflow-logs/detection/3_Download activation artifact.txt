@@ -1,0 +1,132 @@
+﻿2026-09-25T02:37:58.4772118Z ##[debug]Evaluating condition for step: 'Download activation artifact'
+2026-09-25T02:37:58.4775923Z ##[debug]Evaluating: success()
+2026-09-25T02:37:58.4776375Z ##[debug]Evaluating success:
+2026-09-25T02:37:58.4776841Z ##[debug]=> true
+2026-09-25T02:37:58.4777253Z ##[debug]Result: true
+2026-09-25T02:37:58.4778153Z ##[debug]Starting: Download activation artifact
+2026-09-25T02:37:58.4817457Z ##[debug]Loading inputs
+2026-09-25T02:37:58.4822713Z ##[debug]Evaluating: github.repository
+2026-09-25T02:37:58.4823100Z ##[debug]Evaluating Index:
+2026-09-25T02:37:58.4823365Z ##[debug]..Evaluating github:
+2026-09-25T02:37:58.4823658Z ##[debug]..=> Object
+2026-09-25T02:37:58.4823913Z ##[debug]..Evaluating String:
+2026-09-25T02:37:58.4824179Z ##[debug]..=> 'repository'
+2026-09-25T02:37:58.4824592Z ##[debug]=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:37:58.4825085Z ##[debug]Result: 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:37:58.4826793Z ##[debug]Evaluating: github.run_id
+2026-09-25T02:37:58.4827126Z ##[debug]Evaluating Index:
+2026-09-25T02:37:58.4827394Z ##[debug]..Evaluating github:
+2026-09-25T02:37:58.4827655Z ##[debug]..=> Object
+2026-09-25T02:37:58.4827904Z ##[debug]..Evaluating String:
+2026-09-25T02:37:58.4828149Z ##[debug]..=> 'run_id'
+2026-09-25T02:37:58.4828400Z ##[debug]=> '36086288956'
+2026-09-25T02:37:58.4828647Z ##[debug]Result: '36086288956'
+2026-09-25T02:37:58.4857420Z ##[debug]Loading env
+2026-09-25T02:37:58.4863197Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-09-25T02:37:58.4863611Z with:
+2026-09-25T02:37:58.4863817Z   name: activation
+2026-09-25T02:37:58.4864049Z   path: /tmp/gh-aw
+2026-09-25T02:37:58.4864269Z   merge-multiple: false
+2026-09-25T02:37:58.4864608Z   repository: L-Sandler/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:37:58.4865007Z   run-id: 36086288956
+2026-09-25T02:37:58.4865255Z   skip-decompress: false
+2026-09-25T02:37:58.4865490Z   digest-mismatch: error
+2026-09-25T02:37:58.4865844Z env:
+2026-09-25T02:37:58.4866056Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:58.4866343Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:58.4867216Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:58.4868053Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:58.4868344Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:58.4868644Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:58.4868884Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:58.4869285Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:58.4869637Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 45587e438fc1659e
+2026-09-25T02:37:58.4869949Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303878460
+2026-09-25T02:37:58.4870232Z ##[endgroup]
+2026-09-25T02:37:58.6161583Z ##[debug]Resolved path is /tmp/gh-aw
+2026-09-25T02:37:58.6162134Z Downloading single artifact
+2026-09-25T02:37:58.6163224Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:37:58.6163863Z ##[debug]Workflow Job Run Backend ID: b38175f5-4189-590e-8cc8-915edd5cb39f
+2026-09-25T02:37:58.6168012Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-09-25T02:37:58.8038215Z ##[debug][Response] - 200
+2026-09-25T02:37:58.8040179Z ##[debug]Headers: {
+2026-09-25T02:37:58.8040604Z ##[debug]  "content-length": "334",
+2026-09-25T02:37:58.8041097Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:37:58.8041612Z ##[debug]  "date": "Fri, 25 Sep 2026 02:37:58 GMT",
+2026-09-25T02:37:58.8042156Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:37:58.8042811Z ##[debug]  "x-github-request-id": "3809:BC58D:564D74:6FD129:6AB5DE86",
+2026-09-25T02:37:58.8043453Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:37:58.8043985Z ##[debug]  "server": "github.com"
+2026-09-25T02:37:58.8044827Z ##[debug]}
+2026-09-25T02:37:58.8045758Z ##[debug]Body: {
+2026-09-25T02:37:58.8046104Z ##[debug]  "artifacts": [
+2026-09-25T02:37:58.8046498Z ##[debug]    {
+2026-09-25T02:37:58.8046957Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:37:58.8047723Z ##[debug]      "workflow_job_run_backend_id": "e3aaf996-3bc0-5167-8880-1350e20db4d4",
+2026-09-25T02:37:58.8048354Z ##[debug]      "database_id": "10843718601",
+2026-09-25T02:37:58.8048827Z ##[debug]      "name": "activation",
+2026-09-25T02:37:58.8049409Z ##[debug]      "size": "656666",
+2026-09-25T02:37:58.8049873Z ##[debug]      "created_at": "2026-09-25T02:36:28Z",
+2026-09-25T02:37:58.8050643Z ##[debug]      "digest": "sha256:4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5"
+2026-09-25T02:37:58.8051314Z ##[debug]    }
+2026-09-25T02:37:58.8051623Z ##[debug]  ]
+2026-09-25T02:37:58.8051920Z ##[debug]}
+2026-09-25T02:37:58.8060857Z ##[debug]Found named artifact 'activation' (ID: 10843718601, Size: 656666)
+2026-09-25T02:37:58.8061979Z Preparing to download the following artifacts:
+2026-09-25T02:37:58.8063302Z - activation (ID: 10843718601, Size: 656666, Expected Digest: sha256:4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5)
+2026-09-25T02:37:58.8066563Z ##[debug]Artifact destination folder already exists: /tmp/gh-aw
+2026-09-25T02:37:58.8075501Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:37:58.8076963Z ##[debug]Workflow Job Run Backend ID: b38175f5-4189-590e-8cc8-915edd5cb39f
+2026-09-25T02:37:58.8079106Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-09-25T02:37:58.9935878Z ##[debug][Response] - 200
+2026-09-25T02:37:58.9936763Z ##[debug]Headers: {
+2026-09-25T02:37:58.9937030Z ##[debug]  "content-length": "334",
+2026-09-25T02:37:58.9937389Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:37:58.9938155Z ##[debug]  "date": "Fri, 25 Sep 2026 02:37:58 GMT",
+2026-09-25T02:37:58.9938534Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:37:58.9939210Z ##[debug]  "x-github-request-id": "380B:32106F:55E3D1:6F656E:6AB5DE86",
+2026-09-25T02:37:58.9939668Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:37:58.9940104Z ##[debug]  "server": "github.com"
+2026-09-25T02:37:58.9940565Z ##[debug]}
+2026-09-25T02:37:58.9941428Z ##[debug]Body: {
+2026-09-25T02:37:58.9941865Z ##[debug]  "artifacts": [
+2026-09-25T02:37:58.9942324Z ##[debug]    {
+2026-09-25T02:37:58.9942742Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:37:58.9943339Z ##[debug]      "workflow_job_run_backend_id": "e3aaf996-3bc0-5167-8880-1350e20db4d4",
+2026-09-25T02:37:58.9943916Z ##[debug]      "database_id": "10843718601",
+2026-09-25T02:37:58.9944506Z ##[debug]      "name": "activation",
+2026-09-25T02:37:58.9944921Z ##[debug]      "size": "656666",
+2026-09-25T02:37:58.9945263Z ##[debug]      "created_at": "2026-09-25T02:36:28Z",
+2026-09-25T02:37:58.9945808Z ##[debug]      "digest": "sha256:4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5"
+2026-09-25T02:37:58.9946308Z ##[debug]    }
+2026-09-25T02:37:58.9946548Z ##[debug]  ]
+2026-09-25T02:37:58.9946764Z ##[debug]}
+2026-09-25T02:37:58.9948003Z ##[debug][Request] GetSignedArtifactURL https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/GetSignedArtifactURL
+2026-09-25T02:37:59.1744909Z ##[debug][Response] - 200
+2026-09-25T02:37:59.1746202Z ##[debug]Headers: {
+2026-09-25T02:37:59.1746620Z ##[debug]  "content-length": "635",
+2026-09-25T02:37:59.1747159Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:37:59.1747680Z ##[debug]  "date": "Fri, 25 Sep 2026 02:37:59 GMT",
+2026-09-25T02:37:59.1748203Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:37:59.1748779Z ##[debug]  "x-github-request-id": "380C:35F6F4:554223:6EC1A7:6AB5DE87",
+2026-09-25T02:37:59.1750029Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:37:59.1750535Z ##[debug]  "server": "github.com"
+2026-09-25T02:37:59.1750958Z ##[debug]}
+2026-09-25T02:37:59.1756397Z ::add-mask::***
+2026-09-25T02:37:59.1758510Z ::add-mask::***
+2026-09-25T02:37:59.1759855Z ##[debug]Body: {
+2026-09-25T02:37:59.1762729Z ##[debug]  "signed_url": "https://productionresultssa7.blob.core.windows.net/actions-results/9463978c-7030-4598-924f-edd18d8c6a83/workflow-job-run-e3aaf996-3bc0-5167-8880-1350e20db4d4/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip?rscd=attachment%3B+filename%3D%22activation.zip%22&rsct=application%2Fzip&se=2026-09-25T02%3A47%3A59Z&sig=***&ske=2026-09-25T05%3A54%3A02Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-09-25T01%3A54%3A02Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=r&spr=https&sr=b&st=2026-09-25T02%3A37%3A54Z&sv=2025-11-05"
+2026-09-25T02:37:59.1765801Z ##[debug]}
+2026-09-25T02:37:59.1767613Z Redirecting to blob download url: https://productionresultssa7.blob.core.windows.net/actions-results/9463978c-7030-4598-924f-edd18d8c6a83/workflow-job-run-e3aaf996-3bc0-5167-8880-1350e20db4d4/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip
+2026-09-25T02:37:59.1769922Z Starting download of artifact to: /tmp/gh-aw
+2026-09-25T02:37:59.4079390Z ##[debug]Content-Type: application/zip, mimeType: application/zip, urlEndsWithZip: true, isZip: true, skipDecompress: false
+2026-09-25T02:37:59.4080538Z ##[debug]Content-Disposition: attachment; filename="activation.zip", fileName: activation.zip
+2026-09-25T02:37:59.4137163Z (node:3579) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2026-09-25T02:37:59.4138399Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-09-25T02:37:59.6861429Z SHA256 digest of downloaded artifact is 4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5
+2026-09-25T02:37:59.6862392Z Artifact download completed successfully.
+2026-09-25T02:37:59.6862766Z Total of 1 artifact(s) downloaded
+2026-09-25T02:37:59.6870003Z Download artifact has finished successfully
+2026-09-25T02:37:59.6918273Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:59.6923566Z ##[debug]Set output download-path = /tmp/gh-aw
+2026-09-25T02:37:59.6924982Z ##[debug]Finishing: Download activation artifact

@@ -1,0 +1,25 @@
+﻿2026-09-25T02:38:00.8244021Z ##[debug]Evaluating condition for step: 'Clear inherited Copilot session state'
+2026-09-25T02:38:00.8245518Z ##[debug]Evaluating: success()
+2026-09-25T02:38:00.8245917Z ##[debug]Evaluating success:
+2026-09-25T02:38:00.8246352Z ##[debug]=> true
+2026-09-25T02:38:00.8246722Z ##[debug]Result: true
+2026-09-25T02:38:00.8247298Z ##[debug]Starting: Clear inherited Copilot session state
+2026-09-25T02:38:00.8255229Z ##[debug]Loading inputs
+2026-09-25T02:38:00.8256365Z ##[debug]Loading env
+2026-09-25T02:38:00.8260532Z ##[group]Run rm -rf /tmp/gh-aw/sandbox/agent/logs/copilot-session-state
+2026-09-25T02:38:00.8273977Z [36;1mrm -rf /tmp/gh-aw/sandbox/agent/logs/copilot-session-state[0m
+2026-09-25T02:38:00.8307546Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:38:00.8307832Z env:
+2026-09-25T02:38:00.8308061Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:00.8308381Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:00.8309496Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:00.8310443Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:00.8310745Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:00.8311054Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:00.8311333Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:00.8311637Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:00.8312004Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 45587e438fc1659e
+2026-09-25T02:38:00.8312333Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303878460
+2026-09-25T02:38:00.8312618Z ##[endgroup]
+2026-09-25T02:38:00.8347371Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/f5af4933-cb7b-41e7-a3b2-476ac85d4929.sh
+2026-09-25T02:38:00.8375476Z ##[debug]Finishing: Clear inherited Copilot session state

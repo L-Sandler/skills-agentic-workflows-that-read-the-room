@@ -1,0 +1,434 @@
+﻿2026-09-25T02:37:44.7233145Z ##[debug]Starting: Complete job
+2026-09-25T02:37:44.7234640Z Evaluate and set job outputs
+2026-09-25T02:37:44.7239382Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.agentic_engine_timeout || 'false')
+2026-09-25T02:37:44.7239943Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7240250Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7240537Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7240825Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7241129Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7241447Z ##[debug]........=> Object
+2026-09-25T02:37:44.7242001Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7242329Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7242663Z ##[debug]......=> Object
+2026-09-25T02:37:44.7242949Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7243262Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7243558Z ##[debug]....=> Object
+2026-09-25T02:37:44.7243838Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7244147Z ##[debug]....=> 'agentic_engine_timeout'
+2026-09-25T02:37:44.7244508Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7244773Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7245094Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7245415Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7246034Z ##[debug]Evaluating: (steps.parse-mcp-gateway.outputs.ai_credits_rate_limit_error || 'false')
+2026-09-25T02:37:44.7246527Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7246806Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7247094Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7247383Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7248060Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7248416Z ##[debug]........=> Object
+2026-09-25T02:37:44.7248701Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7249020Z ##[debug]........=> 'parse-mcp-gateway'
+2026-09-25T02:37:44.7249334Z ##[debug]......=> Object
+2026-09-25T02:37:44.7249604Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7249902Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7250189Z ##[debug]....=> Object
+2026-09-25T02:37:44.7250463Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7250773Z ##[debug]....=> 'ai_credits_rate_limit_error'
+2026-09-25T02:37:44.7251095Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7251354Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7251654Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7251959Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7252392Z ##[debug]Evaluating: steps.parse-token-usage.outputs.aic
+2026-09-25T02:37:44.7252782Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7253067Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7253352Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7253646Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7253974Z ##[debug]......=> Object
+2026-09-25T02:37:44.7254249Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7254554Z ##[debug]......=> 'parse-token-usage'
+2026-09-25T02:37:44.7254864Z ##[debug]....=> Object
+2026-09-25T02:37:44.7255131Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7255434Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7255703Z ##[debug]..=> Object
+2026-09-25T02:37:44.7255955Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7256236Z ##[debug]..=> 'aic'
+2026-09-25T02:37:44.7256484Z ##[debug]=> null
+2026-09-25T02:37:44.7256737Z ##[debug]Result: null
+2026-09-25T02:37:44.7257213Z ##[debug]Evaluating: steps.parse-token-usage.outputs.ambient_context
+2026-09-25T02:37:44.7257871Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7258164Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7258451Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7258742Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7259037Z ##[debug]......=> Object
+2026-09-25T02:37:44.7259323Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7259638Z ##[debug]......=> 'parse-token-usage'
+2026-09-25T02:37:44.7259938Z ##[debug]....=> Object
+2026-09-25T02:37:44.7260206Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7260488Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7261018Z ##[debug]..=> Object
+2026-09-25T02:37:44.7261274Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7261563Z ##[debug]..=> 'ambient_context'
+2026-09-25T02:37:44.7261838Z ##[debug]=> null
+2026-09-25T02:37:44.7262092Z ##[debug]Result: null
+2026-09-25T02:37:44.7262610Z ##[debug]Evaluating: (steps.checkout-pr.outputs.checkout_pr_success || 'true')
+2026-09-25T02:37:44.7263055Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7263336Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7263619Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7263900Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7264334Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7264634Z ##[debug]........=> Object
+2026-09-25T02:37:44.7264908Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7265222Z ##[debug]........=> 'checkout-pr'
+2026-09-25T02:37:44.7265512Z ##[debug]......=> Object
+2026-09-25T02:37:44.7265783Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7266063Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7266334Z ##[debug]....=> Object
+2026-09-25T02:37:44.7266586Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7266877Z ##[debug]....=> 'checkout_pr_success'
+2026-09-25T02:37:44.7267174Z ##[debug]..=> null
+2026-09-25T02:37:44.7267437Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7267960Z ##[debug]..=> 'true'
+2026-09-25T02:37:44.7268212Z ##[debug]=> 'true'
+2026-09-25T02:37:44.7268499Z ##[debug]Expanded: (null || 'true')
+2026-09-25T02:37:44.7268795Z ##[debug]Result: 'true'
+2026-09-25T02:37:44.7269216Z ##[debug]Evaluating: steps.collect_output.outputs.has_patch
+2026-09-25T02:37:44.7269607Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7269880Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7270155Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7270432Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7270722Z ##[debug]......=> Object
+2026-09-25T02:37:44.7270993Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7271287Z ##[debug]......=> 'collect_output'
+2026-09-25T02:37:44.7271579Z ##[debug]....=> Object
+2026-09-25T02:37:44.7271836Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7272121Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7272382Z ##[debug]..=> Object
+2026-09-25T02:37:44.7272640Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7272911Z ##[debug]..=> 'has_patch'
+2026-09-25T02:37:44.7273173Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7273429Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7273957Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.http_400_response_error || 'false')
+2026-09-25T02:37:44.7274444Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7274722Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7274996Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7275276Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7275556Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7275967Z ##[debug]........=> Object
+2026-09-25T02:37:44.7276350Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7276760Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7277084Z ##[debug]......=> Object
+2026-09-25T02:37:44.7277346Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7277756Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7278030Z ##[debug]....=> Object
+2026-09-25T02:37:44.7278290Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7278573Z ##[debug]....=> 'http_400_response_error'
+2026-09-25T02:37:44.7278890Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7279150Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7279446Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7279750Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7280314Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.inference_access_error || 'false')
+2026-09-25T02:37:44.7280798Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7281071Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7281352Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7281635Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7281920Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7282399Z ##[debug]........=> Object
+2026-09-25T02:37:44.7282677Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7282984Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7283288Z ##[debug]......=> Object
+2026-09-25T02:37:44.7283549Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7283836Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7284101Z ##[debug]....=> Object
+2026-09-25T02:37:44.7284357Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7284656Z ##[debug]....=> 'inference_access_error'
+2026-09-25T02:37:44.7284972Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7285356Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7285649Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7285951Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7286522Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.invocation_cap_exceeded || 'false')
+2026-09-25T02:37:44.7287026Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7287310Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7287804Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7288104Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7288403Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7288708Z ##[debug]........=> Object
+2026-09-25T02:37:44.7288992Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7289302Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7289632Z ##[debug]......=> Object
+2026-09-25T02:37:44.7289913Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7290208Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7290482Z ##[debug]....=> Object
+2026-09-25T02:37:44.7290747Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7291046Z ##[debug]....=> 'invocation_cap_exceeded'
+2026-09-25T02:37:44.7291359Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7291622Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7291903Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7292208Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7292752Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.max_cache_misses_exceeded || 'false')
+2026-09-25T02:37:44.7293254Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7293527Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7293803Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7294090Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7294381Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7294675Z ##[debug]........=> Object
+2026-09-25T02:37:44.7294948Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7295258Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7295568Z ##[debug]......=> Object
+2026-09-25T02:37:44.7295851Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7296138Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7296416Z ##[debug]....=> Object
+2026-09-25T02:37:44.7296683Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7296993Z ##[debug]....=> 'max_cache_misses_exceeded'
+2026-09-25T02:37:44.7297318Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7297753Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7298047Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7298363Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7298871Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.mcp_policy_error || 'false')
+2026-09-25T02:37:44.7299326Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7299607Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7299892Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7300178Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7300465Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7300764Z ##[debug]........=> Object
+2026-09-25T02:37:44.7301041Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7301354Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7301666Z ##[debug]......=> Object
+2026-09-25T02:37:44.7301933Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7302218Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7302493Z ##[debug]....=> Object
+2026-09-25T02:37:44.7302766Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7303049Z ##[debug]....=> 'mcp_policy_error'
+2026-09-25T02:37:44.7303501Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7303768Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7304043Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7304360Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7304894Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.missing_model_pricing_error || 'false')
+2026-09-25T02:37:44.7305407Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7305679Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7305962Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7306242Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7306670Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7306981Z ##[debug]........=> Object
+2026-09-25T02:37:44.7307273Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7307710Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7308037Z ##[debug]......=> Object
+2026-09-25T02:37:44.7308313Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7308607Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7308886Z ##[debug]....=> Object
+2026-09-25T02:37:44.7309154Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7309474Z ##[debug]....=> 'missing_model_pricing_error'
+2026-09-25T02:37:44.7309805Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7310073Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7310347Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7310657Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7311202Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.missing_model_pricing_model_name || '')
+2026-09-25T02:37:44.7311702Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7311980Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7312254Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7312544Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7312837Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7313131Z ##[debug]........=> Object
+2026-09-25T02:37:44.7313404Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7313739Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7314058Z ##[debug]......=> Object
+2026-09-25T02:37:44.7314327Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7314613Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7314885Z ##[debug]....=> Object
+2026-09-25T02:37:44.7315148Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7315474Z ##[debug]....=> 'missing_model_pricing_model_name'
+2026-09-25T02:37:44.7315817Z ##[debug]..=> ''
+2026-09-25T02:37:44.7316072Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7316349Z ##[debug]..=> ''
+2026-09-25T02:37:44.7316589Z ##[debug]=> ''
+2026-09-25T02:37:44.7316849Z ##[debug]Expanded: ('' || '')
+2026-09-25T02:37:44.7317131Z ##[debug]Result: ''
+2026-09-25T02:37:44.7317630Z ##[debug]Evaluating: needs.activation.outputs.model
+2026-09-25T02:37:44.7318009Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7318285Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7318572Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7318861Z ##[debug]......Evaluating needs:
+2026-09-25T02:37:44.7319156Z ##[debug]......=> Object
+2026-09-25T02:37:44.7319426Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7319725Z ##[debug]......=> 'activation'
+2026-09-25T02:37:44.7320010Z ##[debug]....=> Object
+2026-09-25T02:37:44.7320276Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7320558Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7320823Z ##[debug]..=> Object
+2026-09-25T02:37:44.7321083Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7321354Z ##[debug]..=> 'model'
+2026-09-25T02:37:44.7321621Z ##[debug]=> 'auto'
+2026-09-25T02:37:44.7321878Z ##[debug]Result: 'auto'
+2026-09-25T02:37:44.7322437Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.model_not_supported_error || 'false')
+2026-09-25T02:37:44.7322940Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7323210Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7323486Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7323771Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7324059Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7324352Z ##[debug]........=> Object
+2026-09-25T02:37:44.7324776Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7325083Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7325400Z ##[debug]......=> Object
+2026-09-25T02:37:44.7325670Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7325959Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7326225Z ##[debug]....=> Object
+2026-09-25T02:37:44.7326486Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7326791Z ##[debug]....=> 'model_not_supported_error'
+2026-09-25T02:37:44.7327118Z ##[debug]..=> 'true'
+2026-09-25T02:37:44.7327373Z ##[debug]=> 'true'
+2026-09-25T02:37:44.7327920Z ##[debug]Expanded: ('true' || 'false')
+2026-09-25T02:37:44.7328231Z ##[debug]Result: 'true'
+2026-09-25T02:37:44.7342374Z ##[debug]Evaluating: steps.collect_output.outputs.output
+2026-09-25T02:37:44.7342814Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7343114Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7343404Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7343687Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7344010Z ##[debug]......=> Object
+2026-09-25T02:37:44.7344295Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7344599Z ##[debug]......=> 'collect_output'
+2026-09-25T02:37:44.7344901Z ##[debug]....=> Object
+2026-09-25T02:37:44.7345180Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7345474Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7345750Z ##[debug]..=> Object
+2026-09-25T02:37:44.7346027Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7346325Z ##[debug]..=> 'output'
+2026-09-25T02:37:44.7346606Z ##[debug]=> '{"items":[],"errors":[]}'
+2026-09-25T02:37:44.7346959Z ##[debug]Result: '{"items":[],"errors":[]}'
+2026-09-25T02:37:44.7347653Z ##[debug]Evaluating: steps.collect_output.outputs.output_types
+2026-09-25T02:37:44.7348070Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7348358Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7348649Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7348942Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7349243Z ##[debug]......=> Object
+2026-09-25T02:37:44.7349529Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7349841Z ##[debug]......=> 'collect_output'
+2026-09-25T02:37:44.7350136Z ##[debug]....=> Object
+2026-09-25T02:37:44.7350397Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7350692Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7350958Z ##[debug]..=> Object
+2026-09-25T02:37:44.7351217Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7351496Z ##[debug]..=> 'output_types'
+2026-09-25T02:37:44.7351780Z ##[debug]=> ''
+2026-09-25T02:37:44.7352035Z ##[debug]Result: ''
+2026-09-25T02:37:44.7352624Z ##[debug]Evaluating: (steps.setup.outputs.parent-span-id || steps.setup.outputs.span-id)
+2026-09-25T02:37:44.7353134Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7353428Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7353712Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7354058Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7354363Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7354676Z ##[debug]........=> Object
+2026-09-25T02:37:44.7354965Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7355275Z ##[debug]........=> 'setup'
+2026-09-25T02:37:44.7355555Z ##[debug]......=> Object
+2026-09-25T02:37:44.7355844Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7356139Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7356397Z ##[debug]....=> Object
+2026-09-25T02:37:44.7356666Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7356966Z ##[debug]....=> 'parent-span-id'
+2026-09-25T02:37:44.7357266Z ##[debug]..=> '1ee9605759333040'
+2026-09-25T02:37:44.7357722Z ##[debug]=> '1ee9605759333040'
+2026-09-25T02:37:44.7358200Z ##[debug]Expanded: ('1ee9605759333040' || steps['setup']['outputs']['span-id'])
+2026-09-25T02:37:44.7358648Z ##[debug]Result: '1ee9605759333040'
+2026-09-25T02:37:44.7359076Z ##[debug]Evaluating: steps.setup.outputs.span-id
+2026-09-25T02:37:44.7359427Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7359709Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7359991Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7360490Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7360786Z ##[debug]......=> Object
+2026-09-25T02:37:44.7361071Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7361366Z ##[debug]......=> 'setup'
+2026-09-25T02:37:44.7361633Z ##[debug]....=> Object
+2026-09-25T02:37:44.7361899Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7362178Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7362438Z ##[debug]..=> Object
+2026-09-25T02:37:44.7362699Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7362980Z ##[debug]..=> 'span-id'
+2026-09-25T02:37:44.7363388Z ##[debug]=> 'bef8a0ae1b4a817c'
+2026-09-25T02:37:44.7363701Z ##[debug]Result: 'bef8a0ae1b4a817c'
+2026-09-25T02:37:44.7364127Z ##[debug]Evaluating: steps.setup.outputs.trace-id
+2026-09-25T02:37:44.7364486Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.7364772Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7365053Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7365344Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:44.7365643Z ##[debug]......=> Object
+2026-09-25T02:37:44.7365913Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7366209Z ##[debug]......=> 'setup'
+2026-09-25T02:37:44.7366473Z ##[debug]....=> Object
+2026-09-25T02:37:44.7366735Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7367014Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:44.7367271Z ##[debug]..=> Object
+2026-09-25T02:37:44.7367745Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.7368047Z ##[debug]..=> 'trace-id'
+2026-09-25T02:37:44.7368351Z ##[debug]=> '3c8c32e738303c7a8313802e4ab455aa'
+2026-09-25T02:37:44.7368716Z ##[debug]Result: '3c8c32e738303c7a8313802e4ab455aa'
+2026-09-25T02:37:44.7369381Z ##[debug]Evaluating: (steps.detect-agent-errors.outputs.shell_expansion_guard_rejected || 'false')
+2026-09-25T02:37:44.7369909Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7370187Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7370471Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7370771Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7371075Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7371377Z ##[debug]........=> Object
+2026-09-25T02:37:44.7371660Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7371978Z ##[debug]........=> 'detect-agent-errors'
+2026-09-25T02:37:44.7372297Z ##[debug]......=> Object
+2026-09-25T02:37:44.7372574Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7372866Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7373130Z ##[debug]....=> Object
+2026-09-25T02:37:44.7373395Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7373715Z ##[debug]....=> 'shell_expansion_guard_rejected'
+2026-09-25T02:37:44.7374057Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7374329Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7374612Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7374937Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7375495Z ##[debug]Evaluating: (steps.parse-mcp-gateway.outputs.unknown_model_ai_credits || 'false')
+2026-09-25T02:37:44.7376000Z ##[debug]Evaluating Or:
+2026-09-25T02:37:44.7376279Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:44.7376570Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:44.7376861Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:44.7377157Z ##[debug]........Evaluating steps:
+2026-09-25T02:37:44.7377639Z ##[debug]........=> Object
+2026-09-25T02:37:44.7377975Z ##[debug]........Evaluating String:
+2026-09-25T02:37:44.7378298Z ##[debug]........=> 'parse-mcp-gateway'
+2026-09-25T02:37:44.7378615Z ##[debug]......=> Object
+2026-09-25T02:37:44.7378890Z ##[debug]......Evaluating String:
+2026-09-25T02:37:44.7379187Z ##[debug]......=> 'outputs'
+2026-09-25T02:37:44.7379467Z ##[debug]....=> Object
+2026-09-25T02:37:44.7379732Z ##[debug]....Evaluating String:
+2026-09-25T02:37:44.7380032Z ##[debug]....=> 'unknown_model_ai_credits'
+2026-09-25T02:37:44.7380349Z ##[debug]..=> 'false'
+2026-09-25T02:37:44.7380607Z ##[debug]=> 'false'
+2026-09-25T02:37:44.7380881Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:37:44.7381176Z ##[debug]Result: 'false'
+2026-09-25T02:37:44.7381903Z Set output 'agentic_engine_timeout'
+2026-09-25T02:37:44.7383830Z Set output 'ai_credits_rate_limit_error'
+2026-09-25T02:37:44.7384668Z ##[debug]Skip output 'aic' since it's empty
+2026-09-25T02:37:44.7385037Z ##[debug]Skip output 'ambient_context' since it's empty
+2026-09-25T02:37:44.7385499Z Set output 'checkout_pr_success'
+2026-09-25T02:37:44.7385886Z Set output 'has_patch'
+2026-09-25T02:37:44.7386256Z Set output 'http_400_response_error'
+2026-09-25T02:37:44.7386667Z Set output 'inference_access_error'
+2026-09-25T02:37:44.7387065Z Set output 'invocation_cap_exceeded'
+2026-09-25T02:37:44.7387899Z Set output 'max_cache_misses_exceeded'
+2026-09-25T02:37:44.7388316Z Set output 'mcp_policy_error'
+2026-09-25T02:37:44.7388718Z Set output 'missing_model_pricing_error'
+2026-09-25T02:37:44.7389126Z ##[debug]Skip output 'missing_model_pricing_model_name' since it's empty
+2026-09-25T02:37:44.7389640Z Set output 'model'
+2026-09-25T02:37:44.7390002Z Set output 'model_not_supported_error'
+2026-09-25T02:37:44.7390416Z Set output 'output'
+2026-09-25T02:37:44.7390715Z ##[debug]Skip output 'output_types' since it's empty
+2026-09-25T02:37:44.7391172Z Set output 'setup-parent-span-id'
+2026-09-25T02:37:44.7391580Z Set output 'setup-span-id'
+2026-09-25T02:37:44.7391974Z Set output 'setup-trace-id'
+2026-09-25T02:37:44.7392376Z Set output 'shell_expansion_guard_rejected'
+2026-09-25T02:37:44.7392804Z Set output 'unknown_model_ai_credits'
+2026-09-25T02:37:44.7393873Z Uploading runner diagnostic logs
+2026-09-25T02:37:44.7405802Z ##[debug]Starting diagnostic file upload.
+2026-09-25T02:37:44.7406216Z ##[debug]Setting up diagnostic log folders.
+2026-09-25T02:37:44.7408643Z ##[debug]Creating diagnostic log files folder.
+2026-09-25T02:37:44.7416781Z ##[debug]Copying 1 worker diagnostic logs.
+2026-09-25T02:37:44.7427963Z ##[debug]Copying 1 runner diagnostic logs.
+2026-09-25T02:37:44.7429147Z ##[debug]Zipping diagnostic files.
+2026-09-25T02:37:44.7551241Z ##[debug]Uploading diagnostic metadata file.
+2026-09-25T02:37:44.7573444Z ##[debug]Diagnostic file upload complete.
+2026-09-25T02:37:44.7574085Z Completed runner diagnostic log upload
+2026-09-25T02:37:44.7574429Z Cleaning up orphan processes
+2026-09-25T02:37:44.7878300Z ##[debug]Finishing: Complete job

@@ -1,0 +1,82 @@
+﻿2026-09-25T02:38:18.8754275Z ##[debug]Starting: Complete job
+2026-09-25T02:38:18.8755765Z Evaluate and set job outputs
+2026-09-25T02:38:18.8760583Z ##[debug]Evaluating: steps.parse_detection_token_usage.outputs.aic
+2026-09-25T02:38:18.8761023Z ##[debug]Evaluating Index:
+2026-09-25T02:38:18.8761310Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.8761589Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.8761865Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:18.8762156Z ##[debug]......=> Object
+2026-09-25T02:38:18.8762431Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.8762750Z ##[debug]......=> 'parse_detection_token_usage'
+2026-09-25T02:38:18.8763078Z ##[debug]....=> Object
+2026-09-25T02:38:18.8763339Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.8763613Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:18.8763872Z ##[debug]..=> Object
+2026-09-25T02:38:18.8764120Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.8764384Z ##[debug]..=> 'aic'
+2026-09-25T02:38:18.8764613Z ##[debug]=> null
+2026-09-25T02:38:18.8764865Z ##[debug]Result: null
+2026-09-25T02:38:18.8765420Z ##[debug]Evaluating: steps.detection_conclusion.outputs.conclusion
+2026-09-25T02:38:18.8765808Z ##[debug]Evaluating Index:
+2026-09-25T02:38:18.8766083Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.8766357Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.8766638Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:18.8766919Z ##[debug]......=> Object
+2026-09-25T02:38:18.8767190Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.8767488Z ##[debug]......=> 'detection_conclusion'
+2026-09-25T02:38:18.8767786Z ##[debug]....=> Object
+2026-09-25T02:38:18.8768034Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.8768307Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:18.8768560Z ##[debug]..=> Object
+2026-09-25T02:38:18.8768805Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.8769223Z ##[debug]..=> 'conclusion'
+2026-09-25T02:38:18.8769486Z ##[debug]=> 'warning'
+2026-09-25T02:38:18.8769754Z ##[debug]Result: 'warning'
+2026-09-25T02:38:18.8770217Z ##[debug]Evaluating: steps.detection_conclusion.outputs.reason
+2026-09-25T02:38:18.8770595Z ##[debug]Evaluating Index:
+2026-09-25T02:38:18.8770862Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.8771326Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.8771610Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:18.8771894Z ##[debug]......=> Object
+2026-09-25T02:38:18.8772148Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.8772442Z ##[debug]......=> 'detection_conclusion'
+2026-09-25T02:38:18.8772735Z ##[debug]....=> Object
+2026-09-25T02:38:18.8772984Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.8773243Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:18.8773481Z ##[debug]..=> Object
+2026-09-25T02:38:18.8773719Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.8773974Z ##[debug]..=> 'reason'
+2026-09-25T02:38:18.8774219Z ##[debug]=> 'agent_failure'
+2026-09-25T02:38:18.8774491Z ##[debug]Result: 'agent_failure'
+2026-09-25T02:38:18.8774935Z ##[debug]Evaluating: steps.detection_conclusion.outputs.success
+2026-09-25T02:38:18.8775312Z ##[debug]Evaluating Index:
+2026-09-25T02:38:18.8775573Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.8775830Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.8776106Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:18.8776396Z ##[debug]......=> Object
+2026-09-25T02:38:18.8776653Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.8776940Z ##[debug]......=> 'detection_conclusion'
+2026-09-25T02:38:18.8777223Z ##[debug]....=> Object
+2026-09-25T02:38:18.8777469Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.8777725Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:18.8777973Z ##[debug]..=> Object
+2026-09-25T02:38:18.8778216Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.8778472Z ##[debug]..=> 'success'
+2026-09-25T02:38:18.8778711Z ##[debug]=> 'false'
+2026-09-25T02:38:18.8779076Z ##[debug]Result: 'false'
+2026-09-25T02:38:18.8779565Z ##[debug]Skip output 'aic' since it's empty
+2026-09-25T02:38:18.8780212Z Set output 'detection_conclusion'
+2026-09-25T02:38:18.8782172Z Set output 'detection_reason'
+2026-09-25T02:38:18.8783257Z Set output 'detection_success'
+2026-09-25T02:38:18.8784408Z Uploading runner diagnostic logs
+2026-09-25T02:38:18.8795233Z ##[debug]Starting diagnostic file upload.
+2026-09-25T02:38:18.8795759Z ##[debug]Setting up diagnostic log folders.
+2026-09-25T02:38:18.8816296Z ##[debug]Creating diagnostic log files folder.
+2026-09-25T02:38:18.8824520Z ##[debug]Copying 1 worker diagnostic logs.
+2026-09-25T02:38:18.8832626Z ##[debug]Copying 1 runner diagnostic logs.
+2026-09-25T02:38:18.8833587Z ##[debug]Zipping diagnostic files.
+2026-09-25T02:38:18.8921853Z ##[debug]Uploading diagnostic metadata file.
+2026-09-25T02:38:18.8945047Z ##[debug]Diagnostic file upload complete.
+2026-09-25T02:38:18.8945618Z Completed runner diagnostic log upload
+2026-09-25T02:38:18.8945932Z Cleaning up orphan processes
+2026-09-25T02:38:18.9176345Z ##[debug]Finishing: Complete job

@@ -1,0 +1,168 @@
+﻿2026-09-25T02:36:21.8132243Z ##[debug]Evaluating: format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id)
+2026-09-25T02:36:21.8133306Z ##[debug]Evaluating format:
+2026-09-25T02:36:21.8133871Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8134506Z ##[debug]..=> '{0}/{1}/actions/runs/{2}'
+2026-09-25T02:36:21.8135471Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8136037Z ##[debug]....Evaluating github:
+2026-09-25T02:36:21.8136612Z ##[debug]....=> Object
+2026-09-25T02:36:21.8138019Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8138621Z ##[debug]....=> 'server_url'
+2026-09-25T02:36:21.8139252Z ##[debug]..=> 'https://github.com'
+2026-09-25T02:36:21.8139892Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8140433Z ##[debug]....Evaluating github:
+2026-09-25T02:36:21.8140991Z ##[debug]....=> Object
+2026-09-25T02:36:21.8141514Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8142157Z ##[debug]....=> 'repository'
+2026-09-25T02:36:21.8142984Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:36:21.8164736Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8165304Z ##[debug]....Evaluating github:
+2026-09-25T02:36:21.8166006Z ##[debug]....=> Object
+2026-09-25T02:36:21.8166541Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8167403Z ##[debug]....=> 'run_id'
+2026-09-25T02:36:21.8167959Z ##[debug]..=> '36086288956'
+2026-09-25T02:36:21.8168966Z ##[debug]=> 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956'
+2026-09-25T02:36:21.8170460Z ##[debug]Result: 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956'
+2026-09-25T02:36:21.8172368Z ##[debug]Evaluating: (github.event.inputs.aw_context || '')
+2026-09-25T02:36:21.8173154Z ##[debug]Evaluating Or:
+2026-09-25T02:36:21.8173675Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8174225Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:21.8174769Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:21.8175323Z ##[debug]........Evaluating github:
+2026-09-25T02:36:21.8175933Z ##[debug]........=> Object
+2026-09-25T02:36:21.8176462Z ##[debug]........Evaluating String:
+2026-09-25T02:36:21.8177307Z ##[debug]........=> 'event'
+2026-09-25T02:36:21.8177868Z ##[debug]......=> Object
+2026-09-25T02:36:21.8178398Z ##[debug]......Evaluating String:
+2026-09-25T02:36:21.8178953Z ##[debug]......=> 'inputs'
+2026-09-25T02:36:21.8179503Z ##[debug]....=> Object
+2026-09-25T02:36:21.8180016Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8180567Z ##[debug]....=> 'aw_context'
+2026-09-25T02:36:21.8181095Z ##[debug]..=> null
+2026-09-25T02:36:21.8181591Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8182140Z ##[debug]..=> ''
+2026-09-25T02:36:21.8182608Z ##[debug]=> ''
+2026-09-25T02:36:21.8183116Z ##[debug]Expanded: (null || '')
+2026-09-25T02:36:21.8183652Z ##[debug]Result: ''
+2026-09-25T02:36:21.8184498Z ##[debug]Evaluating: secrets.GITHUB_TOKEN
+2026-09-25T02:36:21.8185127Z ##[debug]Evaluating Index:
+2026-09-25T02:36:21.8185676Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:21.8186236Z ##[debug]..=> Object
+2026-09-25T02:36:21.8186737Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8187506Z ##[debug]..=> 'GITHUB_TOKEN'
+2026-09-25T02:36:21.8191765Z ##[debug]=> '***'
+2026-09-25T02:36:21.8195737Z ##[debug]Result: '***'
+2026-09-25T02:36:21.8196949Z ##[debug]Evaluating: (vars.GH_AW_DEFAULT_MAX_DAILY_AI_CREDITS || '5000')
+2026-09-25T02:36:21.8197939Z ##[debug]Evaluating Or:
+2026-09-25T02:36:21.8198468Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8199015Z ##[debug]....Evaluating vars:
+2026-09-25T02:36:21.8199572Z ##[debug]....=> Object
+2026-09-25T02:36:21.8200089Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8200698Z ##[debug]....=> 'GH_AW_DEFAULT_MAX_DAILY_AI_CREDITS'
+2026-09-25T02:36:21.8201365Z ##[debug]..=> null
+2026-09-25T02:36:21.8201853Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8202381Z ##[debug]..=> '5000'
+2026-09-25T02:36:21.8202881Z ##[debug]=> '5000'
+2026-09-25T02:36:21.8203410Z ##[debug]Expanded: (null || '5000')
+2026-09-25T02:36:21.8204280Z ##[debug]Result: '5000'
+2026-09-25T02:36:21.8205289Z ##[debug]Evaluating: (vars.GH_AW_DEFAULT_MAX_AI_CREDITS || '1000')
+2026-09-25T02:36:21.8206046Z ##[debug]Evaluating Or:
+2026-09-25T02:36:21.8206563Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8207456Z ##[debug]....Evaluating vars:
+2026-09-25T02:36:21.8208011Z ##[debug]....=> Object
+2026-09-25T02:36:21.8208530Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8209108Z ##[debug]....=> 'GH_AW_DEFAULT_MAX_AI_CREDITS'
+2026-09-25T02:36:21.8209739Z ##[debug]..=> null
+2026-09-25T02:36:21.8210225Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8210750Z ##[debug]..=> '1000'
+2026-09-25T02:36:21.8211227Z ##[debug]=> '1000'
+2026-09-25T02:36:21.8211733Z ##[debug]Expanded: (null || '1000')
+2026-09-25T02:36:21.8212308Z ##[debug]Result: '1000'
+2026-09-25T02:36:21.8213298Z ##[debug]Evaluating condition for step: 'Check daily workflow token guardrail'
+2026-09-25T02:36:21.8216853Z ##[debug]Evaluating: (success() && (env.GH_AW_MAX_DAILY_AI_CREDITS != ''))
+2026-09-25T02:36:21.8218212Z ##[debug]Evaluating And:
+2026-09-25T02:36:21.8218980Z ##[debug]..Evaluating success:
+2026-09-25T02:36:21.8219873Z ##[debug]..=> true
+2026-09-25T02:36:21.8220606Z ##[debug]..Evaluating NotEqual:
+2026-09-25T02:36:21.8221386Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:21.8222145Z ##[debug]......Evaluating env:
+2026-09-25T02:36:21.8222901Z ##[debug]......=> Object
+2026-09-25T02:36:21.8223677Z ##[debug]......Evaluating String:
+2026-09-25T02:36:21.8224529Z ##[debug]......=> 'GH_AW_MAX_DAILY_AI_CREDITS'
+2026-09-25T02:36:21.8225387Z ##[debug]....=> '5000'
+2026-09-25T02:36:21.8226119Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8226869Z ##[debug]....=> ''
+2026-09-25T02:36:21.8227725Z ##[debug]..=> true
+2026-09-25T02:36:21.8228411Z ##[debug]=> true
+2026-09-25T02:36:21.8229334Z ##[debug]Expanded: (true && ('5000' != ''))
+2026-09-25T02:36:21.8230221Z ##[debug]Result: true
+2026-09-25T02:36:21.8231304Z ##[debug]Starting: Check daily workflow token guardrail
+2026-09-25T02:36:21.8279203Z ##[debug]Loading inputs
+2026-09-25T02:36:21.8281540Z ##[debug]Evaluating: secrets.GITHUB_TOKEN
+2026-09-25T02:36:21.8282221Z ##[debug]Evaluating Index:
+2026-09-25T02:36:21.8282801Z ##[debug]..Evaluating secrets:
+2026-09-25T02:36:21.8283379Z ##[debug]..=> Object
+2026-09-25T02:36:21.8283931Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8284503Z ##[debug]..=> 'GITHUB_TOKEN'
+2026-09-25T02:36:21.8289036Z ##[debug]=> '***'
+2026-09-25T02:36:21.8293111Z ##[debug]Result: '***'
+2026-09-25T02:36:21.8294737Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:36:21.8295443Z ##[debug]Evaluating Equal:
+2026-09-25T02:36:21.8296005Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.8296564Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:21.8297522Z ##[debug]....=> Object
+2026-09-25T02:36:21.8298061Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.8298614Z ##[debug]....=> 'debug'
+2026-09-25T02:36:21.8299171Z ##[debug]..=> '1'
+2026-09-25T02:36:21.8299681Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.8300246Z ##[debug]..=> '1'
+2026-09-25T02:36:21.8300731Z ##[debug]=> true
+2026-09-25T02:36:21.8301268Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:36:21.8301827Z ##[debug]Result: true
+2026-09-25T02:36:21.8311437Z ##[debug]Loading env
+2026-09-25T02:36:21.8322159Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:36:21.8323095Z with:
+2026-09-25T02:36:21.8327455Z   github-token: ***
+2026-09-25T02:36:21.8329873Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_daily_aic_workflow_guardrail.cjs'));
+await main();
+
+2026-09-25T02:36:21.8332367Z   debug: true
+2026-09-25T02:36:21.8332967Z   user-agent: actions/github-script
+2026-09-25T02:36:21.8333677Z   result-encoding: json
+2026-09-25T02:36:21.8334256Z   retries: 0
+2026-09-25T02:36:21.8335042Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:36:21.8335813Z env:
+2026-09-25T02:36:21.8336352Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:21.8337334Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:21.8339312Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:21.8341133Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:21.8341922Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:21.8342657Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:21.8343378Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:21.8344048Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:21.8344781Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:21.8345670Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:21.8346426Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:21.8347420Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-25T02:36:21.8348144Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-09-25T02:36:21.8349331Z   GH_AW_RUN_URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956
+2026-09-25T02:36:21.8350521Z   GH_AW_WORKFLOW_DISPATCH_AW_CONTEXT: 
+2026-09-25T02:36:21.8351196Z   GH_AW_HAS_SLASH_COMMAND: false
+2026-09-25T02:36:21.8351926Z   GH_AW_HAS_LABEL_COMMAND: false
+2026-09-25T02:36:21.8356172Z   GH_AW_GITHUB_TOKEN: ***
+2026-09-25T02:36:21.8356837Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-09-25T02:36:21.8357663Z ##[endgroup]
+2026-09-25T02:36:21.9948217Z [daily-workflow-aic] Resolved daily AIC guardrail limits: {"dailyAICThreshold":5000,"perRunMaxAICredits":1000,"perRunFallbackAvailable":true}
+2026-09-25T02:36:21.9950337Z Skipping daily workflow AI Credits guardrail for manual or command-driven runs.
+2026-09-25T02:36:21.9955281Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:21.9963467Z ##[debug]Set output daily_ai_credits_exceeded = false
+2026-09-25T02:36:21.9964929Z ##[debug]Set output daily_ai_credits_total = 
+2026-09-25T02:36:21.9969037Z ##[debug]Set output daily_ai_credits_threshold = 
+2026-09-25T02:36:21.9970712Z ##[debug]Set output daily_ai_credits_guardrail_status = not_run
+2026-09-25T02:36:21.9972498Z ##[debug]Set output daily_ai_credits_guardrail_error = 
+2026-09-25T02:36:21.9974554Z ##[debug]Set output daily_ai_credits_guardrail_status = skipped
+2026-09-25T02:36:21.9975964Z ##[debug]Set output result = 
+2026-09-25T02:36:21.9980719Z ##[debug]Finishing: Check daily workflow token guardrail

@@ -1,0 +1,153 @@
+﻿2026-09-25T02:38:41.2590255Z ##[debug]Evaluating condition for step: 'Upload usage artifact'
+2026-09-25T02:38:41.2595009Z ##[debug]Evaluating: always()
+2026-09-25T02:38:41.2595879Z ##[debug]Evaluating always:
+2026-09-25T02:38:41.2597343Z ##[debug]=> true
+2026-09-25T02:38:41.2598578Z ##[debug]Result: true
+2026-09-25T02:38:41.2600197Z ##[debug]Starting: Upload usage artifact
+2026-09-25T02:38:41.2681993Z ##[debug]Loading inputs
+2026-09-25T02:38:41.2690794Z ##[debug]Loading env
+2026-09-25T02:38:41.2700255Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-25T02:38:41.2701137Z with:
+2026-09-25T02:38:41.2701594Z   name: usage
+2026-09-25T02:38:41.2705648Z   path: /tmp/gh-aw/usage/aw_info.json
+/tmp/gh-aw/usage/aw-info.jsonl
+/tmp/gh-aw/usage/agent_usage.json
+/tmp/gh-aw/usage/agent_usage.jsonl
+/tmp/gh-aw/usage/detection_usage.jsonl
+/tmp/gh-aw/usage/evals.jsonl
+/tmp/gh-aw/usage/graders/grader_manifest.json
+/tmp/gh-aw/usage/graders/grader_results.json
+/tmp/gh-aw/usage/github_rate_limits.jsonl
+/tmp/gh-aw/usage/agent/token_usage.jsonl
+/tmp/gh-aw/usage/agent/execution.json
+/tmp/gh-aw/usage/detection/token_usage.jsonl
+/tmp/gh-aw/usage/detection/execution.json
+/tmp/gh-aw/usage/evals/token_usage.jsonl
+/tmp/gh-aw/usage/evals/execution.json
+/tmp/gh-aw/usage/activity/summary.json
+
+2026-09-25T02:38:41.2710443Z   if-no-files-found: ignore
+2026-09-25T02:38:41.2711026Z   compression-level: 6
+2026-09-25T02:38:41.2711569Z   overwrite: false
+2026-09-25T02:38:41.2713271Z   include-hidden-files: false
+2026-09-25T02:38:41.2714204Z   archive: true
+2026-09-25T02:38:41.2714684Z env:
+2026-09-25T02:38:41.2715171Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:41.2715794Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:41.2717818Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:41.2719626Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:41.2720275Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:41.2721190Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:41.2721771Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:41.2722424Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:41.2723196Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 434ff0d3ad0b9735
+2026-09-25T02:38:41.2723895Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303919335
+2026-09-25T02:38:41.2724830Z ##[endgroup]
+2026-09-25T02:38:41.4708799Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:38:41.4716638Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:38:41.4722598Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:38:41.4727936Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:38:41.4789280Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:38:41.4794923Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:38:41.4800540Z ##[debug]matchDirectories 'true'
+2026-09-25T02:38:41.4805555Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:38:41.4813062Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:38:42.0558140Z ##[debug]Search path '/tmp/gh-aw/usage/aw_info.json'
+2026-09-25T02:38:42.0559667Z ##[debug]Search path '/tmp/gh-aw/usage/aw-info.jsonl'
+2026-09-25T02:38:42.0561047Z ##[debug]Search path '/tmp/gh-aw/usage/agent_usage.json'
+2026-09-25T02:38:42.0562501Z ##[debug]Search path '/tmp/gh-aw/usage/agent_usage.jsonl'
+2026-09-25T02:38:42.0563898Z ##[debug]Search path '/tmp/gh-aw/usage/detection_usage.jsonl'
+2026-09-25T02:38:42.0565266Z ##[debug]Search path '/tmp/gh-aw/usage/evals.jsonl'
+2026-09-25T02:38:42.0566670Z ##[debug]Search path '/tmp/gh-aw/usage/graders/grader_manifest.json'
+2026-09-25T02:38:42.0568641Z ##[debug]Search path '/tmp/gh-aw/usage/graders/grader_results.json'
+2026-09-25T02:38:42.0570110Z ##[debug]Search path '/tmp/gh-aw/usage/github_rate_limits.jsonl'
+2026-09-25T02:38:42.0571527Z ##[debug]Search path '/tmp/gh-aw/usage/agent/token_usage.jsonl'
+2026-09-25T02:38:42.0572993Z ##[debug]Search path '/tmp/gh-aw/usage/agent/execution.json'
+2026-09-25T02:38:42.0574887Z ##[debug]Search path '/tmp/gh-aw/usage/detection/token_usage.jsonl'
+2026-09-25T02:38:42.0576418Z ##[debug]Search path '/tmp/gh-aw/usage/detection/execution.json'
+2026-09-25T02:38:42.0578716Z ##[debug]Search path '/tmp/gh-aw/usage/evals/token_usage.jsonl'
+2026-09-25T02:38:42.0580227Z ##[debug]Search path '/tmp/gh-aw/usage/evals/execution.json'
+2026-09-25T02:38:42.0581619Z ##[debug]Search path '/tmp/gh-aw/usage/activity/summary.json'
+2026-09-25T02:38:42.0583231Z ##[debug]File:/tmp/gh-aw/usage/detection_usage.jsonl was found using the provided searchPath
+2026-09-25T02:38:42.0585334Z ##[debug]File:/tmp/gh-aw/usage/github_rate_limits.jsonl was found using the provided searchPath
+2026-09-25T02:38:42.0587644Z ##[debug]File:/tmp/gh-aw/usage/agent/token_usage.jsonl was found using the provided searchPath
+2026-09-25T02:38:42.0589427Z ##[debug]File:/tmp/gh-aw/usage/agent/execution.json was found using the provided searchPath
+2026-09-25T02:38:42.0591227Z ##[debug]File:/tmp/gh-aw/usage/detection/token_usage.jsonl was found using the provided searchPath
+2026-09-25T02:38:42.0592822Z ##[debug]File:/tmp/gh-aw/usage/detection/execution.json was found using the provided searchPath
+2026-09-25T02:38:42.0594468Z ##[debug]File:/tmp/gh-aw/usage/activity/summary.json was found using the provided searchPath
+2026-09-25T02:38:42.0595680Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-25T02:38:42.0597131Z ##[debug]Using search path /tmp/gh-aw/usage/aw_info.json
+2026-09-25T02:38:42.0598243Z ##[debug]Using search path /tmp/gh-aw/usage/aw-info.jsonl
+2026-09-25T02:38:42.0599358Z ##[debug]Using search path /tmp/gh-aw/usage/agent_usage.json
+2026-09-25T02:38:42.0600494Z ##[debug]Using search path /tmp/gh-aw/usage/agent_usage.jsonl
+2026-09-25T02:38:42.0601654Z ##[debug]Using search path /tmp/gh-aw/usage/detection_usage.jsonl
+2026-09-25T02:38:42.0602792Z ##[debug]Using search path /tmp/gh-aw/usage/evals.jsonl
+2026-09-25T02:38:42.0603967Z ##[debug]Using search path /tmp/gh-aw/usage/graders/grader_manifest.json
+2026-09-25T02:38:42.0605833Z ##[debug]Using search path /tmp/gh-aw/usage/graders/grader_results.json
+2026-09-25T02:38:42.0607597Z ##[debug]Using search path /tmp/gh-aw/usage/github_rate_limits.jsonl
+2026-09-25T02:38:42.0609113Z ##[debug]Using search path /tmp/gh-aw/usage/agent/token_usage.jsonl
+2026-09-25T02:38:42.0610556Z ##[debug]Using search path /tmp/gh-aw/usage/agent/execution.json
+2026-09-25T02:38:42.0612048Z ##[debug]Using search path /tmp/gh-aw/usage/detection/token_usage.jsonl
+2026-09-25T02:38:42.0613529Z ##[debug]Using search path /tmp/gh-aw/usage/detection/execution.json
+2026-09-25T02:38:42.0615011Z ##[debug]Using search path /tmp/gh-aw/usage/evals/token_usage.jsonl
+2026-09-25T02:38:42.0617828Z ##[debug]Using search path /tmp/gh-aw/usage/evals/execution.json
+2026-09-25T02:38:42.0619411Z ##[debug]Using search path /tmp/gh-aw/usage/activity/summary.json
+2026-09-25T02:38:42.0620609Z The least common ancestor is /tmp/gh-aw/usage. This will be the root directory of the artifact
+2026-09-25T02:38:42.0621658Z With the provided path, there will be 7 files uploaded
+2026-09-25T02:38:42.0622760Z ##[debug]Root artifact directory is /tmp/gh-aw/usage
+2026-09-25T02:38:42.0623491Z Artifact name is valid!
+2026-09-25T02:38:42.0624055Z Root directory input is valid!
+2026-09-25T02:38:42.0625096Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:38:42.0626502Z ##[debug]Workflow Job Run Backend ID: a57eb08e-9323-5d76-b3b9-4709c9cd7cf5
+2026-09-25T02:38:42.0628987Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-09-25T02:38:42.0630997Z ##[debug][Response] - 200
+2026-09-25T02:38:42.0632104Z ##[debug]Headers: {
+2026-09-25T02:38:42.0632656Z ##[debug]  "content-length": "579",
+2026-09-25T02:38:42.0633300Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:38:42.0634045Z ##[debug]  "date": "Fri, 25 Sep 2026 02:38:41 GMT",
+2026-09-25T02:38:42.0634747Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:38:42.0635785Z ##[debug]  "x-github-request-id": "17C0:1E9C74:5081FD:6A1FFE:6AB5DEB1",
+2026-09-25T02:38:42.0636611Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:38:42.0637812Z ##[debug]  "server": "github.com"
+2026-09-25T02:38:42.0638464Z ##[debug]}
+2026-09-25T02:38:42.0639561Z ::add-mask::***
+2026-09-25T02:38:42.0641350Z ::add-mask::***
+2026-09-25T02:38:42.0643011Z ##[debug]Body: {
+2026-09-25T02:38:42.0643823Z ##[debug]  "ok": true,
+2026-09-25T02:38:42.0649439Z ##[debug]  "signed_upload_url": "https://productionresultssa7.blob.core.windows.net/actions-results/9463978c-7030-4598-924f-edd18d8c6a83/workflow-job-run-a57eb08e-9323-5d76-b3b9-4709c9cd7cf5/artifacts/0a4e4c29432ecb01b95f87d87ffaff9cb4f36ce4b89ff1a1a136ad1c7392ae07.zip?se=2026-09-25T03%3A38%3A41Z&sig=***&ske=2026-09-25T05%3A54%3A03Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-09-25T01%3A54%3A03Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-09-25T02%3A38%3A36Z&sv=2025-11-05"
+2026-09-25T02:38:42.0654339Z ##[debug]}
+2026-09-25T02:38:42.0655707Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-09-25T02:38:42.0657252Z ##[debug]Zip write high watermark value 8388608
+2026-09-25T02:38:42.0658564Z ##[debug]Zip read high watermark value 8388608
+2026-09-25T02:38:42.0659498Z Uploading artifact: usage.zip
+2026-09-25T02:38:42.0660889Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-09-25T02:38:42.0662094Z Beginning upload of artifact content to blob storage
+2026-09-25T02:38:42.0663365Z ##[debug]Zip stream for upload has ended.
+2026-09-25T02:38:42.0664403Z ##[debug]Zip stream for upload has finished.
+2026-09-25T02:38:42.0665097Z Uploaded bytes 1709
+2026-09-25T02:38:42.0665713Z Finished uploading artifact content to blob storage!
+2026-09-25T02:38:42.0667059Z SHA256 digest of uploaded artifact is 1d5e03581b5f9891247019d0d5b88b10e6e896e08fad089ce153b2bf55c21bc8
+2026-09-25T02:38:42.0668156Z Finalizing artifact upload
+2026-09-25T02:38:42.0670519Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-09-25T02:38:42.0672365Z ##[debug][Response] - 200
+2026-09-25T02:38:42.0673282Z ##[debug]Headers: {
+2026-09-25T02:38:42.0673826Z ##[debug]  "content-length": "39",
+2026-09-25T02:38:42.0674490Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:38:42.0676063Z ##[debug]  "date": "Fri, 25 Sep 2026 02:38:42 GMT",
+2026-09-25T02:38:42.0677164Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:38:42.0678003Z ##[debug]  "x-github-request-id": "1629:E88FF:1B5CBEE:1E86E2A:6AB5DEB1",
+2026-09-25T02:38:42.0679112Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:38:42.0679773Z ##[debug]  "server": "github.com"
+2026-09-25T02:38:42.0680644Z ##[debug]}
+2026-09-25T02:38:42.0681576Z ##[debug]Body: {
+2026-09-25T02:38:42.0682359Z ##[debug]  "ok": true,
+2026-09-25T02:38:42.0682936Z ##[debug]  "artifact_id": "10843848546"
+2026-09-25T02:38:42.0683808Z ##[debug]}
+2026-09-25T02:38:42.0684482Z Artifact usage successfully finalized. Artifact ID 10843848546
+2026-09-25T02:38:42.0685944Z Artifact usage has been successfully uploaded! Final size is 1709 bytes. Artifact ID is 10843848546
+2026-09-25T02:38:42.0688124Z Artifact download URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10843848546
+2026-09-25T02:38:42.0691242Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:42.0696260Z ##[debug]Set output artifact-id = 10843848546
+2026-09-25T02:38:42.0697753Z ##[debug]Set output artifact-digest = 1d5e03581b5f9891247019d0d5b88b10e6e896e08fad089ce153b2bf55c21bc8
+2026-09-25T02:38:42.0700227Z ##[debug]Set output artifact-url = https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10843848546
+2026-09-25T02:38:42.0703825Z ##[debug]Finishing: Upload usage artifact

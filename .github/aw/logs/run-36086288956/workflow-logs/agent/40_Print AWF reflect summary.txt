@@ -1,0 +1,73 @@
+﻿2026-09-25T02:37:41.6805093Z ##[debug]Evaluating condition for step: 'Print AWF reflect summary'
+2026-09-25T02:37:41.6807349Z ##[debug]Evaluating: always()
+2026-09-25T02:37:41.6808195Z ##[debug]Evaluating always:
+2026-09-25T02:37:41.6808766Z ##[debug]=> true
+2026-09-25T02:37:41.6809380Z ##[debug]Result: true
+2026-09-25T02:37:41.6810183Z ##[debug]Starting: Print AWF reflect summary
+2026-09-25T02:37:41.6847180Z ##[debug]Loading inputs
+2026-09-25T02:37:41.6849330Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:41.6849795Z ##[debug]Evaluating Index:
+2026-09-25T02:37:41.6850208Z ##[debug]..Evaluating github:
+2026-09-25T02:37:41.6850623Z ##[debug]..=> Object
+2026-09-25T02:37:41.6851002Z ##[debug]..Evaluating String:
+2026-09-25T02:37:41.6851406Z ##[debug]..=> 'token'
+2026-09-25T02:37:41.6855754Z ##[debug]=> '***'
+2026-09-25T02:37:41.6860266Z ##[debug]Result: '***'
+2026-09-25T02:37:41.6865882Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:37:41.6866388Z ##[debug]Evaluating Equal:
+2026-09-25T02:37:41.6866808Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:41.6867264Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:41.6867873Z ##[debug]....=> Object
+2026-09-25T02:37:41.6868283Z ##[debug]....Evaluating String:
+2026-09-25T02:37:41.6868697Z ##[debug]....=> 'debug'
+2026-09-25T02:37:41.6869085Z ##[debug]..=> '1'
+2026-09-25T02:37:41.6869452Z ##[debug]..Evaluating String:
+2026-09-25T02:37:41.6869859Z ##[debug]..=> '1'
+2026-09-25T02:37:41.6870206Z ##[debug]=> true
+2026-09-25T02:37:41.6870587Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:37:41.6871006Z ##[debug]Result: true
+2026-09-25T02:37:41.6876955Z ##[debug]Loading env
+2026-09-25T02:37:41.6884537Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:37:41.6885196Z with:
+2026-09-25T02:37:41.6887182Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'awf_reflect_summary.cjs'));
+await main();
+
+2026-09-25T02:37:41.6893555Z   github-token: ***
+2026-09-25T02:37:41.6893929Z   debug: true
+2026-09-25T02:37:41.6894287Z   user-agent: actions/github-script
+2026-09-25T02:37:41.6894751Z   result-encoding: json
+2026-09-25T02:37:41.6895119Z   retries: 0
+2026-09-25T02:37:41.6895508Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:37:41.6896010Z env:
+2026-09-25T02:37:41.6910709Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:41.6911219Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:41.6912849Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:41.6914411Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:41.6914876Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:41.6915394Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:41.6915822Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:41.6916225Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:41.6916637Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:41.6917010Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:41.6917649Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:41.6918189Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:41.6918616Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:41.6919040Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:41.6919429Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:41.6919818Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:41.6920199Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:41.6920564Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:41.6921003Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:41.6921587Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:41.6922188Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:41.6922725Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:41.6923617Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-25T02:37:41.6924287Z ##[endgroup]
+2026-09-25T02:37:41.7956549Z AWF reflect data not available (AWF not enabled or /reflect not reachable), skipping summary
+2026-09-25T02:37:41.8037630Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:41.8040565Z ##[debug]Set output result = 
+2026-09-25T02:37:41.8042101Z ##[debug]Finishing: Print AWF reflect summary

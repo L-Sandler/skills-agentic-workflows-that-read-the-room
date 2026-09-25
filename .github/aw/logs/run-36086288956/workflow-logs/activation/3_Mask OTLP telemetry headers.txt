@@ -1,0 +1,26 @@
+﻿2026-09-25T02:36:21.3887800Z ##[debug]Evaluating condition for step: 'Mask OTLP telemetry headers'
+2026-09-25T02:36:21.3891766Z ##[debug]Evaluating: success()
+2026-09-25T02:36:21.3892590Z ##[debug]Evaluating success:
+2026-09-25T02:36:21.3894321Z ##[debug]=> true
+2026-09-25T02:36:21.3895281Z ##[debug]Result: true
+2026-09-25T02:36:21.3896613Z ##[debug]Starting: Mask OTLP telemetry headers
+2026-09-25T02:36:21.3913837Z ##[debug]Loading inputs
+2026-09-25T02:36:21.3916033Z ##[debug]Loading env
+2026-09-25T02:36:21.3936789Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/mask_otlp_headers.sh"
+2026-09-25T02:36:21.3938241Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/mask_otlp_headers.sh"[0m
+2026-09-25T02:36:21.3948671Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:36:21.3949290Z env:
+2026-09-25T02:36:21.3949760Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:21.3950382Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:21.3952129Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:21.3953926Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:21.3954525Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:21.3955165Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:21.3955726Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:21.3956296Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:21.3956929Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:21.3957955Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:21.3958636Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:21.3959223Z ##[endgroup]
+2026-09-25T02:36:21.3990719Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/2db6eef5-82b5-4773-a437-4bfb27d3ebb9.sh
+2026-09-25T02:36:21.4062368Z ##[debug]Finishing: Mask OTLP telemetry headers

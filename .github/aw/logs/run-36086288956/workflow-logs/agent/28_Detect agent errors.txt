@@ -1,0 +1,111 @@
+﻿2026-09-25T02:37:38.5718797Z ##[debug]Evaluating: steps.agentic_execution.outcome
+2026-09-25T02:37:38.5719227Z ##[debug]Evaluating Index:
+2026-09-25T02:37:38.5719505Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:38.5719783Z ##[debug]....Evaluating steps:
+2026-09-25T02:37:38.5720077Z ##[debug]....=> Object
+2026-09-25T02:37:38.5720348Z ##[debug]....Evaluating String:
+2026-09-25T02:37:38.5720646Z ##[debug]....=> 'agentic_execution'
+2026-09-25T02:37:38.5720948Z ##[debug]..=> Object
+2026-09-25T02:37:38.5721209Z ##[debug]..Evaluating String:
+2026-09-25T02:37:38.5721476Z ##[debug]..=> 'outcome'
+2026-09-25T02:37:38.5721932Z ##[debug]=> 'failure'
+2026-09-25T02:37:38.5722206Z ##[debug]Result: 'failure'
+2026-09-25T02:37:38.5723083Z ##[debug]Evaluating: fromJSON((vars.GH_AW_DEFAULT_TIMEOUT_MINUTES || '20'))
+2026-09-25T02:37:38.5723525Z ##[debug]Evaluating fromJSON:
+2026-09-25T02:37:38.5723826Z ##[debug]..Evaluating Or:
+2026-09-25T02:37:38.5724105Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:38.5724374Z ##[debug]......Evaluating vars:
+2026-09-25T02:37:38.5724673Z ##[debug]......=> Object
+2026-09-25T02:37:38.5724935Z ##[debug]......Evaluating String:
+2026-09-25T02:37:38.5725245Z ##[debug]......=> 'GH_AW_DEFAULT_TIMEOUT_MINUTES'
+2026-09-25T02:37:38.5725558Z ##[debug]....=> null
+2026-09-25T02:37:38.5725816Z ##[debug]....Evaluating String:
+2026-09-25T02:37:38.5726069Z ##[debug]....=> '20'
+2026-09-25T02:37:38.5726302Z ##[debug]..=> '20'
+2026-09-25T02:37:38.5726888Z ##[debug]=> 20
+2026-09-25T02:37:38.5727159Z ##[debug]Result: 20
+2026-09-25T02:37:38.5727848Z ##[debug]Evaluating condition for step: 'Detect agent errors'
+2026-09-25T02:37:38.5729694Z ##[debug]Evaluating: always()
+2026-09-25T02:37:38.5730084Z ##[debug]Evaluating always:
+2026-09-25T02:37:38.5730807Z ##[debug]=> true
+2026-09-25T02:37:38.5731193Z ##[debug]Result: true
+2026-09-25T02:37:38.5731718Z ##[debug]Starting: Detect agent errors
+2026-09-25T02:37:38.5755600Z ##[debug]Loading inputs
+2026-09-25T02:37:38.5756944Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:38.5757237Z ##[debug]Evaluating Index:
+2026-09-25T02:37:38.5757818Z ##[debug]..Evaluating github:
+2026-09-25T02:37:38.5758152Z ##[debug]..=> Object
+2026-09-25T02:37:38.5758429Z ##[debug]..Evaluating String:
+2026-09-25T02:37:38.5758699Z ##[debug]..=> 'token'
+2026-09-25T02:37:38.5761104Z ##[debug]=> '***'
+2026-09-25T02:37:38.5763443Z ##[debug]Result: '***'
+2026-09-25T02:37:38.5766668Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:37:38.5767034Z ##[debug]Evaluating Equal:
+2026-09-25T02:37:38.5767328Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:38.5767846Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:38.5768151Z ##[debug]....=> Object
+2026-09-25T02:37:38.5768422Z ##[debug]....Evaluating String:
+2026-09-25T02:37:38.5768699Z ##[debug]....=> 'debug'
+2026-09-25T02:37:38.5768975Z ##[debug]..=> '1'
+2026-09-25T02:37:38.5769260Z ##[debug]..Evaluating String:
+2026-09-25T02:37:38.5769567Z ##[debug]..=> '1'
+2026-09-25T02:37:38.5769834Z ##[debug]=> true
+2026-09-25T02:37:38.5770092Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:37:38.5770386Z ##[debug]Result: true
+2026-09-25T02:37:38.5774318Z ##[debug]Loading env
+2026-09-25T02:37:38.5779542Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:37:38.5779963Z with:
+2026-09-25T02:37:38.5781105Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'detect_agent_errors.cjs'));
+await main();
+
+2026-09-25T02:37:38.5784382Z   github-token: ***
+2026-09-25T02:37:38.5784632Z   debug: true
+2026-09-25T02:37:38.5784886Z   user-agent: actions/github-script
+2026-09-25T02:37:38.5785185Z   result-encoding: json
+2026-09-25T02:37:38.5785438Z   retries: 0
+2026-09-25T02:37:38.5785701Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:37:38.5786019Z env:
+2026-09-25T02:37:38.5786258Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:38.5786757Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:38.5787895Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:38.5788791Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:38.5789101Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:38.5789434Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:38.5789708Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:38.5789957Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:38.5790375Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:38.5790626Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:38.5790928Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:38.5791269Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:38.5791535Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:38.5791817Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:38.5792073Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:38.5792345Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:38.5792604Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:38.5792850Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:38.5793134Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:38.5793515Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:38.5793893Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:38.5794231Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:38.5794561Z   GH_AW_AGENTIC_EXECUTION_OUTCOME: failure
+2026-09-25T02:37:38.5794876Z   GH_AW_ENGINE_STEP_TIMEOUT_MINUTES: 20
+2026-09-25T02:37:38.5795170Z ##[endgroup]
+2026-09-25T02:37:38.6842821Z [detect-agent-errors] Detected model configuration error: configured model is invalid or unavailable for this engine/account
+2026-09-25T02:37:38.6943159Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:38.6945590Z ##[debug]Set output inference_access_error = false
+2026-09-25T02:37:38.6946083Z ##[debug]Set output mcp_policy_error = false
+2026-09-25T02:37:38.6946515Z ##[debug]Set output agentic_engine_timeout = false
+2026-09-25T02:37:38.6946895Z ##[debug]Set output model_not_supported_error = true
+2026-09-25T02:37:38.6947269Z ##[debug]Set output http_400_response_error = false
+2026-09-25T02:37:38.6947831Z ##[debug]Set output capi_quota_exceeded_error = false
+2026-09-25T02:37:38.6948209Z ##[debug]Set output invocation_cap_exceeded = false
+2026-09-25T02:37:38.6948588Z ##[debug]Set output max_cache_misses_exceeded = false
+2026-09-25T02:37:38.6948959Z ##[debug]Set output missing_model_pricing_error = false
+2026-09-25T02:37:38.6949343Z ##[debug]Set output missing_model_pricing_model_name = 
+2026-09-25T02:37:38.6949746Z ##[debug]Set output shell_expansion_guard_rejected = false
+2026-09-25T02:37:38.6950155Z ##[debug]Set output result = 
+2026-09-25T02:37:38.6951193Z ##[debug]Finishing: Detect agent errors

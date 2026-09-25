@@ -1,0 +1,148 @@
+﻿2026-09-25T02:38:18.7778008Z ##[debug]Evaluating: format('{0}/.github/workflows/update-github-info.lock.yml@{1}', github.repository, github.ref)
+2026-09-25T02:38:18.7778600Z ##[debug]Evaluating format:
+2026-09-25T02:38:18.7778884Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.7779523Z ##[debug]..=> '{0}/.github/workflows/update-github-info.lock.yml@{1}'
+2026-09-25T02:38:18.7780020Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.7780311Z ##[debug]....Evaluating github:
+2026-09-25T02:38:18.7780628Z ##[debug]....=> Object
+2026-09-25T02:38:18.7780903Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.7781184Z ##[debug]....=> 'repository'
+2026-09-25T02:38:18.7781581Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:18.7781985Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.7782248Z ##[debug]....Evaluating github:
+2026-09-25T02:38:18.7782506Z ##[debug]....=> Object
+2026-09-25T02:38:18.7782791Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.7783053Z ##[debug]....=> 'ref'
+2026-09-25T02:38:18.7783332Z ##[debug]..=> 'refs/heads/main'
+2026-09-25T02:38:18.7783922Z ##[debug]=> 'L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main'
+2026-09-25T02:38:18.7784850Z ##[debug]Result: 'L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main'
+2026-09-25T02:38:18.7785759Z ##[debug]Evaluating condition for step: 'Post Setup Scripts'
+2026-09-25T02:38:18.7787063Z ##[debug]Evaluating: always()
+2026-09-25T02:38:18.7787446Z ##[debug]Evaluating always:
+2026-09-25T02:38:18.7787825Z ##[debug]=> true
+2026-09-25T02:38:18.7788238Z ##[debug]Result: true
+2026-09-25T02:38:18.7788869Z ##[debug]Starting: Post Setup Scripts
+2026-09-25T02:38:18.7810516Z ##[debug]Loading inputs
+2026-09-25T02:38:18.7811850Z ##[debug]Evaluating: format('{0}/gh-aw/actions', runner.temp)
+2026-09-25T02:38:18.7812225Z ##[debug]Evaluating format:
+2026-09-25T02:38:18.7812508Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.7812796Z ##[debug]..=> '{0}/gh-aw/actions'
+2026-09-25T02:38:18.7813171Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.7813444Z ##[debug]....Evaluating runner:
+2026-09-25T02:38:18.7813736Z ##[debug]....=> Object
+2026-09-25T02:38:18.7814008Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.7814297Z ##[debug]....=> 'temp'
+2026-09-25T02:38:18.7814577Z ##[debug]..=> '/home/runner/work/_temp'
+2026-09-25T02:38:18.7814919Z ##[debug]=> '/home/runner/work/_temp/gh-aw/actions'
+2026-09-25T02:38:18.7815308Z ##[debug]Result: '/home/runner/work/_temp/gh-aw/actions'
+2026-09-25T02:38:18.7815782Z ##[debug]Evaluating: github.job
+2026-09-25T02:38:18.7816065Z ##[debug]Evaluating Index:
+2026-09-25T02:38:18.7816336Z ##[debug]..Evaluating github:
+2026-09-25T02:38:18.7816606Z ##[debug]..=> Object
+2026-09-25T02:38:18.7816863Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.7817131Z ##[debug]..=> 'job'
+2026-09-25T02:38:18.7817368Z ##[debug]=> 'detection'
+2026-09-25T02:38:18.7817643Z ##[debug]Result: 'detection'
+2026-09-25T02:38:18.7818195Z ##[debug]Evaluating: needs.activation.outputs.setup-trace-id
+2026-09-25T02:38:18.7818564Z ##[debug]Evaluating Index:
+2026-09-25T02:38:18.7818826Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.7819232Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.7819522Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:18.7819808Z ##[debug]......=> Object
+2026-09-25T02:38:18.7820069Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.7820360Z ##[debug]......=> 'activation'
+2026-09-25T02:38:18.7820628Z ##[debug]....=> Object
+2026-09-25T02:38:18.7820879Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.7821152Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:18.7821402Z ##[debug]..=> Object
+2026-09-25T02:38:18.7821654Z ##[debug]..Evaluating String:
+2026-09-25T02:38:18.7821927Z ##[debug]..=> 'setup-trace-id'
+2026-09-25T02:38:18.7822235Z ##[debug]=> '3c8c32e738303c7a8313802e4ab455aa'
+2026-09-25T02:38:18.7822587Z ##[debug]Result: '3c8c32e738303c7a8313802e4ab455aa'
+2026-09-25T02:38:18.7823391Z ##[debug]Evaluating: (needs.activation.outputs.setup-parent-span-id || needs.activation.outputs.setup-span-id)
+2026-09-25T02:38:18.7824143Z ##[debug]Evaluating Or:
+2026-09-25T02:38:18.7824404Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:18.7824678Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.7825035Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:18.7825317Z ##[debug]........Evaluating needs:
+2026-09-25T02:38:18.7825591Z ##[debug]........=> Object
+2026-09-25T02:38:18.7825869Z ##[debug]........Evaluating String:
+2026-09-25T02:38:18.7826161Z ##[debug]........=> 'activation'
+2026-09-25T02:38:18.7826450Z ##[debug]......=> Object
+2026-09-25T02:38:18.7826717Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.7826987Z ##[debug]......=> 'outputs'
+2026-09-25T02:38:18.7827247Z ##[debug]....=> Object
+2026-09-25T02:38:18.7827499Z ##[debug]....Evaluating String:
+2026-09-25T02:38:18.7827791Z ##[debug]....=> 'setup-parent-span-id'
+2026-09-25T02:38:18.7828084Z ##[debug]..=> '1ee9605759333040'
+2026-09-25T02:38:18.7828372Z ##[debug]=> '1ee9605759333040'
+2026-09-25T02:38:18.7828866Z ##[debug]Expanded: ('1ee9605759333040' || needs['activation']['outputs']['setup-span-id'])
+2026-09-25T02:38:18.7829432Z ##[debug]Result: '1ee9605759333040'
+2026-09-25T02:38:18.7831280Z ##[debug]Loading env
+2026-09-25T02:38:18.7835541Z Post job cleanup.
+2026-09-25T02:38:18.8253506Z [info] [otlp] sending conclusion span "gh-aw.detection.conclusion" to configured endpoints
+2026-09-25T02:38:18.8300394Z [info] [otlp] conclusion span export attempted
+2026-09-25T02:38:18.8388371Z [debug] listing files under /tmp/gh-aw (max depth 4, max files 200)
+2026-09-25T02:38:18.8389343Z [debug] - agent_execution.json
+2026-09-25T02:38:18.8389808Z [debug] - agent_output.json
+2026-09-25T02:38:18.8390789Z [debug] - agent-stdio.log
+2026-09-25T02:38:18.8391383Z [debug] - aw_info.json
+2026-09-25T02:38:18.8391989Z [debug] - aw-prompts/prompt-import-tree.json
+2026-09-25T02:38:18.8392653Z [debug] - aw-prompts/prompt-template.txt
+2026-09-25T02:38:18.8393268Z [debug] - aw-prompts/prompt.txt
+2026-09-25T02:38:18.8393857Z [debug] - awf-config.json
+2026-09-25T02:38:18.8394505Z [debug] - base/.github/agents/agentic-workflows.md
+2026-09-25T02:38:18.8395229Z [debug] - base/.github/aw/actions-lock.json
+2026-09-25T02:38:18.8395949Z [debug] - base/.github/images/actions-permissions-1.png
+2026-09-25T02:38:18.8396727Z [debug] - base/.github/images/actions-secrets-settings.svg
+2026-09-25T02:38:18.8397616Z [debug] - base/.github/images/add-copilot-github-token-secret.svg
+2026-09-25T02:38:18.8398483Z [debug] - base/.github/images/agentic-workflows-agent.png
+2026-09-25T02:38:18.8399420Z [debug] - base/.github/images/fine-grained-token-1.png
+2026-09-25T02:38:18.8400234Z [debug] - base/.github/images/fine-grained-token-2.png
+2026-09-25T02:38:18.8400963Z [debug] - base/.github/images/generated-update-pr.svg
+2026-09-25T02:38:18.8401752Z [debug] - base/.github/images/mona-astro-site-run-debug.png
+2026-09-25T02:38:18.8402657Z [debug] - base/.github/images/pr-files-changed-github-info.svg
+2026-09-25T02:38:18.8403482Z [debug] - base/.github/images/repo-secrets-1.png
+2026-09-25T02:38:18.8404247Z [debug] - base/.github/images/repo-secrets-2.png
+2026-09-25T02:38:18.8405032Z [debug] - base/.github/images/repo-secrets-3.png
+2026-09-25T02:38:18.8405772Z [debug] - base/.github/images/repo-settings.png
+2026-09-25T02:38:18.8406582Z [debug] - base/.github/images/run-update-github-info-1.png
+2026-09-25T02:38:18.8407388Z [debug] - base/.github/images/run-update-github-info-2.png
+2026-09-25T02:38:18.8408223Z [debug] - base/.github/images/run-update-github-info-3.png
+2026-09-25T02:38:18.8409144Z [debug] - base/.github/images/run-workflow-button.svg
+2026-09-25T02:38:18.8409938Z [debug] - base/.github/images/sign-in-sync-settings.png
+2026-09-25T02:38:18.8410603Z [debug] - base/.github/mcp.json
+2026-09-25T02:38:18.8411317Z [debug] - base/.github/prompts/manage-mona-site.prompt.md
+2026-09-25T02:38:18.8412044Z [debug] - base/.github/steps/1-step.md
+2026-09-25T02:38:18.8412642Z [debug] - base/.github/steps/2-step.md
+2026-09-25T02:38:18.8413541Z [debug] - base/.github/steps/3-step.md
+2026-09-25T02:38:18.8414148Z [debug] - base/.github/steps/x-review.md
+2026-09-25T02:38:18.8414755Z [debug] - base/.github/workflows/0-start-exercise.yml
+2026-09-25T02:38:18.8415324Z [debug] - base/.github/workflows/1-step.yml
+2026-09-25T02:38:18.8416084Z [debug] - base/.github/workflows/2-step.yml
+2026-09-25T02:38:18.8416684Z [debug] - base/.github/workflows/3-step.yml
+2026-09-25T02:38:18.8417311Z [debug] - base/.github/workflows/copilot-setup-steps.yml
+2026-09-25T02:38:18.8418116Z [debug] - base/.github/workflows/update-github-info.lock.yml
+2026-09-25T02:38:18.8419196Z [debug] - base/.github/workflows/update-github-info.md
+2026-09-25T02:38:18.8419605Z [debug] - github_rate_limits.jsonl
+2026-09-25T02:38:18.8419941Z [debug] - mcp-logs/gateway.md
+2026-09-25T02:38:18.8420253Z [debug] - mcp-logs/github.log
+2026-09-25T02:38:18.8420577Z [debug] - mcp-logs/mcp-gateway.log
+2026-09-25T02:38:18.8420948Z [debug] - mcp-logs/observed-url-domains.json
+2026-09-25T02:38:18.8421310Z [debug] - mcp-logs/rpc-messages.jsonl
+2026-09-25T02:38:18.8421677Z [debug] - mcp-logs/safeoutputs/server.log
+2026-09-25T02:38:18.8422026Z [debug] - mcp-logs/safeoutputs.log
+2026-09-25T02:38:18.8422333Z [debug] - mcp-logs/tools.json
+2026-09-25T02:38:18.8422624Z [debug] - models.json
+2026-09-25T02:38:18.8422879Z [debug] - otel.jsonl
+2026-09-25T02:38:18.8423149Z [debug] - pre-agent-audit.txt
+2026-09-25T02:38:18.8423534Z [debug] - sandbox/agent/logs/process-1790303851940-384.log
+2026-09-25T02:38:18.8423967Z [debug] - threat-detection/detection_usage.json
+2026-09-25T02:38:18.8424366Z [debug] - threat-detection/detection_usage.jsonl
+2026-09-25T02:38:18.8424755Z [debug] - threat-detection/execution.json
+2026-09-25T02:38:18.8425127Z Cleaning up /tmp/gh-aw...
+2026-09-25T02:38:18.8515629Z Cleaned up /tmp/gh-aw
+2026-09-25T02:38:18.8592338Z No /tmp/awf-*-chroot-home directories found
+2026-09-25T02:38:18.8660000Z No /tmp/awf-chroot-* directories found
+2026-09-25T02:38:18.8693992Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:18.8697920Z ##[debug]Finishing: Post Setup Scripts

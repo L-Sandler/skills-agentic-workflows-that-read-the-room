@@ -1,0 +1,66 @@
+﻿2026-09-25T02:36:24.9714140Z ##[debug]Evaluating condition for step: 'Check compile-agentic version'
+2026-09-25T02:36:24.9719243Z ##[debug]Evaluating: success()
+2026-09-25T02:36:24.9720529Z ##[debug]Evaluating success:
+2026-09-25T02:36:24.9723328Z ##[debug]=> true
+2026-09-25T02:36:24.9725341Z ##[debug]Result: true
+2026-09-25T02:36:24.9726509Z ##[debug]Starting: Check compile-agentic version
+2026-09-25T02:36:24.9807825Z ##[debug]Loading inputs
+2026-09-25T02:36:24.9844928Z ##[debug]Evaluating: github.token
+2026-09-25T02:36:24.9845612Z ##[debug]Evaluating Index:
+2026-09-25T02:36:24.9846188Z ##[debug]..Evaluating github:
+2026-09-25T02:36:24.9846793Z ##[debug]..=> Object
+2026-09-25T02:36:24.9847496Z ##[debug]..Evaluating String:
+2026-09-25T02:36:24.9848052Z ##[debug]..=> 'token'
+2026-09-25T02:36:24.9859092Z ##[debug]=> '***'
+2026-09-25T02:36:24.9865409Z ##[debug]Result: '***'
+2026-09-25T02:36:24.9883334Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:36:24.9884031Z ##[debug]Evaluating Equal:
+2026-09-25T02:36:24.9885162Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:24.9888030Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:24.9888668Z ##[debug]....=> Object
+2026-09-25T02:36:24.9889206Z ##[debug]....Evaluating String:
+2026-09-25T02:36:24.9889790Z ##[debug]....=> 'debug'
+2026-09-25T02:36:24.9890340Z ##[debug]..=> '1'
+2026-09-25T02:36:24.9894700Z ##[debug]..Evaluating String:
+2026-09-25T02:36:24.9900493Z ##[debug]..=> '1'
+2026-09-25T02:36:24.9901239Z ##[debug]=> true
+2026-09-25T02:36:24.9901789Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:36:24.9902329Z ##[debug]Result: true
+2026-09-25T02:36:24.9913719Z ##[debug]Loading env
+2026-09-25T02:36:24.9924736Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:36:24.9925536Z with:
+2026-09-25T02:36:24.9928570Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_version_updates.cjs'));
+await main();
+
+2026-09-25T02:36:24.9935242Z   github-token: ***
+2026-09-25T02:36:24.9935756Z   debug: true
+2026-09-25T02:36:24.9936447Z   user-agent: actions/github-script
+2026-09-25T02:36:24.9937218Z   result-encoding: json
+2026-09-25T02:36:24.9937715Z   retries: 0
+2026-09-25T02:36:24.9938989Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:36:24.9939638Z env:
+2026-09-25T02:36:24.9940093Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:24.9940763Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:24.9942500Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:24.9944949Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:24.9945634Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:24.9946297Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:24.9947567Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:24.9948167Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:24.9948785Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:24.9949545Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:24.9951011Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:24.9951623Z   GH_AW_COMPILED_VERSION: v0.89.21
+2026-09-25T02:36:24.9952223Z   GH_AW_BLOCKED_VERSION_REPORT_AS_ISSUE: true
+2026-09-25T02:36:24.9952870Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-25T02:36:24.9953469Z ##[endgroup]
+2026-09-25T02:36:25.1870522Z Checking compile-agentic version: v0.89.21
+2026-09-25T02:36:25.1879578Z Fetching update configuration from: https://raw.githubusercontent.com/github/gh-aw-actions/main/.github/aw/compat.json
+2026-09-25T02:36:25.2701930Z ✅ Version check passed: v0.89.21
+2026-09-25T02:36:25.3053970Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:25.3058659Z ##[debug]Set output result = 
+2026-09-25T02:36:25.3061883Z ##[debug]Finishing: Check compile-agentic version

@@ -1,0 +1,170 @@
+﻿2026-09-25T02:36:24.1563343Z ##[debug]Evaluating: github.workflow_ref
+2026-09-25T02:36:24.1564181Z ##[debug]Evaluating Index:
+2026-09-25T02:36:24.1565201Z ##[debug]..Evaluating github:
+2026-09-25T02:36:24.1565905Z ##[debug]..=> Object
+2026-09-25T02:36:24.1566807Z ##[debug]..Evaluating String:
+2026-09-25T02:36:24.1652033Z ##[debug]..=> 'workflow_ref'
+2026-09-25T02:36:24.1653480Z ##[debug]=> 'L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main'
+2026-09-25T02:36:24.1655299Z ##[debug]Result: 'L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main'
+2026-09-25T02:36:24.1659386Z ##[debug]Evaluating condition for step: 'Check workflow lock file'
+2026-09-25T02:36:24.1662577Z ##[debug]Evaluating: success()
+2026-09-25T02:36:24.1663921Z ##[debug]Evaluating success:
+2026-09-25T02:36:24.1664950Z ##[debug]=> true
+2026-09-25T02:36:24.1665735Z ##[debug]Result: true
+2026-09-25T02:36:24.1666789Z ##[debug]Starting: Check workflow lock file
+2026-09-25T02:36:24.1726031Z ##[debug]Loading inputs
+2026-09-25T02:36:24.1730328Z ##[debug]Evaluating: github.token
+2026-09-25T02:36:24.1730959Z ##[debug]Evaluating Index:
+2026-09-25T02:36:24.1731522Z ##[debug]..Evaluating github:
+2026-09-25T02:36:24.1732095Z ##[debug]..=> Object
+2026-09-25T02:36:24.1732612Z ##[debug]..Evaluating String:
+2026-09-25T02:36:24.1733149Z ##[debug]..=> 'token'
+2026-09-25T02:36:24.1737611Z ##[debug]=> '***'
+2026-09-25T02:36:24.1741647Z ##[debug]Result: '***'
+2026-09-25T02:36:24.1748393Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:36:24.1749134Z ##[debug]Evaluating Equal:
+2026-09-25T02:36:24.1749680Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:24.1750227Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:24.1751008Z ##[debug]....=> Object
+2026-09-25T02:36:24.1751534Z ##[debug]....Evaluating String:
+2026-09-25T02:36:24.1752074Z ##[debug]....=> 'debug'
+2026-09-25T02:36:24.1752607Z ##[debug]..=> '1'
+2026-09-25T02:36:24.1753095Z ##[debug]..Evaluating String:
+2026-09-25T02:36:24.1754414Z ##[debug]..=> '1'
+2026-09-25T02:36:24.1755396Z ##[debug]=> true
+2026-09-25T02:36:24.1755909Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:36:24.1756670Z ##[debug]Result: true
+2026-09-25T02:36:24.1764994Z ##[debug]Loading env
+2026-09-25T02:36:24.1774132Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:36:24.1774930Z with:
+2026-09-25T02:36:24.1778737Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'check_workflow_timestamp_api.cjs'));
+await main();
+
+2026-09-25T02:36:24.1789635Z   github-token: ***
+2026-09-25T02:36:24.1790596Z   debug: true
+2026-09-25T02:36:24.1791107Z   user-agent: actions/github-script
+2026-09-25T02:36:24.1791703Z   result-encoding: json
+2026-09-25T02:36:24.1792587Z   retries: 0
+2026-09-25T02:36:24.1793468Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:36:24.1794123Z env:
+2026-09-25T02:36:24.1794577Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:24.1795546Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:24.1798173Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:24.1800356Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:24.1801335Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:24.1802000Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:24.1802560Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:24.1803144Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:24.1804425Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:24.1805191Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:24.1805861Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:24.1807829Z   GH_AW_WORKFLOW_FILE: update-github-info.lock.yml
+2026-09-25T02:36:24.1809613Z   GH_AW_CONTEXT_WORKFLOW_REF: L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main
+2026-09-25T02:36:24.1814384Z ##[endgroup]
+2026-09-25T02:36:24.8923273Z Checking for stale lock file using frontmatter hash:
+2026-09-25T02:36:24.8924159Z   Source: .github/workflows/update-github-info.md
+2026-09-25T02:36:24.8924975Z   Lock file: .github/workflows/update-github-info.lock.yml
+2026-09-25T02:36:24.8926000Z Env workflow ref already identifies this workflow, skipping referenced_workflows API lookup
+2026-09-25T02:36:24.8927869Z GITHUB_WORKFLOW_REF: L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main
+2026-09-25T02:36:24.8930098Z GH_AW_CONTEXT_WORKFLOW_REF: L-Sandler/skills-agentic-workflows-that-read-the-room/.github/workflows/update-github-info.lock.yml@refs/heads/main (available as env fallback)
+2026-09-25T02:36:24.8931823Z GITHUB_REPOSITORY: L-Sandler/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:36:24.8932999Z Resolved source repo: L-Sandler/skills-agentic-workflows-that-read-the-room @ refs/heads/main
+2026-09-25T02:36:24.8934426Z Same-repo invocation: checking out L-Sandler/skills-agentic-workflows-that-read-the-room @ refs/heads/main
+2026-09-25T02:36:24.8935460Z request {
+2026-09-25T02:36:24.8935909Z   method: 'GET',
+2026-09-25T02:36:24.8936439Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:36:24.8937263Z   headers: {
+2026-09-25T02:36:24.8937787Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:36:24.8939212Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.activation.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:36:24.8940902Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:36:24.8941524Z   },
+2026-09-25T02:36:24.8942011Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:36:24.8942642Z   request: {
+2026-09-25T02:36:24.8943103Z     agent: Agent {
+2026-09-25T02:36:24.8943616Z       _events: [Object: null prototype],
+2026-09-25T02:36:24.8944216Z       _eventsCount: 2,
+2026-09-25T02:36:24.8944727Z       _maxListeners: undefined,
+2026-09-25T02:36:24.8945310Z       options: [Object: null prototype],
+2026-09-25T02:36:24.8945917Z       defaultPort: 443,
+2026-09-25T02:36:24.8946481Z       protocol: 'https:',
+2026-09-25T02:36:24.8947217Z       requests: [Object: null prototype] {},
+2026-09-25T02:36:24.8947880Z       sockets: [Object: null prototype] {},
+2026-09-25T02:36:24.8948543Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:36:24.8949206Z       keepAliveMsecs: 1000,
+2026-09-25T02:36:24.8949767Z       keepAlive: false,
+2026-09-25T02:36:24.8950285Z       maxSockets: 100,
+2026-09-25T02:36:24.8950795Z       maxFreeSockets: 256,
+2026-09-25T02:36:24.8951332Z       scheduling: 'lifo',
+2026-09-25T02:36:24.8951864Z       maxTotalSockets: Infinity,
+2026-09-25T02:36:24.8952460Z       totalSocketCount: 0,
+2026-09-25T02:36:24.8953039Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:36:24.8953661Z       maxCachedSessions: 100,
+2026-09-25T02:36:24.8954227Z       _sessionCache: [Object],
+2026-09-25T02:36:24.8954780Z       Symbol(shapeMode): false,
+2026-09-25T02:36:24.8955336Z       Symbol(kCapture): false
+2026-09-25T02:36:24.8955854Z     },
+2026-09-25T02:36:24.8956316Z     fetch: [Function: proxyFetch],
+2026-09-25T02:36:24.8956918Z     hook: [Function: bound bound register]
+2026-09-25T02:36:24.8957696Z   },
+2026-09-25T02:36:24.8958191Z   url: '/repos/{owner}/{repo}/contents/{path}',
+2026-09-25T02:36:24.8958841Z   owner: 'L-Sandler',
+2026-09-25T02:36:24.8959442Z   repo: 'skills-agentic-workflows-that-read-the-room',
+2026-09-25T02:36:24.8960245Z   path: '.github/workflows/update-github-info.lock.yml',
+2026-09-25T02:36:24.8965190Z   ref: 'refs/heads/main'
+2026-09-25T02:36:24.8971383Z }
+2026-09-25T02:36:24.8974237Z GET /repos/L-Sandler/skills-agentic-workflows-that-read-the-room/contents/.github%2Fworkflows%2Fupdate-github-info.lock.yml?ref=refs%2Fheads%2Fmain - 200 with id 1900:521F8:4F8142:102F32F:6AB5DE28 in 305ms
+2026-09-25T02:36:24.8976555Z request {
+2026-09-25T02:36:24.8977714Z   method: 'GET',
+2026-09-25T02:36:24.8981722Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:36:24.8989594Z   headers: {
+2026-09-25T02:36:24.8990162Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:36:24.8991536Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.activation.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:36:24.8992864Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:36:24.8993444Z   },
+2026-09-25T02:36:24.8993933Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:36:24.8994562Z   request: {
+2026-09-25T02:36:24.8996732Z     agent: Agent {
+2026-09-25T02:36:24.8997839Z       _events: [Object: null prototype],
+2026-09-25T02:36:24.8998460Z       _eventsCount: 2,
+2026-09-25T02:36:24.8999296Z       _maxListeners: undefined,
+2026-09-25T02:36:24.8999887Z       options: [Object: null prototype],
+2026-09-25T02:36:24.9000477Z       defaultPort: 443,
+2026-09-25T02:36:24.9002664Z       protocol: 'https:',
+2026-09-25T02:36:24.9003319Z       requests: [Object: null prototype] {},
+2026-09-25T02:36:24.9003973Z       sockets: [Object: null prototype] {},
+2026-09-25T02:36:24.9004626Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:36:24.9005263Z       keepAliveMsecs: 1000,
+2026-09-25T02:36:24.9005793Z       keepAlive: false,
+2026-09-25T02:36:24.9006294Z       maxSockets: 100,
+2026-09-25T02:36:24.9007713Z       maxFreeSockets: 256,
+2026-09-25T02:36:24.9008270Z       scheduling: 'lifo',
+2026-09-25T02:36:24.9008800Z       maxTotalSockets: Infinity,
+2026-09-25T02:36:24.9009841Z       totalSocketCount: 0,
+2026-09-25T02:36:24.9010416Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:36:24.9011027Z       maxCachedSessions: 100,
+2026-09-25T02:36:24.9011578Z       _sessionCache: [Object],
+2026-09-25T02:36:24.9012154Z       Symbol(shapeMode): false,
+2026-09-25T02:36:24.9013642Z       Symbol(kCapture): false
+2026-09-25T02:36:24.9014181Z     },
+2026-09-25T02:36:24.9014652Z     fetch: [Function: proxyFetch],
+2026-09-25T02:36:24.9015797Z     hook: [Function: bound bound register]
+2026-09-25T02:36:24.9018992Z   },
+2026-09-25T02:36:24.9020516Z   url: '/repos/{owner}/{repo}/contents/{path}',
+2026-09-25T02:36:24.9021199Z   owner: 'L-Sandler',
+2026-09-25T02:36:24.9022416Z   repo: 'skills-agentic-workflows-that-read-the-room',
+2026-09-25T02:36:24.9023196Z   path: '.github/workflows/update-github-info.md',
+2026-09-25T02:36:24.9026348Z   ref: 'refs/heads/main'
+2026-09-25T02:36:24.9039484Z }
+2026-09-25T02:36:24.9273789Z GET /repos/L-Sandler/skills-agentic-workflows-that-read-the-room/contents/.github%2Fworkflows%2Fupdate-github-info.md?ref=refs%2Fheads%2Fmain - 200 with id 1900:AAB76:21CA706:6EDC2E0:6AB5DE28 in 212ms
+2026-09-25T02:36:24.9332079Z Frontmatter hash comparison:
+2026-09-25T02:36:24.9337535Z   Lock file hash:    4077c15febcac16b008a26e3d41cb99bb804056884caa7a27b57aa24694a6f80
+2026-09-25T02:36:24.9343468Z   Recomputed hash:   4077c15febcac16b008a26e3d41cb99bb804056884caa7a27b57aa24694a6f80
+2026-09-25T02:36:24.9346270Z   Status: ✅ Hashes match
+2026-09-25T02:36:24.9349513Z ✅ Lock file is up to date (hashes match)
+2026-09-25T02:36:24.9684016Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:24.9688039Z ##[debug]Set output result = 
+2026-09-25T02:36:24.9690164Z ##[debug]Finishing: Check workflow lock file
