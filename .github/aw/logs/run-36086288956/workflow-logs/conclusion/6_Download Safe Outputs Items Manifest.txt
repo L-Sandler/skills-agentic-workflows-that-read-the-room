@@ -1,0 +1,117 @@
+﻿2026-09-25T02:38:40.8149196Z ##[debug]Evaluating condition for step: 'Download Safe Outputs Items Manifest'
+2026-09-25T02:38:40.8155858Z ##[debug]Evaluating: always()
+2026-09-25T02:38:40.8157316Z ##[debug]Evaluating always:
+2026-09-25T02:38:40.8159187Z ##[debug]=> true
+2026-09-25T02:38:40.8160419Z ##[debug]Result: true
+2026-09-25T02:38:40.8162313Z ##[debug]Starting: Download Safe Outputs Items Manifest
+2026-09-25T02:38:40.8243415Z ##[debug]Loading inputs
+2026-09-25T02:38:40.8251412Z ##[debug]Evaluating: github.repository
+2026-09-25T02:38:40.8252323Z ##[debug]Evaluating Index:
+2026-09-25T02:38:40.8253773Z ##[debug]..Evaluating github:
+2026-09-25T02:38:40.8254460Z ##[debug]..=> Object
+2026-09-25T02:38:40.8255307Z ##[debug]..Evaluating String:
+2026-09-25T02:38:40.8255932Z ##[debug]..=> 'repository'
+2026-09-25T02:38:40.8256748Z ##[debug]=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:40.8258677Z ##[debug]Result: 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:40.8262560Z ##[debug]Evaluating: github.run_id
+2026-09-25T02:38:40.8263627Z ##[debug]Evaluating Index:
+2026-09-25T02:38:40.8264325Z ##[debug]..Evaluating github:
+2026-09-25T02:38:40.8265291Z ##[debug]..=> Object
+2026-09-25T02:38:40.8265948Z ##[debug]..Evaluating String:
+2026-09-25T02:38:40.8267439Z ##[debug]..=> 'run_id'
+2026-09-25T02:38:40.8268448Z ##[debug]=> '36086288956'
+2026-09-25T02:38:40.8269392Z ##[debug]Result: '36086288956'
+2026-09-25T02:38:40.8276631Z ##[debug]Loading env
+2026-09-25T02:38:40.8371279Z ##[group]Run actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
+2026-09-25T02:38:40.8372185Z with:
+2026-09-25T02:38:40.8372944Z   pattern: safe-outputs-items
+2026-09-25T02:38:40.8373550Z   merge-multiple: true
+2026-09-25T02:38:40.8374318Z   path: /tmp/gh-aw/
+2026-09-25T02:38:40.8375035Z   repository: L-Sandler/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:38:40.8376166Z   run-id: 36086288956
+2026-09-25T02:38:40.8376694Z   skip-decompress: false
+2026-09-25T02:38:40.8377719Z   digest-mismatch: error
+2026-09-25T02:38:40.8378262Z env:
+2026-09-25T02:38:40.8378728Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:40.8379620Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:40.8381847Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:40.8384079Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:40.8384707Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:40.8385636Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:40.8386207Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:40.8387239Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:40.8388031Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 434ff0d3ad0b9735
+2026-09-25T02:38:40.8389020Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303919335
+2026-09-25T02:38:40.8389890Z ##[endgroup]
+2026-09-25T02:38:41.0693004Z ##[debug]Resolved path is /tmp/gh-aw
+2026-09-25T02:38:41.0714014Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:38:41.0719942Z ##[debug]Workflow Job Run Backend ID: a57eb08e-9323-5d76-b3b9-4709c9cd7cf5
+2026-09-25T02:38:41.0734215Z ##[debug][Request] ListArtifacts https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/ListArtifacts
+2026-09-25T02:38:41.1598774Z ##[debug][Response] - 200
+2026-09-25T02:38:41.1605330Z ##[debug]Headers: {
+2026-09-25T02:38:41.1605907Z ##[debug]  "content-length": "1600",
+2026-09-25T02:38:41.1606585Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:38:41.1607856Z ##[debug]  "date": "Fri, 25 Sep 2026 02:38:41 GMT",
+2026-09-25T02:38:41.1608579Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:38:41.1609388Z ##[debug]  "x-github-request-id": "162A:31005:179A431:1AC4F55:6AB5DEB1",
+2026-09-25T02:38:41.1610178Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:38:41.1610811Z ##[debug]  "server": "github.com"
+2026-09-25T02:38:41.1611935Z ##[debug]}
+2026-09-25T02:38:41.1616629Z ##[debug]Body: {
+2026-09-25T02:38:41.1617465Z ##[debug]  "artifacts": [
+2026-09-25T02:38:41.1618008Z ##[debug]    {
+2026-09-25T02:38:41.1618705Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:38:41.1619738Z ##[debug]      "workflow_job_run_backend_id": "e3aaf996-3bc0-5167-8880-1350e20db4d4",
+2026-09-25T02:38:41.1620618Z ##[debug]      "database_id": "10843718601",
+2026-09-25T02:38:41.1621261Z ##[debug]      "name": "activation",
+2026-09-25T02:38:41.1622378Z ##[debug]      "size": "656666",
+2026-09-25T02:38:41.1623107Z ##[debug]      "created_at": "2026-09-25T02:36:28Z",
+2026-09-25T02:38:41.1624534Z ##[debug]      "digest": "sha256:4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5"
+2026-09-25T02:38:41.1625836Z ##[debug]    },
+2026-09-25T02:38:41.1626339Z ##[debug]    {
+2026-09-25T02:38:41.1627994Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:38:41.1629369Z ##[debug]      "workflow_job_run_backend_id": "b38175f5-4189-590e-8cc8-915edd5cb39f",
+2026-09-25T02:38:41.1630488Z ##[debug]      "database_id": "10843937054",
+2026-09-25T02:38:41.1631332Z ##[debug]      "name": "detection",
+2026-09-25T02:38:41.1632184Z ##[debug]      "size": "571",
+2026-09-25T02:38:41.1632787Z ##[debug]      "created_at": "2026-09-25T02:38:18Z",
+2026-09-25T02:38:41.1634248Z ##[debug]      "digest": "sha256:ebcc59977be3c3a0f1188f79a90e3935fc66e77b9ec57f8aa0d1fa0be27884a1"
+2026-09-25T02:38:41.1635483Z ##[debug]    },
+2026-09-25T02:38:41.1636193Z ##[debug]    {
+2026-09-25T02:38:41.1636864Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:38:41.1638270Z ##[debug]      "workflow_job_run_backend_id": "e3aaf996-3bc0-5167-8880-1350e20db4d4",
+2026-09-25T02:38:41.1639349Z ##[debug]      "database_id": "10844415900",
+2026-09-25T02:38:41.1639987Z ##[debug]      "name": "info",
+2026-09-25T02:38:41.1640790Z ##[debug]      "size": "609",
+2026-09-25T02:38:41.1641406Z ##[debug]      "created_at": "2026-09-25T02:36:27Z",
+2026-09-25T02:38:41.1642933Z ##[debug]      "digest": "sha256:8bfc5672e8d56092e625d4c5038d730e8666b4e106fdd3b8a073bbe301e6da8e"
+2026-09-25T02:38:41.1644173Z ##[debug]    },
+2026-09-25T02:38:41.1644888Z ##[debug]    {
+2026-09-25T02:38:41.1645633Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:38:41.1647044Z ##[debug]      "workflow_job_run_backend_id": "c66b0db7-8949-5166-baec-97b683163e62",
+2026-09-25T02:38:41.1648147Z ##[debug]      "database_id": "10844516763",
+2026-09-25T02:38:41.1648806Z ##[debug]      "name": "agent-output-fallback",
+2026-09-25T02:38:41.1649695Z ##[debug]      "size": "584",
+2026-09-25T02:38:41.1650292Z ##[debug]      "created_at": "2026-09-25T02:37:43Z",
+2026-09-25T02:38:41.1651476Z ##[debug]      "digest": "sha256:bcfeb055d526faa591c4f837e62fc538aab511655d6df66316e8780695eff8c7"
+2026-09-25T02:38:41.1652640Z ##[debug]    },
+2026-09-25T02:38:41.1653120Z ##[debug]    {
+2026-09-25T02:38:41.1654030Z ##[debug]      "workflow_run_backend_id": "9463978c-7030-4598-924f-edd18d8c6a83",
+2026-09-25T02:38:41.1655271Z ##[debug]      "workflow_job_run_backend_id": "c66b0db7-8949-5166-baec-97b683163e62",
+2026-09-25T02:38:41.1656370Z ##[debug]      "database_id": "10844740953",
+2026-09-25T02:38:41.1657130Z ##[debug]      "name": "agent",
+2026-09-25T02:38:41.1658006Z ##[debug]      "size": "111719",
+2026-09-25T02:38:41.1658654Z ##[debug]      "created_at": "2026-09-25T02:37:44Z",
+2026-09-25T02:38:41.1659874Z ##[debug]      "digest": "sha256:2777a80fb36e66d98cbb21a41d74697adba2d1cd3bf73a405ab99dfd5efe67ca"
+2026-09-25T02:38:41.1661057Z ##[debug]    }
+2026-09-25T02:38:41.1661784Z ##[debug]  ]
+2026-09-25T02:38:41.1662320Z ##[debug]}
+2026-09-25T02:38:41.1702954Z Found 5 artifact(s)
+2026-09-25T02:38:41.1704056Z ##[debug]Found 5 artifacts in run
+2026-09-25T02:38:41.1704774Z Filtering artifacts by pattern 'safe-outputs-items'
+2026-09-25T02:38:41.1730811Z ##[debug]Filtered from 5 to 0 artifacts
+2026-09-25T02:38:41.1734375Z Total of 0 artifact(s) downloaded
+2026-09-25T02:38:41.1741635Z Download artifact has finished successfully
+2026-09-25T02:38:41.1795632Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:41.1799794Z ##[debug]Set output download-path = /tmp/gh-aw
+2026-09-25T02:38:41.1802340Z ##[debug]Finishing: Download Safe Outputs Items Manifest

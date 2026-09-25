@@ -1,0 +1,31 @@
+﻿2026-09-25T02:36:24.1265325Z ##[debug]Evaluating condition for step: 'Save agent config folders for base branch restoration'
+2026-09-25T02:36:24.1270649Z ##[debug]Evaluating: success()
+2026-09-25T02:36:24.1271985Z ##[debug]Evaluating success:
+2026-09-25T02:36:24.1274984Z ##[debug]=> true
+2026-09-25T02:36:24.1276733Z ##[debug]Result: true
+2026-09-25T02:36:24.1278625Z ##[debug]Starting: Save agent config folders for base branch restoration
+2026-09-25T02:36:24.1307330Z ##[debug]Loading inputs
+2026-09-25T02:36:24.1309408Z ##[debug]Loading env
+2026-09-25T02:36:24.1322525Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/save_base_github_folders.sh"
+2026-09-25T02:36:24.1324024Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/save_base_github_folders.sh"[0m
+2026-09-25T02:36:24.1335756Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:36:24.1336335Z env:
+2026-09-25T02:36:24.1337716Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:24.1338370Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:24.1345279Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:24.1347406Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:24.1349029Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:24.1349706Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:24.1350518Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:24.1351623Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:24.1352966Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:24.1354605Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:24.1355309Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:24.1356417Z   GH_AW_AGENT_FOLDERS: .agents .github
+2026-09-25T02:36:24.1357618Z   GH_AW_AGENT_FILES: AGENTS.md
+2026-09-25T02:36:24.1358188Z ##[endgroup]
+2026-09-25T02:36:24.1371826Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/141add49-dc46-412f-80a8-379c2e811b94.sh
+2026-09-25T02:36:24.1501982Z .agents not found in workspace, skipping
+2026-09-25T02:36:24.1503938Z Saved .github to /tmp/gh-aw/base/.github
+2026-09-25T02:36:24.1504701Z AGENTS.md not found in workspace, skipping
+2026-09-25T02:36:24.1511084Z ##[debug]Finishing: Save agent config folders for base branch restoration

@@ -1,0 +1,486 @@
+﻿2026-09-25T02:37:16.7079593Z ##[debug]Evaluating: secrets.COPILOT_GITHUB_TOKEN
+2026-09-25T02:37:16.7080011Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7080275Z ##[debug]..Evaluating secrets:
+2026-09-25T02:37:16.7080551Z ##[debug]..=> Object
+2026-09-25T02:37:16.7080799Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7081070Z ##[debug]..=> 'COPILOT_GITHUB_TOKEN'
+2026-09-25T02:37:16.7081722Z ##[debug]=> '***'
+2026-09-25T02:37:16.7082277Z ##[debug]Result: '***'
+2026-09-25T02:37:16.7082930Z ##[debug]Evaluating: (vars.GH_AW_MODEL_AGENT_COPILOT || vars.GH_AW_DEFAULT_MODEL_COPILOT || 'auto')
+2026-09-25T02:37:16.7083428Z ##[debug]Evaluating Or:
+2026-09-25T02:37:16.7083688Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7083950Z ##[debug]....Evaluating vars:
+2026-09-25T02:37:16.7084209Z ##[debug]....=> Object
+2026-09-25T02:37:16.7084445Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7084726Z ##[debug]....=> 'GH_AW_MODEL_AGENT_COPILOT'
+2026-09-25T02:37:16.7085031Z ##[debug]..=> null
+2026-09-25T02:37:16.7085271Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7085552Z ##[debug]....Evaluating vars:
+2026-09-25T02:37:16.7085805Z ##[debug]....=> Object
+2026-09-25T02:37:16.7086038Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7086315Z ##[debug]....=> 'GH_AW_DEFAULT_MODEL_COPILOT'
+2026-09-25T02:37:16.7086610Z ##[debug]..=> null
+2026-09-25T02:37:16.7086835Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7087083Z ##[debug]..=> 'auto'
+2026-09-25T02:37:16.7087309Z ##[debug]=> 'auto'
+2026-09-25T02:37:16.7087751Z ##[debug]Expanded: (null || null || 'auto')
+2026-09-25T02:37:16.7088051Z ##[debug]Result: 'auto'
+2026-09-25T02:37:16.7088490Z ##[debug]Evaluating: (vars.GH_AW_DEFAULT_MAX_AI_CREDITS || '1000')
+2026-09-25T02:37:16.7088863Z ##[debug]Evaluating Or:
+2026-09-25T02:37:16.7089114Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7089388Z ##[debug]....Evaluating vars:
+2026-09-25T02:37:16.7089647Z ##[debug]....=> Object
+2026-09-25T02:37:16.7089880Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7090160Z ##[debug]....=> 'GH_AW_DEFAULT_MAX_AI_CREDITS'
+2026-09-25T02:37:16.7090641Z ##[debug]..=> null
+2026-09-25T02:37:16.7090869Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7091117Z ##[debug]..=> '1000'
+2026-09-25T02:37:16.7091340Z ##[debug]=> '1000'
+2026-09-25T02:37:16.7091592Z ##[debug]Expanded: (null || '1000')
+2026-09-25T02:37:16.7091863Z ##[debug]Result: '1000'
+2026-09-25T02:37:16.7092245Z ##[debug]Evaluating: (vars.GH_AW_DEFAULT_MAX_TURNS || '')
+2026-09-25T02:37:16.7092576Z ##[debug]Evaluating Or:
+2026-09-25T02:37:16.7092810Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7093060Z ##[debug]....Evaluating vars:
+2026-09-25T02:37:16.7093306Z ##[debug]....=> Object
+2026-09-25T02:37:16.7093543Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7093808Z ##[debug]....=> 'GH_AW_DEFAULT_MAX_TURNS'
+2026-09-25T02:37:16.7094086Z ##[debug]..=> null
+2026-09-25T02:37:16.7094308Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7094550Z ##[debug]..=> ''
+2026-09-25T02:37:16.7094768Z ##[debug]=> ''
+2026-09-25T02:37:16.7094996Z ##[debug]Expanded: (null || '')
+2026-09-25T02:37:16.7095256Z ##[debug]Result: ''
+2026-09-25T02:37:16.7095688Z ##[debug]Evaluating: steps.set-runtime-paths.outputs.GH_AW_SAFE_OUTPUTS
+2026-09-25T02:37:16.7096092Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7096354Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7096615Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:16.7096878Z ##[debug]......Evaluating steps:
+2026-09-25T02:37:16.7097143Z ##[debug]......=> Object
+2026-09-25T02:37:16.7097393Z ##[debug]......Evaluating String:
+2026-09-25T02:37:16.7097935Z ##[debug]......=> 'set-runtime-paths'
+2026-09-25T02:37:16.7098227Z ##[debug]....=> Object
+2026-09-25T02:37:16.7098475Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7098744Z ##[debug]....=> 'outputs'
+2026-09-25T02:37:16.7098997Z ##[debug]..=> Object
+2026-09-25T02:37:16.7099235Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7099502Z ##[debug]..=> 'GH_AW_SAFE_OUTPUTS'
+2026-09-25T02:37:16.7099870Z ##[debug]=> '/home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl'
+2026-09-25T02:37:16.7100560Z ##[debug]Result: '/home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl'
+2026-09-25T02:37:16.7101359Z ##[debug]Evaluating: fromJSON((vars.GH_AW_DEFAULT_TIMEOUT_MINUTES || '20'))
+2026-09-25T02:37:16.7101765Z ##[debug]Evaluating fromJSON:
+2026-09-25T02:37:16.7102038Z ##[debug]..Evaluating Or:
+2026-09-25T02:37:16.7102289Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:16.7102548Z ##[debug]......Evaluating vars:
+2026-09-25T02:37:16.7102808Z ##[debug]......=> Object
+2026-09-25T02:37:16.7103065Z ##[debug]......Evaluating String:
+2026-09-25T02:37:16.7103365Z ##[debug]......=> 'GH_AW_DEFAULT_TIMEOUT_MINUTES'
+2026-09-25T02:37:16.7103666Z ##[debug]....=> null
+2026-09-25T02:37:16.7103904Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7104150Z ##[debug]....=> '20'
+2026-09-25T02:37:16.7104372Z ##[debug]..=> '20'
+2026-09-25T02:37:16.7108415Z ##[debug]=> 20
+2026-09-25T02:37:16.7108722Z ##[debug]Result: 20
+2026-09-25T02:37:16.7109194Z ##[debug]Evaluating: github.api_url
+2026-09-25T02:37:16.7109507Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7109786Z ##[debug]..Evaluating github:
+2026-09-25T02:37:16.7110061Z ##[debug]..=> Object
+2026-09-25T02:37:16.7110315Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7110586Z ##[debug]..=> 'api_url'
+2026-09-25T02:37:16.7110864Z ##[debug]=> 'https://api.github.com'
+2026-09-25T02:37:16.7111192Z ##[debug]Result: 'https://api.github.com'
+2026-09-25T02:37:16.7111581Z ##[debug]Evaluating: github.head_ref
+2026-09-25T02:37:16.7111860Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7112121Z ##[debug]..Evaluating github:
+2026-09-25T02:37:16.7112372Z ##[debug]..=> Object
+2026-09-25T02:37:16.7112607Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7112858Z ##[debug]..=> 'head_ref'
+2026-09-25T02:37:16.7113102Z ##[debug]=> ''
+2026-09-25T02:37:16.7113319Z ##[debug]Result: ''
+2026-09-25T02:37:16.7113917Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN || secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-09-25T02:37:16.7114434Z ##[debug]Evaluating Or:
+2026-09-25T02:37:16.7114912Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7115174Z ##[debug]....Evaluating secrets:
+2026-09-25T02:37:16.7115439Z ##[debug]....=> Object
+2026-09-25T02:37:16.7115680Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7115969Z ##[debug]....=> 'GH_AW_GITHUB_MCP_SERVER_TOKEN'
+2026-09-25T02:37:16.7116275Z ##[debug]..=> null
+2026-09-25T02:37:16.7116510Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7116767Z ##[debug]....Evaluating secrets:
+2026-09-25T02:37:16.7117026Z ##[debug]....=> Object
+2026-09-25T02:37:16.7117257Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7117813Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-09-25T02:37:16.7118152Z ##[debug]..=> null
+2026-09-25T02:37:16.7118394Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:16.7118659Z ##[debug]....Evaluating secrets:
+2026-09-25T02:37:16.7118917Z ##[debug]....=> Object
+2026-09-25T02:37:16.7119173Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7119432Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-09-25T02:37:16.7121841Z ##[debug]..=> '***'
+2026-09-25T02:37:16.7124158Z ##[debug]=> '***'
+2026-09-25T02:37:16.7126533Z ##[debug]Expanded: (null || null || '***')
+2026-09-25T02:37:16.7129023Z ##[debug]Result: '***'
+2026-09-25T02:37:16.7129399Z ##[debug]Evaluating: github.ref_name
+2026-09-25T02:37:16.7129699Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7129969Z ##[debug]..Evaluating github:
+2026-09-25T02:37:16.7130241Z ##[debug]..=> Object
+2026-09-25T02:37:16.7130483Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7130748Z ##[debug]..=> 'ref_name'
+2026-09-25T02:37:16.7131001Z ##[debug]=> 'main'
+2026-09-25T02:37:16.7131244Z ##[debug]Result: 'main'
+2026-09-25T02:37:16.7131567Z ##[debug]Evaluating: github.server_url
+2026-09-25T02:37:16.7131866Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7132114Z ##[debug]..Evaluating github:
+2026-09-25T02:37:16.7132374Z ##[debug]..=> Object
+2026-09-25T02:37:16.7132607Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7132864Z ##[debug]..=> 'server_url'
+2026-09-25T02:37:16.7133139Z ##[debug]=> 'https://github.com'
+2026-09-25T02:37:16.7133656Z ##[debug]Result: 'https://github.com'
+2026-09-25T02:37:16.7134018Z ##[debug]Evaluating: github.workspace
+2026-09-25T02:37:16.7134319Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7134589Z ##[debug]..Evaluating github:
+2026-09-25T02:37:16.7134853Z ##[debug]..=> Object
+2026-09-25T02:37:16.7135096Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7135361Z ##[debug]..=> 'workspace'
+2026-09-25T02:37:16.7135934Z ##[debug]=> '/home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:37:16.7136825Z ##[debug]Result: '/home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:37:16.7137690Z ##[debug]Evaluating: runner.temp
+2026-09-25T02:37:16.7138027Z ##[debug]Evaluating Index:
+2026-09-25T02:37:16.7138289Z ##[debug]..Evaluating runner:
+2026-09-25T02:37:16.7138557Z ##[debug]..=> Object
+2026-09-25T02:37:16.7138795Z ##[debug]..Evaluating String:
+2026-09-25T02:37:16.7139060Z ##[debug]..=> 'temp'
+2026-09-25T02:37:16.7139319Z ##[debug]=> '/home/runner/work/_temp'
+2026-09-25T02:37:16.7139628Z ##[debug]Result: '/home/runner/work/_temp'
+2026-09-25T02:37:16.7141860Z ##[debug]Evaluating: (((env.GITHUB_AW_OTEL_TRACE_ID != '') && (env.GITHUB_AW_OTEL_PARENT_SPAN_ID != '') && format('00-{0}-{1}-01', env.GITHUB_AW_OTEL_TRACE_ID, env.GITHUB_AW_OTEL_PARENT_SPAN_ID)) || '')
+2026-09-25T02:37:16.7142586Z ##[debug]Evaluating Or:
+2026-09-25T02:37:16.7142876Z ##[debug]..Evaluating And:
+2026-09-25T02:37:16.7143183Z ##[debug]....Evaluating NotEqual:
+2026-09-25T02:37:16.7144158Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:16.7144434Z ##[debug]........Evaluating env:
+2026-09-25T02:37:16.7144721Z ##[debug]........=> Object
+2026-09-25T02:37:16.7144986Z ##[debug]........Evaluating String:
+2026-09-25T02:37:16.7145296Z ##[debug]........=> 'GITHUB_AW_OTEL_TRACE_ID'
+2026-09-25T02:37:16.7146917Z ##[debug]......=> '3c8c32e738303c7a8313802e4ab455aa'
+2026-09-25T02:37:16.7147285Z ##[debug]......Evaluating String:
+2026-09-25T02:37:16.7147978Z ##[debug]......=> ''
+2026-09-25T02:37:16.7148584Z ##[debug]....=> true
+2026-09-25T02:37:16.7148979Z ##[debug]....Evaluating NotEqual:
+2026-09-25T02:37:16.7149257Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:16.7149524Z ##[debug]........Evaluating env:
+2026-09-25T02:37:16.7149803Z ##[debug]........=> Object
+2026-09-25T02:37:16.7150074Z ##[debug]........Evaluating String:
+2026-09-25T02:37:16.7150402Z ##[debug]........=> 'GITHUB_AW_OTEL_PARENT_SPAN_ID'
+2026-09-25T02:37:16.7150790Z ##[debug]......=> 'bef8a0ae1b4a817c'
+2026-09-25T02:37:16.7151090Z ##[debug]......Evaluating String:
+2026-09-25T02:37:16.7151355Z ##[debug]......=> ''
+2026-09-25T02:37:16.7151586Z ##[debug]....=> true
+2026-09-25T02:37:16.7151824Z ##[debug]....Evaluating format:
+2026-09-25T02:37:16.7152094Z ##[debug]......Evaluating String:
+2026-09-25T02:37:16.7152363Z ##[debug]......=> '00-{0}-{1}-01'
+2026-09-25T02:37:16.7152736Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:16.7153028Z ##[debug]........Evaluating env:
+2026-09-25T02:37:16.7153293Z ##[debug]........=> Object
+2026-09-25T02:37:16.7153558Z ##[debug]........Evaluating String:
+2026-09-25T02:37:16.7153870Z ##[debug]........=> 'GITHUB_AW_OTEL_TRACE_ID'
+2026-09-25T02:37:16.7154221Z ##[debug]......=> '3c8c32e738303c7a8313802e4ab455aa'
+2026-09-25T02:37:16.7154574Z ##[debug]......Evaluating Index:
+2026-09-25T02:37:16.7154853Z ##[debug]........Evaluating env:
+2026-09-25T02:37:16.7155121Z ##[debug]........=> Object
+2026-09-25T02:37:16.7155381Z ##[debug]........Evaluating String:
+2026-09-25T02:37:16.7155695Z ##[debug]........=> 'GITHUB_AW_OTEL_PARENT_SPAN_ID'
+2026-09-25T02:37:16.7156022Z ##[debug]......=> 'bef8a0ae1b4a817c'
+2026-09-25T02:37:16.7156425Z ##[debug]....=> '00-3c8c32e738303c7a8313802e4ab455aa-bef8a0ae1b4a817c-01'
+2026-09-25T02:37:16.7156896Z ##[debug]..=> '00-3c8c32e738303c7a8313802e4ab455aa-bef8a0ae1b4a817c-01'
+2026-09-25T02:37:16.7157341Z ##[debug]=> '00-3c8c32e738303c7a8313802e4ab455aa-bef8a0ae1b4a817c-01'
+2026-09-25T02:37:16.7159702Z ##[debug]Expanded: ((('3c8c32e738303c7a8313802e4ab455aa' != '') && ('bef8a0ae1b4a817c' != '') && '00-3c8c32e738303c7a8313802e4ab455aa-bef8a0ae1b4a817c-01') || '')
+2026-09-25T02:37:16.7160456Z ##[debug]Result: '00-3c8c32e738303c7a8313802e4ab455aa-bef8a0ae1b4a817c-01'
+2026-09-25T02:37:16.7161159Z ##[debug]Evaluating condition for step: 'Execute GitHub Copilot CLI'
+2026-09-25T02:37:16.7162449Z ##[debug]Evaluating: success()
+2026-09-25T02:37:16.7162847Z ##[debug]Evaluating success:
+2026-09-25T02:37:16.7163248Z ##[debug]=> true
+2026-09-25T02:37:16.7163650Z ##[debug]Result: true
+2026-09-25T02:37:16.7164175Z ##[debug]Starting: Execute GitHub Copilot CLI
+2026-09-25T02:37:16.7165126Z ##[debug]Evaluating: fromJSON((vars.GH_AW_DEFAULT_TIMEOUT_MINUTES || '20'))
+2026-09-25T02:37:16.7165549Z ##[debug]Evaluating fromJSON:
+2026-09-25T02:37:16.7165826Z ##[debug]..Evaluating Or:
+2026-09-25T02:37:16.7166088Z ##[debug]....Evaluating Index:
+2026-09-25T02:37:16.7166358Z ##[debug]......Evaluating vars:
+2026-09-25T02:37:16.7166636Z ##[debug]......=> Object
+2026-09-25T02:37:16.7166906Z ##[debug]......Evaluating String:
+2026-09-25T02:37:16.7167214Z ##[debug]......=> 'GH_AW_DEFAULT_TIMEOUT_MINUTES'
+2026-09-25T02:37:16.7167834Z ##[debug]....=> null
+2026-09-25T02:37:16.7168113Z ##[debug]....Evaluating String:
+2026-09-25T02:37:16.7168381Z ##[debug]....=> '20'
+2026-09-25T02:37:16.7168615Z ##[debug]..=> '20'
+2026-09-25T02:37:16.7169563Z ##[debug]=> 20
+2026-09-25T02:37:16.7169802Z ##[debug]Result: 20
+2026-09-25T02:37:16.7182967Z ##[debug]Loading inputs
+2026-09-25T02:37:16.7183926Z ##[debug]Loading env
+2026-09-25T02:37:16.7188139Z ##[group]Run set -o pipefail
+2026-09-25T02:37:16.7188518Z [36;1mset -o pipefail[0m
+2026-09-25T02:37:16.7188867Z [36;1mprintf '%s' "$(date +%s%3N)" > /tmp/gh-aw/agent_cli_start_ms.txt[0m
+2026-09-25T02:37:16.7190054Z [36;1mtrap 'gh_aw_exit_code=$?; mkdir -p /tmp/gh-aw >/dev/null 2>&1 || true; printf "%s" "$gh_aw_exit_code" > /tmp/gh-aw/agent_execution_exit_code.txt || true; rm -f "$HOME/.copilot/settings.json"; if [ "$gh_aw_exit_code" -ne 0 ]; then echo "::error::Agent execution exited with code $gh_aw_exit_code"; fi' EXIT[0m
+2026-09-25T02:37:16.7191299Z [36;1mmkdir -p "$HOME/.copilot"[0m
+2026-09-25T02:37:16.7191751Z [36;1mprintf '%s' '{"builtInAgents":{"rubberDuck":false}}' > "$HOME/.copilot/settings.json"[0m
+2026-09-25T02:37:16.7192206Z [36;1mexport XDG_CONFIG_HOME="$HOME"[0m
+2026-09-25T02:37:16.7192577Z [36;1mexport GH_AW_MCP_CONFIG="$HOME/.copilot/mcp-config.json"[0m
+2026-09-25T02:37:16.7193017Z [36;1mGH_AW_COPILOT_SRC="$(command -v copilot 2>/dev/null || true)"[0m
+2026-09-25T02:37:16.7193488Z [36;1mif [ -z "$GH_AW_COPILOT_SRC" ] || [ ! -x "$GH_AW_COPILOT_SRC" ]; then[0m
+2026-09-25T02:37:16.7194008Z [36;1m  echo "GitHub Copilot CLI executable not found on PATH after installation" >&2[0m
+2026-09-25T02:37:16.7194440Z [36;1m  exit 127[0m
+2026-09-25T02:37:16.7194673Z [36;1mfi[0m
+2026-09-25T02:37:16.7194958Z [36;1mGH_AW_COPILOT_BIN="${RUNNER_TEMP}/gh-aw/bin/copilot"[0m
+2026-09-25T02:37:16.7195335Z [36;1mmkdir -p "${RUNNER_TEMP}/gh-aw/bin"[0m
+2026-09-25T02:37:16.7195714Z [36;1mif [ "$GH_AW_COPILOT_SRC" != "$GH_AW_COPILOT_BIN" ]; then[0m
+2026-09-25T02:37:16.7196105Z [36;1m  cp "$GH_AW_COPILOT_SRC" "$GH_AW_COPILOT_BIN"[0m
+2026-09-25T02:37:16.7196425Z [36;1mfi[0m
+2026-09-25T02:37:16.7196647Z [36;1mchmod 755 "$GH_AW_COPILOT_BIN"[0m
+2026-09-25T02:37:16.7196924Z [36;1m[0m
+2026-09-25T02:37:16.7197185Z [36;1mtouch /tmp/gh-aw/agent-step-summary.md[0m
+2026-09-25T02:37:16.7197974Z [36;1mGH_AW_NODE_BIN=$(command -v node 2>/dev/null || true)[0m
+2026-09-25T02:37:16.7198377Z [36;1mexport GH_AW_NODE_BIN[0m
+2026-09-25T02:37:16.7198694Z [36;1mexport COPILOT_API_KEY="$COPILOT_DUMMY_BYOK"[0m
+2026-09-25T02:37:16.7199072Z [36;1m(umask 177 && touch /tmp/gh-aw/agent-stdio.log)[0m
+2026-09-25T02:37:16.7199468Z [36;1mGH_AW_MAX_AI_CREDITS="${GH_AW_MAX_AI_CREDITS:-1000}"[0m
+2026-09-25T02:37:16.7199846Z [36;1mif [[ ! "$GH_AW_MAX_AI_CREDITS" =~ ^[0-9]+$ ]]; then[0m
+2026-09-25T02:37:16.7200348Z [36;1m  GH_AW_MAX_AI_CREDITS="1000"[0m
+2026-09-25T02:37:16.7200628Z [36;1mfi[0m
+2026-09-25T02:37:16.7216899Z [36;1mprintf '%s\n' "{\"\$schema\":\"https://github.com/github/gh-aw-firewall/releases/download/v0.28.23/awf-config.schema.json\",\"network\":{\"allowDomains\":[\"awesome-copilot.github.com\",\"github.blog\",\"github.com\"],\"isolation\":true,\"topologyAttach\":[\"awmg-mcpg\"]},\"apiProxy\":{\"enabled\":true,\"enableTokenSteering\":true,\"maxRuns\":500,\"maxAiCredits\":${GH_AW_MAX_AI_CREDITS},\"maxCacheMisses\":5,\"models\":{\"agent\":[\"sonnet-6x\",\"gpt-6\",\"gpt-5.4\",\"gpt-5.5\",\"gpt-5.6\",\"gpt-5.3\",\"gemini-pro\",\"any\"],\"antigravity\":[\"copilot/antigravity*\",\"google/antigravity*\",\"gemini/antigravity*\"],\"any\":[\"copilot/*\",\"anthropic/*\",\"openai/*\",\"google/*\",\"gemini/*\"],\"auto\":[\"copilot/auto\",\"large\"],\"claude\":[\"agent\"],\"codex\":[\"agent\"],\"coding\":[\"copilot/gpt-5*codex*\",\"openai/gpt-5*codex*\",\"gpt-5-codex\",\"kimi\"],\"computer-use\":[\"copilot/*computer-use*\",\"google/*computer-use*\",\"gemini/*computer-use*\",\"openai/*computer-use*\"],\"copilot\":[\"agent\"],\"deep-research\":[\"copilot/deep-research*\",\"copilot/o3-deep-research*\",\"copilot/o4-mini-deep-research*\",\"google/deep-research*\",\"gemini/deep-research*\",\"openai/o3-deep-research*\",\"openai/o4-mini-deep-research*\"],\"detection\":[\"small\"],\"evals\":[\"small\"],\"fable\":[\"copilot/*fable*\",\"anthropic/*fable*\"],\"gemini\":[\"agent\"],\"gemini-3-flash\":[\"copilot/gemini-3*flash*\",\"google/gemini-3*flash*\",\"gemini/gemini-3*flash*\"],\"gemini-3-pro\":[\"copilot/gemini-3*pro*\",\"google/gemini-3*pro*\",\"google/nano-banana*\",\"gemini/gemini-3*pro*\"],\"gemini-3.1-flash\":[\"copilot/gemini-3.1*flash*\",\"google/gemini-3.1*flash*\",\"gemini/gemini-3.1*flash*\"],\"gemini-3.1-pro\":[\"copilot/gemini-3.1*pro*\",\"google/gemini-3.1*pro*\",\"gemini/gemini-3.1*pro*\"],\"gemini-3.5-flash\":[\"copilot/gemini-3.5*flash*\",\"google/gemini-3.5*flash*\",\"gemini/gemini-3.5*flash*\"],\"gemini-3.6-flash\":[\"copilot/gemini-3.6*flash*\",\"google/gemini-3.6*flash*\",\"gemini/gemini-3.6*flash*\"],\"gemini-3.7-flash\":[\"copilot/gemini-3.7*flash*\",\"google/gemini-3.7*flash*\",\"gemini/gemini-3.7*flash*\"],\"gemini-3.8-flash\":[\"copilot/gemini-3.8*flash*\",\"google/gemini-3.8*flash*\",\"gemini/gemini-3.8*flash*\"],\"gemini-flash\":[\"copilot/gemini-*flash*\",\"google/gemini-*flash*\",\"gemini/gemini-*flash*\"],\"gemini-flash-lite\":[\"copilot/gemini-*flash*lite*\",\"google/gemini-*flash*lite*\",\"gemini/gemini-*flash*lite*\"],\"gemini-omni\":[\"copilot/gemini-omni*\",\"google/gemini-omni*\",\"gemini/gemini-omni*\"],\"gemini-pro\":[\"copilot/gemini-*pro*\",\"google/gemini-*pro*\",\"gemini/gemini-*pro*\"],\"gemma\":[\"copilot/gemma*\",\"google/gemma*\",\"gemini/gemma*\"],\"gpt-5\":[\"copilot/gpt-5*\",\"openai/gpt-5*\"],\"gpt-5-codex\":[\"copilot/gpt-5*codex*\",\"openai/gpt-5*codex*\"],\"gpt-5-mini\":[\"copilot/gpt-5*mini*\",\"openai/gpt-5*mini*\"],\"gpt-5-nano\":[\"copilot/gpt-5*nano*\",\"openai/gpt-5*nano*\"],\"gpt-5-pro\":[\"copilot/gpt-5*pro*\",\"openai/gpt-5*pro*\"],\"gpt-5.1\":[\"copilot/gpt-5.1*\",\"openai/gpt-5.1*\"],\"gpt-5.2\":[\"copilot/gpt-5.2*\",\"openai/gpt-5.2*\"],\"gpt-5.3\":[\"copilot/gpt-5.3*\",\"openai/gpt-5.3*\"],\"gpt-5.4\":[\"copilot/gpt-5.4*\",\"openai/gpt-5.4*\"],\"gpt-5.5\":[\"copilot/gpt-5.5*\",\"openai/gpt-5.5*\"],\"gpt-5.6\":[\"copilot/gpt-5.6*\",\"openai/gpt-5.6*\"],\"gpt-6\":[\"copilot/gpt-6*\",\"openai/gpt-6*\"],\"grok\":[\"copilot/*grok*\",\"openai/*grok*\"],\"haiku\":[\"copilot/*haiku*\",\"anthropic/*haiku*\"],\"image-generation\":[\"copilot/gpt-image*\",\"openai/gpt-image*\",\"openai/chatgpt-image*\",\"copilot/gemini-*image*\",\"google/gemini-*image*\",\"gemini/gemini-*image*\",\"google/imagen*\"],\"kimi\":[\"copilot/kimi*\",\"openai/kimi*\"],\"kiwi\":[\"copilot/kiwi*\",\"openai/kiwi*\"],\"large\":[\"sonnet\",\"gpt-6\",\"gpt-5-pro\",\"gpt-5\",\"gemini-pro\"],\"lyria\":[\"google/lyria*\",\"gemini/lyria*\",\"copilot/lyria*\"],\"mai-code\":[\"copilot/MAI-Code*\",\"copilot/mai-code*\",\"openai/MAI-Code*\"],\"mai-code-1-flash-picker\":[\"copilot/MAI-Code-1-Flash-picker*\",\"copilot/mai-code-1-flash-picker*\",\"openai/MAI-Code-1-Flash-picker*\"],\"mini\":[\"haiku\",\"gpt-5-mini\",\"gpt-5-nano\",\"gemini-flash-lite\"],\"nano-banana\":[\"copilot/nano-banana*\",\"google/nano-banana*\",\"gemini/nano-banana*\"],\"opus\":[\"copilot/*opus*\",\"anthropic/*opus*\"],\"opusplan\":[\"opus?effort=high\"],\"raptor-mini\":[\"copilot/raptor*\",\"openai/raptor*\"],\"reasoning\":[\"copilot/o1*\",\"copilot/o3*\",\"copilot/o4*\",\"openai/o1*\",\"openai/o3*\",\"openai/o4*\"],\"robotics\":[\"copilot/*robotics*\",\"google/*robotics*\",\"gemini/*robotics*\"],\"small\":[\"mini\"],\"small-agent\":[\"haiku\",\"gpt-5-mini\",\"gemini-flash\"],\"sonnet\":[\"copilot/*sonnet*\",\"anthropic/*sonnet*\"],\"sonnet-6x\":[\"copilot/*sonnet-4.5*\",\"copilot/*sonnet-4.6*\",\"copilot/*sonnet-5*\",\"copilot/*sonnet-4-5-*\",\"anthropic/*sonnet-4-5-*\",\"copilot/*sonnet-4-6*\",\"anthropic/*sonnet-4-6*\",\"anthropic/*sonnet-5*\"],\"summarization\":[\"haiku\",\"gpt-5-mini\",\"gemini-flash-lite\",\"mini\"],\"veo\":[\"google/veo*\",\"gemini/veo*\"],\"vision\":[\"copilot/gemini-*image*\",\"google/gemini-*image*\",\"gemini/gemini-*image*\",\"copilot/gemini-*flash*\",\"google/gemini-*flash*\",\"gemini/gemini-*flash*\"]}},\"container\":{\"imageTag\":\"0.28.23,squid=sha256:02ffc56dd40158223064ef03a78c2d9717473c93723b4e403d455ea6f0b09ae0,agent=sha256:2c78aaba1c108e130e2d6d01e4f2cca334ea04c53e6f258913ac34173fe7e3b2,api-proxy=sha256:c15c3d1208df10c5b588a3657be53742aa982ae0909d1eb1812525268794ca64,cli-proxy=sha256:9e31a6e518eba44652b9ae94ce55c3b6958e06290c3b81b08de4174751bb439a\"},\"logging\":{\"proxyLogsDir\":\"/tmp/gh-aw/sandbox/firewall/logs\",\"auditDir\":\"/tmp/gh-aw/sandbox/firewall/audit\"}}" > "${RUNNER_TEMP}/gh-aw/awf-config.json"[0m
+2026-09-25T02:37:16.7233968Z [36;1mcp "${RUNNER_TEMP}/gh-aw/awf-config.json" /tmp/gh-aw/awf-config.json[0m
+2026-09-25T02:37:16.7234459Z [36;1mexport GH_AW_MODELS_JSON_PATH="/tmp/gh-aw/models.json"[0m
+2026-09-25T02:37:16.7234972Z [36;1mGH_AW_DOCKER_HOST=""[0m
+2026-09-25T02:37:16.7235275Z [36;1mif [[ "${DOCKER_HOST:-}" =~ ^tcp:// ]]; then[0m
+2026-09-25T02:37:16.7235613Z [36;1m  GH_AW_DOCKER_HOST="${DOCKER_HOST}"[0m
+2026-09-25T02:37:16.7235915Z [36;1mfi[0m
+2026-09-25T02:37:16.7236154Z [36;1mif [[ "${DOCKER_HOST:-}" =~ ^tcp:// ]]; then[0m
+2026-09-25T02:37:16.7236885Z [36;1m  GH_AW_CHROOT_BINARIES_SOURCE_PATH="${RUNNER_TEMP}/gh-aw" GH_AW_CHROOT_IDENTITY_HOME="${RUNNER_TEMP}/gh-aw/home" node "${RUNNER_TEMP}/gh-aw/actions/patch_awf_chroot_config.cjs"[0m
+2026-09-25T02:37:16.7237661Z [36;1mfi[0m
+2026-09-25T02:37:16.7237893Z [36;1mGH_AW_TOOL_CACHE_MOUNT=""[0m
+2026-09-25T02:37:16.7238294Z [36;1mGH_AW_TOOL_CACHE="${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"[0m
+2026-09-25T02:37:16.7238721Z [36;1mif [ -d "$GH_AW_TOOL_CACHE" ]; then[0m
+2026-09-25T02:37:16.7239062Z [36;1m  if [[ "$GH_AW_TOOL_CACHE" != /opt/* ]]; then[0m
+2026-09-25T02:37:16.7239461Z [36;1m    GH_AW_TOOL_CACHE_MOUNT="$GH_AW_TOOL_CACHE:$GH_AW_TOOL_CACHE:ro"[0m
+2026-09-25T02:37:16.7239838Z [36;1m  fi[0m
+2026-09-25T02:37:16.7240053Z [36;1mfi[0m
+2026-09-25T02:37:16.7240303Z [36;1m# shellcheck disable=SC1003,SC2016,SC2086[0m
+2026-09-25T02:37:16.7240627Z [36;1mmkdir -p "/tmp/gh-aw"[0m
+2026-09-25T02:37:16.7240970Z [36;1mevidence_tmp="/tmp/gh-aw/agent_execution.json.tmp"[0m
+2026-09-25T02:37:16.7241642Z [36;1mprintf '{"version":1,"component":"agent","run_id":%s,"run_attempt":%s,"state":"started"}\n' "$GITHUB_RUN_ID" "$GITHUB_RUN_ATTEMPT" > "$evidence_tmp"[0m
+2026-09-25T02:37:16.7242306Z [36;1mmv "$evidence_tmp" "/tmp/gh-aw/agent_execution.json"[0m
+2026-09-25T02:37:16.7242702Z [36;1mexport GH_AW_AWF_EXECUTION_COMPONENT="agent"[0m
+2026-09-25T02:37:16.7243157Z [36;1mexport GH_AW_AWF_EXECUTION_EVIDENCE_FILE="/tmp/gh-aw/agent_execution.json"[0m
+2026-09-25T02:37:16.7243593Z [36;1mGH_AW_AWF_ENGINE_NAME=copilot \[0m
+2026-09-25T02:37:16.7243927Z [36;1mGH_AW_AWF_HARNESS_MARKER='[copilot-harness]' \[0m
+2026-09-25T02:37:16.7244441Z [36;1mGH_AW_AWF_LOG_FILE=/tmp/gh-aw/agent-stdio.log \[0m
+2026-09-25T02:37:16.7244798Z [36;1mGH_AW_AWF_ATTEMPT_LOG_NAME=copilot \[0m
+2026-09-25T02:37:16.7245232Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/run_awf_with_startup_retries.sh" -- \[0m
+2026-09-25T02:37:16.7247322Z [36;1m  awf --config "${RUNNER_TEMP}/gh-aw/awf-config.json" --container-workdir "${GITHUB_WORKSPACE}" --mount "${RUNNER_TEMP}/gh-aw:${RUNNER_TEMP}/gh-aw:ro" --mount "${RUNNER_TEMP}/gh-aw:/host${RUNNER_TEMP}/gh-aw:ro" ${GH_AW_TOOL_CACHE_MOUNT:+--mount "$GH_AW_TOOL_CACHE_MOUNT"} ${GH_AW_DOCKER_HOST:+--docker-host "$GH_AW_DOCKER_HOST"} --env-all --exclude-env ACTIONS_ID_TOKEN_REQUEST_TOKEN --exclude-env ACTIONS_ID_TOKEN_REQUEST_URL --exclude-env COPILOT_GITHUB_TOKEN --exclude-env GITHUB_MCP_SERVER_TOKEN --exclude-env MCP_GATEWAY_AGENT_ID --mount /tmp/gh-aw:/tmp/gh-aw:rw --log-level info --skip-pull \[0m
+2026-09-25T02:37:16.7253513Z [36;1m  -- /bin/bash -c 'set +o histexpand; export PATH="${RUNNER_TEMP}/gh-aw/mcp-cli/bin:$PATH" && : "${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"; GH_AW_TOOL_CACHE="$RUNNER_TOOL_CACHE"; GH_AW_TOOL_BINS="$(find "$GH_AW_TOOL_CACHE" -maxdepth 5 -type d -name bin 2>/dev/null | tr '\''\n'\'' '\'':'\'')"; GH_AW_TOOL_BINS="${GH_AW_TOOL_BINS%:}"; export PATH="$PATH${GH_AW_TOOL_BINS:+:}$GH_AW_TOOL_BINS"; [ -n "$GOROOT" ] && export PATH="$GOROOT/bin:$PATH" || true; [ -n "$ERLANG_HOME" ] && export PATH="$ERLANG_HOME/bin:$PATH" || true && GH_AW_NODE_EXEC="${GH_AW_NODE_BIN:-}"; if [ -z "$GH_AW_NODE_EXEC" ] || [ ! -x "$GH_AW_NODE_EXEC" ]; then GH_AW_NODE_EXEC="$(command -v node 2>/dev/null || true)"; fi; if [ -z "$GH_AW_NODE_EXEC" ]; then echo "node runtime missing on this runner — check runtimes.node in workflow YAML" >&2; exit 127; fi; GH_AW_NPM_GLOBAL_ROOT="$(npm root -g 2>/dev/null || true)"; if [ -n "$GH_AW_NPM_GLOBAL_ROOT" ]; then export NODE_PATH="${GH_AW_NPM_GLOBAL_ROOT}${NODE_PATH:+:${NODE_PATH}}"; fi; "$GH_AW_NODE_EXEC" "${RUNNER_TEMP}/gh-aw/actions/copilot_harness.cjs" "${RUNNER_TEMP}/gh-aw/bin/copilot" --add-dir /tmp/gh-aw/ --log-level all --log-dir /tmp/gh-aw/sandbox/agent/logs/ --no-ask-user --allow-tool github --allow-tool safeoutputs --allow-tool shell --allow-tool web_fetch --allow-tool write --allow-all-paths --add-dir "${GITHUB_WORKSPACE}" --prompt-file /tmp/gh-aw/aw-prompts/prompt.txt'[0m
+2026-09-25T02:37:16.7326350Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:37:16.7326632Z env:
+2026-09-25T02:37:16.7326859Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:16.7327182Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:16.7328246Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:16.7329152Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:16.7329555Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:16.7329871Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:16.7330147Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:16.7330408Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:16.7330670Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:16.7330905Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:16.7331193Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:16.7331522Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:16.7331779Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:16.7332040Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:16.7332292Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:16.7332541Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:16.7332779Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:16.7333017Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:16.7333290Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:16.7333656Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:16.7334022Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:16.7334348Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:16.7334646Z   AWF_REFLECT_ENABLED: 1
+2026-09-25T02:37:16.7335101Z   COPILOT_AGENT_RUNNER_TYPE: STANDALONE
+2026-09-25T02:37:16.7335435Z   COPILOT_DUMMY_BYOK: dummy-byok-key-for-offline-mode
+2026-09-25T02:37:16.7336125Z   COPILOT_GITHUB_TOKEN: ***
+2026-09-25T02:37:16.7336395Z   COPILOT_MODEL: auto
+2026-09-25T02:37:16.7336646Z   GH_AW_LLM_PROVIDER: github
+2026-09-25T02:37:16.7336904Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-09-25T02:37:16.7337149Z   GH_AW_MAX_TURNS: 
+2026-09-25T02:37:16.7337381Z   GH_AW_PHASE: agent
+2026-09-25T02:37:16.7337948Z   GH_AW_PROMPT: /tmp/gh-aw/aw-prompts/prompt.txt
+2026-09-25T02:37:16.7338388Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-09-25T02:37:16.7338798Z   GH_AW_TIMEOUT_MINUTES: 20
+2026-09-25T02:37:16.7339053Z   GH_AW_VERSION: v0.89.21
+2026-09-25T02:37:16.7339331Z   GITHUB_API_URL: https://api.github.com
+2026-09-25T02:37:16.7339619Z   GITHUB_AW: true
+2026-09-25T02:37:16.7339884Z   GITHUB_COPILOT_INTEGRATION_ID: agentic-workflows
+2026-09-25T02:37:16.7340204Z   GITHUB_HEAD_REF: 
+2026-09-25T02:37:16.7342539Z   GITHUB_MCP_SERVER_TOKEN: ***
+2026-09-25T02:37:16.7342806Z   GITHUB_REF_NAME: main
+2026-09-25T02:37:16.7343065Z   GITHUB_SERVER_URL: https://github.com
+2026-09-25T02:37:16.7343407Z   GITHUB_STEP_SUMMARY: /tmp/gh-aw/agent-step-summary.md
+2026-09-25T02:37:16.7344058Z   GITHUB_WORKSPACE: /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:37:16.7344732Z   GIT_AUTHOR_EMAIL: github-actions[bot]@users.noreply.github.com
+2026-09-25T02:37:16.7345115Z   GIT_AUTHOR_NAME: github-actions[bot]
+2026-09-25T02:37:16.7345482Z   GIT_COMMITTER_EMAIL: github-actions[bot]@users.noreply.github.com
+2026-09-25T02:37:16.7345874Z   GIT_COMMITTER_NAME: github-actions[bot]
+2026-09-25T02:37:16.7346174Z   RUNNER_TEMP: /home/runner/work/_temp
+2026-09-25T02:37:16.7346538Z   TRACEPARENT: 00-3c8c32e738303c7a8313802e4ab455aa-bef8a0ae1b4a817c-01
+2026-09-25T02:37:16.7346916Z ##[endgroup]
+2026-09-25T02:37:16.7413290Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/9a7608ef-6f07-4564-83c9-db598ddb3fbf.sh
+2026-09-25T02:37:18.5493084Z [INFO] Auto-detected DNS servers from /run/systemd/resolve/resolv.conf: 168.63.129.16
+2026-09-25T02:37:18.5524948Z [WARN] ⚠️  Using --env-all: All host environment variables will be passed to container
+2026-09-25T02:37:18.5525690Z [WARN]    This may expose sensitive credentials if logs or configs are shared
+2026-09-25T02:37:18.5528534Z [INFO] API proxy enabled: OpenAI=false, Anthropic=false, Copilot=true (github-token), Gemini=false, Vertex=false
+2026-09-25T02:37:20.2765515Z [INFO] Allowed domains: awesome-copilot.github.com, github.blog, github.com, awmg-mcpg
+2026-09-25T02:37:20.3255510Z [INFO] Network-isolation mode: enforcing egress via Docker network topology (no host iptables, no sudo).
+2026-09-25T02:37:20.3256157Z [INFO] Generating configuration files...
+2026-09-25T02:37:20.6305095Z [INFO] API proxy sidecar enabled - API keys will be held securely in sidecar container
+2026-09-25T02:37:20.6306125Z [INFO] API proxy will route through Squid to respect domain whitelisting
+2026-09-25T02:37:20.7745039Z [INFO] Starting containers...
+2026-09-25T02:37:20.8190916Z [INFO] Topology mode: starting squid-proxy first to create awf-net...
+2026-09-25T02:37:20.9178415Z  Network awf-9rdze3_awf-ext  Creating
+2026-09-25T02:37:20.9546954Z  Network awf-9rdze3_awf-ext  Created
+2026-09-25T02:37:20.9554378Z  Network awf-net  Creating
+2026-09-25T02:37:20.9761348Z  Network awf-net  Created
+2026-09-25T02:37:20.9769436Z  Container awf-squid  Creating
+2026-09-25T02:37:20.9945295Z  Container awf-squid  Created
+2026-09-25T02:37:20.9952270Z  Container awf-squid  Starting
+2026-09-25T02:37:21.1339789Z  Container awf-squid  Started
+2026-09-25T02:37:21.2394328Z [INFO] squid-proxy started; attaching topology peers before full bring-up...
+2026-09-25T02:37:21.2395775Z [INFO] Attaching 1 trusted container(s) to the internal network...
+2026-09-25T02:37:21.2397993Z [INFO] Network-isolation: connecting container "awmg-mcpg" to "awf-net"...
+2026-09-25T02:37:21.3005036Z [INFO] Topology peer "awmg-mcpg" has IP 172.30.0.2 on awf-net
+2026-09-25T02:37:21.3077049Z [INFO] Patched docker-compose.yml with 3 topology peer host(s) for static DNS compatibility
+2026-09-25T02:37:21.3078399Z [INFO] Appended 3 topology peer(s) to chroot hosts file: /tmp/awf-9RDZE3/chroot-bVOra9/hosts
+2026-09-25T02:37:21.3079016Z [INFO] Topology peers attached; continuing with full container bring-up...
+2026-09-25T02:37:21.3940059Z  Container awf-api-proxy  Creating
+2026-09-25T02:37:21.3940629Z  Container awf-squid  Recreate
+2026-09-25T02:37:21.4121168Z  Container awf-api-proxy  Created
+2026-09-25T02:37:23.4074531Z  Container awf-squid  Recreated
+2026-09-25T02:37:23.4075429Z  Container awf-agent  Creating
+2026-09-25T02:37:23.4251463Z  Container awf-agent  Created
+2026-09-25T02:37:23.4263498Z  Container awf-api-proxy  Starting
+2026-09-25T02:37:23.4264671Z  Container awf-squid  Starting
+2026-09-25T02:37:23.5600078Z  Container awf-api-proxy  Started
+2026-09-25T02:37:23.6041931Z  Container awf-squid  Started
+2026-09-25T02:37:23.6043197Z  Container awf-api-proxy  Waiting
+2026-09-25T02:37:23.6043835Z  Container awf-squid  Waiting
+2026-09-25T02:37:28.6055161Z  Container awf-api-proxy  Healthy
+2026-09-25T02:37:29.1064453Z  Container awf-squid  Healthy
+2026-09-25T02:37:29.1065279Z  Container awf-agent  Starting
+2026-09-25T02:37:29.2411394Z  Container awf-agent  Started
+2026-09-25T02:37:29.3455585Z [SUCCESS] Containers started successfully
+2026-09-25T02:37:29.3458694Z [INFO] Executing agent command...
+2026-09-25T02:37:29.3628491Z [entrypoint] Agentic Workflow Firewall - Agent Container
+2026-09-25T02:37:29.3628962Z [entrypoint] ==================================
+2026-09-25T02:37:29.3710622Z [entrypoint] Adjusting awfuser UID:GID from 1000:1000 to 1001:1001
+2026-09-25T02:37:29.6782834Z [entrypoint] UID/GID adjustment complete
+2026-09-25T02:37:29.6783281Z [entrypoint] Configuring DNS...
+2026-09-25T02:37:29.7203142Z [entrypoint] DNS configured with Docker embedded DNS (127.0.0.11) only
+2026-09-25T02:37:29.7204243Z [entrypoint] iptables-init skipped (proxy-based egress): skipping init container wait
+2026-09-25T02:37:29.7222088Z [health-check] API Proxy Pre-flight Check
+2026-09-25T02:37:29.7223035Z [health-check] ==========================================
+2026-09-25T02:37:29.7226805Z [health-check] Checking GitHub Copilot API proxy configuration...
+2026-09-25T02:37:29.7227866Z [health-check] COPILOT_API_URL=http://172.30.0.30:10002
+2026-09-25T02:37:29.7228961Z [health-check] ✓ COPILOT_GITHUB_TOKEN is placeholder value (correct)
+2026-09-25T02:37:29.7230017Z [health-check] ✓ COPILOT_TOKEN is placeholder value (correct)
+2026-09-25T02:37:29.7231101Z [health-check] ✓ COPILOT_PROVIDER_API_KEY is placeholder value (correct)
+2026-09-25T02:37:29.7232145Z [health-check] COPILOT_PROVIDER_BASE_URL=http://172.30.0.30:10002 (offline+BYOK mode)
+2026-09-25T02:37:29.7232916Z [health-check] ✓ COPILOT_PROVIDER_BASE_URL matches COPILOT_API_URL
+2026-09-25T02:37:29.7233856Z [health-check] ✓ Copilot CLI offline+BYOK mode configured
+2026-09-25T02:37:29.7234808Z [health-check] Testing connectivity to GitHub Copilot API proxy at http://172.30.0.30:10002...
+2026-09-25T02:37:29.8741439Z [health-check] ✓ GitHub Copilot API proxy is reachable at http://172.30.0.30:10002
+2026-09-25T02:37:29.8742353Z [health-check] ==========================================
+2026-09-25T02:37:29.8742948Z [health-check] ✓ All API proxy health checks passed
+2026-09-25T02:37:29.8743415Z [health-check] ✓ Credential isolation verified
+2026-09-25T02:37:29.8744012Z [health-check] ✓ Connectivity established
+2026-09-25T02:37:29.8744560Z [health-check] ==========================================
+2026-09-25T02:37:29.8746121Z [entrypoint] Pre-seeding JVM build tool proxy configuration (squid-proxy:3128)...
+2026-09-25T02:37:29.8892785Z [entrypoint] ✓ Created Maven proxy config (/host/home/runner/.m2/settings.xml)
+2026-09-25T02:37:29.8934506Z [entrypoint] ✓ Created Gradle proxy config (/host/home/runner/.gradle/gradle.properties)
+2026-09-25T02:37:29.9047319Z [entrypoint] ✓ Set JAVA_TOOL_OPTIONS with proxy and nonProxyHosts flags
+2026-09-25T02:37:29.9048791Z [entrypoint] Proxy configuration:
+2026-09-25T02:37:29.9049354Z [entrypoint]   HTTP_PROXY=http://172.30.0.10:3128
+2026-09-25T02:37:29.9049926Z [entrypoint]   HTTPS_PROXY=http://172.30.0.10:3128
+2026-09-25T02:37:29.9050449Z [entrypoint] Network information:
+2026-09-25T02:37:29.9172742Z [entrypoint]   IP address: 172.30.0.20 
+2026-09-25T02:37:29.9185130Z [entrypoint]   Hostname: 89e910138001
+2026-09-25T02:37:30.3690446Z [entrypoint] ==================================
+2026-09-25T02:37:30.3691206Z [entrypoint] Chroot mode enabled - dropping CAP_SYS_CHROOT and CAP_SYS_ADMIN
+2026-09-25T02:37:30.3728567Z [entrypoint] Switching to awfuser (UID: 1001, GID: 1001)
+2026-09-25T02:37:30.3735271Z [entrypoint] Executing command: /bin/bash -c /bin/bash -c 'set +o histexpand; export PATH="${RUNNER_TEMP}/gh-aw/mcp-cli/bin:$PATH" && : "${RUNNER_TOOL_CACHE:?RUNNER_TOOL_CACHE must be set}"; GH_AW_TOOL_CACHE="$RUNNER_TOOL_CACHE"; GH_AW_TOOL_BINS="$(find "$GH_AW_TOOL_CACHE" -maxdepth 5 -type d -name bin 2>/dev/null | tr '\''\n'\'' '\'':'\'')"; GH_AW_TOOL_BINS="${GH_AW_TOOL_BINS%:}"; export PATH="$PATH${GH_AW_TOOL_BINS:+:}$GH_AW_TOOL_BINS"; [ -n "$GOROOT" ] && export PATH="$GOROOT/bin:$PATH" || true; [ -n "$ERLANG_HOME" ] && export PATH="$ERLANG_HOME/bin:$PATH" || true && GH_AW_NODE_EXEC="${GH_AW_NODE_BIN:-}"; if [ -z "$GH_AW_NODE_EXEC" ] || [ ! -x "$GH_AW_NODE_EXEC" ]; then GH_AW_NODE_EXEC="$(command -v node 2>/dev/null || true)"; fi; if [ -z "$GH_AW_NODE_EXEC" ]; then echo "node runtime missing on this runner — check runtimes.node in workflow YAML" >&2; exit 127; fi; GH_AW_NPM_GLOBAL_ROOT="$(npm root -g 2>/dev/null || true)"; if [ -n "$GH_AW_NPM_GLOBAL_ROOT" ]; then export NODE_PATH="${GH_AW_NPM_GLOBAL_ROOT}${NODE_PATH:+:${NODE_PATH}}"; fi; "$GH_AW_NODE_EXEC" "${RUNNER_TEMP}/gh-aw/actions/copilot_harness.cjs" "${RUNNER_TEMP}/gh-aw/bin/copilot" --add-dir /tmp/gh-aw/ --log-level all --log-dir /tmp/gh-aw/sandbox/agent/logs/ --no-ask-user --allow-tool github --allow-tool safeoutputs --allow-tool shell --allow-tool web_fetch --allow-tool write --allow-all-paths --add-dir "${GITHUB_WORKSPACE}" --prompt-file /tmp/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:37:30.3740241Z 
+2026-09-25T02:37:30.3740473Z [entrypoint] Chroot mode: running command inside host filesystem (/host)
+2026-09-25T02:37:30.4564884Z [entrypoint] Mounted procfs at /host/proc (nosuid,nodev,noexec,hidepid=2)
+2026-09-25T02:37:30.4663550Z [entrypoint] Bind-mounted container cgroup subtree at /host/sys/fs/cgroup (ro)
+2026-09-25T02:37:30.4803011Z [entrypoint] One-shot token library copied to chroot at /run/awf-lib/one-shot-token.so
+2026-09-25T02:37:30.9116609Z [entrypoint] Chromium/Playwright runtime libraries staged for chroot at /host/run/awf-lib/browser-libs
+2026-09-25T02:37:30.9118710Z [entrypoint] System CA bundle found at /etc/ssl/certs/ca-certificates.crt (already accessible in chroot)
+2026-09-25T02:37:30.9137299Z [entrypoint] DNS configuration created in chroot (/host/etc/resolv.conf)
+2026-09-25T02:37:30.9169287Z [entrypoint] Running as host user: runner (UID: 1001)
+2026-09-25T02:37:30.9171461Z [entrypoint] Chroot working directory: /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:37:30.9188300Z [entrypoint] Using host PATH for chroot
+2026-09-25T02:37:30.9202378Z [entrypoint] Adding JAVA_HOME/bin to PATH: /usr/lib/jvm/temurin-17-jdk-amd64/bin
+2026-09-25T02:37:30.9484465Z [entrypoint] DNS configuration will be removed on exit
+2026-09-25T02:37:30.9508141Z [entrypoint] Transferred /host/tmp/gh-aw ownership to chroot user (1001:1001)
+2026-09-25T02:37:30.9545573Z [entrypoint][WARN] Failed to transfer /host/home/runner/work/_temp/gh-aw/safeoutputs ownership to chroot user
+2026-09-25T02:37:30.9646071Z [entrypoint] Node.js available via GH_AW_NODE_BIN: /usr/local/bin/node
+2026-09-25T02:37:31.2495882Z [copilot-harness] starting: command=/home/runner/work/_temp/gh-aw/bin/copilot maxRetries=3 initialDelayMs=5000 backoffMultiplier=2 maxDelayMs=60000 nodeVersion=v22.23.2 platform=linux
+2026-09-25T02:37:31.2507820Z [copilot-harness] pre-flight: command is accessible and executable: /home/runner/work/_temp/gh-aw/bin/copilot
+2026-09-25T02:37:31.2512342Z [copilot-harness] resolved --prompt-file: path=/tmp/gh-aw/aw-prompts/prompt.txt size=13659B
+2026-09-25T02:37:31.2514101Z [copilot-harness] awf-reflect: fetching http://api-proxy:10000/reflect (timeout=60000ms)
+2026-09-25T02:37:31.3615018Z [copilot-harness] awf-reflect: unable to persist reflect payload to /home/runner/work/_temp/awf-reflect.json: EACCES: permission denied, open '/home/runner/work/_temp/awf-reflect.json'
+2026-09-25T02:37:31.3628023Z [copilot-harness] copilot model alias resolution: 'auto' -> 'claude-sonnet-5'
+2026-09-25T02:37:31.3637649Z [copilot-harness] inference routing: mode=cli configuredModel="claude-sonnet-5" endpoint=managed-by-copilot-cli
+2026-09-25T02:37:31.3647360Z [copilot-harness] attempt 1: spawning: /home/runner/work/_temp/gh-aw/bin/copilot --add-dir /tmp/gh-aw/ --log-level all --log-dir /tmp/gh-aw/sandbox/agent/logs/ --no-ask-user --allow-tool github --allow-tool safeoutputs --allow-tool shell --allow-tool web_fetch --allow-tool write -
+2026-09-25T02:37:31.3688878Z [copilot-harness] attempt 1: process started (pid=384)
+2026-09-25T02:37:32.0113704Z [entrypoint] Unsetting sensitive tokens from parent shell environment...
+2026-09-25T02:37:32.0114299Z [entrypoint] Unset COPILOT_GITHUB_TOKEN from /proc/1/environ
+2026-09-25T02:37:32.0114757Z [entrypoint] Unset COPILOT_PROVIDER_API_KEY from /proc/1/environ
+2026-09-25T02:37:36.3459511Z 
+2026-09-25T02:37:36.3460171Z 400 The requested model is not supported.
+2026-09-25T02:37:36.3942594Z 
+2026-09-25T02:37:36.3942653Z 
+2026-09-25T02:37:36.3943225Z Changes    +0 -0
+2026-09-25T02:37:36.3943666Z Duration   4s
+2026-09-25T02:37:36.3944195Z Resume     copilot --resume=bbada2ee-dd92-4eef-a5e7-46b385b07700
+2026-09-25T02:37:36.4597895Z [copilot-harness] attempt 1: process exit event exitCode=1
+2026-09-25T02:37:36.4598817Z [copilot-harness] attempt 1: process closed exitCode=1 duration=5s stdout=0B stderr=141B hasOutput=true
+2026-09-25T02:37:36.4638314Z [copilot-harness] attempt 1 failed: exitCode=1 failureClass=model_not_supported isCAPIError400=false isCAPIQuotaExceededError=false isInvocationCapExceeded=false apiProxyGuardRejection=none isMCPPolicyError=false isModelNotSupportedError=true isHTTP400ResponseError=false isNullTypeToolCallError=false isSDKSessionIdleTimeoutError=false isMCPGatewayShutdownError=false isConnectionRefusedError=false isAuthError=false isAuthenticationFailedError=false permissionDeniedCount=0 hasNumerousPermissionDenied=false hasOutput=true tokenCount=0 attemptDurationMs=5095 retriesRemaining=3
+2026-09-25T02:37:36.4642318Z [copilot-harness] attempt 1: outputTail="400 The requested model is not supported.\nChanges    +0 -0\nDuration   4s\nResume     copilot --resume=bbada2ee-dd92-4eef-a5e7-46b385b07700"
+2026-09-25T02:37:36.4644032Z [copilot-harness] attempt 1: model not supported — not retrying (the requested model is unavailable for this subscription tier; specify a supported model in the workflow frontmatter)
+2026-09-25T02:37:36.4645048Z [copilot-harness] awf-reflect: fetching http://api-proxy:10000/reflect (timeout=60000ms)
+2026-09-25T02:37:36.4770050Z [copilot-harness] awf-reflect: unable to persist reflect payload to /home/runner/work/_temp/awf-reflect.json: EACCES: permission denied, open '/home/runner/work/_temp/awf-reflect.json'
+2026-09-25T02:37:36.4770934Z [copilot-harness] done: exitCode=1 totalDuration=5s
+2026-09-25T02:37:36.8136516Z [INFO] Stopping containers...
+2026-09-25T02:37:36.9519685Z  Container awf-agent  Stopping
+2026-09-25T02:37:36.9522040Z  Container awf-agent  Stopped
+2026-09-25T02:37:36.9522540Z  Container awf-agent  Removing
+2026-09-25T02:37:36.9651542Z  Container awf-agent  Removed
+2026-09-25T02:37:36.9652478Z  Container awf-api-proxy  Stopping
+2026-09-25T02:37:36.9653198Z  Container awf-squid  Stopping
+2026-09-25T02:37:37.0323103Z  Container awf-api-proxy  Stopped
+2026-09-25T02:37:37.0323964Z  Container awf-api-proxy  Removing
+2026-09-25T02:37:37.0377664Z  Container awf-api-proxy  Removed
+2026-09-25T02:37:38.0839853Z  Container awf-squid  Stopped
+2026-09-25T02:37:38.0840564Z  Container awf-squid  Removing
+2026-09-25T02:37:38.0901274Z  Container awf-squid  Removed
+2026-09-25T02:37:38.0910273Z  Network awf-9rdze3_awf-ext  Removing
+2026-09-25T02:37:38.0911155Z  Network awf-net  Removing
+2026-09-25T02:37:38.0913289Z  Network awf-net  Resource is still in use
+2026-09-25T02:37:38.1653912Z  Network awf-9rdze3_awf-ext  Removed
+2026-09-25T02:37:38.2693917Z [SUCCESS] Containers stopped successfully
+2026-09-25T02:37:38.2703118Z [INFO] Agent session state preserved at: /tmp/awf-agent-session-state-9RDZE3
+2026-09-25T02:37:38.2718043Z [INFO] API proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/api-proxy-logs
+2026-09-25T02:37:38.2734966Z [INFO] CLI proxy logs available at: /tmp/gh-aw/sandbox/firewall/logs/cli-proxy-logs
+2026-09-25T02:37:38.2791486Z [INFO] Squid logs available at: /tmp/gh-aw/sandbox/firewall/logs
+2026-09-25T02:37:38.2817704Z [INFO] Audit artifacts available at: /tmp/gh-aw/sandbox/firewall/audit
+2026-09-25T02:37:38.5529243Z [WARN] Command completed with exit code: 1
+2026-09-25T02:37:38.5529866Z Process exiting with code: 1
+2026-09-25T02:37:38.5687062Z ##[error]Agent execution exited with code 1
+2026-09-25T02:37:38.5694579Z ##[error]Process completed with exit code 1.
+2026-09-25T02:37:38.5700584Z ##[debug]Finishing: Execute GitHub Copilot CLI

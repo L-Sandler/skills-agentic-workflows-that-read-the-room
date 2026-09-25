@@ -1,0 +1,40 @@
+﻿2026-09-25T02:36:57.2821938Z ##[debug]Evaluating condition for step: 'Restore inline skills from activation artifact'
+2026-09-25T02:36:57.2823236Z ##[debug]Evaluating: success()
+2026-09-25T02:36:57.2823637Z ##[debug]Evaluating success:
+2026-09-25T02:36:57.2824029Z ##[debug]=> true
+2026-09-25T02:36:57.2824409Z ##[debug]Result: true
+2026-09-25T02:36:57.2824986Z ##[debug]Starting: Restore inline skills from activation artifact
+2026-09-25T02:36:57.2834541Z ##[debug]Loading inputs
+2026-09-25T02:36:57.2835502Z ##[debug]Loading env
+2026-09-25T02:36:57.2839854Z ##[group]Run bash "${RUNNER_TEMP}/gh-aw/actions/restore_inline_skills.sh"
+2026-09-25T02:36:57.2840367Z [36;1mbash "${RUNNER_TEMP}/gh-aw/actions/restore_inline_skills.sh"[0m
+2026-09-25T02:36:57.2902159Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:36:57.2902452Z env:
+2026-09-25T02:36:57.2902674Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:57.2902990Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:57.2903951Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:57.2904888Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:57.2905193Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:57.2905509Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:57.2905771Z   DEFAULT_BRANCH: main
+2026-09-25T02:36:57.2906009Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:36:57.2906274Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:36:57.2906510Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:36:57.2906800Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:36:57.2907128Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:36:57.2907385Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:36:57.2907905Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:36:57.2908162Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:36:57.2908411Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:36:57.2908647Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:36:57.2909061Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:57.2909341Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:36:57.2909720Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:57.2910103Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:36:57.2910439Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:36:57.2910745Z   GH_AW_SKILL_DIR: .github/skills
+2026-09-25T02:36:57.2911010Z ##[endgroup]
+2026-09-25T02:36:57.2976428Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/5ef6c56f-16df-4723-978a-af7ed109e8c7.sh
+2026-09-25T02:36:57.3010277Z [restore-inline-skills] source: /tmp/gh-aw/.github/skills
+2026-09-25T02:36:57.3011361Z [restore-inline-skills] source directory not found — no inline skills to restore
+2026-09-25T02:36:57.3018019Z ##[debug]Finishing: Restore inline skills from activation artifact

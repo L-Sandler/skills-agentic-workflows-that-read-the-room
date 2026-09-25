@@ -1,0 +1,26 @@
+﻿2026-09-25T02:38:00.8085867Z ##[debug]Evaluating condition for step: 'Checkout repository for patch context'
+2026-09-25T02:38:00.8088083Z ##[debug]Evaluating: (success() && (needs.agent.outputs.has_patch == 'true'))
+2026-09-25T02:38:00.8088613Z ##[debug]Evaluating And:
+2026-09-25T02:38:00.8089224Z ##[debug]..Evaluating success:
+2026-09-25T02:38:00.8089670Z ##[debug]..=> true
+2026-09-25T02:38:00.8090070Z ##[debug]..Evaluating Equal:
+2026-09-25T02:38:00.8090438Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:00.8090811Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:00.8091191Z ##[debug]........Evaluating Index:
+2026-09-25T02:38:00.8091589Z ##[debug]..........Evaluating needs:
+2026-09-25T02:38:00.8091988Z ##[debug]..........=> Object
+2026-09-25T02:38:00.8092368Z ##[debug]..........Evaluating String:
+2026-09-25T02:38:00.8092746Z ##[debug]..........=> 'agent'
+2026-09-25T02:38:00.8093146Z ##[debug]........=> Object
+2026-09-25T02:38:00.8093505Z ##[debug]........Evaluating String:
+2026-09-25T02:38:00.8093904Z ##[debug]........=> 'outputs'
+2026-09-25T02:38:00.8094297Z ##[debug]......=> Object
+2026-09-25T02:38:00.8094663Z ##[debug]......Evaluating String:
+2026-09-25T02:38:00.8095072Z ##[debug]......=> 'has_patch'
+2026-09-25T02:38:00.8095459Z ##[debug]....=> 'false'
+2026-09-25T02:38:00.8095807Z ##[debug]....Evaluating String:
+2026-09-25T02:38:00.8096150Z ##[debug]....=> 'true'
+2026-09-25T02:38:00.8096490Z ##[debug]..=> false
+2026-09-25T02:38:00.8096801Z ##[debug]=> false
+2026-09-25T02:38:00.8097329Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-09-25T02:38:00.8097753Z ##[debug]Result: false

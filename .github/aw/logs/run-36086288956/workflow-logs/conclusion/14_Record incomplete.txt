@@ -1,0 +1,113 @@
+﻿2026-09-25T02:38:43.6353138Z ##[debug]Evaluating: steps.setup-agent-output-env.outputs.GH_AW_AGENT_OUTPUT
+2026-09-25T02:38:43.6354867Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.6355694Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6356545Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.6358297Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:43.6359194Z ##[debug]......=> Object
+2026-09-25T02:38:43.6360004Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.6360932Z ##[debug]......=> 'setup-agent-output-env'
+2026-09-25T02:38:43.6361946Z ##[debug]....=> Object
+2026-09-25T02:38:43.6362692Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6363534Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.6364288Z ##[debug]..=> Object
+2026-09-25T02:38:43.6365013Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.6365849Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-09-25T02:38:43.6366780Z ##[debug]=> '/tmp/gh-aw/agent_output.json'
+2026-09-25T02:38:43.6368325Z ##[debug]Result: '/tmp/gh-aw/agent_output.json'
+2026-09-25T02:38:43.6371227Z ##[debug]Evaluating: format('{0}/{1}/blob/{2}/.github/workflows/update-github-info.md', github.server_url, github.repository, github.ref_name)
+2026-09-25T02:38:43.6373435Z ##[debug]Evaluating format:
+2026-09-25T02:38:43.6374256Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.6375351Z ##[debug]..=> '{0}/{1}/blob/{2}/.github/workflows/update-github-info.md'
+2026-09-25T02:38:43.6376696Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6469019Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.6470328Z ##[debug]....=> Object
+2026-09-25T02:38:43.6471111Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6471964Z ##[debug]....=> 'server_url'
+2026-09-25T02:38:43.6472870Z ##[debug]..=> 'https://github.com'
+2026-09-25T02:38:43.6473910Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6474729Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.6475551Z ##[debug]....=> Object
+2026-09-25T02:38:43.6476285Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6477312Z ##[debug]....=> 'repository'
+2026-09-25T02:38:43.6478497Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:43.6479812Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6480624Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.6481446Z ##[debug]....=> Object
+2026-09-25T02:38:43.6482185Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6482990Z ##[debug]....=> 'ref_name'
+2026-09-25T02:38:43.6483968Z ##[debug]..=> 'main'
+2026-09-25T02:38:43.6485922Z ##[debug]=> 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md'
+2026-09-25T02:38:43.6489576Z ##[debug]Result: 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md'
+2026-09-25T02:38:43.6492421Z ##[debug]Evaluating condition for step: 'Record incomplete'
+2026-09-25T02:38:43.6495718Z ##[debug]Evaluating: success()
+2026-09-25T02:38:43.6496859Z ##[debug]Evaluating success:
+2026-09-25T02:38:43.6498168Z ##[debug]=> true
+2026-09-25T02:38:43.6499211Z ##[debug]Result: true
+2026-09-25T02:38:43.6500480Z ##[debug]Starting: Record incomplete
+2026-09-25T02:38:43.6585513Z ##[debug]Loading inputs
+2026-09-25T02:38:43.6610833Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-09-25T02:38:43.6612792Z ##[debug]Evaluating Or:
+2026-09-25T02:38:43.6613605Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6617395Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:43.6619684Z ##[debug]....=> Object
+2026-09-25T02:38:43.6621189Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6622053Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-09-25T02:38:43.6623350Z ##[debug]..=> null
+2026-09-25T02:38:43.6624082Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6624928Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:43.6625776Z ##[debug]....=> Object
+2026-09-25T02:38:43.6626520Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6627555Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-09-25T02:38:43.6636123Z ##[debug]..=> '***'
+2026-09-25T02:38:43.6644935Z ##[debug]=> '***'
+2026-09-25T02:38:43.6653443Z ##[debug]Expanded: (null || '***')
+2026-09-25T02:38:43.6667195Z ##[debug]Result: '***'
+2026-09-25T02:38:43.6669446Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:38:43.6671031Z ##[debug]Evaluating Equal:
+2026-09-25T02:38:43.6671852Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.6672663Z ##[debug]....Evaluating runner:
+2026-09-25T02:38:43.6673485Z ##[debug]....=> Object
+2026-09-25T02:38:43.6674336Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.6675149Z ##[debug]....=> 'debug'
+2026-09-25T02:38:43.6675885Z ##[debug]..=> '1'
+2026-09-25T02:38:43.6676582Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.6677575Z ##[debug]..=> '1'
+2026-09-25T02:38:43.6678246Z ##[debug]=> true
+2026-09-25T02:38:43.6678950Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:38:43.6679760Z ##[debug]Result: true
+2026-09-25T02:38:43.6705053Z ##[debug]Loading env
+2026-09-25T02:38:43.6721902Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:38:43.6723476Z with:
+2026-09-25T02:38:43.6732189Z   github-token: ***
+2026-09-25T02:38:43.6736138Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'report_incomplete_handler.cjs'));
+await main();
+
+2026-09-25T02:38:43.6740449Z   debug: true
+2026-09-25T02:38:43.6741127Z   user-agent: actions/github-script
+2026-09-25T02:38:43.6741989Z   result-encoding: json
+2026-09-25T02:38:43.6742681Z   retries: 0
+2026-09-25T02:38:43.6743406Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:38:43.6744333Z env:
+2026-09-25T02:38:43.6744932Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:43.6745813Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:43.6749041Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:43.6752043Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:43.6752919Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:43.6753899Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:43.6754692Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:43.6755593Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:43.6756734Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 434ff0d3ad0b9735
+2026-09-25T02:38:43.6757887Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303919335
+2026-09-25T02:38:43.6758886Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-25T02:38:43.6759925Z   GH_AW_REPORT_INCOMPLETE_CREATE_ISSUE: true
+2026-09-25T02:38:43.6760885Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-25T02:38:43.6763086Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-09-25T02:38:43.6765297Z ##[endgroup]
+2026-09-25T02:38:43.8696123Z Max count: unlimited
+2026-09-25T02:38:43.8754995Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:43.8759508Z ##[debug]Set output result = 
+2026-09-25T02:38:43.8762112Z ##[debug]Finishing: Record incomplete

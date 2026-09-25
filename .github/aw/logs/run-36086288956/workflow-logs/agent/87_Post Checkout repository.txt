@@ -1,0 +1,63 @@
+﻿2026-09-25T02:37:44.4051944Z ##[debug]Evaluating condition for step: 'Post Checkout repository'
+2026-09-25T02:37:44.4053600Z ##[debug]Evaluating: always()
+2026-09-25T02:37:44.4054003Z ##[debug]Evaluating always:
+2026-09-25T02:37:44.4054383Z ##[debug]=> true
+2026-09-25T02:37:44.4054797Z ##[debug]Result: true
+2026-09-25T02:37:44.4055399Z ##[debug]Starting: Post Checkout repository
+2026-09-25T02:37:44.4090648Z ##[debug]Loading inputs
+2026-09-25T02:37:44.4092056Z ##[debug]Evaluating: github.repository
+2026-09-25T02:37:44.4092430Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.4092710Z ##[debug]..Evaluating github:
+2026-09-25T02:37:44.4093024Z ##[debug]..=> Object
+2026-09-25T02:37:44.4093287Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.4093564Z ##[debug]..=> 'repository'
+2026-09-25T02:37:44.4093950Z ##[debug]=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:37:44.4094466Z ##[debug]Result: 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:37:44.4096188Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:44.4096542Z ##[debug]Evaluating Index:
+2026-09-25T02:37:44.4096818Z ##[debug]..Evaluating github:
+2026-09-25T02:37:44.4097103Z ##[debug]..=> Object
+2026-09-25T02:37:44.4097358Z ##[debug]..Evaluating String:
+2026-09-25T02:37:44.4097800Z ##[debug]..=> 'token'
+2026-09-25T02:37:44.4100377Z ##[debug]=> '***'
+2026-09-25T02:37:44.4102724Z ##[debug]Result: '***'
+2026-09-25T02:37:44.4114654Z ##[debug]Loading env
+2026-09-25T02:37:44.4119689Z Post job cleanup.
+2026-09-25T02:37:44.4945778Z ##[debug]Getting git version
+2026-09-25T02:37:44.4962034Z [command]/usr/bin/git version
+2026-09-25T02:37:44.5005120Z git version 2.55.0
+2026-09-25T02:37:44.5022193Z ##[debug]0
+2026-09-25T02:37:44.5022971Z ##[debug]git version 2.55.0
+2026-09-25T02:37:44.5023383Z ##[debug]
+2026-09-25T02:37:44.5024625Z ##[debug]Set git useragent to: git/2.55.0 (github-actions-checkout) actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.agent.__default
+2026-09-25T02:37:44.5026149Z ::add-mask::***
+2026-09-25T02:37:44.5042501Z Copying '/home/runner/.gitconfig' to '/home/runner/work/_temp/6d06cd57-b262-4444-98ac-bf7b521d7857/.gitconfig'
+2026-09-25T02:37:44.5052672Z Temporarily overriding HOME='/home/runner/work/_temp/6d06cd57-b262-4444-98ac-bf7b521d7857' before making global git config changes
+2026-09-25T02:37:44.5054281Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-25T02:37:44.5060178Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:37:44.5093253Z ##[debug]0
+2026-09-25T02:37:44.5093865Z ##[debug]
+2026-09-25T02:37:44.5094234Z Removing SSH command configuration
+2026-09-25T02:37:44.5100409Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-25T02:37:44.5130371Z ##[debug]1
+2026-09-25T02:37:44.5131260Z ##[debug]
+2026-09-25T02:37:44.5136619Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-25T02:37:44.5408653Z ##[debug]0
+2026-09-25T02:37:44.5409331Z ##[debug]
+2026-09-25T02:37:44.5410030Z Removing HTTP extra header
+2026-09-25T02:37:44.5416384Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-25T02:37:44.5447800Z ##[debug]1
+2026-09-25T02:37:44.5448539Z ##[debug]
+2026-09-25T02:37:44.5453591Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-25T02:37:44.5725121Z ##[debug]0
+2026-09-25T02:37:44.5725756Z ##[debug]
+2026-09-25T02:37:44.5726414Z Removing includeIf entries pointing to credentials config files
+2026-09-25T02:37:44.5734874Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-25T02:37:44.5769235Z ##[debug]1
+2026-09-25T02:37:44.5770589Z ##[debug]
+2026-09-25T02:37:44.5775606Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-25T02:37:44.6033780Z ##[debug]0
+2026-09-25T02:37:44.6034412Z ##[debug]
+2026-09-25T02:37:44.6035589Z ##[debug]Unsetting HOME override
+2026-09-25T02:37:44.6126317Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:44.6129408Z ##[debug]Finishing: Post Checkout repository

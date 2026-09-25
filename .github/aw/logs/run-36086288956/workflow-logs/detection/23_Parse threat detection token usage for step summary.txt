@@ -1,0 +1,65 @@
+﻿2026-09-25T02:38:17.3669458Z ##[debug]Evaluating condition for step: 'Parse threat detection token usage for step summary'
+2026-09-25T02:38:17.3670655Z ##[debug]Evaluating: always()
+2026-09-25T02:38:17.3671011Z ##[debug]Evaluating always:
+2026-09-25T02:38:17.3671345Z ##[debug]=> true
+2026-09-25T02:38:17.3671694Z ##[debug]Result: true
+2026-09-25T02:38:17.3672212Z ##[debug]Starting: Parse threat detection token usage for step summary
+2026-09-25T02:38:17.3696391Z ##[debug]Loading inputs
+2026-09-25T02:38:17.3697849Z ##[debug]Evaluating: github.token
+2026-09-25T02:38:17.3698217Z ##[debug]Evaluating Index:
+2026-09-25T02:38:17.3698518Z ##[debug]..Evaluating github:
+2026-09-25T02:38:17.3698791Z ##[debug]..=> Object
+2026-09-25T02:38:17.3699347Z ##[debug]..Evaluating String:
+2026-09-25T02:38:17.3699609Z ##[debug]..=> 'token'
+2026-09-25T02:38:17.3701923Z ##[debug]=> '***'
+2026-09-25T02:38:17.3704202Z ##[debug]Result: '***'
+2026-09-25T02:38:17.3707480Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:38:17.3707790Z ##[debug]Evaluating Equal:
+2026-09-25T02:38:17.3708085Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:17.3708466Z ##[debug]....Evaluating runner:
+2026-09-25T02:38:17.3708754Z ##[debug]....=> Object
+2026-09-25T02:38:17.3709199Z ##[debug]....Evaluating String:
+2026-09-25T02:38:17.3709474Z ##[debug]....=> 'debug'
+2026-09-25T02:38:17.3709739Z ##[debug]..=> '1'
+2026-09-25T02:38:17.3709982Z ##[debug]..Evaluating String:
+2026-09-25T02:38:17.3710236Z ##[debug]..=> '1'
+2026-09-25T02:38:17.3710456Z ##[debug]=> true
+2026-09-25T02:38:17.3710711Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:38:17.3710971Z ##[debug]Result: true
+2026-09-25T02:38:17.3714804Z ##[debug]Loading env
+2026-09-25T02:38:17.3719374Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:38:17.3719782Z with:
+2026-09-25T02:38:17.3720868Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'parse_token_usage.cjs'));
+await main();
+
+2026-09-25T02:38:17.3724094Z   github-token: ***
+2026-09-25T02:38:17.3724317Z   debug: true
+2026-09-25T02:38:17.3724553Z   user-agent: actions/github-script
+2026-09-25T02:38:17.3724838Z   result-encoding: json
+2026-09-25T02:38:17.3725078Z   retries: 0
+2026-09-25T02:38:17.3725336Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:38:17.3725633Z env:
+2026-09-25T02:38:17.3725862Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:17.3726160Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:17.3727051Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:17.3727922Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:17.3728219Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:17.3728551Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:17.3728814Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:17.3729208Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:17.3729582Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 45587e438fc1659e
+2026-09-25T02:38:17.3729902Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303878460
+2026-09-25T02:38:17.3730260Z   GH_AW_TOKEN_USAGE_SUMMARY_TITLE: Threat Detection Token Usage
+2026-09-25T02:38:17.3730703Z   GH_AW_AGENT_USAGE_PATH: /tmp/gh-aw/threat-detection/detection_usage.json
+2026-09-25T02:38:17.3731213Z   GH_AW_AGENT_USAGE_JSONL_PATH: /tmp/gh-aw/threat-detection/detection_usage.jsonl
+2026-09-25T02:38:17.3731631Z   GH_AW_WRITE_EMPTY_USAGE: true
+2026-09-25T02:38:17.3731892Z ##[endgroup]
+2026-09-25T02:38:17.4715766Z Recorded explicit zero token usage evidence
+2026-09-25T02:38:17.4716569Z No token usage data found, skipping summary
+2026-09-25T02:38:17.4761196Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:17.4763490Z ##[debug]Set output result = 
+2026-09-25T02:38:17.4764727Z ##[debug]Finishing: Parse threat detection token usage for step summary

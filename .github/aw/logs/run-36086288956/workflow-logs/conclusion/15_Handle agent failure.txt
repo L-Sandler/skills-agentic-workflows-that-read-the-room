@@ -1,0 +1,884 @@
+﻿2026-09-25T02:38:43.8784641Z ##[debug]Evaluating: steps.setup-agent-output-env.outputs.GH_AW_AGENT_OUTPUT
+2026-09-25T02:38:43.8786106Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8787234Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8788034Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8788845Z ##[debug]......Evaluating steps:
+2026-09-25T02:38:43.8789695Z ##[debug]......=> Object
+2026-09-25T02:38:43.8790455Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8791432Z ##[debug]......=> 'setup-agent-output-env'
+2026-09-25T02:38:43.8792701Z ##[debug]....=> Object
+2026-09-25T02:38:43.8793439Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8794238Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8795205Z ##[debug]..=> Object
+2026-09-25T02:38:43.8795916Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8796757Z ##[debug]..=> 'GH_AW_AGENT_OUTPUT'
+2026-09-25T02:38:43.8797875Z ##[debug]=> '/tmp/gh-aw/agent_output.json'
+2026-09-25T02:38:43.8798902Z ##[debug]Result: '/tmp/gh-aw/agent_output.json'
+2026-09-25T02:38:43.8801622Z ##[debug]Evaluating: format('{0}/{1}/blob/{2}/.github/workflows/update-github-info.md', github.server_url, github.repository, github.ref_name)
+2026-09-25T02:38:43.8803687Z ##[debug]Evaluating format:
+2026-09-25T02:38:43.8804478Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8805521Z ##[debug]..=> '{0}/{1}/blob/{2}/.github/workflows/update-github-info.md'
+2026-09-25T02:38:43.8806776Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8807791Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.8808581Z ##[debug]....=> Object
+2026-09-25T02:38:43.8809308Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8810101Z ##[debug]....=> 'server_url'
+2026-09-25T02:38:43.8810928Z ##[debug]..=> 'https://github.com'
+2026-09-25T02:38:43.8811813Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8812594Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.8813366Z ##[debug]....=> Object
+2026-09-25T02:38:43.8814156Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8815259Z ##[debug]....=> 'repository'
+2026-09-25T02:38:43.8816357Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:43.8817741Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8818527Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.8819350Z ##[debug]....=> Object
+2026-09-25T02:38:43.8820079Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8820887Z ##[debug]....=> 'ref_name'
+2026-09-25T02:38:43.8821652Z ##[debug]..=> 'main'
+2026-09-25T02:38:43.8823515Z ##[debug]=> 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md'
+2026-09-25T02:38:43.8826777Z ##[debug]Result: 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md'
+2026-09-25T02:38:43.8830140Z ##[debug]Evaluating: format('{0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id)
+2026-09-25T02:38:43.8831722Z ##[debug]Evaluating format:
+2026-09-25T02:38:43.8832500Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8833331Z ##[debug]..=> '{0}/{1}/actions/runs/{2}'
+2026-09-25T02:38:43.8834257Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8835048Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.8836128Z ##[debug]....=> Object
+2026-09-25T02:38:43.8836856Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8837901Z ##[debug]....=> 'server_url'
+2026-09-25T02:38:43.8838726Z ##[debug]..=> 'https://github.com'
+2026-09-25T02:38:43.8839604Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8840391Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.8841176Z ##[debug]....=> Object
+2026-09-25T02:38:43.8841891Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8842690Z ##[debug]....=> 'repository'
+2026-09-25T02:38:43.8843991Z ##[debug]..=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:38:43.8845214Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8845993Z ##[debug]....Evaluating github:
+2026-09-25T02:38:43.8846768Z ##[debug]....=> Object
+2026-09-25T02:38:43.8847628Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8848682Z ##[debug]....=> 'run_id'
+2026-09-25T02:38:43.8849410Z ##[debug]..=> '36086288956'
+2026-09-25T02:38:43.8850964Z ##[debug]=> 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956'
+2026-09-25T02:38:43.8853531Z ##[debug]Result: 'https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956'
+2026-09-25T02:38:43.8855647Z ##[debug]Evaluating: needs.agent.result
+2026-09-25T02:38:43.8856540Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8857491Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8858281Z ##[debug]....Evaluating needs:
+2026-09-25T02:38:43.8859066Z ##[debug]....=> Object
+2026-09-25T02:38:43.8859913Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8860802Z ##[debug]....=> 'agent'
+2026-09-25T02:38:43.8861528Z ##[debug]..=> Object
+2026-09-25T02:38:43.8862235Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8863013Z ##[debug]..=> 'result'
+2026-09-25T02:38:43.8863715Z ##[debug]=> 'failure'
+2026-09-25T02:38:43.8864432Z ##[debug]Result: 'failure'
+2026-09-25T02:38:43.8865832Z ##[debug]Evaluating: needs.activation.outputs.secret_verification_result
+2026-09-25T02:38:43.8867256Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8868050Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8868835Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8869631Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.8870441Z ##[debug]......=> Object
+2026-09-25T02:38:43.8871174Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8871994Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.8872766Z ##[debug]....=> Object
+2026-09-25T02:38:43.8873474Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8874269Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8875008Z ##[debug]..=> Object
+2026-09-25T02:38:43.8875696Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8876525Z ##[debug]..=> 'secret_verification_result'
+2026-09-25T02:38:43.8877579Z ##[debug]=> 'success'
+2026-09-25T02:38:43.8878284Z ##[debug]Result: 'success'
+2026-09-25T02:38:43.8879481Z ##[debug]Evaluating: needs.agent.outputs.checkout_pr_success
+2026-09-25T02:38:43.8882368Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8883164Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8883961Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8884858Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.8885700Z ##[debug]......=> Object
+2026-09-25T02:38:43.8886626Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8887630Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.8888813Z ##[debug]....=> Object
+2026-09-25T02:38:43.8889534Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8890326Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8891068Z ##[debug]..=> Object
+2026-09-25T02:38:43.8891772Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8892567Z ##[debug]..=> 'checkout_pr_success'
+2026-09-25T02:38:43.8893405Z ##[debug]=> 'true'
+2026-09-25T02:38:43.8894093Z ##[debug]Result: 'true'
+2026-09-25T02:38:43.8895663Z ##[debug]Evaluating: (needs.agent.outputs.ai_credits_rate_limit_error || 'false')
+2026-09-25T02:38:43.8897312Z ##[debug]Evaluating Or:
+2026-09-25T02:38:43.8898067Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8898862Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8899663Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:43.8900479Z ##[debug]........Evaluating needs:
+2026-09-25T02:38:43.8901299Z ##[debug]........=> Object
+2026-09-25T02:38:43.8902069Z ##[debug]........Evaluating String:
+2026-09-25T02:38:43.8903176Z ##[debug]........=> 'agent'
+2026-09-25T02:38:43.8903947Z ##[debug]......=> Object
+2026-09-25T02:38:43.8904683Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8905492Z ##[debug]......=> 'outputs'
+2026-09-25T02:38:43.8906323Z ##[debug]....=> Object
+2026-09-25T02:38:43.8907202Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8908051Z ##[debug]....=> 'ai_credits_rate_limit_error'
+2026-09-25T02:38:43.8908980Z ##[debug]..=> 'false'
+2026-09-25T02:38:43.8909681Z ##[debug]=> 'false'
+2026-09-25T02:38:43.8910436Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:38:43.8911585Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.8913034Z ##[debug]Evaluating: (needs.agent.outputs.unknown_model_ai_credits || 'false')
+2026-09-25T02:38:43.8914346Z ##[debug]Evaluating Or:
+2026-09-25T02:38:43.8915081Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8915861Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8916656Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:43.8917685Z ##[debug]........Evaluating needs:
+2026-09-25T02:38:43.8918509Z ##[debug]........=> Object
+2026-09-25T02:38:43.8919263Z ##[debug]........Evaluating String:
+2026-09-25T02:38:43.8920087Z ##[debug]........=> 'agent'
+2026-09-25T02:38:43.8920837Z ##[debug]......=> Object
+2026-09-25T02:38:43.8921716Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8922519Z ##[debug]......=> 'outputs'
+2026-09-25T02:38:43.8923270Z ##[debug]....=> Object
+2026-09-25T02:38:43.8923983Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8924805Z ##[debug]....=> 'unknown_model_ai_credits'
+2026-09-25T02:38:43.8925710Z ##[debug]..=> 'false'
+2026-09-25T02:38:43.8926402Z ##[debug]=> 'false'
+2026-09-25T02:38:43.8927270Z ##[debug]Expanded: ('false' || 'false')
+2026-09-25T02:38:43.8928123Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.8929152Z ##[debug]Evaluating: needs.agent.outputs.aic
+2026-09-25T02:38:43.8930095Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8930853Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8931651Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8932451Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.8933252Z ##[debug]......=> Object
+2026-09-25T02:38:43.8934004Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8934814Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.8935555Z ##[debug]....=> Object
+2026-09-25T02:38:43.8936261Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8937215Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8937946Z ##[debug]..=> Object
+2026-09-25T02:38:43.8938662Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8939426Z ##[debug]..=> 'aic'
+2026-09-25T02:38:43.8940096Z ##[debug]=> null
+2026-09-25T02:38:43.8940754Z ##[debug]Result: null
+2026-09-25T02:38:43.8941808Z ##[debug]Evaluating: needs.detection.outputs.aic
+2026-09-25T02:38:43.8942794Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8943556Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8944336Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8945131Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.8945938Z ##[debug]......=> Object
+2026-09-25T02:38:43.8946670Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8947640Z ##[debug]......=> 'detection'
+2026-09-25T02:38:43.8949174Z ##[debug]....=> Object
+2026-09-25T02:38:43.8949915Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8950725Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8951456Z ##[debug]..=> Object
+2026-09-25T02:38:43.8952161Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8952933Z ##[debug]..=> 'aic'
+2026-09-25T02:38:43.8953978Z ##[debug]=> null
+2026-09-25T02:38:43.8954664Z ##[debug]Result: null
+2026-09-25T02:38:43.8956677Z ##[debug]Evaluating: (vars.GH_AW_DEFAULT_MAX_AI_CREDITS || '1000')
+2026-09-25T02:38:43.8958391Z ##[debug]Evaluating Or:
+2026-09-25T02:38:43.8959131Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8959915Z ##[debug]....Evaluating vars:
+2026-09-25T02:38:43.8960706Z ##[debug]....=> Object
+2026-09-25T02:38:43.8961448Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8962783Z ##[debug]....=> 'GH_AW_DEFAULT_MAX_AI_CREDITS'
+2026-09-25T02:38:43.8969646Z ##[debug]..=> null
+2026-09-25T02:38:43.8970808Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8971633Z ##[debug]..=> '1000'
+2026-09-25T02:38:43.8972351Z ##[debug]=> '1000'
+2026-09-25T02:38:43.8973096Z ##[debug]Expanded: (null || '1000')
+2026-09-25T02:38:43.8973979Z ##[debug]Result: '1000'
+2026-09-25T02:38:43.8975380Z ##[debug]Evaluating: needs.agent.outputs.inference_access_error
+2026-09-25T02:38:43.8976643Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8977594Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8978400Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8979441Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.8980252Z ##[debug]......=> Object
+2026-09-25T02:38:43.8981006Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8981825Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.8982569Z ##[debug]....=> Object
+2026-09-25T02:38:43.8983280Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8984059Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8984782Z ##[debug]..=> Object
+2026-09-25T02:38:43.8985486Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.8986299Z ##[debug]..=> 'inference_access_error'
+2026-09-25T02:38:43.8987332Z ##[debug]=> 'false'
+2026-09-25T02:38:43.8988014Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.8989351Z ##[debug]Evaluating: needs.agent.outputs.mcp_policy_error
+2026-09-25T02:38:43.8990424Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.8991183Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.8991958Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.8992748Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.8993564Z ##[debug]......=> Object
+2026-09-25T02:38:43.8994299Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.8995101Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.8995843Z ##[debug]....=> Object
+2026-09-25T02:38:43.8996601Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.8998257Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.8999853Z ##[debug]..=> Object
+2026-09-25T02:38:43.9000578Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9001381Z ##[debug]..=> 'mcp_policy_error'
+2026-09-25T02:38:43.9002180Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9002865Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9004125Z ##[debug]Evaluating: needs.agent.outputs.agentic_engine_timeout
+2026-09-25T02:38:43.9005280Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9006049Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9007946Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9008742Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9009548Z ##[debug]......=> Object
+2026-09-25T02:38:43.9010296Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9011112Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9011931Z ##[debug]....=> Object
+2026-09-25T02:38:43.9012649Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9013664Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9014382Z ##[debug]..=> Object
+2026-09-25T02:38:43.9015077Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9015890Z ##[debug]..=> 'agentic_engine_timeout'
+2026-09-25T02:38:43.9016740Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9017573Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9018867Z ##[debug]Evaluating: needs.agent.outputs.model_not_supported_error
+2026-09-25T02:38:43.9020038Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9020810Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9021586Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9022374Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9023159Z ##[debug]......=> Object
+2026-09-25T02:38:43.9025056Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9029709Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9030786Z ##[debug]....=> Object
+2026-09-25T02:38:43.9031516Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9032303Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9033016Z ##[debug]..=> Object
+2026-09-25T02:38:43.9033702Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9034521Z ##[debug]..=> 'model_not_supported_error'
+2026-09-25T02:38:43.9035401Z ##[debug]=> 'true'
+2026-09-25T02:38:43.9036086Z ##[debug]Result: 'true'
+2026-09-25T02:38:43.9037679Z ##[debug]Evaluating: needs.agent.outputs.http_400_response_error
+2026-09-25T02:38:43.9038847Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9039604Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9040376Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9041175Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9043483Z ##[debug]......=> Object
+2026-09-25T02:38:43.9052669Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9054132Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9055773Z ##[debug]....=> Object
+2026-09-25T02:38:43.9060328Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9061148Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9061906Z ##[debug]..=> Object
+2026-09-25T02:38:43.9062610Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9063422Z ##[debug]..=> 'http_400_response_error'
+2026-09-25T02:38:43.9064295Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9065557Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9067582Z ##[debug]Evaluating: needs.agent.outputs.max_cache_misses_exceeded
+2026-09-25T02:38:43.9068787Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9069562Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9070347Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9071130Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9072135Z ##[debug]......=> Object
+2026-09-25T02:38:43.9072884Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9073685Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9074419Z ##[debug]....=> Object
+2026-09-25T02:38:43.9075138Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9075929Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9076644Z ##[debug]..=> Object
+2026-09-25T02:38:43.9077561Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9078376Z ##[debug]..=> 'max_cache_misses_exceeded'
+2026-09-25T02:38:43.9079236Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9079918Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9081221Z ##[debug]Evaluating: needs.agent.outputs.missing_model_pricing_error
+2026-09-25T02:38:43.9082418Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9083195Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9083983Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9084779Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9085572Z ##[debug]......=> Object
+2026-09-25T02:38:43.9086322Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9087293Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9088039Z ##[debug]....=> Object
+2026-09-25T02:38:43.9088769Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9089557Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9090282Z ##[debug]..=> Object
+2026-09-25T02:38:43.9091718Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9092577Z ##[debug]..=> 'missing_model_pricing_error'
+2026-09-25T02:38:43.9093490Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9094172Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9095620Z ##[debug]Evaluating: needs.agent.outputs.missing_model_pricing_model_name
+2026-09-25T02:38:43.9097108Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9097879Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9098664Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9099465Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9100269Z ##[debug]......=> Object
+2026-09-25T02:38:43.9100998Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9101817Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9102550Z ##[debug]....=> Object
+2026-09-25T02:38:43.9103250Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9104031Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9104746Z ##[debug]..=> Object
+2026-09-25T02:38:43.9105431Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9106292Z ##[debug]..=> 'missing_model_pricing_model_name'
+2026-09-25T02:38:43.9107388Z ##[debug]=> null
+2026-09-25T02:38:43.9108055Z ##[debug]Result: null
+2026-09-25T02:38:43.9109306Z ##[debug]Evaluating: needs.agent.outputs.shell_expansion_guard_rejected
+2026-09-25T02:38:43.9111002Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9111792Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9112582Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9113381Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9114187Z ##[debug]......=> Object
+2026-09-25T02:38:43.9114932Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9115733Z ##[debug]......=> 'agent'
+2026-09-25T02:38:43.9116480Z ##[debug]....=> Object
+2026-09-25T02:38:43.9117371Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9118169Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9118878Z ##[debug]..=> Object
+2026-09-25T02:38:43.9120172Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9121045Z ##[debug]..=> 'shell_expansion_guard_rejected'
+2026-09-25T02:38:43.9122230Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9122921Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9124604Z ##[debug]Evaluating: needs.safe_outputs.outputs.code_push_failure_errors
+2026-09-25T02:38:43.9129038Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9130283Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9131280Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9132270Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9133474Z ##[debug]......=> Object
+2026-09-25T02:38:43.9134656Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9135684Z ##[debug]......=> 'safe_outputs'
+2026-09-25T02:38:43.9136840Z ##[debug]....=> Object
+2026-09-25T02:38:43.9138152Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9139120Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9140071Z ##[debug]..=> Object
+2026-09-25T02:38:43.9140941Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9142115Z ##[debug]..=> 'code_push_failure_errors'
+2026-09-25T02:38:43.9143157Z ##[debug]=> null
+2026-09-25T02:38:43.9144021Z ##[debug]Result: null
+2026-09-25T02:38:43.9145878Z ##[debug]Evaluating: needs.safe_outputs.outputs.code_push_failure_count
+2026-09-25T02:38:43.9147489Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9148451Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9149620Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9150596Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9151601Z ##[debug]......=> Object
+2026-09-25T02:38:43.9152533Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9153709Z ##[debug]......=> 'safe_outputs'
+2026-09-25T02:38:43.9154694Z ##[debug]....=> Object
+2026-09-25T02:38:43.9155583Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9156575Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9157499Z ##[debug]..=> Object
+2026-09-25T02:38:43.9158378Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9159577Z ##[debug]..=> 'code_push_failure_count'
+2026-09-25T02:38:43.9160617Z ##[debug]=> null
+2026-09-25T02:38:43.9161471Z ##[debug]Result: null
+2026-09-25T02:38:43.9163141Z ##[debug]Evaluating: needs.activation.outputs.lockdown_check_failed
+2026-09-25T02:38:43.9164728Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9165689Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9166662Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9168430Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9169233Z ##[debug]......=> Object
+2026-09-25T02:38:43.9169976Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9170819Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9171599Z ##[debug]....=> Object
+2026-09-25T02:38:43.9172310Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9173097Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9173834Z ##[debug]..=> Object
+2026-09-25T02:38:43.9174523Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9175329Z ##[debug]..=> 'lockdown_check_failed'
+2026-09-25T02:38:43.9176182Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9176863Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9178338Z ##[debug]Evaluating: needs.activation.outputs.oauth_token_check_failed
+2026-09-25T02:38:43.9179562Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9180324Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9181094Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9181879Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9183280Z ##[debug]......=> Object
+2026-09-25T02:38:43.9184024Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9184839Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9185608Z ##[debug]....=> Object
+2026-09-25T02:38:43.9186303Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9187252Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9187980Z ##[debug]..=> Object
+2026-09-25T02:38:43.9188673Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9189485Z ##[debug]..=> 'oauth_token_check_failed'
+2026-09-25T02:38:43.9190562Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9191243Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9192548Z ##[debug]Evaluating: needs.activation.outputs.stale_lock_file_failed
+2026-09-25T02:38:43.9193726Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9194719Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9195511Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9196315Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9197369Z ##[debug]......=> Object
+2026-09-25T02:38:43.9198183Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9198999Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9199768Z ##[debug]....=> Object
+2026-09-25T02:38:43.9200488Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9201277Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9201984Z ##[debug]..=> Object
+2026-09-25T02:38:43.9202680Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9205062Z ##[debug]..=> 'stale_lock_file_failed'
+2026-09-25T02:38:43.9206158Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9206873Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9208493Z ##[debug]Evaluating: needs.activation.outputs.daily_ai_credits_exceeded
+2026-09-25T02:38:43.9209971Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9210731Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9211525Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9212313Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9213108Z ##[debug]......=> Object
+2026-09-25T02:38:43.9213925Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9214741Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9215517Z ##[debug]....=> Object
+2026-09-25T02:38:43.9216232Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9217171Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9217903Z ##[debug]..=> Object
+2026-09-25T02:38:43.9218596Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9219411Z ##[debug]..=> 'daily_ai_credits_exceeded'
+2026-09-25T02:38:43.9220281Z ##[debug]=> 'false'
+2026-09-25T02:38:43.9220977Z ##[debug]Result: 'false'
+2026-09-25T02:38:43.9222340Z ##[debug]Evaluating: needs.activation.outputs.daily_ai_credits_guardrail_status
+2026-09-25T02:38:43.9223662Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9224415Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9225187Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9225984Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9226779Z ##[debug]......=> Object
+2026-09-25T02:38:43.9227684Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9228502Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9229385Z ##[debug]....=> Object
+2026-09-25T02:38:43.9230105Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9230880Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9231603Z ##[debug]..=> Object
+2026-09-25T02:38:43.9232305Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9233176Z ##[debug]..=> 'daily_ai_credits_guardrail_status'
+2026-09-25T02:38:43.9234180Z ##[debug]=> 'skipped'
+2026-09-25T02:38:43.9234926Z ##[debug]Result: 'skipped'
+2026-09-25T02:38:43.9236327Z ##[debug]Evaluating: needs.activation.outputs.daily_ai_credits_guardrail_error
+2026-09-25T02:38:43.9238306Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9239069Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9239849Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9240644Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9241443Z ##[debug]......=> Object
+2026-09-25T02:38:43.9242212Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9243023Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9243814Z ##[debug]....=> Object
+2026-09-25T02:38:43.9244519Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9245324Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9260445Z ##[debug]..=> Object
+2026-09-25T02:38:43.9261223Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9262117Z ##[debug]..=> 'daily_ai_credits_guardrail_error'
+2026-09-25T02:38:43.9263075Z ##[debug]=> null
+2026-09-25T02:38:43.9263738Z ##[debug]Result: null
+2026-09-25T02:38:43.9265271Z ##[debug]Evaluating: needs.activation.outputs.daily_ai_credits_total
+2026-09-25T02:38:43.9266511Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9267606Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9268413Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9269191Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9270259Z ##[debug]......=> Object
+2026-09-25T02:38:43.9270997Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9271811Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9272599Z ##[debug]....=> Object
+2026-09-25T02:38:43.9273309Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9274094Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9274807Z ##[debug]..=> Object
+2026-09-25T02:38:43.9275603Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9276409Z ##[debug]..=> 'daily_ai_credits_total'
+2026-09-25T02:38:43.9277442Z ##[debug]=> null
+2026-09-25T02:38:43.9278101Z ##[debug]Result: null
+2026-09-25T02:38:43.9279449Z ##[debug]Evaluating: needs.activation.outputs.daily_ai_credits_threshold
+2026-09-25T02:38:43.9280861Z ##[debug]Evaluating Index:
+2026-09-25T02:38:43.9281630Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9282413Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9283201Z ##[debug]......Evaluating needs:
+2026-09-25T02:38:43.9283985Z ##[debug]......=> Object
+2026-09-25T02:38:43.9284727Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9285539Z ##[debug]......=> 'activation'
+2026-09-25T02:38:43.9286318Z ##[debug]....=> Object
+2026-09-25T02:38:43.9287240Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9288370Z ##[debug]....=> 'outputs'
+2026-09-25T02:38:43.9289089Z ##[debug]..=> Object
+2026-09-25T02:38:43.9289764Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9290572Z ##[debug]..=> 'daily_ai_credits_threshold'
+2026-09-25T02:38:43.9291449Z ##[debug]=> null
+2026-09-25T02:38:43.9292101Z ##[debug]Result: null
+2026-09-25T02:38:43.9295662Z ##[debug]Evaluating: fromJSON((vars.GH_AW_DEFAULT_TIMEOUT_MINUTES || '20'))
+2026-09-25T02:38:43.9297263Z ##[debug]Evaluating fromJSON:
+2026-09-25T02:38:43.9301426Z ##[debug]..Evaluating Or:
+2026-09-25T02:38:43.9302253Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:43.9303054Z ##[debug]......Evaluating vars:
+2026-09-25T02:38:43.9303853Z ##[debug]......=> Object
+2026-09-25T02:38:43.9304596Z ##[debug]......Evaluating String:
+2026-09-25T02:38:43.9305786Z ##[debug]......=> 'GH_AW_DEFAULT_TIMEOUT_MINUTES'
+2026-09-25T02:38:43.9306746Z ##[debug]....=> null
+2026-09-25T02:38:43.9307667Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9308440Z ##[debug]....=> '20'
+2026-09-25T02:38:43.9309105Z ##[debug]..=> '20'
+2026-09-25T02:38:43.9319269Z ##[debug]=> 20
+2026-09-25T02:38:43.9320029Z ##[debug]Result: 20
+2026-09-25T02:38:43.9322381Z ##[debug]Evaluating condition for step: 'Handle agent failure'
+2026-09-25T02:38:43.9325699Z ##[debug]Evaluating: always()
+2026-09-25T02:38:43.9326808Z ##[debug]Evaluating always:
+2026-09-25T02:38:43.9328199Z ##[debug]=> true
+2026-09-25T02:38:43.9329197Z ##[debug]Result: true
+2026-09-25T02:38:43.9330439Z ##[debug]Starting: Handle agent failure
+2026-09-25T02:38:43.9501667Z ##[debug]Loading inputs
+2026-09-25T02:38:43.9504912Z ##[debug]Evaluating: (secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN)
+2026-09-25T02:38:43.9506131Z ##[debug]Evaluating Or:
+2026-09-25T02:38:43.9506868Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9507985Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:43.9508822Z ##[debug]....=> Object
+2026-09-25T02:38:43.9509535Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9510322Z ##[debug]....=> 'GH_AW_GITHUB_TOKEN'
+2026-09-25T02:38:43.9511157Z ##[debug]..=> null
+2026-09-25T02:38:43.9511832Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9512600Z ##[debug]....Evaluating secrets:
+2026-09-25T02:38:43.9513387Z ##[debug]....=> Object
+2026-09-25T02:38:43.9514082Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9514868Z ##[debug]....=> 'GITHUB_TOKEN'
+2026-09-25T02:38:43.9525350Z ##[debug]..=> '***'
+2026-09-25T02:38:43.9533612Z ##[debug]=> '***'
+2026-09-25T02:38:43.9541768Z ##[debug]Expanded: (null || '***')
+2026-09-25T02:38:43.9550450Z ##[debug]Result: '***'
+2026-09-25T02:38:43.9552419Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:38:43.9553866Z ##[debug]Evaluating Equal:
+2026-09-25T02:38:43.9554739Z ##[debug]..Evaluating Index:
+2026-09-25T02:38:43.9555526Z ##[debug]....Evaluating runner:
+2026-09-25T02:38:43.9556575Z ##[debug]....=> Object
+2026-09-25T02:38:43.9557477Z ##[debug]....Evaluating String:
+2026-09-25T02:38:43.9558244Z ##[debug]....=> 'debug'
+2026-09-25T02:38:43.9558970Z ##[debug]..=> '1'
+2026-09-25T02:38:43.9559640Z ##[debug]..Evaluating String:
+2026-09-25T02:38:43.9560441Z ##[debug]..=> '1'
+2026-09-25T02:38:43.9561092Z ##[debug]=> true
+2026-09-25T02:38:43.9561754Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:38:43.9562518Z ##[debug]Result: true
+2026-09-25T02:38:43.9573873Z ##[debug]Loading env
+2026-09-25T02:38:43.9586703Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:38:43.9588086Z with:
+2026-09-25T02:38:43.9600486Z   github-token: ***
+2026-09-25T02:38:43.9605739Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'handle_agent_failure.cjs'));
+await main();
+
+2026-09-25T02:38:43.9610762Z   debug: true
+2026-09-25T02:38:43.9611715Z   user-agent: actions/github-script
+2026-09-25T02:38:43.9612820Z   result-encoding: json
+2026-09-25T02:38:43.9613578Z   retries: 0
+2026-09-25T02:38:43.9614542Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:38:43.9615734Z env:
+2026-09-25T02:38:43.9616332Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:43.9617641Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:43.9621043Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:43.9624707Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:43.9625820Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:43.9627623Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:43.9628669Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:43.9630188Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:43.9631549Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 434ff0d3ad0b9735
+2026-09-25T02:38:43.9633392Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303919335
+2026-09-25T02:38:43.9634404Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-25T02:38:43.9640344Z   GH_AW_WORKFLOW_NAME: update-github-info
+2026-09-25T02:38:43.9642512Z   GH_AW_WORKFLOW_SOURCE_URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/blob/main/.github/workflows/update-github-info.md
+2026-09-25T02:38:43.9645396Z   GH_AW_RUN_URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956
+2026-09-25T02:38:43.9647246Z   GH_AW_AGENT_CONCLUSION: failure
+2026-09-25T02:38:43.9648072Z   GH_AW_WORKFLOW_ID: update-github-info
+2026-09-25T02:38:43.9648975Z   GH_AW_ACTION_FAILURE_ISSUE_EXPIRES_HOURS: 0
+2026-09-25T02:38:43.9649876Z   GH_AW_ENGINE_ID: copilot
+2026-09-25T02:38:43.9650636Z   GH_AW_SECRET_VERIFICATION_RESULT: success
+2026-09-25T02:38:43.9655562Z   GH_AW_ENGINE_SECRET_FAILURE_MESSAGE: **Alternative**: If your organization has a Copilot subscription, you can avoid the need for a personal access token by adding a top-level `permissions` block to your workflow file. This enables Copilot inference through the org using the built-in GitHub Actions token.
+
+```yaml
+permissions:
+  copilot-requests: write
+```
+
+See: https://github.github.com/gh-aw/reference/engines/#github-copilot-default
+2026-09-25T02:38:43.9660737Z   GH_AW_CHECKOUT_PR_SUCCESS: true
+2026-09-25T02:38:43.9661580Z   GH_AW_AI_CREDITS_RATE_LIMIT_ERROR: false
+2026-09-25T02:38:43.9662462Z   GH_AW_UNKNOWN_MODEL_AI_CREDITS: false
+2026-09-25T02:38:43.9663961Z   GH_AW_AIC: 
+2026-09-25T02:38:43.9664597Z   GH_AW_THREAT_DETECTION_AIC: 
+2026-09-25T02:38:43.9665356Z   GH_AW_MAX_AI_CREDITS: 1000
+2026-09-25T02:38:43.9666152Z   GH_AW_INFERENCE_ACCESS_ERROR: false
+2026-09-25T02:38:43.9667150Z   GH_AW_MCP_POLICY_ERROR: false
+2026-09-25T02:38:43.9667938Z   GH_AW_AGENTIC_ENGINE_TIMEOUT: false
+2026-09-25T02:38:43.9669039Z   GH_AW_MODEL_NOT_SUPPORTED_ERROR: true
+2026-09-25T02:38:43.9670480Z   GH_AW_HTTP_400_RESPONSE_ERROR: false
+2026-09-25T02:38:43.9671342Z   GH_AW_MAX_CACHE_MISSES_EXCEEDED: false
+2026-09-25T02:38:43.9672238Z   GH_AW_MISSING_MODEL_PRICING_ERROR: false
+2026-09-25T02:38:43.9673505Z   GH_AW_MISSING_MODEL_PRICING_MODEL_NAME: 
+2026-09-25T02:38:43.9676144Z   GH_AW_SHELL_EXPANSION_GUARD_REJECTED: false
+2026-09-25T02:38:43.9679715Z   GH_AW_ENGINE_API_HOSTS: api.enterprise.githubcopilot.com,api.githubcopilot.com,api.business.githubcopilot.com,api.individual.githubcopilot.com
+2026-09-25T02:38:43.9688258Z   GH_AW_CODE_PUSH_FAILURE_ERRORS: 
+2026-09-25T02:38:43.9689606Z   GH_AW_CODE_PUSH_FAILURE_COUNT: 
+2026-09-25T02:38:43.9690425Z   GH_AW_LOCKDOWN_CHECK_FAILED: false
+2026-09-25T02:38:43.9691774Z   GH_AW_OAUTH_TOKEN_CHECK_FAILED: false
+2026-09-25T02:38:43.9692650Z   GH_AW_STALE_LOCK_FILE_FAILED: false
+2026-09-25T02:38:43.9693779Z   GH_AW_DAILY_AI_CREDITS_EXCEEDED: false
+2026-09-25T02:38:43.9694976Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_STATUS: skipped
+2026-09-25T02:38:43.9696206Z   GH_AW_DAILY_AI_CREDITS_GUARDRAIL_ERROR: 
+2026-09-25T02:38:43.9697503Z   GH_AW_DAILY_AI_CREDITS_TOTAL: 
+2026-09-25T02:38:43.9698302Z   GH_AW_DAILY_AI_CREDITS_THRESHOLD: 
+2026-09-25T02:38:43.9699455Z   GH_AW_DAILY_AI_CREDITS_CONTINUE_ON_ERROR: false
+2026-09-25T02:38:43.9700651Z   GH_AW_GROUP_REPORTS: false
+2026-09-25T02:38:43.9701690Z   GH_AW_FAILURE_REPORT_AS_ISSUE: true
+2026-09-25T02:38:43.9702802Z   GH_AW_MISSING_TOOL_REPORT_AS_FAILURE: true
+2026-09-25T02:38:43.9703994Z   GH_AW_MISSING_DATA_REPORT_AS_FAILURE: true
+2026-09-25T02:38:43.9705122Z   GH_AW_TIMEOUT_MINUTES: 20
+2026-09-25T02:38:43.9705845Z ##[endgroup]
+2026-09-25T02:38:44.1709132Z [ai-credits] aiCredits source=none GH_AW_AIC=(unset)
+2026-09-25T02:38:44.1710554Z [ai-credits] maxAICredits source=env(GH_AW_MAX_AI_CREDITS) value=1000
+2026-09-25T02:38:44.1711765Z [ai-credits] rateLimitSignal source=none
+2026-09-25T02:38:44.1774668Z Agent conclusion: failure
+2026-09-25T02:38:44.1787960Z Workflow name: update-github-info
+2026-09-25T02:38:44.1790824Z Workflow ID: update-github-info
+2026-09-25T02:38:44.1792794Z Secret verification result: success
+2026-09-25T02:38:44.1796763Z Engine secret failure message: (set)
+2026-09-25T02:38:44.1801823Z Assignment error count: 0
+2026-09-25T02:38:44.1808766Z Assign copilot failure count: 0
+2026-09-25T02:38:44.1813164Z Skill install failure count: 0
+2026-09-25T02:38:44.1831222Z Create discussion error count: 0
+2026-09-25T02:38:44.1832314Z Code push failure count: 0
+2026-09-25T02:38:44.1833102Z Checkout PR success: true
+2026-09-25T02:38:44.1833837Z AI credits: (none)
+2026-09-25T02:38:44.1834502Z Configured max AI credits: 1000
+2026-09-25T02:38:44.1835366Z AI credits rate-limit error: false
+2026-09-25T02:38:44.1836307Z Max AI credits exceeded (harness budget abort): false
+2026-09-25T02:38:44.1837626Z Daily workflow AIC guardrail exceeded: false
+2026-09-25T02:38:44.1838799Z Daily workflow AIC guardrail status: skipped; error detail: (none)
+2026-09-25T02:38:44.1840280Z Daily workflow AIC guardrail continue-on-error (warning mode): false
+2026-09-25T02:38:44.1841458Z Inference access error: false
+2026-09-25T02:38:44.1842227Z MCP policy error: false
+2026-09-25T02:38:44.1842945Z Agentic engine timeout: false
+2026-09-25T02:38:44.1843715Z Model not supported error: true
+2026-09-25T02:38:44.1844501Z HTTP 400 response error: false
+2026-09-25T02:38:44.1845572Z Unknown model AI credits error: false
+2026-09-25T02:38:44.1846621Z Unknown model AI credits sources (audit/output): false/false
+2026-09-25T02:38:44.1849132Z Missing model pricing error: false (model: (unknown))
+2026-09-25T02:38:44.1851744Z Shell expansion guard rejected: false
+2026-09-25T02:38:44.1853021Z Push repo-memory result: 
+2026-09-25T02:38:44.1855481Z App token minting failed (safe_outputs/conclusion/activation): false/false/false
+2026-09-25T02:38:44.1858279Z Lockdown check failed: false
+2026-09-25T02:38:44.1859749Z OAuth token check failed: false
+2026-09-25T02:38:44.1861136Z Stale lock file check failed: false
+2026-09-25T02:38:44.1863520Z Cache memory enabled: false
+2026-09-25T02:38:44.1864394Z Cache memory restored (from restore outputs): false
+2026-09-25T02:38:44.1866563Z Missing tool report-as-failure: true
+2026-09-25T02:38:44.1868219Z Missing data report-as-failure: true
+2026-09-25T02:38:44.1869649Z Agent output content length: 24
+2026-09-25T02:38:44.2069103Z Searching for pull request from branch: main
+2026-09-25T02:38:44.9313567Z request {
+2026-09-25T02:38:44.9339675Z   method: 'GET',
+2026-09-25T02:38:44.9375876Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:38:44.9377849Z   headers: {
+2026-09-25T02:38:44.9379604Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:38:44.9384760Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.conclusion.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:38:44.9388253Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:38:44.9389384Z   },
+2026-09-25T02:38:44.9391222Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:38:44.9392676Z   request: {
+2026-09-25T02:38:44.9393303Z     agent: Agent {
+2026-09-25T02:38:44.9394284Z       _events: [Object: null prototype],
+2026-09-25T02:38:44.9395441Z       _eventsCount: 2,
+2026-09-25T02:38:44.9396165Z       _maxListeners: undefined,
+2026-09-25T02:38:44.9397647Z       options: [Object: null prototype],
+2026-09-25T02:38:44.9398786Z       defaultPort: 443,
+2026-09-25T02:38:44.9399494Z       protocol: 'https:',
+2026-09-25T02:38:44.9400552Z       requests: [Object: null prototype] {},
+2026-09-25T02:38:44.9401717Z       sockets: [Object: null prototype] {},
+2026-09-25T02:38:44.9402754Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:38:44.9403940Z       keepAliveMsecs: 1000,
+2026-09-25T02:38:44.9404679Z       keepAlive: false,
+2026-09-25T02:38:44.9405667Z       maxSockets: 100,
+2026-09-25T02:38:44.9406605Z       maxFreeSockets: 256,
+2026-09-25T02:38:44.9407486Z       scheduling: 'lifo',
+2026-09-25T02:38:44.9408505Z       maxTotalSockets: Infinity,
+2026-09-25T02:38:44.9409378Z       totalSocketCount: 0,
+2026-09-25T02:38:44.9410411Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:38:44.9411662Z       maxCachedSessions: 100,
+2026-09-25T02:38:44.9412446Z       _sessionCache: [Object],
+2026-09-25T02:38:44.9413221Z       Symbol(shapeMode): false,
+2026-09-25T02:38:44.9413989Z       Symbol(kCapture): false
+2026-09-25T02:38:44.9415064Z     },
+2026-09-25T02:38:44.9415899Z     fetch: [Function: proxyFetch],
+2026-09-25T02:38:44.9416754Z     hook: [Function: bound bound register]
+2026-09-25T02:38:44.9418441Z   },
+2026-09-25T02:38:44.9419275Z   url: '/search/issues',
+2026-09-25T02:38:44.9420614Z   q: 'repo:L-Sandler/skills-agentic-workflows-that-read-the-room is:pr is:open head:main',
+2026-09-25T02:38:44.9424144Z   per_page: 1
+2026-09-25T02:38:44.9425310Z }
+2026-09-25T02:38:44.9428815Z GET /search/issues?q=repo%3AL-Sandler%2Fskills-agentic-workflows-that-read-the-room%20is%3Apr%20is%3Aopen%20head%3Amain&per_page=1 - 200 with id 17C1:8E44A:22204F3:7383004:6AB5DEB4 in 371ms
+2026-09-25T02:38:44.9432769Z No pull request found for branch: main
+2026-09-25T02:38:44.9433820Z Parent issue creation is disabled (group-reports: false)
+2026-09-25T02:38:44.9436028Z Checking for existing issue with precise failure metadata for title: "[aw] update-github-info failed"
+2026-09-25T02:38:44.9437945Z request {
+2026-09-25T02:38:44.9438761Z   method: 'GET',
+2026-09-25T02:38:44.9439458Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:38:44.9440282Z   headers: {
+2026-09-25T02:38:44.9442948Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:38:44.9450055Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.conclusion.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:38:44.9454858Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:38:44.9456311Z   },
+2026-09-25T02:38:44.9457386Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:38:44.9458765Z   request: {
+2026-09-25T02:38:44.9462661Z     agent: Agent {
+2026-09-25T02:38:44.9466013Z       _events: [Object: null prototype],
+2026-09-25T02:38:44.9467870Z       _eventsCount: 2,
+2026-09-25T02:38:44.9468946Z       _maxListeners: undefined,
+2026-09-25T02:38:44.9470668Z       options: [Object: null prototype],
+2026-09-25T02:38:44.9487262Z       defaultPort: 443,
+2026-09-25T02:38:44.9489063Z       protocol: 'https:',
+2026-09-25T02:38:44.9493026Z       requests: [Object: null prototype] {},
+2026-09-25T02:38:44.9494318Z       sockets: [Object: null prototype] {},
+2026-09-25T02:38:44.9495355Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:38:44.9498808Z       keepAliveMsecs: 1000,
+2026-09-25T02:38:44.9500228Z       keepAlive: false,
+2026-09-25T02:38:44.9500933Z       maxSockets: 100,
+2026-09-25T02:38:44.9503881Z       maxFreeSockets: 256,
+2026-09-25T02:38:44.9504634Z       scheduling: 'lifo',
+2026-09-25T02:38:44.9506181Z       maxTotalSockets: Infinity,
+2026-09-25T02:38:44.9507191Z       totalSocketCount: 0,
+2026-09-25T02:38:44.9508322Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:38:44.9511009Z       maxCachedSessions: 100,
+2026-09-25T02:38:44.9512775Z       _sessionCache: [Object],
+2026-09-25T02:38:44.9514113Z       Symbol(shapeMode): false,
+2026-09-25T02:38:44.9515154Z       Symbol(kCapture): false
+2026-09-25T02:38:44.9515886Z     },
+2026-09-25T02:38:44.9516494Z     fetch: [Function: proxyFetch],
+2026-09-25T02:38:44.9518325Z     hook: [Function: bound bound register]
+2026-09-25T02:38:44.9519434Z   },
+2026-09-25T02:38:44.9520207Z   url: '/search/issues',
+2026-09-25T02:38:44.9562215Z   q: 'repo:L-Sandler/skills-agentic-workflows-that-read-the-room is:issue is:open label:agentic-workflows created:>=2026-09-24T02:38:44Z "gh-aw-agentic-workflow:" "workflow_id: update-github-info" in:body',
+2026-09-25T02:38:44.9566413Z   per_page: 100,
+2026-09-25T02:38:44.9568035Z   page: 1
+2026-09-25T02:38:44.9568621Z }
+2026-09-25T02:38:44.9573997Z GET /search/issues?q=repo%3AL-Sandler%2Fskills-agentic-workflows-that-read-the-room%20is%3Aissue%20is%3Aopen%20label%3Aagentic-workflows%20created%3A%3E%3D2026-09-24T02%3A38%3A44Z%20%22gh-aw-agentic-workflow%3A%22%20%22workflow_id%3A%20update-github-info%22%20in%3Abody&per_page=100&page=1 - 200 with id 17C1:8E44A:22206AF:738356D:6AB5DEB4 in 261ms
+2026-09-25T02:38:44.9580951Z Found existing issue #6: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/issues/6
+2026-09-25T02:38:44.9585118Z No specific error patterns found; including last 4 line(s) of agent-stdio.log as fallback
+2026-09-25T02:38:44.9587181Z Generating failure comment footer with aiCredits context: (none)
+2026-09-25T02:38:44.9589424Z request {
+2026-09-25T02:38:44.9590330Z   method: 'POST',
+2026-09-25T02:38:44.9591048Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:38:44.9592153Z   headers: {
+2026-09-25T02:38:44.9592838Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:38:44.9596364Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.conclusion.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:38:44.9609730Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:38:44.9611943Z   },
+2026-09-25T02:38:44.9612662Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:38:44.9613818Z   request: {
+2026-09-25T02:38:44.9614687Z     agent: Agent {
+2026-09-25T02:38:44.9615374Z       _events: [Object: null prototype],
+2026-09-25T02:38:44.9616499Z       _eventsCount: 2,
+2026-09-25T02:38:44.9618427Z       _maxListeners: undefined,
+2026-09-25T02:38:44.9619350Z       options: [Object: null prototype],
+2026-09-25T02:38:44.9632587Z       defaultPort: 443,
+2026-09-25T02:38:44.9633468Z       protocol: 'https:',
+2026-09-25T02:38:44.9638487Z       requests: [Object: null prototype] {},
+2026-09-25T02:38:44.9640627Z       sockets: [Object: null prototype] {},
+2026-09-25T02:38:44.9650792Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:38:44.9654998Z       keepAliveMsecs: 1000,
+2026-09-25T02:38:44.9655938Z       keepAlive: false,
+2026-09-25T02:38:44.9656661Z       maxSockets: 100,
+2026-09-25T02:38:44.9657878Z       maxFreeSockets: 256,
+2026-09-25T02:38:44.9658929Z       scheduling: 'lifo',
+2026-09-25T02:38:44.9659684Z       maxTotalSockets: Infinity,
+2026-09-25T02:38:44.9663812Z       totalSocketCount: 0,
+2026-09-25T02:38:44.9664624Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:38:44.9665527Z       maxCachedSessions: 100,
+2026-09-25T02:38:44.9666295Z       _sessionCache: [Object],
+2026-09-25T02:38:44.9667229Z       Symbol(shapeMode): false,
+2026-09-25T02:38:44.9669316Z       Symbol(kCapture): false
+2026-09-25T02:38:44.9670066Z     },
+2026-09-25T02:38:44.9670917Z     fetch: [Function: proxyFetch],
+2026-09-25T02:38:44.9671769Z     hook: [Function: bound bound register]
+2026-09-25T02:38:44.9672810Z   },
+2026-09-25T02:38:44.9675734Z   url: '/repos/{owner}/{repo}/issues/{issue_number}/comments',
+2026-09-25T02:38:44.9677433Z   owner: 'L-Sandler',
+2026-09-25T02:38:44.9678544Z   repo: 'skills-agentic-workflows-that-read-the-room',
+2026-09-25T02:38:44.9679558Z   issue_number: 6,
+2026-09-25T02:38:44.9682691Z   body: 'Agent job [36086288956](https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956) failed.\n' +
+2026-09-25T02:38:44.9684944Z     '\n' +
+2026-09-25T02:38:44.9685516Z     '\n' +
+2026-09-25T02:38:44.9686087Z     '> [!WARNING]\n' +
+2026-09-25T02:38:44.9689046Z     '> **Invalid or Unsupported Model**: The agent failed because the configured model name is invalid, unknown, or unavailable for this engine/account.\n' +
+2026-09-25T02:38:44.9691017Z     '\n' +
+2026-09-25T02:38:44.9693661Z     'This is a **configuration issue**, not a transient error — retrying will not help.\n' +
+2026-09-25T02:38:44.9695237Z     '\n' +
+2026-09-25T02:38:44.9695821Z     '<details>\n' +
+2026-09-25T02:38:44.9696511Z     '<summary>How to fix this</summary>\n' +
+2026-09-25T02:38:44.9700755Z     '\n' +
+2026-09-25T02:38:44.9701810Z     'Specify a valid model for the selected engine in the workflow frontmatter:\n' +
+2026-09-25T02:38:44.9703061Z     '\n' +
+2026-09-25T02:38:44.9703648Z     '```yaml\n' +
+2026-09-25T02:38:44.9704269Z     '---\n' +
+2026-09-25T02:38:44.9710556Z     'engine: copilot\n' +
+2026-09-25T02:38:44.9711355Z     'model: gpt-5-mini\n' +
+2026-09-25T02:38:44.9712070Z     '---\n' +
+2026-09-25T02:38:44.9712747Z     '```\n' +
+2026-09-25T02:38:44.9713334Z     '\n' +
+2026-09-25T02:38:44.9717199Z     'To find valid models, check your engine/provider documentation (for Copilot see [supported models](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line#supported-models)).\n' +
+2026-09-25T02:38:44.9720215Z     '\n' +
+2026-09-25T02:38:44.9725695Z     "If the error text is `No model available. Check policy enablement under GitHub Settings > Copilot`, the model is not disabled in the workflow but by Copilot policy. Enable the model under **GitHub Settings > Copilot > Policies** for the org/repo, or pick a model that is already enabled. This can also be triggered by a subagent (`task` tool) dispatch requesting a model that the policy does not allow, even when the main agent's model is enabled.\n" +
+2026-09-25T02:38:44.9736262Z     '\n' +
+2026-09-25T02:38:44.9742430Z     '</details>\n' +
+2026-09-25T02:38:44.9743084Z     '\n' +
+2026-09-25T02:38:44.9743669Z     '> [!WARNING]\n' +
+2026-09-25T02:38:44.9744636Z     '> **Engine Failure**: The `copilot` engine terminated unexpectedly.\n' +
+2026-09-25T02:38:44.9745853Z     '\n' +
+2026-09-25T02:38:44.9746452Z     '**Last agent output:**\n' +
+2026-09-25T02:38:44.9748153Z     '```\n' +
+2026-09-25T02:38:44.9748871Z     '400 The requested model is not supported.\n' +
+2026-09-25T02:38:44.9749836Z     'Changes    +0 -0\n' +
+2026-09-25T02:38:44.9750549Z     'Duration   4s\n' +
+2026-09-25T02:38:44.9751543Z     'Resume     copilot --resume=bbada2ee-dd92-4eef-a5e7-46b385b07700\n' +
+2026-09-25T02:38:44.9754065Z     '```\n' +
+2026-09-25T02:38:44.9754675Z     '\n' +
+2026-09-25T02:38:44.9755237Z     '\n' +
+2026-09-25T02:38:44.9755796Z     '\n' +
+2026-09-25T02:38:44.9756339Z     '\n' +
+2026-09-25T02:38:44.9761536Z     '> Generated from [update-github-info](https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956) · [◷](https://github.com/search?q=repo:L-Sandler%2Fskills-agentic-workflows-that-read-the-room+is:issue+%22gh-aw-workflow-id:+update-github-info%22&type=issues)'
+2026-09-25T02:38:44.9782645Z }
+2026-09-25T02:38:45.3243033Z POST /repos/L-Sandler/skills-agentic-workflows-that-read-the-room/issues/6/comments - 201 with id 17C1:8E44A:2220810:7383A45:6AB5DEB4 in 431ms
+2026-09-25T02:38:45.3245630Z ✓ Added comment to existing issue #6
+2026-09-25T02:38:45.3253002Z request {
+2026-09-25T02:38:45.3253643Z   method: 'GET',
+2026-09-25T02:38:45.3254708Z   baseUrl: 'https://api.github.com',
+2026-09-25T02:38:45.3255544Z   headers: {
+2026-09-25T02:38:45.3256220Z     accept: 'application/vnd.github.v3+json',
+2026-09-25T02:38:45.3258697Z     'user-agent': 'actions/github-script actions_orchestration_id/9463978c-7030-4598-924f-edd18d8c6a83.conclusion.__default octokit-core.js/7.0.6 Node.js/24',
+2026-09-25T02:38:45.3260884Z     'X-GitHub-Api-Version': '2022-11-28'
+2026-09-25T02:38:45.3261688Z   },
+2026-09-25T02:38:45.3262304Z   mediaType: { format: '', previews: [] },
+2026-09-25T02:38:45.3263141Z   request: {
+2026-09-25T02:38:45.3263728Z     agent: Agent {
+2026-09-25T02:38:45.3264402Z       _events: [Object: null prototype],
+2026-09-25T02:38:45.3265239Z       _eventsCount: 2,
+2026-09-25T02:38:45.3265927Z       _maxListeners: undefined,
+2026-09-25T02:38:45.3266719Z       options: [Object: null prototype],
+2026-09-25T02:38:45.3267733Z       defaultPort: 443,
+2026-09-25T02:38:45.3268429Z       protocol: 'https:',
+2026-09-25T02:38:45.3269190Z       requests: [Object: null prototype] {},
+2026-09-25T02:38:45.3270108Z       sockets: [Object: null prototype] {},
+2026-09-25T02:38:45.3271028Z       freeSockets: [Object: null prototype] {},
+2026-09-25T02:38:45.3271930Z       keepAliveMsecs: 1000,
+2026-09-25T02:38:45.3272646Z       keepAlive: false,
+2026-09-25T02:38:45.3273323Z       maxSockets: 100,
+2026-09-25T02:38:45.3274017Z       maxFreeSockets: 256,
+2026-09-25T02:38:45.3274718Z       scheduling: 'lifo',
+2026-09-25T02:38:45.3275448Z       maxTotalSockets: Infinity,
+2026-09-25T02:38:45.3276228Z       totalSocketCount: 0,
+2026-09-25T02:38:45.3277140Z       agentKeepAliveTimeoutBuffer: 1000,
+2026-09-25T02:38:45.3278038Z       maxCachedSessions: 100,
+2026-09-25T02:38:45.3278799Z       _sessionCache: [Object],
+2026-09-25T02:38:45.3279551Z       Symbol(shapeMode): false,
+2026-09-25T02:38:45.3280309Z       Symbol(kCapture): false
+2026-09-25T02:38:45.3281018Z     },
+2026-09-25T02:38:45.3281607Z     fetch: [Function: proxyFetch],
+2026-09-25T02:38:45.3284017Z     hook: [Function: bound bound register]
+2026-09-25T02:38:45.3284906Z   },
+2026-09-25T02:38:45.3285470Z   url: '/search/issues',
+2026-09-25T02:38:45.3308752Z   q: 'repo:L-Sandler/skills-agentic-workflows-that-read-the-room is:issue is:open label:agentic-workflows "[aw]" in:title created:>=2026-09-25T01:38:45Z',
+2026-09-25T02:38:45.3311083Z   per_page: 100,
+2026-09-25T02:38:45.3311727Z   sort: 'created',
+2026-09-25T02:38:45.3312351Z   order: 'asc'
+2026-09-25T02:38:45.3312953Z }
+2026-09-25T02:38:45.6810195Z GET /search/issues?q=repo%3AL-Sandler%2Fskills-agentic-workflows-that-read-the-room%20is%3Aissue%20is%3Aopen%20label%3Aagentic-workflows%20%22%5Baw%5D%22%20in%3Atitle%20created%3A%3E%3D2026-09-25T01%3A38%3A45Z&per_page=100&sort=created&order=asc - 200 with id 17C0:CEC5F:42DAFD6:DFB4679:6AB5DEB5 in 345ms
+2026-09-25T02:38:45.6815340Z Cascade check: 2 failure issue(s) in the last 60 min (threshold: 10) — no cascade
+2026-09-25T02:38:45.6830189Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:45.6834344Z ##[debug]Set output result = 
+2026-09-25T02:38:45.6837335Z ##[debug]Finishing: Handle agent failure

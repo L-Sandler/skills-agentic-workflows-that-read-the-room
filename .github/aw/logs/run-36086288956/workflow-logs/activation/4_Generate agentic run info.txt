@@ -1,0 +1,144 @@
+﻿2026-09-25T02:36:21.4081733Z ##[debug]Evaluating: (vars.GH_AW_MODEL_AGENT_COPILOT || vars.GH_AW_DEFAULT_MODEL_COPILOT || 'auto')
+2026-09-25T02:36:21.4083379Z ##[debug]Evaluating Or:
+2026-09-25T02:36:21.4083953Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.4084513Z ##[debug]....Evaluating vars:
+2026-09-25T02:36:21.4085124Z ##[debug]....=> Object
+2026-09-25T02:36:21.4085668Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.4086263Z ##[debug]....=> 'GH_AW_MODEL_AGENT_COPILOT'
+2026-09-25T02:36:21.4086923Z ##[debug]..=> null
+2026-09-25T02:36:21.4087974Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.4088703Z ##[debug]....Evaluating vars:
+2026-09-25T02:36:21.4089261Z ##[debug]....=> Object
+2026-09-25T02:36:21.4089792Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.4090393Z ##[debug]....=> 'GH_AW_DEFAULT_MODEL_COPILOT'
+2026-09-25T02:36:21.4091014Z ##[debug]..=> null
+2026-09-25T02:36:21.4091520Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.4092055Z ##[debug]..=> 'auto'
+2026-09-25T02:36:21.4092547Z ##[debug]=> 'auto'
+2026-09-25T02:36:21.4093159Z ##[debug]Expanded: (null || null || 'auto')
+2026-09-25T02:36:21.4094113Z ##[debug]Result: 'auto'
+2026-09-25T02:36:21.4095641Z ##[debug]Evaluating condition for step: 'Generate agentic run info'
+2026-09-25T02:36:21.4098411Z ##[debug]Evaluating: success()
+2026-09-25T02:36:21.4099465Z ##[debug]Evaluating success:
+2026-09-25T02:36:21.4100460Z ##[debug]=> true
+2026-09-25T02:36:21.4101222Z ##[debug]Result: true
+2026-09-25T02:36:21.4102230Z ##[debug]Starting: Generate agentic run info
+2026-09-25T02:36:21.4253545Z ##[debug]Loading inputs
+2026-09-25T02:36:21.4257614Z ##[debug]Evaluating: github.token
+2026-09-25T02:36:21.4259204Z ##[debug]Evaluating Index:
+2026-09-25T02:36:21.4259804Z ##[debug]..Evaluating github:
+2026-09-25T02:36:21.4260409Z ##[debug]..=> Object
+2026-09-25T02:36:21.4260948Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.4261499Z ##[debug]..=> 'token'
+2026-09-25T02:36:21.4266297Z ##[debug]=> '***'
+2026-09-25T02:36:21.4271784Z ##[debug]Result: '***'
+2026-09-25T02:36:21.4283000Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:36:21.4283898Z ##[debug]Evaluating Equal:
+2026-09-25T02:36:21.4285511Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:21.4286090Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:21.4286697Z ##[debug]....=> Object
+2026-09-25T02:36:21.4288175Z ##[debug]....Evaluating String:
+2026-09-25T02:36:21.4288747Z ##[debug]....=> 'debug'
+2026-09-25T02:36:21.4289407Z ##[debug]..=> '1'
+2026-09-25T02:36:21.4289928Z ##[debug]..Evaluating String:
+2026-09-25T02:36:21.4290469Z ##[debug]..=> '1'
+2026-09-25T02:36:21.4291435Z ##[debug]=> true
+2026-09-25T02:36:21.4292902Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:36:21.4294226Z ##[debug]Result: true
+2026-09-25T02:36:21.4305715Z ##[debug]Loading env
+2026-09-25T02:36:21.4316847Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:36:21.4317853Z with:
+2026-09-25T02:36:21.4320107Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_aw_info.cjs'));
+await main(core, context);
+
+2026-09-25T02:36:21.4334599Z   github-token: ***
+2026-09-25T02:36:21.4335559Z   debug: true
+2026-09-25T02:36:21.4336065Z   user-agent: actions/github-script
+2026-09-25T02:36:21.4336662Z   result-encoding: json
+2026-09-25T02:36:21.4337626Z   retries: 0
+2026-09-25T02:36:21.4338150Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:36:21.4338802Z env:
+2026-09-25T02:36:21.4339258Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:21.4339865Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:21.4341660Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:21.4344530Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:21.4345462Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:21.4346677Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:21.4347686Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:21.4348271Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:21.4348945Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:21.4350664Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:21.4351782Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:21.4352420Z   GH_AW_INFO_ENGINE_ID: copilot
+2026-09-25T02:36:21.4353018Z   GH_AW_INFO_ENGINE_NAME: GitHub Copilot CLI
+2026-09-25T02:36:21.4353921Z   GH_AW_INFO_MODEL: auto
+2026-09-25T02:36:21.4354456Z   GH_AW_INFO_VERSION: 1.0.87
+2026-09-25T02:36:21.4355235Z   GH_AW_INFO_AGENT_VERSION: 1.0.87
+2026-09-25T02:36:21.4355812Z   GH_AW_INFO_CLI_VERSION: v0.89.21
+2026-09-25T02:36:21.4356429Z   GH_AW_INFO_WORKFLOW_NAME: update-github-info
+2026-09-25T02:36:21.4357802Z   GH_AW_INFO_EXPERIMENTAL: false
+2026-09-25T02:36:21.4358426Z   GH_AW_INFO_SUPPORTS_TOOLS_ALLOWLIST: true
+2026-09-25T02:36:21.4359305Z   GH_AW_INFO_STAGED: false
+2026-09-25T02:36:21.4360112Z   GH_AW_INFO_ALLOWED_DOMAINS: ["github.blog","github.com","awesome-copilot.github.com"]
+2026-09-25T02:36:21.4361265Z   GH_AW_INFO_FIREWALL_ENABLED: true
+2026-09-25T02:36:21.4362104Z   GH_AW_INFO_AWF_VERSION: v0.28.23
+2026-09-25T02:36:21.4362857Z   GH_AW_INFO_AWMG_VERSION: 
+2026-09-25T02:36:21.4363571Z   GH_AW_INFO_FIREWALL_TYPE: squid
+2026-09-25T02:36:21.4364339Z   GH_AW_INFO_AGENT_RUNTIME: 
+2026-09-25T02:36:21.4365172Z   GH_AW_COMPILED_STRICT: true
+2026-09-25T02:36:21.4365704Z ##[endgroup]
+2026-09-25T02:36:21.6311639Z Starting context variable validation...
+2026-09-25T02:36:21.6312724Z ✓ github.event.repository.id is valid: 1386584259
+2026-09-25T02:36:21.6313491Z ✓ github.event.sender.id is valid: 74992167
+2026-09-25T02:36:21.6314142Z Validated 2 context variables
+2026-09-25T02:36:21.6314794Z ✅ All context variables validated successfully
+2026-09-25T02:36:21.6315591Z Lockdown mode not explicitly enabled, skipping validation
+2026-09-25T02:36:21.6316312Z Repository visibility: unknown
+2026-09-25T02:36:21.6316880Z Compiled with strict mode: true
+2026-09-25T02:36:21.6317992Z Generated merged models.json at: /tmp/gh-aw/models.json
+2026-09-25T02:36:21.6318752Z Generated aw_info.json at: /tmp/gh-aw/aw_info.json
+2026-09-25T02:36:21.6319379Z {
+2026-09-25T02:36:21.6319812Z   "engine_id": "copilot",
+2026-09-25T02:36:21.6320358Z   "engine_name": "GitHub Copilot CLI",
+2026-09-25T02:36:21.6320950Z   "model": "auto",
+2026-09-25T02:36:21.6321415Z   "version": "1.0.87",
+2026-09-25T02:36:21.6321914Z   "agent_version": "1.0.87",
+2026-09-25T02:36:21.6322467Z   "workflow_name": "update-github-info",
+2026-09-25T02:36:21.6323114Z   "experimental": false,
+2026-09-25T02:36:21.6323656Z   "supports_tools_allowlist": true,
+2026-09-25T02:36:21.6324231Z   "cache_memory": false,
+2026-09-25T02:36:21.6324749Z   "run_id": 36086288956,
+2026-09-25T02:36:21.6325250Z   "run_number": 1,
+2026-09-25T02:36:21.6325740Z   "run_attempt": "3",
+2026-09-25T02:36:21.6326435Z   "repository": "L-Sandler/skills-agentic-workflows-that-read-the-room",
+2026-09-25T02:36:21.6327442Z   "ref": "refs/heads/main",
+2026-09-25T02:36:21.6328054Z   "sha": "2f37adbf0819c83e859eb9253dff63fac4da244b",
+2026-09-25T02:36:21.6328709Z   "actor": "L-Sandler",
+2026-09-25T02:36:21.6329233Z   "event_name": "workflow_dispatch",
+2026-09-25T02:36:21.6329804Z   "target_repo": "",
+2026-09-25T02:36:21.6330283Z   "staged": false,
+2026-09-25T02:36:21.6330771Z   "allowed_domains": [
+2026-09-25T02:36:21.6331271Z     "github.blog",
+2026-09-25T02:36:21.6331732Z     "github.com",
+2026-09-25T02:36:21.6332223Z     "awesome-copilot.github.com"
+2026-09-25T02:36:21.6332768Z   ],
+2026-09-25T02:36:21.6333214Z   "firewall_enabled": true,
+2026-09-25T02:36:21.6333750Z   "awf_version": "v0.28.23",
+2026-09-25T02:36:21.6334280Z   "awmg_version": "",
+2026-09-25T02:36:21.6334784Z   "agent_runtime": "",
+2026-09-25T02:36:21.6335275Z   "steps": {
+2026-09-25T02:36:21.6338352Z     "firewall": "squid"
+2026-09-25T02:36:21.6339201Z   },
+2026-09-25T02:36:21.6339669Z   "created_at": "2026-09-25T02:36:21.614Z",
+2026-09-25T02:36:21.6340292Z   "cli_version": "v0.89.21"
+2026-09-25T02:36:21.6340811Z }
+2026-09-25T02:36:21.6341294Z Generated workflow overview in step summary
+2026-09-25T02:36:21.6343280Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:21.6370697Z ##[debug]Set output model = auto
+2026-09-25T02:36:21.6371395Z ##[debug]Set output engine_id = copilot
+2026-09-25T02:36:21.6372074Z ##[debug]Set output result = 
+2026-09-25T02:36:21.6374109Z ##[debug]Finishing: Generate agentic run info

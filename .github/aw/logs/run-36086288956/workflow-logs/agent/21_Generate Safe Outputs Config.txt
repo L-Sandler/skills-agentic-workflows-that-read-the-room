@@ -1,0 +1,87 @@
+﻿2026-09-25T02:37:08.1910983Z ##[debug]Evaluating: format('{0}/gh-aw', runner.temp)
+2026-09-25T02:37:08.1911349Z ##[debug]Evaluating format:
+2026-09-25T02:37:08.1911643Z ##[debug]..Evaluating String:
+2026-09-25T02:37:08.1911927Z ##[debug]..=> '{0}/gh-aw'
+2026-09-25T02:37:08.1912476Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:08.1912761Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:08.1913035Z ##[debug]....=> Object
+2026-09-25T02:37:08.1913304Z ##[debug]....Evaluating String:
+2026-09-25T02:37:08.1913560Z ##[debug]....=> 'temp'
+2026-09-25T02:37:08.1913857Z ##[debug]..=> '/home/runner/work/_temp'
+2026-09-25T02:37:08.1914412Z ##[debug]=> '/home/runner/work/_temp/gh-aw'
+2026-09-25T02:37:08.1914766Z ##[debug]Result: '/home/runner/work/_temp/gh-aw'
+2026-09-25T02:37:08.1915343Z ##[debug]Evaluating condition for step: 'Generate Safe Outputs Config'
+2026-09-25T02:37:08.1916491Z ##[debug]Evaluating: success()
+2026-09-25T02:37:08.1916883Z ##[debug]Evaluating success:
+2026-09-25T02:37:08.1917279Z ##[debug]=> true
+2026-09-25T02:37:08.1917951Z ##[debug]Result: true
+2026-09-25T02:37:08.1918502Z ##[debug]Starting: Generate Safe Outputs Config
+2026-09-25T02:37:08.1943591Z ##[debug]Loading inputs
+2026-09-25T02:37:08.1945142Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:08.1945456Z ##[debug]Evaluating Index:
+2026-09-25T02:37:08.1945724Z ##[debug]..Evaluating github:
+2026-09-25T02:37:08.1945991Z ##[debug]..=> Object
+2026-09-25T02:37:08.1946245Z ##[debug]..Evaluating String:
+2026-09-25T02:37:08.1946495Z ##[debug]..=> 'token'
+2026-09-25T02:37:08.1949091Z ##[debug]=> '***'
+2026-09-25T02:37:08.1951442Z ##[debug]Result: '***'
+2026-09-25T02:37:08.1954787Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:37:08.1955132Z ##[debug]Evaluating Equal:
+2026-09-25T02:37:08.1955407Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:08.1955670Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:08.1955933Z ##[debug]....=> Object
+2026-09-25T02:37:08.1956267Z ##[debug]....Evaluating String:
+2026-09-25T02:37:08.1956527Z ##[debug]....=> 'debug'
+2026-09-25T02:37:08.1956783Z ##[debug]..=> '1'
+2026-09-25T02:37:08.1957026Z ##[debug]..Evaluating String:
+2026-09-25T02:37:08.1957278Z ##[debug]..=> '1'
+2026-09-25T02:37:08.1957627Z ##[debug]=> true
+2026-09-25T02:37:08.1957896Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:37:08.1958162Z ##[debug]Result: true
+2026-09-25T02:37:08.1962127Z ##[debug]Loading env
+2026-09-25T02:37:08.1966902Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:37:08.1967316Z with:
+2026-09-25T02:37:08.1968715Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'create_files.cjs'));
+await main();
+
+2026-09-25T02:37:08.1971969Z   github-token: ***
+2026-09-25T02:37:08.1972212Z   debug: true
+2026-09-25T02:37:08.1972458Z   user-agent: actions/github-script
+2026-09-25T02:37:08.1972768Z   result-encoding: json
+2026-09-25T02:37:08.1973012Z   retries: 0
+2026-09-25T02:37:08.1973270Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:37:08.1973593Z env:
+2026-09-25T02:37:08.1973829Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:08.1974136Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:08.1975069Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:08.1975948Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:08.1976255Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:08.1976581Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:08.1976845Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:08.1977096Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:08.1977371Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:08.1977748Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:08.1978055Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:08.1978612Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:08.1978875Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:08.1979155Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:08.1979414Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:08.1979671Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:08.1979925Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:08.1980172Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:08.1980457Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:08.1980830Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:08.1981347Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:08.1981678Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:08.1982018Z   GH_AW_FILE_ROOT: /home/runner/work/_temp/gh-aw
+2026-09-25T02:37:08.1982532Z   GH_AW_FILE_CONFIG: {"files":[{"path":"safeoutputs/config.json","content_env":"GH_AW_SAFE_OUTPUTS_CONFIG"}]}
+2026-09-25T02:37:08.1985700Z   GH_AW_SAFE_OUTPUTS_CONFIG: {"create_pull_request":{"draft":false,"max":1,"max_patch_files":100,"max_patch_size":4096,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","SECURITY.md","CODE_OF_CONDUCT.md","AGENTS.md"],"protected_files_policy":"request-review"},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"false"},"report_incomplete":{}}
+2026-09-25T02:37:08.1988756Z ##[endgroup]
+2026-09-25T02:37:08.2964167Z Created 1 generated file(s) under /home/runner/work/_temp/gh-aw
+2026-09-25T02:37:08.3063089Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:08.3066072Z ##[debug]Set output result = 
+2026-09-25T02:37:08.3067847Z ##[debug]Finishing: Generate Safe Outputs Config

@@ -1,0 +1,57 @@
+﻿2026-09-25T02:36:22.0013572Z ##[debug]Evaluating condition for step: 'Publish daily AIC scan observations'
+2026-09-25T02:36:22.0021390Z ##[debug]Evaluating: (always() && (env.GH_AW_MAX_DAILY_AI_CREDITS != ''))
+2026-09-25T02:36:22.0023572Z ##[debug]Evaluating And:
+2026-09-25T02:36:22.0024505Z ##[debug]..Evaluating always:
+2026-09-25T02:36:22.0027312Z ##[debug]..=> true
+2026-09-25T02:36:22.0028891Z ##[debug]..Evaluating NotEqual:
+2026-09-25T02:36:22.0030300Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:22.0031268Z ##[debug]......Evaluating env:
+2026-09-25T02:36:22.0032699Z ##[debug]......=> Object
+2026-09-25T02:36:22.0034064Z ##[debug]......Evaluating String:
+2026-09-25T02:36:22.0035553Z ##[debug]......=> 'GH_AW_MAX_DAILY_AI_CREDITS'
+2026-09-25T02:36:22.0037283Z ##[debug]....=> '5000'
+2026-09-25T02:36:22.0038178Z ##[debug]....Evaluating String:
+2026-09-25T02:36:22.0039100Z ##[debug]....=> ''
+2026-09-25T02:36:22.0040386Z ##[debug]..=> true
+2026-09-25T02:36:22.0041649Z ##[debug]=> true
+2026-09-25T02:36:22.0042768Z ##[debug]Expanded: (true && ('5000' != ''))
+2026-09-25T02:36:22.0044802Z ##[debug]Result: true
+2026-09-25T02:36:22.0046739Z ##[debug]Starting: Publish daily AIC scan observations
+2026-09-25T02:36:22.0109488Z ##[debug]Loading inputs
+2026-09-25T02:36:22.0119665Z ##[debug]Loading env
+2026-09-25T02:36:22.0132044Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-25T02:36:22.0132918Z with:
+2026-09-25T02:36:22.0133735Z   name: aic-usage-scan-v2
+2026-09-25T02:36:22.0134385Z   path: /tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl
+2026-09-25T02:36:22.0135495Z   overwrite: true
+2026-09-25T02:36:22.0135985Z   if-no-files-found: ignore
+2026-09-25T02:36:22.0137269Z   retention-days: 3
+2026-09-25T02:36:22.0137771Z   compression-level: 6
+2026-09-25T02:36:22.0138630Z   include-hidden-files: false
+2026-09-25T02:36:22.0139168Z   archive: true
+2026-09-25T02:36:22.0139692Z env:
+2026-09-25T02:36:22.0140510Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:22.0141462Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:22.0143596Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:22.0145633Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:22.0146595Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:22.0147446Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:22.0148418Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:22.0148986Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:22.0150088Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:22.0151222Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:22.0151908Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:22.0152509Z ##[endgroup]
+2026-09-25T02:36:22.2965775Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:36:22.2979339Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:36:22.2980309Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:36:22.2981264Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:36:22.2982165Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:36:22.2983064Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:36:22.2983966Z ##[debug]matchDirectories 'true'
+2026-09-25T02:36:22.2984838Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:36:22.2985755Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:36:22.2986869Z ##[debug]Search path '/tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl'
+2026-09-25T02:36:22.2988840Z No files were found with the provided path: /tmp/gh-aw/agentic-workflow-usage-scan-v2.jsonl. No artifacts will be uploaded.
+2026-09-25T02:36:22.2992315Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:22.2996544Z ##[debug]Finishing: Publish daily AIC scan observations

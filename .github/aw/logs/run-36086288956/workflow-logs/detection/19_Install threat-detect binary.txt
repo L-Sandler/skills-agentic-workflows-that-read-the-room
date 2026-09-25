@@ -1,0 +1,26 @@
+﻿2026-09-25T02:38:17.3549535Z ##[debug]Evaluating condition for step: 'Install threat-detect binary'
+2026-09-25T02:38:17.3552459Z ##[debug]Evaluating: (always() && (steps.detection_guard.outputs.run_detection == 'true'))
+2026-09-25T02:38:17.3553044Z ##[debug]Evaluating And:
+2026-09-25T02:38:17.3553410Z ##[debug]..Evaluating always:
+2026-09-25T02:38:17.3553771Z ##[debug]..=> true
+2026-09-25T02:38:17.3554119Z ##[debug]..Evaluating Equal:
+2026-09-25T02:38:17.3554620Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:17.3554982Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:17.3555363Z ##[debug]........Evaluating Index:
+2026-09-25T02:38:17.3555739Z ##[debug]..........Evaluating steps:
+2026-09-25T02:38:17.3556116Z ##[debug]..........=> Object
+2026-09-25T02:38:17.3556485Z ##[debug]..........Evaluating String:
+2026-09-25T02:38:17.3556872Z ##[debug]..........=> 'detection_guard'
+2026-09-25T02:38:17.3557321Z ##[debug]........=> Object
+2026-09-25T02:38:17.3557698Z ##[debug]........Evaluating String:
+2026-09-25T02:38:17.3558071Z ##[debug]........=> 'outputs'
+2026-09-25T02:38:17.3558454Z ##[debug]......=> Object
+2026-09-25T02:38:17.3558806Z ##[debug]......Evaluating String:
+2026-09-25T02:38:17.3559455Z ##[debug]......=> 'run_detection'
+2026-09-25T02:38:17.3559815Z ##[debug]....=> 'false'
+2026-09-25T02:38:17.3560175Z ##[debug]....Evaluating String:
+2026-09-25T02:38:17.3560520Z ##[debug]....=> 'true'
+2026-09-25T02:38:17.3560847Z ##[debug]..=> false
+2026-09-25T02:38:17.3561174Z ##[debug]=> false
+2026-09-25T02:38:17.3561674Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-09-25T02:38:17.3562108Z ##[debug]Result: false

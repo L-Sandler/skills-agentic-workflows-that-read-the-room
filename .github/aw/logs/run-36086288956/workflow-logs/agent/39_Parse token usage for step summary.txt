@@ -1,0 +1,73 @@
+﻿2026-09-25T02:37:41.5577216Z ##[debug]Evaluating condition for step: 'Parse token usage for step summary'
+2026-09-25T02:37:41.5578990Z ##[debug]Evaluating: always()
+2026-09-25T02:37:41.5579374Z ##[debug]Evaluating always:
+2026-09-25T02:37:41.5579741Z ##[debug]=> true
+2026-09-25T02:37:41.5580129Z ##[debug]Result: true
+2026-09-25T02:37:41.5580714Z ##[debug]Starting: Parse token usage for step summary
+2026-09-25T02:37:41.5608196Z ##[debug]Loading inputs
+2026-09-25T02:37:41.5610209Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:41.5610732Z ##[debug]Evaluating Index:
+2026-09-25T02:37:41.5611460Z ##[debug]..Evaluating github:
+2026-09-25T02:37:41.5611899Z ##[debug]..=> Object
+2026-09-25T02:37:41.5612291Z ##[debug]..Evaluating String:
+2026-09-25T02:37:41.5612701Z ##[debug]..=> 'token'
+2026-09-25T02:37:41.5616155Z ##[debug]=> '***'
+2026-09-25T02:37:41.5618864Z ##[debug]Result: '***'
+2026-09-25T02:37:41.5622157Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:37:41.5622514Z ##[debug]Evaluating Equal:
+2026-09-25T02:37:41.5622788Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:41.5623093Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:41.5623374Z ##[debug]....=> Object
+2026-09-25T02:37:41.5623626Z ##[debug]....Evaluating String:
+2026-09-25T02:37:41.5623885Z ##[debug]....=> 'debug'
+2026-09-25T02:37:41.5624153Z ##[debug]..=> '1'
+2026-09-25T02:37:41.5624398Z ##[debug]..Evaluating String:
+2026-09-25T02:37:41.5624667Z ##[debug]..=> '1'
+2026-09-25T02:37:41.5624905Z ##[debug]=> true
+2026-09-25T02:37:41.5625169Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:37:41.5625454Z ##[debug]Result: true
+2026-09-25T02:37:41.5629532Z ##[debug]Loading env
+2026-09-25T02:37:41.5634349Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:37:41.5634761Z with:
+2026-09-25T02:37:41.5635889Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'parse_token_usage.cjs'));
+await main();
+
+2026-09-25T02:37:41.5639392Z   github-token: ***
+2026-09-25T02:37:41.5639635Z   debug: true
+2026-09-25T02:37:41.5639896Z   user-agent: actions/github-script
+2026-09-25T02:37:41.5640191Z   result-encoding: json
+2026-09-25T02:37:41.5640432Z   retries: 0
+2026-09-25T02:37:41.5640685Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:37:41.5641007Z env:
+2026-09-25T02:37:41.5641226Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:41.5641542Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:41.5642474Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:41.5643356Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:41.5643669Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:41.5643988Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:41.5644262Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:41.5644509Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:41.5644770Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:41.5645020Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:41.5645332Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:41.5645659Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:41.5645931Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:41.5646198Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:41.5646460Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:41.5646721Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:41.5646969Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:41.5647210Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:41.5647604Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:41.5647977Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:41.5648362Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:41.5648696Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:41.5649243Z   GH_AW_AGENT_OUTPUT: /tmp/gh-aw/agent_output.json
+2026-09-25T02:37:41.5649569Z ##[endgroup]
+2026-09-25T02:37:41.6687111Z No token usage data found, skipping summary
+2026-09-25T02:37:41.6787973Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:41.6791596Z ##[debug]Set output result = 
+2026-09-25T02:37:41.6793184Z ##[debug]Finishing: Parse token usage for step summary

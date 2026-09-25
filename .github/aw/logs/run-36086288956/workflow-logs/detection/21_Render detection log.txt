@@ -1,0 +1,26 @@
+﻿2026-09-25T02:38:17.3638082Z ##[debug]Evaluating condition for step: 'Render detection log'
+2026-09-25T02:38:17.3639883Z ##[debug]Evaluating: (always() && (steps.detection_guard.outputs.run_detection == 'true'))
+2026-09-25T02:38:17.3640411Z ##[debug]Evaluating And:
+2026-09-25T02:38:17.3640844Z ##[debug]..Evaluating always:
+2026-09-25T02:38:17.3641182Z ##[debug]..=> true
+2026-09-25T02:38:17.3641508Z ##[debug]..Evaluating Equal:
+2026-09-25T02:38:17.3641860Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:17.3642220Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:17.3642581Z ##[debug]........Evaluating Index:
+2026-09-25T02:38:17.3642951Z ##[debug]..........Evaluating steps:
+2026-09-25T02:38:17.3643323Z ##[debug]..........=> Object
+2026-09-25T02:38:17.3643688Z ##[debug]..........Evaluating String:
+2026-09-25T02:38:17.3644068Z ##[debug]..........=> 'detection_guard'
+2026-09-25T02:38:17.3644459Z ##[debug]........=> Object
+2026-09-25T02:38:17.3644815Z ##[debug]........Evaluating String:
+2026-09-25T02:38:17.3645184Z ##[debug]........=> 'outputs'
+2026-09-25T02:38:17.3645558Z ##[debug]......=> Object
+2026-09-25T02:38:17.3645906Z ##[debug]......Evaluating String:
+2026-09-25T02:38:17.3646297Z ##[debug]......=> 'run_detection'
+2026-09-25T02:38:17.3646656Z ##[debug]....=> 'false'
+2026-09-25T02:38:17.3646998Z ##[debug]....Evaluating String:
+2026-09-25T02:38:17.3647343Z ##[debug]....=> 'true'
+2026-09-25T02:38:17.3647656Z ##[debug]..=> false
+2026-09-25T02:38:17.3647974Z ##[debug]=> false
+2026-09-25T02:38:17.3648400Z ##[debug]Expanded: (true && ('false' == 'true'))
+2026-09-25T02:38:17.3648806Z ##[debug]Result: false

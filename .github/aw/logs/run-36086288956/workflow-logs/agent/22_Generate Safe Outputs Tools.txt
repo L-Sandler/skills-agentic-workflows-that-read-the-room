@@ -1,0 +1,214 @@
+﻿2026-09-25T02:37:08.3080375Z ##[debug]Evaluating condition for step: 'Generate Safe Outputs Tools'
+2026-09-25T02:37:08.3082513Z ##[debug]Evaluating: success()
+2026-09-25T02:37:08.3083113Z ##[debug]Evaluating success:
+2026-09-25T02:37:08.3083748Z ##[debug]=> true
+2026-09-25T02:37:08.3084365Z ##[debug]Result: true
+2026-09-25T02:37:08.3085241Z ##[debug]Starting: Generate Safe Outputs Tools
+2026-09-25T02:37:08.3122800Z ##[debug]Loading inputs
+2026-09-25T02:37:08.3124879Z ##[debug]Evaluating: github.token
+2026-09-25T02:37:08.3125361Z ##[debug]Evaluating Index:
+2026-09-25T02:37:08.3125795Z ##[debug]..Evaluating github:
+2026-09-25T02:37:08.3126220Z ##[debug]..=> Object
+2026-09-25T02:37:08.3126623Z ##[debug]..Evaluating String:
+2026-09-25T02:37:08.3127051Z ##[debug]..=> 'token'
+2026-09-25T02:37:08.3131684Z ##[debug]=> '***'
+2026-09-25T02:37:08.3135443Z ##[debug]Result: '***'
+2026-09-25T02:37:08.3139581Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:37:08.3140100Z ##[debug]Evaluating Equal:
+2026-09-25T02:37:08.3140530Z ##[debug]..Evaluating Index:
+2026-09-25T02:37:08.3140993Z ##[debug]....Evaluating runner:
+2026-09-25T02:37:08.3141370Z ##[debug]....=> Object
+2026-09-25T02:37:08.3141626Z ##[debug]....Evaluating String:
+2026-09-25T02:37:08.3141889Z ##[debug]....=> 'debug'
+2026-09-25T02:37:08.3142152Z ##[debug]..=> '1'
+2026-09-25T02:37:08.3142407Z ##[debug]..Evaluating String:
+2026-09-25T02:37:08.3142668Z ##[debug]..=> '1'
+2026-09-25T02:37:08.3142905Z ##[debug]=> true
+2026-09-25T02:37:08.3143174Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:37:08.3143445Z ##[debug]Result: true
+2026-09-25T02:37:08.3147660Z ##[debug]Loading env
+2026-09-25T02:37:08.3153271Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:37:08.3153812Z with:
+2026-09-25T02:37:08.3155003Z   script: const path = require('path');
+const actionsDir = path.join(process.env.RUNNER_TEMP, 'gh-aw', 'actions');
+const { setupGlobals } = require(path.join(actionsDir, 'setup_globals.cjs'));
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(path.join(actionsDir, 'generate_safe_outputs_tools.cjs'));
+await main();
+
+2026-09-25T02:37:08.3158735Z   github-token: ***
+2026-09-25T02:37:08.3159105Z   debug: true
+2026-09-25T02:37:08.3159473Z   user-agent: actions/github-script
+2026-09-25T02:37:08.3159913Z   result-encoding: json
+2026-09-25T02:37:08.3160382Z   retries: 0
+2026-09-25T02:37:08.3160638Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:37:08.3160946Z env:
+2026-09-25T02:37:08.3161175Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:37:08.3161476Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:37:08.3162395Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:37:08.3163282Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:37:08.3163579Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:37:08.3163890Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:37:08.3164179Z   DEFAULT_BRANCH: main
+2026-09-25T02:37:08.3164422Z   GH_AW_ASSETS_ALLOWED_EXTS: 
+2026-09-25T02:37:08.3164673Z   GH_AW_ASSETS_BRANCH: 
+2026-09-25T02:37:08.3164914Z   GH_AW_ASSETS_MAX_SIZE_KB: 0
+2026-09-25T02:37:08.3165205Z   GH_AW_MCP_LOG_DIR: /tmp/gh-aw/mcp-logs/safeoutputs
+2026-09-25T02:37:08.3165530Z   GH_AW_PR_HEAD_BASE_BRANCH: 
+2026-09-25T02:37:08.3165844Z   GH_AW_PR_HEAD_BASE_PR_NUMBER: 
+2026-09-25T02:37:08.3166112Z   GH_AW_PR_HEAD_BASE_REF: 
+2026-09-25T02:37:08.3166357Z   GH_AW_PR_HEAD_BASE_REPO: 
+2026-09-25T02:37:08.3166615Z   GH_AW_PR_HEAD_BASE_SHA: 
+2026-09-25T02:37:08.3166853Z   GH_AW_PR_HEAD_REPO: 
+2026-09-25T02:37:08.3167083Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:37:08.3167356Z   GH_AW_WORKFLOW_ID_SANITIZED: updategithubinfo
+2026-09-25T02:37:08.3167973Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:37:08.3168353Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: bef8a0ae1b4a817c
+2026-09-25T02:37:08.3168680Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303802719
+2026-09-25T02:37:08.3169640Z   GH_AW_TOOLS_META_JSON: {
+  "description_suffixes": {
+    "create_pull_request": " CONSTRAINTS: Maximum 1 pull request(s) can be created."
+  },
+  "repo_params": {},
+  "dynamic_tools": []
+}
+
+2026-09-25T02:37:08.3175972Z   GH_AW_VALIDATION_JSON: {
+  "create_pull_request": {
+    "defaultMax": 1,
+    "fields": {
+      "base": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      },
+      "body": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 65000
+      },
+      "branch": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "dependencies": {
+        "type": "array",
+        "itemType": "string",
+        "itemSanitize": true,
+        "itemMaxLength": 256
+      },
+      "draft": {
+        "type": "boolean"
+      },
+      "labels": {
+        "type": "array",
+        "itemType": "string",
+        "itemSanitize": true,
+        "itemMaxLength": 128
+      },
+      "repo": {
+        "type": "string",
+        "maxLength": 256
+      },
+      "stack_position": {
+        "optionalPositiveInteger": true
+      },
+      "stack_root": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "temporary_id": {
+        "type": "string",
+        "pattern": "^#?aw_[A-Za-z0-9_]{3,12}$"
+      },
+      "title": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      }
+    }
+  },
+  "missing_data": {
+    "defaultMax": 20,
+    "fields": {
+      "alternatives": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "context": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "data_type": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      },
+      "reason": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      }
+    }
+  },
+  "missing_tool": {
+    "defaultMax": 20,
+    "fields": {
+      "alternatives": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 512
+      },
+      "reason": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 256
+      },
+      "tool": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 128
+      }
+    }
+  },
+  "noop": {
+    "defaultMax": 1,
+    "fields": {
+      "message": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 65000
+      }
+    }
+  },
+  "report_incomplete": {
+    "defaultMax": 5,
+    "fields": {
+      "details": {
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 65000
+      },
+      "reason": {
+        "required": true,
+        "type": "string",
+        "sanitize": true,
+        "maxLength": 1024
+      }
+    }
+  }
+}
+
+2026-09-25T02:37:08.3182481Z ##[endgroup]
+2026-09-25T02:37:08.4291555Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:37:08.4295537Z ##[debug]Set output result = 
+2026-09-25T02:37:08.4297098Z ##[debug]Finishing: Generate Safe Outputs Tools

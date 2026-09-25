@@ -1,0 +1,119 @@
+﻿2026-09-25T02:38:17.4772039Z ##[debug]Evaluating condition for step: 'Upload threat detection artifact'
+2026-09-25T02:38:17.4773608Z ##[debug]Evaluating: always()
+2026-09-25T02:38:17.4773996Z ##[debug]Evaluating always:
+2026-09-25T02:38:17.4774353Z ##[debug]=> true
+2026-09-25T02:38:17.4774726Z ##[debug]Result: true
+2026-09-25T02:38:17.4775372Z ##[debug]Starting: Upload threat detection artifact
+2026-09-25T02:38:17.4799353Z ##[debug]Loading inputs
+2026-09-25T02:38:17.4803262Z ##[debug]Loading env
+2026-09-25T02:38:17.4807555Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-25T02:38:17.4807953Z with:
+2026-09-25T02:38:17.4808189Z   name: detection
+2026-09-25T02:38:17.4809430Z   path: /tmp/gh-aw/threat-detection/detection_result.json
+/tmp/gh-aw/threat-detection/execution.json
+/tmp/gh-aw/threat-detection/detection_usage.json
+/tmp/gh-aw/threat-detection/detection_usage.jsonl
+/tmp/gh-aw/threat-detection/sandbox/firewall/logs/
+/tmp/gh-aw/threat-detection/sandbox/firewall/audit/
+
+2026-09-25T02:38:17.4810683Z   if-no-files-found: ignore
+2026-09-25T02:38:17.4811002Z   compression-level: 6
+2026-09-25T02:38:17.4811251Z   overwrite: false
+2026-09-25T02:38:17.4811481Z   include-hidden-files: false
+2026-09-25T02:38:17.4811736Z   archive: true
+2026-09-25T02:38:17.4811949Z env:
+2026-09-25T02:38:17.4812161Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:17.4812500Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:17.4813481Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:17.4833001Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:17.4833432Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:17.4833762Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:17.4834040Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:17.4834349Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:17.4834742Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 45587e438fc1659e
+2026-09-25T02:38:17.4835076Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303878460
+2026-09-25T02:38:17.4835364Z ##[endgroup]
+2026-09-25T02:38:17.6184450Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:38:17.6186064Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:38:17.6186905Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:38:17.6187742Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:38:17.6212636Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:38:17.6213512Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:38:17.6214276Z ##[debug]matchDirectories 'true'
+2026-09-25T02:38:17.6215019Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:38:17.6215822Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:38:17.6222889Z ##[debug]Search path '/tmp/gh-aw/threat-detection/detection_result.json'
+2026-09-25T02:38:17.6229585Z ##[debug]Search path '/tmp/gh-aw/threat-detection/execution.json'
+2026-09-25T02:38:17.6230838Z ##[debug]Search path '/tmp/gh-aw/threat-detection/detection_usage.json'
+2026-09-25T02:38:17.6250234Z ##[debug]Search path '/tmp/gh-aw/threat-detection/detection_usage.jsonl'
+2026-09-25T02:38:17.6260452Z ##[debug]Search path '/tmp/gh-aw/threat-detection/sandbox/firewall/logs'
+2026-09-25T02:38:17.6262007Z ##[debug]Search path '/tmp/gh-aw/threat-detection/sandbox/firewall/audit'
+2026-09-25T02:38:17.6263587Z ##[debug]File:/tmp/gh-aw/threat-detection/execution.json was found using the provided searchPath
+2026-09-25T02:38:17.6265323Z ##[debug]File:/tmp/gh-aw/threat-detection/detection_usage.json was found using the provided searchPath
+2026-09-25T02:38:17.6267146Z ##[debug]File:/tmp/gh-aw/threat-detection/detection_usage.jsonl was found using the provided searchPath
+2026-09-25T02:38:17.6290477Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-25T02:38:17.6320171Z ##[debug]Using search path /tmp/gh-aw/threat-detection/detection_result.json
+2026-09-25T02:38:17.6321638Z ##[debug]Using search path /tmp/gh-aw/threat-detection/execution.json
+2026-09-25T02:38:17.6350201Z ##[debug]Using search path /tmp/gh-aw/threat-detection/detection_usage.json
+2026-09-25T02:38:17.6380090Z ##[debug]Using search path /tmp/gh-aw/threat-detection/detection_usage.jsonl
+2026-09-25T02:38:17.6381336Z ##[debug]Using search path /tmp/gh-aw/threat-detection/sandbox/firewall/logs
+2026-09-25T02:38:17.6382475Z ##[debug]Using search path /tmp/gh-aw/threat-detection/sandbox/firewall/audit
+2026-09-25T02:38:17.6383967Z The least common ancestor is /tmp/gh-aw/threat-detection. This will be the root directory of the artifact
+2026-09-25T02:38:17.6385110Z With the provided path, there will be 3 files uploaded
+2026-09-25T02:38:17.6386129Z ##[debug]Root artifact directory is /tmp/gh-aw/threat-detection
+2026-09-25T02:38:17.6386860Z Artifact name is valid!
+2026-09-25T02:38:17.6387413Z Root directory input is valid!
+2026-09-25T02:38:17.6388343Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:38:17.6389964Z ##[debug]Workflow Job Run Backend ID: b38175f5-4189-590e-8cc8-915edd5cb39f
+2026-09-25T02:38:17.6391633Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-09-25T02:38:17.9000489Z ##[debug][Response] - 200
+2026-09-25T02:38:17.9003113Z ##[debug]Headers: {
+2026-09-25T02:38:17.9003417Z ##[debug]  "content-length": "577",
+2026-09-25T02:38:17.9003823Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:38:17.9004244Z ##[debug]  "date": "Fri, 25 Sep 2026 02:38:17 GMT",
+2026-09-25T02:38:17.9004633Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:38:17.9005109Z ##[debug]  "x-github-request-id": "3809:BC58D:56724B:70016C:6AB5DE99",
+2026-09-25T02:38:17.9005760Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:38:17.9006353Z ##[debug]  "server": "github.com"
+2026-09-25T02:38:17.9006669Z ##[debug]}
+2026-09-25T02:38:17.9007162Z ::add-mask::***
+2026-09-25T02:38:17.9008512Z ::add-mask::***
+2026-09-25T02:38:17.9009455Z ##[debug]Body: {
+2026-09-25T02:38:17.9009760Z ##[debug]  "ok": true,
+2026-09-25T02:38:17.9012469Z ##[debug]  "signed_upload_url": "https://productionresultssa7.blob.core.windows.net/actions-results/9463978c-7030-4598-924f-edd18d8c6a83/workflow-job-run-b38175f5-4189-590e-8cc8-915edd5cb39f/artifacts/dad9a79bf7094d4e4604288b20606bf0c332ad493b99c12f1d458912c5ab4bdc.zip?se=2026-09-25T03%3A38%3A17Z&sig=***&ske=2026-09-25T05%3A53%3A53Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-09-25T01%3A53%3A53Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-09-25T02%3A38%3A12Z&sv=2025-11-05"
+2026-09-25T02:38:17.9014751Z ##[debug]}
+2026-09-25T02:38:17.9015760Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-09-25T02:38:17.9037095Z ##[debug]Zip write high watermark value 8388608
+2026-09-25T02:38:17.9037817Z ##[debug]Zip read high watermark value 8388608
+2026-09-25T02:38:17.9041281Z Uploading artifact: detection.zip
+2026-09-25T02:38:17.9081459Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-09-25T02:38:17.9082746Z Beginning upload of artifact content to blob storage
+2026-09-25T02:38:17.9222104Z ##[debug]Zip stream for upload has ended.
+2026-09-25T02:38:17.9223916Z ##[debug]Zip stream for upload has finished.
+2026-09-25T02:38:18.1410038Z Uploaded bytes 571
+2026-09-25T02:38:18.1966159Z Finished uploading artifact content to blob storage!
+2026-09-25T02:38:18.1967191Z SHA256 digest of uploaded artifact is ebcc59977be3c3a0f1188f79a90e3935fc66e77b9ec57f8aa0d1fa0be27884a1
+2026-09-25T02:38:18.1968401Z Finalizing artifact upload
+2026-09-25T02:38:18.1972115Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-09-25T02:38:18.6305345Z ##[debug][Response] - 200
+2026-09-25T02:38:18.6306018Z ##[debug]Headers: {
+2026-09-25T02:38:18.6306354Z ##[debug]  "content-length": "39",
+2026-09-25T02:38:18.6307058Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:38:18.6307603Z ##[debug]  "date": "Fri, 25 Sep 2026 02:38:18 GMT",
+2026-09-25T02:38:18.6308272Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:38:18.6308807Z ##[debug]  "x-github-request-id": "380B:32106F:5609FD:6F9734:6AB5DE9A",
+2026-09-25T02:38:18.6309587Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:38:18.6309958Z ##[debug]  "server": "github.com"
+2026-09-25T02:38:18.6310277Z ##[debug]}
+2026-09-25T02:38:18.6310757Z ##[debug]Body: {
+2026-09-25T02:38:18.6311027Z ##[debug]  "ok": true,
+2026-09-25T02:38:18.6311322Z ##[debug]  "artifact_id": "10843937054"
+2026-09-25T02:38:18.6311645Z ##[debug]}
+2026-09-25T02:38:18.6312200Z Artifact detection successfully finalized. Artifact ID 10843937054
+2026-09-25T02:38:18.6313256Z Artifact detection has been successfully uploaded! Final size is 571 bytes. Artifact ID is 10843937054
+2026-09-25T02:38:18.6315627Z Artifact download URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10843937054
+2026-09-25T02:38:18.6371971Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:18.6374224Z ##[debug]Set output artifact-id = 10843937054
+2026-09-25T02:38:18.6374865Z ##[debug]Set output artifact-digest = ebcc59977be3c3a0f1188f79a90e3935fc66e77b9ec57f8aa0d1fa0be27884a1
+2026-09-25T02:38:18.6375928Z ##[debug]Set output artifact-url = https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10843937054
+2026-09-25T02:38:18.6377626Z ##[debug]Finishing: Upload threat detection artifact

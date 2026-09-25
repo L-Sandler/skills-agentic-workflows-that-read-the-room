@@ -1,0 +1,102 @@
+﻿2026-09-25T02:36:26.0727613Z ##[debug]Evaluating condition for step: 'Upload info artifact'
+2026-09-25T02:36:26.0736423Z ##[debug]Evaluating: (success() || failure())
+2026-09-25T02:36:26.0738409Z ##[debug]Evaluating Or:
+2026-09-25T02:36:26.0739852Z ##[debug]..Evaluating success:
+2026-09-25T02:36:26.0741101Z ##[debug]..=> true
+2026-09-25T02:36:26.0742284Z ##[debug]=> true
+2026-09-25T02:36:26.0743853Z ##[debug]Expanded: (true || failure())
+2026-09-25T02:36:26.0745351Z ##[debug]Result: true
+2026-09-25T02:36:26.0747436Z ##[debug]Starting: Upload info artifact
+2026-09-25T02:36:26.0827863Z ##[debug]Loading inputs
+2026-09-25T02:36:26.0844787Z ##[debug]Loading env
+2026-09-25T02:36:26.0860636Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-25T02:36:26.0862051Z with:
+2026-09-25T02:36:26.0862510Z   name: info
+2026-09-25T02:36:26.0863563Z   path: /tmp/gh-aw/aw_info.json
+2026-09-25T02:36:26.0864132Z   if-no-files-found: ignore
+2026-09-25T02:36:26.0865247Z   compression-level: 6
+2026-09-25T02:36:26.0865742Z   overwrite: false
+2026-09-25T02:36:26.0866875Z   include-hidden-files: false
+2026-09-25T02:36:26.0868231Z   archive: true
+2026-09-25T02:36:26.0868700Z env:
+2026-09-25T02:36:26.0869402Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:26.0870391Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:26.0873387Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:26.0876335Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:26.0876938Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:26.0878326Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:26.0879483Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:26.0880056Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:26.0881253Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:26.0882564Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:26.0883251Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:26.0884446Z ##[endgroup]
+2026-09-25T02:36:26.3171299Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:36:26.3177501Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:36:26.3181025Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:36:26.3184249Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:36:26.3213359Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:36:26.3217384Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:36:26.3220793Z ##[debug]matchDirectories 'true'
+2026-09-25T02:36:26.3223975Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:36:26.3227439Z ##[debug]excludeHiddenFiles 'true'
+2026-09-25T02:36:26.3235200Z ##[debug]Search path '/tmp/gh-aw/aw_info.json'
+2026-09-25T02:36:26.3255334Z ##[debug]File:/tmp/gh-aw/aw_info.json was found using the provided searchPath
+2026-09-25T02:36:26.3269307Z With the provided path, there will be 1 file uploaded
+2026-09-25T02:36:26.3291672Z ##[debug]Root artifact directory is /tmp/gh-aw
+2026-09-25T02:36:26.3292755Z Artifact name is valid!
+2026-09-25T02:36:26.3293635Z Root directory input is valid!
+2026-09-25T02:36:26.3302228Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:36:26.3304393Z ##[debug]Workflow Job Run Backend ID: e3aaf996-3bc0-5167-8880-1350e20db4d4
+2026-09-25T02:36:26.3317487Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-09-25T02:36:26.5594500Z ##[debug][Response] - 200
+2026-09-25T02:36:26.5601455Z ##[debug]Headers: {
+2026-09-25T02:36:26.5602013Z ##[debug]  "content-length": "579",
+2026-09-25T02:36:26.5602654Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:36:26.5604431Z ##[debug]  "date": "Fri, 25 Sep 2026 02:36:26 GMT",
+2026-09-25T02:36:26.5605147Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:36:26.5605918Z ##[debug]  "x-github-request-id": "1904:3C0274:573F8A:708756:6AB5DE2A",
+2026-09-25T02:36:26.5607435Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:36:26.5608082Z ##[debug]  "server": "github.com"
+2026-09-25T02:36:26.5608615Z ##[debug]}
+2026-09-25T02:36:26.5640291Z ::add-mask::***
+2026-09-25T02:36:26.5651269Z ::add-mask::***
+2026-09-25T02:36:26.5654018Z ##[debug]Body: {
+2026-09-25T02:36:26.5654522Z ##[debug]  "ok": true,
+2026-09-25T02:36:26.5659067Z ##[debug]  "signed_upload_url": "https://productionresultssa7.blob.core.windows.net/actions-results/9463978c-7030-4598-924f-edd18d8c6a83/workflow-job-run-e3aaf996-3bc0-5167-8880-1350e20db4d4/artifacts/06271baf49532c879aa3c58b48671884bcc858f09197412d682750496c33e1e1.zip?se=2026-09-25T03%3A36%3A26Z&sig=***&ske=2026-09-25T05%3A55%3A06Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-09-25T01%3A55%3A06Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-09-25T02%3A36%3A21Z&sv=2025-11-05"
+2026-09-25T02:36:26.5662803Z ##[debug]}
+2026-09-25T02:36:26.5672289Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-09-25T02:36:26.5694059Z ##[debug]Zip write high watermark value 8388608
+2026-09-25T02:36:26.5696385Z ##[debug]Zip read high watermark value 8388608
+2026-09-25T02:36:26.5702583Z Uploading artifact: info.zip
+2026-09-25T02:36:26.5753444Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-09-25T02:36:26.5765109Z Beginning upload of artifact content to blob storage
+2026-09-25T02:36:26.5960013Z ##[debug]Zip stream for upload has ended.
+2026-09-25T02:36:26.5969225Z ##[debug]Zip stream for upload has finished.
+2026-09-25T02:36:26.7455329Z Uploaded bytes 609
+2026-09-25T02:36:26.7859722Z Finished uploading artifact content to blob storage!
+2026-09-25T02:36:27.0853800Z SHA256 digest of uploaded artifact is 8bfc5672e8d56092e625d4c5038d730e8666b4e106fdd3b8a073bbe301e6da8e
+2026-09-25T02:36:27.0872130Z Finalizing artifact upload
+2026-09-25T02:36:27.0874086Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-09-25T02:36:27.0875907Z ##[debug][Response] - 200
+2026-09-25T02:36:27.0876772Z ##[debug]Headers: {
+2026-09-25T02:36:27.0877642Z ##[debug]  "content-length": "39",
+2026-09-25T02:36:27.0878271Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:36:27.0878951Z ##[debug]  "date": "Fri, 25 Sep 2026 02:36:27 GMT",
+2026-09-25T02:36:27.0879652Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:36:27.0880427Z ##[debug]  "x-github-request-id": "1900:1ECD:318CEF:4159FF:6AB5DE2A",
+2026-09-25T02:36:27.0881192Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:36:27.0881826Z ##[debug]  "server": "github.com"
+2026-09-25T02:36:27.0882387Z ##[debug]}
+2026-09-25T02:36:27.0883175Z ##[debug]Body: {
+2026-09-25T02:36:27.0883647Z ##[debug]  "ok": true,
+2026-09-25T02:36:27.0884172Z ##[debug]  "artifact_id": "10844415900"
+2026-09-25T02:36:27.0884751Z ##[debug]}
+2026-09-25T02:36:27.0885347Z Artifact info successfully finalized. Artifact ID 10844415900
+2026-09-25T02:36:27.0886662Z Artifact info has been successfully uploaded! Final size is 609 bytes. Artifact ID is 10844415900
+2026-09-25T02:36:27.0888506Z Artifact download URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10844415900
+2026-09-25T02:36:27.0890668Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:27.0893704Z ##[debug]Set output artifact-id = 10844415900
+2026-09-25T02:36:27.0894740Z ##[debug]Set output artifact-digest = 8bfc5672e8d56092e625d4c5038d730e8666b4e106fdd3b8a073bbe301e6da8e
+2026-09-25T02:36:27.0896429Z ##[debug]Set output artifact-url = https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10844415900
+2026-09-25T02:36:27.0899861Z ##[debug]Finishing: Upload info artifact

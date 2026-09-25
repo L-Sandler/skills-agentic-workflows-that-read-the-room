@@ -1,0 +1,409 @@
+﻿2026-09-25T02:36:25.3140874Z ##[debug]Evaluating: format('{0}/gh-aw/actions', runner.temp)
+2026-09-25T02:36:25.3142069Z ##[debug]Evaluating format:
+2026-09-25T02:36:25.3142869Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3143455Z ##[debug]..=> '{0}/gh-aw/actions'
+2026-09-25T02:36:25.3144423Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3145205Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:25.3145774Z ##[debug]....=> Object
+2026-09-25T02:36:25.3146309Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.3147389Z ##[debug]....=> 'temp'
+2026-09-25T02:36:25.3148212Z ##[debug]..=> '/home/runner/work/_temp'
+2026-09-25T02:36:25.3148897Z ##[debug]=> '/home/runner/work/_temp/gh-aw/actions'
+2026-09-25T02:36:25.3149941Z ##[debug]Result: '/home/runner/work/_temp/gh-aw/actions'
+2026-09-25T02:36:25.3151621Z ##[debug]Evaluating: format('{0}/gh-aw/aw-prompts/prompt.txt', runner.temp)
+2026-09-25T02:36:25.3152827Z ##[debug]Evaluating format:
+2026-09-25T02:36:25.3153613Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3154227Z ##[debug]..=> '{0}/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:25.3155523Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3156316Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:25.3156872Z ##[debug]....=> Object
+2026-09-25T02:36:25.3157985Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.3158785Z ##[debug]....=> 'temp'
+2026-09-25T02:36:25.3159350Z ##[debug]..=> '/home/runner/work/_temp'
+2026-09-25T02:36:25.3160349Z ##[debug]=> '/home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:25.3161490Z ##[debug]Result: '/home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:25.3163318Z ##[debug]Evaluating: format('{0}/gh-aw/safeoutputs/outputs.jsonl', runner.temp)
+2026-09-25T02:36:25.3164432Z ##[debug]Evaluating format:
+2026-09-25T02:36:25.3164988Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3165881Z ##[debug]..=> '{0}/gh-aw/safeoutputs/outputs.jsonl'
+2026-09-25T02:36:25.3166849Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3167624Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:25.3168485Z ##[debug]....=> Object
+2026-09-25T02:36:25.3169030Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.3169817Z ##[debug]....=> 'temp'
+2026-09-25T02:36:25.3170367Z ##[debug]..=> '/home/runner/work/_temp'
+2026-09-25T02:36:25.3171447Z ##[debug]=> '/home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl'
+2026-09-25T02:36:25.3172659Z ##[debug]Result: '/home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl'
+2026-09-25T02:36:25.3178216Z ##[debug]Evaluating: (github.event.discussion.number || ((fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).item_type == 'discussion') && fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).item_number))
+2026-09-25T02:36:25.3180815Z ##[debug]Evaluating Or:
+2026-09-25T02:36:25.3181357Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3182167Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:25.3182716Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3183505Z ##[debug]........Evaluating github:
+2026-09-25T02:36:25.3184184Z ##[debug]........=> Object
+2026-09-25T02:36:25.3185143Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3185733Z ##[debug]........=> 'event'
+2026-09-25T02:36:25.3186530Z ##[debug]......=> Object
+2026-09-25T02:36:25.3187232Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3188074Z ##[debug]......=> 'discussion'
+2026-09-25T02:36:25.3188868Z ##[debug]....=> null
+2026-09-25T02:36:25.3189384Z ##[debug]..=> null
+2026-09-25T02:36:25.3189897Z ##[debug]..Evaluating And:
+2026-09-25T02:36:25.3190701Z ##[debug]....Evaluating Equal:
+2026-09-25T02:36:25.3191487Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3192069Z ##[debug]........Evaluating fromJSON:
+2026-09-25T02:36:25.3195705Z ##[debug]..........Evaluating Or:
+2026-09-25T02:36:25.3196384Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3197438Z ##[debug]..............Evaluating Index:
+2026-09-25T02:36:25.3198327Z ##[debug]................Evaluating Index:
+2026-09-25T02:36:25.3198963Z ##[debug]..................Evaluating github:
+2026-09-25T02:36:25.3200212Z ##[debug]..................=> Object
+2026-09-25T02:36:25.3201100Z ##[debug]..................Evaluating String:
+2026-09-25T02:36:25.3201716Z ##[debug]..................=> 'event'
+2026-09-25T02:36:25.3202580Z ##[debug]................=> Object
+2026-09-25T02:36:25.3203150Z ##[debug]................Evaluating String:
+2026-09-25T02:36:25.3203747Z ##[debug]................=> 'inputs'
+2026-09-25T02:36:25.3204310Z ##[debug]..............=> Object
+2026-09-25T02:36:25.3204878Z ##[debug]..............Evaluating String:
+2026-09-25T02:36:25.3205837Z ##[debug]..............=> 'aw_context'
+2026-09-25T02:36:25.3206654Z ##[debug]............=> null
+2026-09-25T02:36:25.3207387Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3208243Z ##[debug]..............Evaluating Index:
+2026-09-25T02:36:25.3208850Z ##[debug]................Evaluating Index:
+2026-09-25T02:36:25.3209729Z ##[debug]..................Evaluating github:
+2026-09-25T02:36:25.3210366Z ##[debug]..................=> Object
+2026-09-25T02:36:25.3211409Z ##[debug]..................Evaluating String:
+2026-09-25T02:36:25.3213664Z ##[debug]..................=> 'event'
+2026-09-25T02:36:25.3214369Z ##[debug]................=> Object
+2026-09-25T02:36:25.3215288Z ##[debug]................Evaluating String:
+2026-09-25T02:36:25.3216192Z ##[debug]................=> 'client_payload'
+2026-09-25T02:36:25.3216820Z ##[debug]..............=> null
+2026-09-25T02:36:25.3217818Z ##[debug]............=> null
+2026-09-25T02:36:25.3218840Z ##[debug]............Evaluating String:
+2026-09-25T02:36:25.3219733Z ##[debug]............=> '{}'
+2026-09-25T02:36:25.3220294Z ##[debug]..........=> '{}'
+2026-09-25T02:36:25.3230749Z ##[debug]........=> Object
+2026-09-25T02:36:25.3231697Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3232309Z ##[debug]........=> 'item_type'
+2026-09-25T02:36:25.3233143Z ##[debug]......=> null
+2026-09-25T02:36:25.3233667Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3234474Z ##[debug]......=> 'discussion'
+2026-09-25T02:36:25.3248694Z ##[debug]....=> false
+2026-09-25T02:36:25.3249284Z ##[debug]..=> false
+2026-09-25T02:36:25.3250075Z ##[debug]=> false
+2026-09-25T02:36:25.3252751Z ##[debug]Expanded: (null || ((null == 'discussion') && fromJSON((github['event']['inputs']['aw_context'] || github['event']['client_payload']['aw_context'] || '{}'))['item_number']))
+2026-09-25T02:36:25.3254358Z ##[debug]Result: false
+2026-09-25T02:36:25.3258593Z ##[debug]Evaluating: (github.event.pull_request.number || ((fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).item_type == 'pull_request') && fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).item_number))
+2026-09-25T02:36:25.3261113Z ##[debug]Evaluating Or:
+2026-09-25T02:36:25.3261894Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3262445Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:25.3263240Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3263810Z ##[debug]........Evaluating github:
+2026-09-25T02:36:25.3264673Z ##[debug]........=> Object
+2026-09-25T02:36:25.3265230Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3266043Z ##[debug]........=> 'event'
+2026-09-25T02:36:25.3266605Z ##[debug]......=> Object
+2026-09-25T02:36:25.3267518Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3268101Z ##[debug]......=> 'pull_request'
+2026-09-25T02:36:25.3268906Z ##[debug]....=> null
+2026-09-25T02:36:25.3269393Z ##[debug]..=> null
+2026-09-25T02:36:25.3270128Z ##[debug]..Evaluating And:
+2026-09-25T02:36:25.3270660Z ##[debug]....Evaluating Equal:
+2026-09-25T02:36:25.3271462Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3272027Z ##[debug]........Evaluating fromJSON:
+2026-09-25T02:36:25.3272840Z ##[debug]..........Evaluating Or:
+2026-09-25T02:36:25.3273427Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3274026Z ##[debug]..............Evaluating Index:
+2026-09-25T02:36:25.3274900Z ##[debug]................Evaluating Index:
+2026-09-25T02:36:25.3276031Z ##[debug]..................Evaluating github:
+2026-09-25T02:36:25.3276679Z ##[debug]..................=> Object
+2026-09-25T02:36:25.3277701Z ##[debug]..................Evaluating String:
+2026-09-25T02:36:25.3278584Z ##[debug]..................=> 'event'
+2026-09-25T02:36:25.3279171Z ##[debug]................=> Object
+2026-09-25T02:36:25.3280110Z ##[debug]................Evaluating String:
+2026-09-25T02:36:25.3280956Z ##[debug]................=> 'inputs'
+2026-09-25T02:36:25.3281543Z ##[debug]..............=> Object
+2026-09-25T02:36:25.3282111Z ##[debug]..............Evaluating String:
+2026-09-25T02:36:25.3282966Z ##[debug]..............=> 'aw_context'
+2026-09-25T02:36:25.3283769Z ##[debug]............=> null
+2026-09-25T02:36:25.3284329Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3284915Z ##[debug]..............Evaluating Index:
+2026-09-25T02:36:25.3285758Z ##[debug]................Evaluating Index:
+2026-09-25T02:36:25.3286604Z ##[debug]..................Evaluating github:
+2026-09-25T02:36:25.3287385Z ##[debug]..................=> Object
+2026-09-25T02:36:25.3288398Z ##[debug]..................Evaluating String:
+2026-09-25T02:36:25.3289244Z ##[debug]..................=> 'event'
+2026-09-25T02:36:25.3289830Z ##[debug]................=> Object
+2026-09-25T02:36:25.3290641Z ##[debug]................Evaluating String:
+2026-09-25T02:36:25.3291267Z ##[debug]................=> 'client_payload'
+2026-09-25T02:36:25.3292092Z ##[debug]..............=> null
+2026-09-25T02:36:25.3292633Z ##[debug]............=> null
+2026-09-25T02:36:25.3293416Z ##[debug]............Evaluating String:
+2026-09-25T02:36:25.3294228Z ##[debug]............=> '{}'
+2026-09-25T02:36:25.3294771Z ##[debug]..........=> '{}'
+2026-09-25T02:36:25.3295824Z ##[debug]........=> Object
+2026-09-25T02:36:25.3296375Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3297341Z ##[debug]........=> 'item_type'
+2026-09-25T02:36:25.3297894Z ##[debug]......=> null
+2026-09-25T02:36:25.3298698Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3299275Z ##[debug]......=> 'pull_request'
+2026-09-25T02:36:25.3300124Z ##[debug]....=> false
+2026-09-25T02:36:25.3300617Z ##[debug]..=> false
+2026-09-25T02:36:25.3301385Z ##[debug]=> false
+2026-09-25T02:36:25.3303023Z ##[debug]Expanded: (null || ((null == 'pull_request') && fromJSON((github['event']['inputs']['aw_context'] || github['event']['client_payload']['aw_context'] || '{}'))['item_number']))
+2026-09-25T02:36:25.3304635Z ##[debug]Result: false
+2026-09-25T02:36:25.3339548Z ##[debug]Evaluating: (github.event.issue.number || ((fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).item_type == 'issue') && fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).item_number))
+2026-09-25T02:36:25.3342092Z ##[debug]Evaluating Or:
+2026-09-25T02:36:25.3342902Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3343461Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:25.3344238Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3344796Z ##[debug]........Evaluating github:
+2026-09-25T02:36:25.3345697Z ##[debug]........=> Object
+2026-09-25T02:36:25.3346477Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3347259Z ##[debug]........=> 'event'
+2026-09-25T02:36:25.3348108Z ##[debug]......=> Object
+2026-09-25T02:36:25.3348646Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3349211Z ##[debug]......=> 'issue'
+2026-09-25T02:36:25.3349984Z ##[debug]....=> null
+2026-09-25T02:36:25.3350470Z ##[debug]..=> null
+2026-09-25T02:36:25.3351316Z ##[debug]..Evaluating And:
+2026-09-25T02:36:25.3351878Z ##[debug]....Evaluating Equal:
+2026-09-25T02:36:25.3352719Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3353298Z ##[debug]........Evaluating fromJSON:
+2026-09-25T02:36:25.3354131Z ##[debug]..........Evaluating Or:
+2026-09-25T02:36:25.3354703Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3355526Z ##[debug]..............Evaluating Index:
+2026-09-25T02:36:25.3356120Z ##[debug]................Evaluating Index:
+2026-09-25T02:36:25.3356984Z ##[debug]..................Evaluating github:
+2026-09-25T02:36:25.3358283Z ##[debug]..................=> Object
+2026-09-25T02:36:25.3358891Z ##[debug]..................Evaluating String:
+2026-09-25T02:36:25.3359781Z ##[debug]..................=> 'event'
+2026-09-25T02:36:25.3360606Z ##[debug]................=> Object
+2026-09-25T02:36:25.3361260Z ##[debug]................Evaluating String:
+2026-09-25T02:36:25.3363964Z ##[debug]................=> 'inputs'
+2026-09-25T02:36:25.3364872Z ##[debug]..............=> Object
+2026-09-25T02:36:25.3365470Z ##[debug]..............Evaluating String:
+2026-09-25T02:36:25.3366333Z ##[debug]..............=> 'aw_context'
+2026-09-25T02:36:25.3366913Z ##[debug]............=> null
+2026-09-25T02:36:25.3367974Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3368821Z ##[debug]..............Evaluating Index:
+2026-09-25T02:36:25.3369420Z ##[debug]................Evaluating Index:
+2026-09-25T02:36:25.3370340Z ##[debug]..................Evaluating github:
+2026-09-25T02:36:25.3371243Z ##[debug]..................=> Object
+2026-09-25T02:36:25.3372076Z ##[debug]..................Evaluating String:
+2026-09-25T02:36:25.3372948Z ##[debug]..................=> 'event'
+2026-09-25T02:36:25.3374609Z ##[debug]................=> Object
+2026-09-25T02:36:25.3375232Z ##[debug]................Evaluating String:
+2026-09-25T02:36:25.3375872Z ##[debug]................=> 'client_payload'
+2026-09-25T02:36:25.3376767Z ##[debug]..............=> null
+2026-09-25T02:36:25.3377488Z ##[debug]............=> null
+2026-09-25T02:36:25.3378060Z ##[debug]............Evaluating String:
+2026-09-25T02:36:25.3379094Z ##[debug]............=> '{}'
+2026-09-25T02:36:25.3380389Z ##[debug]..........=> '{}'
+2026-09-25T02:36:25.3381065Z ##[debug]........=> Object
+2026-09-25T02:36:25.3381621Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3382495Z ##[debug]........=> 'item_type'
+2026-09-25T02:36:25.3383303Z ##[debug]......=> null
+2026-09-25T02:36:25.3383823Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3388071Z ##[debug]......=> 'issue'
+2026-09-25T02:36:25.3388710Z ##[debug]....=> false
+2026-09-25T02:36:25.3389212Z ##[debug]..=> false
+2026-09-25T02:36:25.3389697Z ##[debug]=> false
+2026-09-25T02:36:25.3391468Z ##[debug]Expanded: (null || ((null == 'issue') && fromJSON((github['event']['inputs']['aw_context'] || github['event']['client_payload']['aw_context'] || '{}'))['item_number']))
+2026-09-25T02:36:25.3392731Z ##[debug]Result: false
+2026-09-25T02:36:25.3395581Z ##[debug]Evaluating: (github.event.comment.id || fromJSON((github.event.inputs.aw_context || github.event.client_payload.aw_context || '{}')).comment_id)
+2026-09-25T02:36:25.3397587Z ##[debug]Evaluating Or:
+2026-09-25T02:36:25.3398143Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3398962Z ##[debug]....Evaluating Index:
+2026-09-25T02:36:25.3399552Z ##[debug]......Evaluating Index:
+2026-09-25T02:36:25.3400361Z ##[debug]........Evaluating github:
+2026-09-25T02:36:25.3401057Z ##[debug]........=> Object
+2026-09-25T02:36:25.3401883Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3402506Z ##[debug]........=> 'event'
+2026-09-25T02:36:25.3403315Z ##[debug]......=> Object
+2026-09-25T02:36:25.3403855Z ##[debug]......Evaluating String:
+2026-09-25T02:36:25.3404411Z ##[debug]......=> 'comment'
+2026-09-25T02:36:25.3404928Z ##[debug]....=> null
+2026-09-25T02:36:25.3405434Z ##[debug]..=> null
+2026-09-25T02:36:25.3406202Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3406822Z ##[debug]....Evaluating fromJSON:
+2026-09-25T02:36:25.3407771Z ##[debug]......Evaluating Or:
+2026-09-25T02:36:25.3408323Z ##[debug]........Evaluating Index:
+2026-09-25T02:36:25.3409176Z ##[debug]..........Evaluating Index:
+2026-09-25T02:36:25.3409763Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3410611Z ##[debug]..............Evaluating github:
+2026-09-25T02:36:25.3411308Z ##[debug]..............=> Object
+2026-09-25T02:36:25.3412158Z ##[debug]..............Evaluating String:
+2026-09-25T02:36:25.3412766Z ##[debug]..............=> 'event'
+2026-09-25T02:36:25.3413589Z ##[debug]............=> Object
+2026-09-25T02:36:25.3414390Z ##[debug]............Evaluating String:
+2026-09-25T02:36:25.3415289Z ##[debug]............=> 'inputs'
+2026-09-25T02:36:25.3416118Z ##[debug]..........=> Object
+2026-09-25T02:36:25.3416683Z ##[debug]..........Evaluating String:
+2026-09-25T02:36:25.3417682Z ##[debug]..........=> 'aw_context'
+2026-09-25T02:36:25.3418498Z ##[debug]........=> null
+2026-09-25T02:36:25.3419060Z ##[debug]........Evaluating Index:
+2026-09-25T02:36:25.3419700Z ##[debug]..........Evaluating Index:
+2026-09-25T02:36:25.3420572Z ##[debug]............Evaluating Index:
+2026-09-25T02:36:25.3421426Z ##[debug]..............Evaluating github:
+2026-09-25T02:36:25.3422051Z ##[debug]..............=> Object
+2026-09-25T02:36:25.3422920Z ##[debug]..............Evaluating String:
+2026-09-25T02:36:25.3423536Z ##[debug]..............=> 'event'
+2026-09-25T02:36:25.3424341Z ##[debug]............=> Object
+2026-09-25T02:36:25.3424901Z ##[debug]............Evaluating String:
+2026-09-25T02:36:25.3425570Z ##[debug]............=> 'client_payload'
+2026-09-25T02:36:25.3426602Z ##[debug]..........=> null
+2026-09-25T02:36:25.3427547Z ##[debug]........=> null
+2026-09-25T02:36:25.3428149Z ##[debug]........Evaluating String:
+2026-09-25T02:36:25.3428735Z ##[debug]........=> '{}'
+2026-09-25T02:36:25.3429512Z ##[debug]......=> '{}'
+2026-09-25T02:36:25.3430448Z ##[debug]....=> Object
+2026-09-25T02:36:25.3430981Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.3431546Z ##[debug]....=> 'comment_id'
+2026-09-25T02:36:25.3432359Z ##[debug]..=> null
+2026-09-25T02:36:25.3433089Z ##[debug]=> null
+2026-09-25T02:36:25.3433707Z ##[debug]Expanded: (null || null)
+2026-09-25T02:36:25.3434274Z ##[debug]Result: null
+2026-09-25T02:36:25.3436370Z ##[debug]Evaluating: github.actor
+2026-09-25T02:36:25.3437214Z ##[debug]Evaluating Index:
+2026-09-25T02:36:25.3438082Z ##[debug]..Evaluating github:
+2026-09-25T02:36:25.3438903Z ##[debug]..=> Object
+2026-09-25T02:36:25.3439423Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3439956Z ##[debug]..=> 'actor'
+2026-09-25T02:36:25.3440801Z ##[debug]=> 'L-Sandler'
+2026-09-25T02:36:25.3441605Z ##[debug]Result: 'L-Sandler'
+2026-09-25T02:36:25.3442486Z ##[debug]Evaluating: github.repository
+2026-09-25T02:36:25.3443497Z ##[debug]Evaluating Index:
+2026-09-25T02:36:25.3444053Z ##[debug]..Evaluating github:
+2026-09-25T02:36:25.3444857Z ##[debug]..=> Object
+2026-09-25T02:36:25.3445376Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3446186Z ##[debug]..=> 'repository'
+2026-09-25T02:36:25.3447291Z ##[debug]=> 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:36:25.3448258Z ##[debug]Result: 'L-Sandler/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:36:25.3449884Z ##[debug]Evaluating: github.run_id
+2026-09-25T02:36:25.3450490Z ##[debug]Evaluating Index:
+2026-09-25T02:36:25.3451031Z ##[debug]..Evaluating github:
+2026-09-25T02:36:25.3451858Z ##[debug]..=> Object
+2026-09-25T02:36:25.3452606Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3453193Z ##[debug]..=> 'run_id'
+2026-09-25T02:36:25.3453740Z ##[debug]=> '36086288956'
+2026-09-25T02:36:25.3454538Z ##[debug]Result: '36086288956'
+2026-09-25T02:36:25.3455597Z ##[debug]Evaluating: github.workspace
+2026-09-25T02:36:25.3456195Z ##[debug]Evaluating Index:
+2026-09-25T02:36:25.3457013Z ##[debug]..Evaluating github:
+2026-09-25T02:36:25.3457988Z ##[debug]..=> Object
+2026-09-25T02:36:25.3458500Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3459040Z ##[debug]..=> 'workspace'
+2026-09-25T02:36:25.3460609Z ##[debug]=> '/home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:36:25.3462544Z ##[debug]Result: '/home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room'
+2026-09-25T02:36:25.3464930Z ##[debug]Evaluating condition for step: 'Create prompt with built-in context'
+2026-09-25T02:36:25.3468674Z ##[debug]Evaluating: success()
+2026-09-25T02:36:25.3469505Z ##[debug]Evaluating success:
+2026-09-25T02:36:25.3470721Z ##[debug]=> true
+2026-09-25T02:36:25.3471966Z ##[debug]Result: true
+2026-09-25T02:36:25.3473391Z ##[debug]Starting: Create prompt with built-in context
+2026-09-25T02:36:25.3533703Z ##[debug]Loading inputs
+2026-09-25T02:36:25.3537571Z ##[debug]Evaluating: github.token
+2026-09-25T02:36:25.3538539Z ##[debug]Evaluating Index:
+2026-09-25T02:36:25.3539099Z ##[debug]..Evaluating github:
+2026-09-25T02:36:25.3539973Z ##[debug]..=> Object
+2026-09-25T02:36:25.3540495Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3541276Z ##[debug]..=> 'token'
+2026-09-25T02:36:25.3546381Z ##[debug]=> '***'
+2026-09-25T02:36:25.3551387Z ##[debug]Result: '***'
+2026-09-25T02:36:25.3630086Z ##[debug]Evaluating: (runner.debug == '1')
+2026-09-25T02:36:25.3631041Z ##[debug]Evaluating Equal:
+2026-09-25T02:36:25.3631606Z ##[debug]..Evaluating Index:
+2026-09-25T02:36:25.3632435Z ##[debug]....Evaluating runner:
+2026-09-25T02:36:25.3633258Z ##[debug]....=> Object
+2026-09-25T02:36:25.3633854Z ##[debug]....Evaluating String:
+2026-09-25T02:36:25.3634421Z ##[debug]....=> 'debug'
+2026-09-25T02:36:25.3635492Z ##[debug]..=> '1'
+2026-09-25T02:36:25.3636224Z ##[debug]..Evaluating String:
+2026-09-25T02:36:25.3636764Z ##[debug]..=> '1'
+2026-09-25T02:36:25.3637698Z ##[debug]=> true
+2026-09-25T02:36:25.3638207Z ##[debug]Expanded: ('1' == '1')
+2026-09-25T02:36:25.3638967Z ##[debug]Result: true
+2026-09-25T02:36:25.3650745Z ##[debug]Loading env
+2026-09-25T02:36:25.3662288Z ##[group]Run actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3
+2026-09-25T02:36:25.3663322Z with:
+2026-09-25T02:36:25.3665223Z   script: const { setupGlobals } = require(process.env.GH_AW_ACTIONS_DIR + '/setup_globals.cjs');
+setupGlobals(core, github, context, exec, io, getOctokit);
+const { main } = require(process.env.GH_AW_ACTIONS_DIR + '/create_prompt.cjs');
+await main(core);
+
+2026-09-25T02:36:25.3671999Z   github-token: ***
+2026-09-25T02:36:25.3672742Z   debug: true
+2026-09-25T02:36:25.3673221Z   user-agent: actions/github-script
+2026-09-25T02:36:25.3674025Z   result-encoding: json
+2026-09-25T02:36:25.3674528Z   retries: 0
+2026-09-25T02:36:25.3675289Z   retry-exempt-status-codes: 400,401,403,404,422
+2026-09-25T02:36:25.3675927Z env:
+2026-09-25T02:36:25.3676608Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:25.3677345Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:25.3679643Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:25.3681862Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:25.3682465Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:25.3683443Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:25.3683997Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:25.3684786Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:25.3685407Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:25.3686399Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:25.3689552Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:25.3690312Z   GH_AW_ACTIONS_DIR: /home/runner/work/_temp/gh-aw/actions
+2026-09-25T02:36:25.3691438Z   GH_AW_PROMPT: /home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt
+2026-09-25T02:36:25.3692824Z   GH_AW_SAFE_OUTPUTS: /home/runner/work/_temp/gh-aw/safeoutputs/outputs.jsonl
+2026-09-25T02:36:25.3697604Z   GH_AW_PROMPT_CONFIG: {"items":[{"content_env":"GH_AW_PROMPT_CONTENT_0000"},{"file":"xpia.md"},{"file":"temp_folder_prompt.md"},{"file":"markdown.md"},{"file":"safe_outputs_prompt.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0001"},{"file":"safe_outputs_create_pull_request.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0002"},{"file":"mcp_cli_tools_with_safeoutputs_prompt.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0003"},{"file":"github_mcp_tools_with_safeoutputs_prompt.md"},{"content_env":"GH_AW_PROMPT_CONTENT_0004"},{"content_env":"GH_AW_PROMPT_CONTENT_0005"}]}
+2026-09-25T02:36:25.3701828Z   GH_AW_EXPR_1A3A194A: false
+2026-09-25T02:36:25.3702376Z   GH_AW_EXPR_463A214A: false
+2026-09-25T02:36:25.3703476Z   GH_AW_EXPR_802A9F6A: false
+2026-09-25T02:36:25.3704267Z   GH_AW_EXPR_FF1D34CE: 
+2026-09-25T02:36:25.3704787Z   GH_AW_GITHUB_ACTOR: L-Sandler
+2026-09-25T02:36:25.3705838Z   GH_AW_GITHUB_REPOSITORY: L-Sandler/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:36:25.3706980Z   GH_AW_GITHUB_RUN_ID: 36086288956
+2026-09-25T02:36:25.3708552Z   GH_AW_GITHUB_WORKSPACE: /home/runner/work/skills-agentic-workflows-that-read-the-room/skills-agentic-workflows-that-read-the-room
+2026-09-25T02:36:25.3710111Z   GH_AW_PROMPT_CONTENT_0000: <system>
+
+2026-09-25T02:36:25.3711382Z   GH_AW_PROMPT_CONTENT_0001: <safe-output-tools>
+Tools: create_pull_request, missing_tool, missing_data, noop
+
+2026-09-25T02:36:25.3712674Z   GH_AW_PROMPT_CONTENT_0002: </safe-output-tools>
+
+2026-09-25T02:36:25.3719607Z   GH_AW_PROMPT_CONTENT_0003: <github-context>
+The following GitHub context information is available for this workflow:
+{{#if github.actor}}
+- **actor**: __GH_AW_GITHUB_ACTOR__
+{{/if}}
+{{#if github.repository}}
+- **repository**: __GH_AW_GITHUB_REPOSITORY__
+{{/if}}
+{{#if github.workspace}}
+- **workspace**: __GH_AW_GITHUB_WORKSPACE__
+{{/if}}
+{{#if github.event.issue.number || (github.aw.context.item_type == 'issue' && github.aw.context.item_number)}}
+- **issue-number**: #__GH_AW_EXPR_802A9F6A__
+{{/if}}
+{{#if github.event.discussion.number || (github.aw.context.item_type == 'discussion' && github.aw.context.item_number)}}
+- **discussion-number**: #__GH_AW_EXPR_1A3A194A__
+{{/if}}
+{{#if github.event.pull_request.number || (github.aw.context.item_type == 'pull_request' && github.aw.context.item_number)}}
+- **pull-request-number**: #__GH_AW_EXPR_463A214A__
+{{/if}}
+{{#if github.event.comment.id || github.aw.context.comment_id}}
+- **comment-id**: __GH_AW_EXPR_FF1D34CE__
+{{/if}}
+{{#if github.run_id}}
+- **workflow-run-id**: __GH_AW_GITHUB_RUN_ID__
+{{/if}}
+</github-context>
+
+
+2026-09-25T02:36:25.3728236Z   GH_AW_PROMPT_CONTENT_0004: </system>
+
+2026-09-25T02:36:25.3729397Z   GH_AW_PROMPT_CONTENT_0005: {{#runtime-import .github/workflows/update-github-info.md}}
+
+2026-09-25T02:36:25.3730564Z ##[endgroup]
+2026-09-25T02:36:25.5394389Z Created prompt at /home/runner/work/_temp/gh-aw/aw-prompts/prompt.txt (12828 bytes)
+2026-09-25T02:36:25.5474512Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:25.5479654Z ##[debug]Set output result = 
+2026-09-25T02:36:25.5482204Z ##[debug]Finishing: Create prompt with built-in context

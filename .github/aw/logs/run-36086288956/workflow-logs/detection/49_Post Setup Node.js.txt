@@ -1,0 +1,35 @@
+﻿2026-09-25T02:38:18.6613886Z ##[debug]Evaluating condition for step: 'Post Setup Node.js'
+2026-09-25T02:38:18.6615220Z ##[debug]Evaluating: success()
+2026-09-25T02:38:18.6615606Z ##[debug]Evaluating success:
+2026-09-25T02:38:18.6616005Z ##[debug]=> true
+2026-09-25T02:38:18.6616381Z ##[debug]Result: true
+2026-09-25T02:38:18.6616916Z ##[debug]Starting: Post Setup Node.js
+2026-09-25T02:38:18.6642676Z ##[debug]Loading inputs
+2026-09-25T02:38:18.6646730Z ##[debug]Evaluating: (((github.server_url == 'https://github.com') && github.token) || '')
+2026-09-25T02:38:18.6647233Z ##[debug]Evaluating Or:
+2026-09-25T02:38:18.6647494Z ##[debug]..Evaluating And:
+2026-09-25T02:38:18.6647776Z ##[debug]....Evaluating Equal:
+2026-09-25T02:38:18.6648059Z ##[debug]......Evaluating Index:
+2026-09-25T02:38:18.6648342Z ##[debug]........Evaluating github:
+2026-09-25T02:38:18.6648641Z ##[debug]........=> Object
+2026-09-25T02:38:18.6649090Z ##[debug]........Evaluating String:
+2026-09-25T02:38:18.6649456Z ##[debug]........=> 'server_url'
+2026-09-25T02:38:18.6649777Z ##[debug]......=> 'https://github.com'
+2026-09-25T02:38:18.6650111Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.6650393Z ##[debug]......=> 'https://github.com'
+2026-09-25T02:38:18.6650690Z ##[debug]....=> true
+2026-09-25T02:38:18.6650946Z ##[debug]....Evaluating Index:
+2026-09-25T02:38:18.6651215Z ##[debug]......Evaluating github:
+2026-09-25T02:38:18.6651480Z ##[debug]......=> Object
+2026-09-25T02:38:18.6651750Z ##[debug]......Evaluating String:
+2026-09-25T02:38:18.6652022Z ##[debug]......=> 'token'
+2026-09-25T02:38:18.6654428Z ##[debug]....=> '***'
+2026-09-25T02:38:18.6656616Z ##[debug]..=> '***'
+2026-09-25T02:38:18.6658827Z ##[debug]=> '***'
+2026-09-25T02:38:18.6661366Z ##[debug]Expanded: ((('https://github.com' == 'https://github.com') && '***') || '')
+2026-09-25T02:38:18.6663925Z ##[debug]Result: '***'
+2026-09-25T02:38:18.6668440Z ##[debug]Loading env
+2026-09-25T02:38:18.6673009Z Post job cleanup.
+2026-09-25T02:38:18.7722368Z ##[debug]Caching for '' is not supported
+2026-09-25T02:38:18.7767322Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:38:18.7770237Z ##[debug]Finishing: Post Setup Node.js

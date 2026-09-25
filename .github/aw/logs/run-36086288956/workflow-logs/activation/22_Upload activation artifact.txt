@@ -1,0 +1,180 @@
+﻿2026-09-25T02:36:27.1036941Z ##[debug]Evaluating condition for step: 'Upload activation artifact'
+2026-09-25T02:36:27.1040139Z ##[debug]Evaluating: (success() || failure())
+2026-09-25T02:36:27.1041056Z ##[debug]Evaluating Or:
+2026-09-25T02:36:27.1041825Z ##[debug]..Evaluating success:
+2026-09-25T02:36:27.1042663Z ##[debug]..=> true
+2026-09-25T02:36:27.1043366Z ##[debug]=> true
+2026-09-25T02:36:27.1044380Z ##[debug]Expanded: (true || failure())
+2026-09-25T02:36:27.1045241Z ##[debug]Result: true
+2026-09-25T02:36:27.1046271Z ##[debug]Starting: Upload activation artifact
+2026-09-25T02:36:27.1091773Z ##[debug]Loading inputs
+2026-09-25T02:36:27.1098174Z ##[debug]Loading env
+2026-09-25T02:36:27.1106917Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-09-25T02:36:27.1107998Z with:
+2026-09-25T02:36:27.1108466Z   name: activation
+2026-09-25T02:36:27.1108991Z   include-hidden-files: true
+2026-09-25T02:36:27.1110993Z   path: /tmp/gh-aw/aw_info.json
+/tmp/gh-aw/models.json
+/tmp/gh-aw/aw-prompts/prompt.txt
+/tmp/gh-aw/aw-prompts/prompt-template.txt
+/tmp/gh-aw/aw-prompts/prompt-import-tree.json
+/tmp/gh-aw/github_rate_limits.jsonl
+/tmp/gh-aw/base
+/tmp/gh-aw/.github/agents
+/tmp/gh-aw/.github/skills
+
+2026-09-25T02:36:27.1113353Z   if-no-files-found: ignore
+2026-09-25T02:36:27.1113900Z   retention-days: 1
+2026-09-25T02:36:27.1114401Z   compression-level: 6
+2026-09-25T02:36:27.1114906Z   overwrite: false
+2026-09-25T02:36:27.1115377Z   archive: true
+2026-09-25T02:36:27.1115846Z env:
+2026-09-25T02:36:27.1116308Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:36:27.1116915Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:36:27.1118923Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:36:27.1120695Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:36:27.1121325Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:36:27.1122013Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:36:27.1122598Z   GH_AW_MAX_DAILY_AI_CREDITS: 5000
+2026-09-25T02:36:27.1123175Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:36:27.1123827Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:36:27.1124599Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 1ee9605759333040
+2026-09-25T02:36:27.1125292Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303781279
+2026-09-25T02:36:27.1125913Z ##[endgroup]
+2026-09-25T02:36:27.2826037Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:36:27.8919380Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:36:27.8920493Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:36:27.8921452Z ##[debug]excludeHiddenFiles 'false'
+2026-09-25T02:36:27.8922393Z ##[debug]followSymbolicLinks 'true'
+2026-09-25T02:36:27.8923310Z ##[debug]implicitDescendants 'true'
+2026-09-25T02:36:27.8924243Z ##[debug]matchDirectories 'true'
+2026-09-25T02:36:27.8925162Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-09-25T02:36:27.8926099Z ##[debug]excludeHiddenFiles 'false'
+2026-09-25T02:36:27.8927371Z ##[debug]Search path '/tmp/gh-aw/aw_info.json'
+2026-09-25T02:36:27.8928412Z ##[debug]Search path '/tmp/gh-aw/models.json'
+2026-09-25T02:36:27.8929488Z ##[debug]Search path '/tmp/gh-aw/aw-prompts/prompt.txt'
+2026-09-25T02:36:27.8930658Z ##[debug]Search path '/tmp/gh-aw/aw-prompts/prompt-template.txt'
+2026-09-25T02:36:27.8932162Z ##[debug]Search path '/tmp/gh-aw/aw-prompts/prompt-import-tree.json'
+2026-09-25T02:36:27.8933815Z ##[debug]Search path '/tmp/gh-aw/github_rate_limits.jsonl'
+2026-09-25T02:36:27.8935031Z ##[debug]Search path '/tmp/gh-aw/base'
+2026-09-25T02:36:27.8936021Z ##[debug]Search path '/tmp/gh-aw/.github/agents'
+2026-09-25T02:36:27.8937200Z ##[debug]Search path '/tmp/gh-aw/.github/skills'
+2026-09-25T02:36:27.8938366Z ##[debug]File:/tmp/gh-aw/aw_info.json was found using the provided searchPath
+2026-09-25T02:36:27.8939759Z ##[debug]File:/tmp/gh-aw/models.json was found using the provided searchPath
+2026-09-25T02:36:27.8941189Z ##[debug]File:/tmp/gh-aw/aw-prompts/prompt.txt was found using the provided searchPath
+2026-09-25T02:36:27.8943110Z ##[debug]File:/tmp/gh-aw/aw-prompts/prompt-template.txt was found using the provided searchPath
+2026-09-25T02:36:27.8944769Z ##[debug]File:/tmp/gh-aw/aw-prompts/prompt-import-tree.json was found using the provided searchPath
+2026-09-25T02:36:27.8946337Z ##[debug]File:/tmp/gh-aw/github_rate_limits.jsonl was found using the provided searchPath
+2026-09-25T02:36:27.8947923Z ##[debug]Removing /tmp/gh-aw/base from rawSearchResults because it is a directory
+2026-09-25T02:36:27.8949335Z ##[debug]Removing /tmp/gh-aw/base/.github from rawSearchResults because it is a directory
+2026-09-25T02:36:27.8950828Z ##[debug]Removing /tmp/gh-aw/base/.github/agents from rawSearchResults because it is a directory
+2026-09-25T02:36:27.8977985Z ##[debug]File:/tmp/gh-aw/base/.github/agents/agentic-workflows.md was found using the provided searchPath
+2026-09-25T02:36:27.8980140Z ##[debug]Removing /tmp/gh-aw/base/.github/aw from rawSearchResults because it is a directory
+2026-09-25T02:36:27.8981780Z ##[debug]File:/tmp/gh-aw/base/.github/aw/actions-lock.json was found using the provided searchPath
+2026-09-25T02:36:27.8983392Z ##[debug]Removing /tmp/gh-aw/base/.github/images from rawSearchResults because it is a directory
+2026-09-25T02:36:27.8985359Z ##[debug]File:/tmp/gh-aw/base/.github/images/actions-permissions-1.png was found using the provided searchPath
+2026-09-25T02:36:27.8987437Z ##[debug]File:/tmp/gh-aw/base/.github/images/actions-secrets-settings.svg was found using the provided searchPath
+2026-09-25T02:36:27.8989318Z ##[debug]File:/tmp/gh-aw/base/.github/images/add-copilot-github-token-secret.svg was found using the provided searchPath
+2026-09-25T02:36:27.8991147Z ##[debug]File:/tmp/gh-aw/base/.github/images/agentic-workflows-agent.png was found using the provided searchPath
+2026-09-25T02:36:27.8992933Z ##[debug]File:/tmp/gh-aw/base/.github/images/fine-grained-token-1.png was found using the provided searchPath
+2026-09-25T02:36:27.8994619Z ##[debug]File:/tmp/gh-aw/base/.github/images/fine-grained-token-2.png was found using the provided searchPath
+2026-09-25T02:36:27.8996307Z ##[debug]File:/tmp/gh-aw/base/.github/images/generated-update-pr.svg was found using the provided searchPath
+2026-09-25T02:36:27.8998332Z ##[debug]File:/tmp/gh-aw/base/.github/images/mona-astro-site-run-debug.png was found using the provided searchPath
+2026-09-25T02:36:27.9000192Z ##[debug]File:/tmp/gh-aw/base/.github/images/pr-files-changed-github-info.svg was found using the provided searchPath
+2026-09-25T02:36:27.9001943Z ##[debug]File:/tmp/gh-aw/base/.github/images/repo-secrets-1.png was found using the provided searchPath
+2026-09-25T02:36:27.9003565Z ##[debug]File:/tmp/gh-aw/base/.github/images/repo-secrets-2.png was found using the provided searchPath
+2026-09-25T02:36:27.9005161Z ##[debug]File:/tmp/gh-aw/base/.github/images/repo-secrets-3.png was found using the provided searchPath
+2026-09-25T02:36:27.9006744Z ##[debug]File:/tmp/gh-aw/base/.github/images/repo-settings.png was found using the provided searchPath
+2026-09-25T02:36:27.9008593Z ##[debug]File:/tmp/gh-aw/base/.github/images/run-update-github-info-1.png was found using the provided searchPath
+2026-09-25T02:36:27.9010342Z ##[debug]File:/tmp/gh-aw/base/.github/images/run-update-github-info-2.png was found using the provided searchPath
+2026-09-25T02:36:27.9012118Z ##[debug]File:/tmp/gh-aw/base/.github/images/run-update-github-info-3.png was found using the provided searchPath
+2026-09-25T02:36:27.9013828Z ##[debug]File:/tmp/gh-aw/base/.github/images/run-workflow-button.svg was found using the provided searchPath
+2026-09-25T02:36:27.9015612Z ##[debug]File:/tmp/gh-aw/base/.github/images/sign-in-sync-settings.png was found using the provided searchPath
+2026-09-25T02:36:27.9017339Z ##[debug]File:/tmp/gh-aw/base/.github/mcp.json was found using the provided searchPath
+2026-09-25T02:36:27.9018863Z ##[debug]Removing /tmp/gh-aw/base/.github/prompts from rawSearchResults because it is a directory
+2026-09-25T02:36:27.9020540Z ##[debug]File:/tmp/gh-aw/base/.github/prompts/manage-mona-site.prompt.md was found using the provided searchPath
+2026-09-25T02:36:27.9022373Z ##[debug]Removing /tmp/gh-aw/base/.github/skills from rawSearchResults because it is a directory
+2026-09-25T02:36:27.9024040Z ##[debug]Removing /tmp/gh-aw/base/.github/skills/agentic-workflows from rawSearchResults because it is a directory
+2026-09-25T02:36:27.9025793Z ##[debug]File:/tmp/gh-aw/base/.github/skills/agentic-workflows/SKILL.md was found using the provided searchPath
+2026-09-25T02:36:27.9028056Z ##[debug]Removing /tmp/gh-aw/base/.github/steps from rawSearchResults because it is a directory
+2026-09-25T02:36:27.9029584Z ##[debug]File:/tmp/gh-aw/base/.github/steps/1-step.md was found using the provided searchPath
+2026-09-25T02:36:27.9031076Z ##[debug]File:/tmp/gh-aw/base/.github/steps/2-step.md was found using the provided searchPath
+2026-09-25T02:36:27.9032540Z ##[debug]File:/tmp/gh-aw/base/.github/steps/3-step.md was found using the provided searchPath
+2026-09-25T02:36:27.9034022Z ##[debug]File:/tmp/gh-aw/base/.github/steps/x-review.md was found using the provided searchPath
+2026-09-25T02:36:27.9035582Z ##[debug]Removing /tmp/gh-aw/base/.github/workflows from rawSearchResults because it is a directory
+2026-09-25T02:36:27.9037574Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/0-start-exercise.yml was found using the provided searchPath
+2026-09-25T02:36:27.9039216Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/1-step.yml was found using the provided searchPath
+2026-09-25T02:36:27.9040763Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/2-step.yml was found using the provided searchPath
+2026-09-25T02:36:27.9042327Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/3-step.yml was found using the provided searchPath
+2026-09-25T02:36:27.9044006Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/copilot-setup-steps.yml was found using the provided searchPath
+2026-09-25T02:36:27.9045781Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/update-github-info.lock.yml was found using the provided searchPath
+2026-09-25T02:36:27.9047763Z ##[debug]File:/tmp/gh-aw/base/.github/workflows/update-github-info.md was found using the provided searchPath
+2026-09-25T02:36:27.9049102Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-09-25T02:36:27.9050385Z ##[debug]Using search path /tmp/gh-aw/aw_info.json
+2026-09-25T02:36:27.9051963Z ##[debug]Using search path /tmp/gh-aw/models.json
+2026-09-25T02:36:27.9053121Z ##[debug]Using search path /tmp/gh-aw/aw-prompts/prompt.txt
+2026-09-25T02:36:27.9054327Z ##[debug]Using search path /tmp/gh-aw/aw-prompts/prompt-template.txt
+2026-09-25T02:36:27.9055585Z ##[debug]Using search path /tmp/gh-aw/aw-prompts/prompt-import-tree.json
+2026-09-25T02:36:27.9056815Z ##[debug]Using search path /tmp/gh-aw/github_rate_limits.jsonl
+2026-09-25T02:36:27.9058063Z ##[debug]Using search path /tmp/gh-aw/base
+2026-09-25T02:36:27.9059054Z ##[debug]Using search path /tmp/gh-aw/.github/agents
+2026-09-25T02:36:27.9060098Z ##[debug]Using search path /tmp/gh-aw/.github/skills
+2026-09-25T02:36:27.9061066Z The least common ancestor is /tmp/gh-aw. This will be the root directory of the artifact
+2026-09-25T02:36:27.9062063Z With the provided path, there will be 40 files uploaded
+2026-09-25T02:36:27.9063130Z ##[debug]Root artifact directory is /tmp/gh-aw
+2026-09-25T02:36:27.9064881Z Artifact name is valid!
+2026-09-25T02:36:27.9065472Z Root directory input is valid!
+2026-09-25T02:36:27.9067258Z ##[debug]Workflow Run Backend ID: 9463978c-7030-4598-924f-edd18d8c6a83
+2026-09-25T02:36:27.9069177Z ##[debug]Workflow Job Run Backend ID: e3aaf996-3bc0-5167-8880-1350e20db4d4
+2026-09-25T02:36:27.9071691Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-09-25T02:36:27.9074101Z ##[debug][Response] - 200
+2026-09-25T02:36:27.9075081Z ##[debug]Headers: {
+2026-09-25T02:36:27.9075614Z ##[debug]  "content-length": "577",
+2026-09-25T02:36:27.9076247Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:36:27.9077802Z ##[debug]  "date": "Fri, 25 Sep 2026 02:36:27 GMT",
+2026-09-25T02:36:27.9078518Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:36:27.9079328Z ##[debug]  "x-github-request-id": "1905:758B3:521677:6B66C5:6AB5DE2B",
+2026-09-25T02:36:27.9080126Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:36:27.9080762Z ##[debug]  "server": "github.com"
+2026-09-25T02:36:27.9081314Z ##[debug]}
+2026-09-25T02:36:27.9082164Z ::add-mask::***
+2026-09-25T02:36:27.9083943Z ::add-mask::***
+2026-09-25T02:36:27.9085190Z ##[debug]Body: {
+2026-09-25T02:36:27.9085691Z ##[debug]  "ok": true,
+2026-09-25T02:36:27.9090016Z ##[debug]  "signed_upload_url": "https://productionresultssa7.blob.core.windows.net/actions-results/9463978c-7030-4598-924f-edd18d8c6a83/workflow-job-run-e3aaf996-3bc0-5167-8880-1350e20db4d4/artifacts/b15526c9c0e75acea3d1f8055de216c85f0330baf8604e13d8c6ce90fb90d6d7.zip?se=2026-09-25T03%3A36%3A27Z&sig=***&ske=2026-09-25T05%3A53%3A33Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-09-25T01%3A53%3A33Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-09-25T02%3A36%3A22Z&sv=2025-11-05"
+2026-09-25T02:36:27.9093889Z ##[debug]}
+2026-09-25T02:36:27.9094911Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-09-25T02:36:27.9096315Z ##[debug]Zip write high watermark value 8388608
+2026-09-25T02:36:27.9097630Z ##[debug]Zip read high watermark value 8388608
+2026-09-25T02:36:27.9098467Z Uploading artifact: activation.zip
+2026-09-25T02:36:27.9099967Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-09-25T02:36:27.9101292Z Beginning upload of artifact content to blob storage
+2026-09-25T02:36:27.9102366Z ##[debug]Zip stream for upload has ended.
+2026-09-25T02:36:27.9103466Z ##[debug]Zip stream for upload has finished.
+2026-09-25T02:36:28.2295386Z Uploaded bytes 656666
+2026-09-25T02:36:28.2296485Z Finished uploading artifact content to blob storage!
+2026-09-25T02:36:28.2298924Z SHA256 digest of uploaded artifact is 4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5
+2026-09-25T02:36:28.2301234Z Finalizing artifact upload
+2026-09-25T02:36:28.2304539Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-09-25T02:36:28.2308636Z ##[debug][Response] - 200
+2026-09-25T02:36:28.2310295Z ##[debug]Headers: {
+2026-09-25T02:36:28.2311481Z ##[debug]  "content-length": "39",
+2026-09-25T02:36:28.2313192Z ##[debug]  "content-type": "application/json",
+2026-09-25T02:36:28.2314635Z ##[debug]  "date": "Fri, 25 Sep 2026 02:36:28 GMT",
+2026-09-25T02:36:28.2315949Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-09-25T02:36:28.2317615Z ##[debug]  "x-github-request-id": "1901:1ED5E8:1C0B9E5:1F30235:6AB5DE2B",
+2026-09-25T02:36:28.2319214Z ##[debug]  "x-github-edge-region": "iad",
+2026-09-25T02:36:28.2320546Z ##[debug]  "server": "github.com"
+2026-09-25T02:36:28.2321739Z ##[debug]}
+2026-09-25T02:36:28.2323271Z ##[debug]Body: {
+2026-09-25T02:36:28.2324391Z ##[debug]  "ok": true,
+2026-09-25T02:36:28.2324945Z ##[debug]  "artifact_id": "10843718601"
+2026-09-25T02:36:28.2327790Z ##[debug]}
+2026-09-25T02:36:28.2328518Z Artifact activation successfully finalized. Artifact ID 10843718601
+2026-09-25T02:36:28.2330083Z Artifact activation has been successfully uploaded! Final size is 656666 bytes. Artifact ID is 10843718601
+2026-09-25T02:36:28.2333102Z Artifact download URL: https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10843718601
+2026-09-25T02:36:28.2338282Z ##[debug]Node Action run completed with exit code 0
+2026-09-25T02:36:28.2344000Z ##[debug]Set output artifact-id = 10843718601
+2026-09-25T02:36:28.2345789Z ##[debug]Set output artifact-digest = 4049579ac3215fa942239cd1fb74ec0de1bdbdd2edf53a292c71c9528c1f93a5
+2026-09-25T02:36:28.2353297Z ##[debug]Set output artifact-url = https://github.com/L-Sandler/skills-agentic-workflows-that-read-the-room/actions/runs/36086288956/artifacts/10843718601
+2026-09-25T02:36:28.2359354Z ##[debug]Finishing: Upload activation artifact

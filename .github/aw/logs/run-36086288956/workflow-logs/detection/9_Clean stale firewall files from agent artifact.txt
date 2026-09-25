@@ -1,0 +1,26 @@
+﻿2026-09-25T02:38:00.8382429Z ##[debug]Evaluating condition for step: 'Clean stale firewall files from agent artifact'
+2026-09-25T02:38:00.8384107Z ##[debug]Evaluating: success()
+2026-09-25T02:38:00.8384503Z ##[debug]Evaluating success:
+2026-09-25T02:38:00.8384997Z ##[debug]=> true
+2026-09-25T02:38:00.8385369Z ##[debug]Result: true
+2026-09-25T02:38:00.8385944Z ##[debug]Starting: Clean stale firewall files from agent artifact
+2026-09-25T02:38:00.8393691Z ##[debug]Loading inputs
+2026-09-25T02:38:00.8394856Z ##[debug]Loading env
+2026-09-25T02:38:00.8398766Z ##[group]Run rm -rf /tmp/gh-aw/sandbox/firewall/logs
+2026-09-25T02:38:00.8399414Z [36;1mrm -rf /tmp/gh-aw/sandbox/firewall/logs[0m
+2026-09-25T02:38:00.8399751Z [36;1mrm -rf /tmp/gh-aw/sandbox/firewall/audit[0m
+2026-09-25T02:38:00.8431149Z shell: /usr/bin/bash -e {0}
+2026-09-25T02:38:00.8431437Z env:
+2026-09-25T02:38:00.8431670Z   OTEL_EXPORTER_OTLP_ENDPOINT: 
+2026-09-25T02:38:00.8431988Z   OTEL_SERVICE_NAME: gh-aw.update-github-info
+2026-09-25T02:38:00.8432886Z   OTEL_RESOURCE_ATTRIBUTES: gh-aw.workflow.name=update-github-info,gh-aw.repository=L-Sandler/skills-agentic-workflows-that-read-the-room,gh-aw.run.id=36086288956,github.run_id=36086288956,gh-aw.engine.id=copilot
+2026-09-25T02:38:00.8433800Z   OTEL_EXPORTER_OTLP_HEADERS: 
+2026-09-25T02:38:00.8434104Z   GH_AW_OTLP_ENDPOINTS: [{"url":"","headers":""}]
+2026-09-25T02:38:00.8434423Z   GH_AW_OTLP_IF_MISSING: ignore
+2026-09-25T02:38:00.8434685Z   GH_AW_RUNTIME_FEATURES: 
+2026-09-25T02:38:00.8435000Z   GITHUB_AW_OTEL_TRACE_ID: 3c8c32e738303c7a8313802e4ab455aa
+2026-09-25T02:38:00.8435358Z   GITHUB_AW_OTEL_PARENT_SPAN_ID: 45587e438fc1659e
+2026-09-25T02:38:00.8435680Z   GITHUB_AW_OTEL_JOB_START_MS: 1790303878460
+2026-09-25T02:38:00.8435967Z ##[endgroup]
+2026-09-25T02:38:00.8469781Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/45ad631d-0b5b-4a37-a77c-ea3d4d362f9f.sh
+2026-09-25T02:38:00.8507857Z ##[debug]Finishing: Clean stale firewall files from agent artifact
