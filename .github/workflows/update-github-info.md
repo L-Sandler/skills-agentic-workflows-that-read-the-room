@@ -15,6 +15,15 @@ tools:
       - repos
   web-fetch:
   edit:
+  bash:
+    - "curl:*"
+    - "cat"
+    - "head"
+    - "tail"
+    - "grep"
+    - "sed"
+    - "ls"
+    - "wc"
 network:
   allowed:
     - github.blog
@@ -33,10 +42,10 @@ Maintain the GitHub Info website through a reviewable pull request for Mona.
 ## Instructions
 
 1. Use the GitHub repository API tools to read `notes/mona-notes.md`, `site/content/github-info.md`, and any repository guidance or reference files needed for this task. Do not use terminal, CLI, or sandboxed shell commands to read repository guidance or reference files.
-2. Call the `web_fetch` tool once for each of these URLs: `https://github.blog/latest/`, `https://github.blog/changelog/`, and `https://awesome-copilot.github.com/workflows/`. Do not use `curl`, `wget`, or any shell command to fetch web pages; shell network access is blocked and only the `web_fetch` tool can read these sites. If a `web_fetch` call fails, retry it once before moving on.
+2. Read `https://github.blog/latest/`, `https://github.blog/changelog/`, and `https://awesome-copilot.github.com/workflows/`. Use the `web_fetch` tool if it is available. If it is not, download each page with `curl -sSL <url> -o /tmp/gh-aw/agent/<name>.html` (one `curl` command per URL, no pipes or redirects), then read each file with `head -c 40000` or `grep`. Only these three domains are reachable.
 3. Select the most useful recent updates for Mona's practical, developer-focused editorial angle. Prefer official sources, keep summaries short, and include source links in the page.
 4. Use the `edit` tool to update `site/content/github-info.md`. Preserve its existing structure and update only what is supported by the fetched sources and repository notes.
 5. Review the resulting change for accuracy, clarity, and unnecessary churn.
 6. Use the `create_pull_request` safe output exactly once to open a pull request for Mona to review. The pull request should describe the sources consulted and summarize the content changes. Do not write directly to `main`, push manually, or merge the pull request.
 
-If the `web_fetch` tool returns content and it contains no meaningful, well-supported update, leave `site/content/github-info.md` unchanged and do not create a pull request. Do not stop early because a shell or `curl` command was denied; that is expected, so use `web_fetch` instead.
+If you read the pages and they contain no meaningful, well-supported update, leave `site/content/github-info.md` unchanged and do not create a pull request. Do not stop early just because `web_fetch` is unavailable or one command was denied; use the `curl` fallback in step 2 and retry once if a download fails.
